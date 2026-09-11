@@ -1,21 +1,39 @@
 # my-transcriver
 
-Transcritor local em Python 3 para converter conjuntos de arquivos de áudio e vídeo em Markdown.
+Transcritor em Python 3 para converter conjuntos de arquivos de áudio e vídeo em Markdown.
 
-O projeto usa [faster-whisper](https://github.com/SYSTRAN/faster-whisper), executa localmente e não exige envio do conteúdo para uma API externa.
+O caminho padrão usa o Whisper já hospedado em `https://whisper.inovacaosistemas.com.br`. O `faster-whisper` local continua disponível como modo opcional para uso offline.
+
+## Arquitetura
+
+Por padrão:
+
+```text
+arquivo de áudio/vídeo
+        |
+        v
+https://whisper.inovacaosistemas.com.br/v1/audio/transcriptions
+        |
+        v
+arquivo .md
+```
+
+O serviço é OpenAI-compatible e usa por padrão o modelo `Systran/faster-whisper-medium`.
 
 ## Requisitos
 
 - Python 3.9 ou superior
-- Espaço em disco para o modelo Whisper escolhido
+- acesso ao servidor `whisper.inovacaosistemas.com.br`
 
-`faster-whisper` usa PyAV para decodificar áudio, portanto não exige uma instalação separada do FFmpeg para os formatos suportados.
+Não é necessário baixar um modelo do Hugging Face no modo padrão.
 
 ## Instalação
 
 ```bash
 git clone git@github.com:EDortta/my-transcriver.git
 cd my-transcriver
+git checkout development
+
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -35,10 +53,10 @@ Vários arquivos:
 python3 transcribe.py audio1.mp3 video1.mp4 reuniao.m4a
 ```
 
-Um ou mais diretórios:
+Um diretório inteiro:
 
 ```bash
-python3 transcribe.py ./gravacoes ./videos
+python3 transcribe.py ./gravacoes
 ```
 
 Os diretórios são percorridos recursivamente por padrão.
@@ -55,66 +73,116 @@ Salvar tudo em outro diretório:
 python3 transcribe.py ./gravacoes --output-dir ./transcricoes
 ```
 
-Incluir timestamps por segmento:
+Sobrescrever transcrições existentes:
 
 ```bash
-python3 transcribe.py ./gravacoes --timestamps
+python3 transcribe.py ./gravacoes --overwrite
 ```
 
-Usar um modelo maior:
+## Servidor Whisper
+
+O padrão é:
+
+```text
+https://whisper.inovacaosistemas.com.br
+```
+
+Pode ser alterado por argumento:
 
 ```bash
-python3 transcribe.py ./gravacoes --model medium
+python3 transcribe.py audio.mp3 --server-url https://outro-whisper.exemplo.com
 ```
 
-Usar GPU NVIDIA compatível:
+Ou por variável de ambiente:
 
 ```bash
-python3 transcribe.py ./gravacoes --device cuda --compute-type float16
+export WHISPER_URL=https://whisper.inovacaosistemas.com.br
+python3 transcribe.py audio.mp3
 ```
+
+O endpoint utilizado é:
+
+```text
+POST /v1/audio/transcriptions
+```
+
+com multipart contendo `file`, `model` e, quando informado, `language`.
+
+O serviço atual não exige autenticação. Se isso mudar, o cliente já aceita:
+
+```bash
+export WHISPER_API_KEY=...
+```
+
+## Backend local opcional
+
+Para trabalhar offline, instale também o `faster-whisper`:
+
+```bash
+pip install -r requirements-local.txt
+```
+
+E execute:
+
+```bash
+python3 transcribe.py audio.mp3 --backend local
+```
+
+Nesse modo o modelo é baixado do Hugging Face na primeira utilização. Se aparecer o aviso sobre requisições não autenticadas ao HF Hub, ele não é erro; apenas informa que downloads anônimos têm limite menor. Opcionalmente:
+
+```bash
+export HF_TOKEN=seu_token
+```
+
+O `HF_TOKEN` não é necessário no backend remoto.
+
+### GPU local
+
+```bash
+python3 transcribe.py ./gravacoes \
+  --backend local \
+  --device cuda \
+  --compute-type float16
+```
+
+### Timestamps
+
+Neste momento `--timestamps` está disponível no backend local:
+
+```bash
+python3 transcribe.py entrevista.mp3 --backend local --timestamps
+```
+
+No backend remoto o programa gera a transcrição normalmente, sem timestamps.
 
 ## Comportamento padrão
 
-- modelo: `small`
-- dispositivo: `cpu`
-- precisão: `int8`
-- idioma: detectado automaticamente
-- filtro de silêncio/voz: habilitado
-- saída: arquivo `.md` ao lado de cada mídia de origem
-- arquivos `.md` existentes: não são sobrescritos sem `--overwrite`
+- backend: `remote`
+- servidor: `https://whisper.inovacaosistemas.com.br`
+- modelo remoto: `Systran/faster-whisper-medium`
+- idioma: detecção automática
+- timeout remoto: 3600 segundos
+- saída: um `.md` por mídia
+- arquivos `.md` existentes não são sobrescritos sem `--overwrite`
+- erro em um arquivo não interrompe o restante do lote
 
 ## Formatos
 
-O script procura formatos comuns de áudio e vídeo, incluindo MP3, WAV, M4A, AAC, FLAC, OGG, OPUS, WMA, MP4, MKV, MOV, AVI, WEBM, MPEG, MPG, M4V e 3GP.
-
-## Exemplos
-
-```bash
-# Diretório inteiro, português, sobrescrevendo resultados antigos
-python3 transcribe.py ~/Videos/aulas --language pt --overwrite
-
-# CPU com modelo medium
-python3 transcribe.py palestra.mp4 --model medium --compute-type int8
-
-# GPU e timestamps
-python3 transcribe.py entrevistas/ --device cuda --compute-type float16 --timestamps
-```
+O script reconhece formatos comuns de áudio e vídeo, incluindo MP3, WAV, M4A, AAC, FLAC, OGG, OPUS, WMA, MP4, MKV, MOV, AVI, WEBM, MPEG, MPG, M4V e 3GP.
 
 ## Saída Markdown
 
-Cada arquivo gera um documento semelhante a:
+Exemplo:
 
 ```markdown
 # Transcrição — entrevista.mp3
 
 - Fonte: `entrevista.mp3`
+- Backend: `remote`
 - Idioma: `pt`
-- Duração: `00:42:18`
-- Modelo: `small`
+- Modelo: `Systran/faster-whisper-medium`
 
 ## Transcrição
 
 Texto transcrito...
 ```
-
-Com `--timestamps`, cada segmento inclui o intervalo de tempo correspondente.
