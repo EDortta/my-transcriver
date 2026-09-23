@@ -187,7 +187,10 @@ function escapeRegex(text) {
   return text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 function findFileUid(snapshotText, filename) {
-  return findUid(snapshotText, new RegExp(escapeRegex(filename), "i"));
+  const full = findUid(snapshotText, new RegExp(escapeRegex(filename), "i"));
+  if (full) return full;
+  const stem = filename.replace(/\.[^.]+$/, "");
+  return findUid(snapshotText, new RegExp(escapeRegex(stem), "i"));
 }
 
 async function snapshot(client, pageId, evidencePath = null) {
@@ -239,7 +242,7 @@ async function speakerState(client, pageId) {
 
 async function ensureSpeakers(client, pageId, timeoutMs) {
   let state = await speakerState(client, pageId);
-  if (/speaker\\s+\\d+/i.test(state)) {
+  if (/speaker\s+\d+/i.test(state)) {
     console.log("    speakers já identificados; seguindo...");
     return;
   }
@@ -255,7 +258,7 @@ async function ensureSpeakers(client, pageId, timeoutMs) {
     await new Promise(resolve => setTimeout(resolve, 5000));
     state = await speakerState(client, pageId);
 
-    if (/speaker\\s+\\d+/i.test(state)) {
+    if (/speaker\s+\d+/i.test(state)) {
       console.log("    speakers identificados.");
       return;
     }
@@ -269,7 +272,7 @@ async function ensureSpeakers(client, pageId, timeoutMs) {
 }
 
 async function configureDownloadModal(client, pageId) {
-  const fn = `() => {
+  const chooseTxt = `() => {
     const visible = el => {
       const s = getComputedStyle(el);
       const r = el.getBoundingClientRect();
@@ -277,39 +280,69 @@ async function configureDownloadModal(client, pageId) {
     };
     const norm = el => (el.innerText || el.textContent || "").trim();
     const all = [...document.querySelectorAll("*")].filter(visible);
-
     const txt = all.find(el => /^\\.?TXT$/i.test(norm(el)));
     if (!txt) return { ok: false, step: "txt", visibleTexts: all.map(norm).filter(Boolean).slice(-120) };
-    const txtClickable = txt.closest("button,[role=button],label") || txt;
-    txtClickable.click();
+    const clickable = txt.closest("button,[role=button],label") || txt;
+    clickable.click();
+    return { ok: true, selected: norm(txt) };
+  }`;
 
-    const tsLabel = all.find(el => /^Include timestamps$/i.test(norm(el)));
-    if (!tsLabel) return { ok: false, step: "timestamps-label" };
+  const txtResult = textResult(await call(client, "evaluate_script", { pageId, function: chooseTxt }));
+  if (!/"?ok"?[^a-z]*[:=]?[^a-z]*true/i.test(txtResult)) {
+    throw new Error("Não consegui selecionar .TXT. " + txtResult);
+  }
 
-    let row = tsLabel.closest("label,[role=group]") || tsLabel.parentElement;
-    for (let i = 0; i < 4 && row; i++, row = row.parentElement) {
-      const control = row.querySelector("input[type=checkbox],[role=switch],button");
-      if (!control) continue;
+  await new Promise(resolve => setTimeout(resolve, 250));
 
-      let checked = false;
-      if (control.matches("input[type=checkbox]")) checked = control.checked;
-      else if (control.getAttribute("aria-checked") != null) checked = control.getAttribute("aria-checked") === "true";
-      else if (control.getAttribute("data-state") != null) checked = control.getAttribute("data-state") === "checked";
-      else checked = /checked|active|on/i.test(control.className || "");
+  const ensureTimestamps = `() => {
+    const visible = el => {
+      const s = getComputedStyle(el);
+      const r = el.getBoundingClientRect();
+      return s.display !== "none" && s.visibility !== "hidden" && r.width > 0 && r.height > 0;
+    };
+    const norm = el => (el.innerText || el.textContent || "").trim();
+    const labels = [...document.querySelectorAll("*")].filter(visible);
+    const label = labels.find(el => /^Include timestamps$/i.test(norm(el)));
+    if (!label) return { ok: false, step: "timestamps-label" };
 
-      if (!checked) control.click();
-      return { ok: true, timestampsWasOn: checked };
+    let row = label.closest("label,[role=group]") || label.parentElement;
+    for (let depth = 0; depth < 5 && row; depth++, row = row.parentElement) {
+      const controls = [...row.querySelectorAll("input[type=checkbox],[role=switch],button")].filter(visible);
+      for (const control of controls) {
+        let known = true;
+        let checked = false;
+
+        if (control.matches("input[type=checkbox]")) {
+          checked = Boolean(control.checked);
+        } else if (control.getAttribute("aria-checked") != null) {
+          checked = control.getAttribute("aria-checked") === "true";
+        } else if (control.getAttribute("data-state") != null) {
+          checked = /checked|on/i.test(control.getAttribute("data-state") || "");
+        } else if (/checked|active|\bon\b/i.test(String(control.className || ""))) {
+          checked = true;
+        } else if (control.querySelector("svg,path,[data-lucide=check]")) {
+          checked = true;
+        } else {
+          known = false;
+        }
+
+        if (!known) continue;
+        if (!checked) control.click();
+        return { ok: true, timestampsWasOn: checked, action: checked ? "kept-on" : "turned-on" };
+      }
     }
 
-    return { ok: false, step: "timestamps-control" };
+    return { ok: false, step: "timestamps-state-unknown" };
   }`;
-  const result = textResult(await call(client, "evaluate_script", { pageId, function: fn }));
-  if (!/"?ok"?[^a-z]*[:=]?[^a-z]*true/i.test(result)) {
-    throw new Error("Não consegui selecionar TXT + timestamps. " + result);
-  }
-  return result;
-}
 
+  const tsResult = textResult(await call(client, "evaluate_script", { pageId, function: ensureTimestamps }));
+  if (!/"?ok"?[^a-z]*[:=]?[^a-z]*true/i.test(tsResult)) {
+    throw new Error("Não consegui garantir Include timestamps ligado. " + tsResult);
+  }
+
+  console.log("    download: .TXT + timestamps.");
+  return { txtResult, tsResult };
+}
 async function clickDownloadInsideModal(client, pageId) {
   const fn = `() => {
     const visible = el => {
