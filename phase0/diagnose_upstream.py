@@ -9,7 +9,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_TARGET = os.getenv("WHISPER_SSH_TARGET", "esteban@192.168.71.50")
+DEFAULT_TARGET = os.getenv("WHISPER_SSH_TARGET", "esteban@whisper.inovacaosistemas.com.br")
 
 COMMANDS = [
     ("identity", "date -u --iso-8601=seconds; hostname -f 2>/dev/null || hostname; uname -a"),
@@ -47,7 +47,7 @@ def run_remote(target: str, command: str, timeout: int) -> tuple[int, str, str]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Diagnostica por SSH o upstream Whisper na porta 8093 do T610."
+        description="Diagnostica por SSH o upstream Whisper na porta 8093."
     )
     parser.add_argument("--target", default=DEFAULT_TARGET)
     parser.add_argument("--timeout", type=int, default=30)
