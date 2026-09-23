@@ -137,10 +137,13 @@ function findUid(snapshotText, wanted) {
 }
 
 async function snapshot(client, pageId, evidencePath = null) {
-  const args = { pageId, verbose: false };
-  if (evidencePath) args.filePath = evidencePath;
-  const result = await call(client, "take_snapshot", args);
-  return textResult(result);
+  const result = await call(client, "take_snapshot", { pageId, verbose: false });
+  const text = textResult(result);
+  if (evidencePath) {
+    await fsp.mkdir(path.dirname(evidencePath), { recursive: true });
+    await fsp.writeFile(evidencePath, text, "utf8");
+  }
+  return text;
 }
 
 async function getPageId(client) {
