@@ -10,7 +10,7 @@ import crypto from "node:crypto";
 
 const HOME_URL = "https://app.1transcribe.com/home";
 const DEFAULT_INPUT = "/home/esteban/Sync/Backups/Android/VoiceRecorder";
-const DEFAULT_OUTPUT = path.join(os.homedir(), "Downloads", "1transcribe");
+const DEFAULT_OUTPUT = "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos";
 const DEFAULT_DOWNLOADS = path.join(os.homedir(), "Downloads");
 const MEDIA_EXT = new Set([".m4a", ".mp3", ".wav", ".ogg", ".opus", ".flac", ".aac", ".mp4", ".mov", ".webm", ".mkv"]);
 
