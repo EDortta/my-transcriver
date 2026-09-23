@@ -13,6 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_TARGET = os.getenv("WHISPER_SSH_TARGET", "esteban@whisper.inovacaosistemas.com.br")
 DEFAULT_IMAGE = os.getenv("WHISPER_DOCKER_IMAGE", "ghcr.io/speaches-ai/speaches:latest-cpu")
+DEFAULT_MODEL = os.getenv("WHISPER_REMOTE_MODEL", "Systran/faster-whisper-medium")
 CONTAINER = "whisper-speaches"
 VOLUME = "whisper-hf-cache"
 PORT = 8093
@@ -54,6 +55,7 @@ def main() -> int:
     p = argparse.ArgumentParser(description="Restaura o Whisper remoto na porta 8093.")
     p.add_argument("--target", default=DEFAULT_TARGET)
     p.add_argument("--image", default=DEFAULT_IMAGE)
+    p.add_argument("--model", default=DEFAULT_MODEL)
     args = p.parse_args()
 
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
@@ -148,22 +150,53 @@ def main() -> int:
         )
         return fail(out, "health local não ficou disponível")
 
-    models = step(
-        args.target, out, "09-models",
-        "curl -sS -i --connect-timeout 3 --max-time 20 "
+    before_models = step(
+        args.target, out, "09-models-before",
+        "curl -fsS --connect-timeout 3 --max-time 20 "
         "http://127.0.0.1:8093/v1/models",
         30,
     )
+    if before_models.returncode != 0:
+        return fail(out, "não foi possível consultar os modelos locais")
+
+    model_q = shlex.quote(args.model)
+    ensure_model = step(
+        args.target, out, "10-ensure-model",
+        "if curl -fsS http://127.0.0.1:8093/v1/models | grep -F "
+        + model_q + " >/dev/null; then "
+        "echo 'model already installed'; "
+        "else "
+        "curl -fsS -X POST --connect-timeout 10 --max-time 1800 "
+        + shlex.quote("http://127.0.0.1:8093/v1/models/" + args.model)
+        + "; fi",
+        1900,
+    )
+    if ensure_model.returncode != 0:
+        step(
+            args.target, out, "10b-model-download-logs",
+            "docker logs --tail 300 whisper-speaches 2>&1",
+            60,
+        )
+        return fail(out, "download/instalação do modelo remoto falhou")
+
+    models = step(
+        args.target, out, "11-models-after",
+        "curl -fsS --connect-timeout 3 --max-time 20 "
+        "http://127.0.0.1:8093/v1/models",
+        30,
+    )
+    if models.returncode != 0 or args.model not in (models.stdout or ""):
+        return fail(out, "modelo remoto não apareceu em /v1/models após instalação")
 
     public = subprocess.run(
         ["curl", "-fsS", "--connect-timeout", "5", "--max-time", "20",
          "https://whisper.inovacaosistemas.com.br/health"],
         capture_output=True, text=True, check=False,
     )
-    save(out, "10-public-health", public)
+    save(out, "12-public-health", public)
 
     final = step(
-        args.target, out, "11-final",
+        args.target, out, "13-final",
         "ss -lntp 2>/dev/null | grep ':8093 ' || true; "
         "docker ps --filter name=whisper-speaches --no-trunc; "
         "docker logs --tail 100 whisper-speaches 2>&1",
@@ -176,6 +209,7 @@ def main() -> int:
         "Data UTC: " + stamp,
         "Host: " + args.target,
         "Imagem: " + args.image,
+        "Modelo: " + args.model,
         "Container: " + CONTAINER,
         "Bind: 127.0.0.1:8093 -> 8000",
         "Cache persistente: " + VOLUME,
@@ -183,7 +217,7 @@ def main() -> int:
         "Models local exit: " + str(models.returncode),
         "Health público exit: " + str(public.returncode),
         "",
-        "O modelo de STT será carregado sob demanda e persistido no volume Docker.",
+        "O modelo de STT foi garantido pelo repair e fica persistido no volume Docker.",
         "",
     ]
     (out / "report.md").write_text("\n".join(report), encoding="utf-8")
@@ -191,7 +225,7 @@ def main() -> int:
     print("Evidências:", out)
     print("Whisper upstream restaurado; health local OK.")
     if public.returncode != 0:
-        print("AVISO: health público falhou; veja 10-public-health.txt.", file=sys.stderr)
+        print("AVISO: health público falhou; veja 12-public-health.txt.", file=sys.stderr)
         return 1
     return 0
 
