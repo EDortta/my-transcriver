@@ -1,0 +1,55 @@
+===== nginx-vhost =====
+exit_code=0
+--- stdout ---
+server {
+    listen 80;
+    listen [::]:80;
+    server_name whisper.inovacaosistemas.com.br;
+
+    # Desafio HTTP-01 do certbot precisa vir do disco, e antes do redirect.
+    location /.well-known/acme-challenge/ {
+        alias /var/www/html/.well-known/acme-challenge/;
+    }
+
+    # 308 e nao 301: preserva metodo e corpo. Os clientes (AI-Gateway, wa-hub)
+    # mandam POST com audio — um 301/302 viraria GET e perderia o corpo.
+    location / {
+        return 308 https://$host$request_uri;
+    }
+}
+
+server {
+    listen 443 ssl;
+    listen [::]:443 ssl;
+    server_name whisper.inovacaosistemas.com.br;
+
+    ssl_certificate     /etc/letsencrypt/live/whisper.inovacaosistemas.com.br/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/whisper.inovacaosistemas.com.br/privkey.pem;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_prefer_server_ciphers on;
+
+    location / {
+        proxy_pass http://127.0.0.1:8093;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        client_max_body_size 50M;
+        proxy_read_timeout 120s;
+        proxy_send_timeout 120s;
+    }
+
+    location /tts/ {
+        proxy_pass http://127.0.0.1:8881/;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        client_max_body_size 1M;
+        proxy_read_timeout 60s;
+        proxy_send_timeout 60s;
+    }
+}
+--- stderr ---
+
