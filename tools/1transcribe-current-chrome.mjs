@@ -136,6 +136,22 @@ function findUid(snapshotText, wanted) {
   return null;
 }
 
+function escapeRegex(text) {
+  return text.replace(/[.*+?^$()|[\]\\{}]/g, "\\function findUid(snapshotText, wanted) {
+  const lines = snapshotText.split(/\r?\n/);
+  for (const line of lines) {
+    if (!wanted.test(line)) continue;
+    const m = line.match(/\buid=([^\s]+)/i);
+    if (m) return m[1].replace(/^["']|["']$/g, "");
+  }
+  return null;
+}");
+}
+
+function findFileUid(snapshotText, filename) {
+  return findUid(snapshotText, new RegExp(escapeRegex(filename), "i"));
+}
+
 async function snapshot(client, pageId, evidencePath = null) {
   const result = await call(client, "take_snapshot", { pageId, verbose: false });
   const text = textResult(result);
@@ -216,35 +232,47 @@ async function processOne(client, uploadTool, pageId, cfg, item, evidenceDir, in
   });
 
   let snap = await snapshot(client, pageId);
-  const importUid = findUid(snap, /\bbutton\b.*["']Import["']/i) || findUid(snap, /\bImport\b/i);
-  if (!importUid) throw new Error("Não encontrei o botão Import. A sessão pode não estar autenticada.");
+  const existingUid = findFileUid(snap, item.name);
 
-  await call(client, "click", { pageId, uid: importUid });
-  await call(client, "wait_for", { pageId, text: ["Transcribe Files"], timeout: 30000 });
+  if (existingUid) {
+    console.log("    já existe no 1Transcribe; reaproveitando...");
+    await call(client, "click", { pageId, uid: existingUid });
+    await call(client, "wait_for", {
+      pageId,
+      text: ["Download"],
+      timeout: cfg.timeoutMinutes * 60 * 1000,
+    });
+  } else {
+    const importUid = findUid(snap, /\bbutton\b.*["']Import["']/i) || findUid(snap, /\bImport\b/i);
+    if (!importUid) throw new Error("Não encontrei o botão Import. A sessão pode não estar autenticada.");
 
-  snap = await snapshot(client, pageId);
+    await call(client, "click", { pageId, uid: importUid });
+    await call(client, "wait_for", { pageId, text: ["Transcribe Files"], timeout: 30000 });
 
-  if (!/Portugu[eê]s/i.test(snap)) {
-    throw new Error("A janela de importação não está configurada para Português.");
+    snap = await snapshot(client, pageId);
+
+    if (!/Portugu[eê]s/i.test(snap)) {
+      throw new Error("A janela de importação não está configurada para Português.");
+    }
+
+    const transcribeUid =
+      findUid(snap, /\bbutton\b.*Transcribe Files/i) ||
+      findUid(snap, /Transcribe Files/i);
+    if (!transcribeUid) throw new Error("Não encontrei o botão Transcribe Files.");
+
+    const uploadArgs = { pageId, uid: transcribeUid };
+    if (uploadTool?.inputSchema?.properties?.filePaths) uploadArgs.filePaths = [item.full];
+    else uploadArgs.filePath = item.full;
+
+    await call(client, "upload_file", uploadArgs);
+
+    console.log("    upload enviado; aguardando conclusão...");
+    await call(client, "wait_for", {
+      pageId,
+      text: ["Download"],
+      timeout: cfg.timeoutMinutes * 60 * 1000,
+    });
   }
-
-  const transcribeUid =
-    findUid(snap, /\bbutton\b.*Transcribe Files/i) ||
-    findUid(snap, /Transcribe Files/i);
-  if (!transcribeUid) throw new Error("Não encontrei o botão Transcribe Files.");
-
-  const uploadArgs = { pageId, uid: transcribeUid };
-  if (uploadTool?.inputSchema?.properties?.filePaths) uploadArgs.filePaths = [item.full];
-  else uploadArgs.filePath = item.full;
-
-  await call(client, "upload_file", uploadArgs);
-
-  console.log("    upload enviado; aguardando conclusão...");
-  await call(client, "wait_for", {
-    pageId,
-    text: ["Download"],
-    timeout: cfg.timeoutMinutes * 60 * 1000,
-  });
 
   snap = await snapshot(
     client,
