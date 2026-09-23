@@ -74,12 +74,11 @@ Os áudios originais nunca são movidos ou modificados nesta fase.
 
 ## Smoke test recomendado
 
-Antes de repetir as cinco amostras, valide um único arquivo nos dois motores:
+Antes de repetir as cinco amostras, valide nos dois motores o áudio que já funcionou localmente:
 
 ```bash
 HF_HUB_OFFLINE=1 python3 phase0/benchmark.py \
-  --samples 1 \
-  --seed 20260923 \
+  --file "/home/esteban/Sync/Backups/Android/VoiceRecorder/Fer choro 27 outubro 2024.m4a" \
   --engines remote,local \
   --remote-chunk-seconds 300
 ```
