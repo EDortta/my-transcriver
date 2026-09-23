@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import os
+import shlex
 import subprocess
 import sys
 from datetime import datetime, timezone
@@ -29,13 +30,14 @@ COMMANDS = [
 
 
 def run_remote(target: str, command: str, timeout: int) -> tuple[int, str, str]:
+    remote_command = "bash -lc " + shlex.quote(command)
     p = subprocess.run(
         [
             "ssh",
             "-o", "BatchMode=yes",
             "-o", "ConnectTimeout=10",
             target,
-            "bash", "-lc", command,
+            remote_command,
         ],
         capture_output=True,
         text=True,
