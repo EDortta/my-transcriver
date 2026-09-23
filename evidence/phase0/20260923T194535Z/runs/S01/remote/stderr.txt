@@ -1,0 +1,1 @@
+[1/1] ERRO em /home/esteban/Sync/Backups/Android/VoiceRecorder/Fer choro 27 outubro 2024.m4a: Whisper HTTP 404: {"detail":"Model 'Systran/faster-whisper-medium' is not installed locally. You can download the model using `POST /v1/models`"}
