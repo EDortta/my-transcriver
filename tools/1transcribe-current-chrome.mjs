@@ -23,6 +23,7 @@ function parseArgs(argv) {
     format: "txt",
     timeoutMinutes: 180,
     newestFirst: false,
+    adaptiveDelay: true,
   };
 
   for (let i = 2; i < argv.length; i++) {
@@ -39,6 +40,7 @@ function parseArgs(argv) {
     else if (a === "--format") cfg.format = next().toLowerCase();
     else if (a === "--timeout-minutes") cfg.timeoutMinutes = Number(next());
     else if (a === "--newest-first") cfg.newestFirst = true;
+    else if (a === "--no-delay") cfg.adaptiveDelay = false;
     else if (a === "-h" || a === "--help") {
       console.log(
         "Uso:\n" +
@@ -52,7 +54,8 @@ function parseArgs(argv) {
         "  --all                   Todos os pendentes\n" +
         "  --format txt|srt|docx|pdf\n" +
         "  --timeout-minutes N     Máximo por arquivo (padrão: 180)\n" +
-        "  --newest-first          Mais recentes primeiro\n"
+        "  --newest-first          Mais recentes primeiro\n" +
+        "  --no-delay              Desativa a pausa adaptativa entre arquivos\n"
       );
       process.exit(0);
     } else {
@@ -105,6 +108,50 @@ async function listMedia(dir, newestFirst) {
   }
   rows.sort((a, b) => newestFirst ? b.mtimeMs - a.mtimeMs : a.mtimeMs - b.mtimeMs);
   return rows;
+}
+
+async function mediaDurationSeconds(file) {
+  try {
+    const { spawnSync } = await import("node:child_process");
+    const r = spawnSync(
+      "ffprobe",
+      ["-v", "error", "-show_entries", "format=duration", "-of", "default=nw=1:nk=1", file],
+      { encoding: "utf8" }
+    );
+    if (r.status === 0) {
+      const value = Number(String(r.stdout).trim());
+      if (Number.isFinite(value) && value > 0) return value;
+    }
+  } catch {}
+  return null;
+}
+
+function adaptiveDelaySeconds(durationSeconds, sizeBytes) {
+  if (Number.isFinite(durationSeconds)) {
+    if (durationSeconds <= 120) return 60;
+    if (durationSeconds <= 300) return 45;
+    if (durationSeconds <= 900) return 30;
+    if (durationSeconds <= 1800) return 20;
+    if (durationSeconds <= 3600) return 10;
+    return 5;
+  }
+
+  const mb = sizeBytes / (1024 * 1024);
+  if (mb <= 5) return 60;
+  if (mb <= 15) return 45;
+  if (mb <= 50) return 30;
+  if (mb <= 150) return 20;
+  return 10;
+}
+
+async function adaptivePause(item) {
+  const duration = await mediaDurationSeconds(item.full);
+  const seconds = adaptiveDelaySeconds(duration, item.size);
+  const desc = Number.isFinite(duration)
+    ? Math.round(duration) + "s de áudio"
+    : Math.round(item.size / (1024 * 1024)) + " MiB";
+  console.log("    pausa anti-saturação:", seconds + "s", "(" + desc + ")");
+  await new Promise(resolve => setTimeout(resolve, seconds * 1000));
 }
 
 async function call(client, name, args = {}) {
@@ -422,6 +469,11 @@ async function main() {
         JSON.stringify({ config: cfg, processed, failures, log }, null, 2) + "\n",
         "utf8"
       );
+
+      const reachedLimit = cfg.limit > 0 && processed >= cfg.limit;
+      if (cfg.adaptiveDelay && !reachedLimit) {
+        await adaptivePause(item);
+      }
     }
   } finally {
     await client.close().catch(() => {});
