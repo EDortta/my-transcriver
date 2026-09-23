@@ -23,7 +23,8 @@ function parseArgs(argv) {
     format: "txt",
     headless: false,
     timeoutMinutes: 180,
-    newestFirst: false
+    newestFirst: false,
+    cdp: null
   };
 
   for (let i = 2; i < argv.length; i++) {
@@ -42,6 +43,8 @@ function parseArgs(argv) {
     else if (arg === "--timeout-minutes") cfg.timeoutMinutes = Number(next());
     else if (arg === "--newest-first") cfg.newestFirst = true;
     else if (arg === "--headless") cfg.headless = true;
+    else if (arg === "--cdp") cfg.cdp = next();
+    else if (arg === "--existing-browser") cfg.cdp = "http://127.0.0.1:9222";
     else if (arg === "-h" || arg === "--help") {
       console.log(
         "Uso:\\n" +
@@ -259,13 +262,40 @@ async function main() {
   console.log("Saída:", cfg.output);
   console.log("Nesta execução:", cfg.limit === 0 ? "todos os pendentes" : cfg.limit);
 
-  const context = await chromium.launchPersistentContext(cfg.profile, {
-    headless: cfg.headless,
-    acceptDownloads: true,
-    viewport: { width: 1440, height: 1000 }
-  });
+  let browser = null;
+  let context = null;
+  let attached = false;
 
-  const page = context.pages()[0] || await context.newPage();
+  if (cfg.cdp) {
+    try {
+      console.log("Conectando ao Chrome existente:", cfg.cdp);
+      browser = await chromium.connectOverCDP(cfg.cdp);
+      attached = true;
+      context = browser.contexts()[0];
+      if (!context) throw new Error("Chrome respondeu ao CDP, mas não há contexto disponível.");
+    } catch (err) {
+      throw new Error(
+        "Não consegui anexar ao Chrome existente em " + cfg.cdp + ". " +
+        "Ele precisa ter sido iniciado com remote debugging. " +
+        "Nenhum navegador novo foi aberto. Detalhe: " + (err?.message || err)
+      );
+    }
+  } else {
+    context = await chromium.launchPersistentContext(cfg.profile, {
+      headless: cfg.headless,
+      acceptDownloads: true,
+      viewport: { width: 1440, height: 1000 }
+    });
+  }
+
+  let page = null;
+  for (const candidate of context.pages()) {
+    if (/1transcribe\.com/i.test(candidate.url())) {
+      page = candidate;
+      break;
+    }
+  }
+  page = page || context.pages()[0] || await context.newPage();
   page.setDefaultTimeout(60000);
 
   let processed = 0;
@@ -325,7 +355,11 @@ async function main() {
       );
     }
   } finally {
-    await context.close();
+    if (attached) {
+      // Em modo CDP não chamamos browser.close(), porque isso poderia fechar o Chrome do usuário.
+    } else {
+      await context?.close().catch(() => {});
+    }
   }
 
   await fsp.writeFile(
