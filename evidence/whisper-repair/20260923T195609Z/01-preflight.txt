@@ -1,0 +1,256 @@
+exit_code=0
+--- stdout ---
+dom1-inovacao
+PORT
+LISTEN 0      4096       127.0.0.1:8093       0.0.0.0:*                                         
+CONTAINER
+[
+    {
+        "Id": "c04e8aa6c9090035594449b990ff8a9132f1765eb7cde0e760636e9fdd82afe9",
+        "Created": "2026-09-23T19:18:11.382237651Z",
+        "Path": "uvicorn",
+        "Args": [
+            "--factory",
+            "speaches.main:create_app"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 2497120,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-09-23T19:18:23.094565195Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:086d02cfff107c823635765b7cdd49293ca412a905a99fcadd51fb29356719a2",
+        "ResolvConfPath": "/var/lib/docker/containers/c04e8aa6c9090035594449b990ff8a9132f1765eb7cde0e760636e9fdd82afe9/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/c04e8aa6c9090035594449b990ff8a9132f1765eb7cde0e760636e9fdd82afe9/hostname",
+        "HostsPath": "/var/lib/docker/containers/c04e8aa6c9090035594449b990ff8a9132f1765eb7cde0e760636e9fdd82afe9/hosts",
+        "LogPath": "/var/lib/docker/containers/c04e8aa6c9090035594449b990ff8a9132f1765eb7cde0e760636e9fdd82afe9/c04e8aa6c9090035594449b990ff8a9132f1765eb7cde0e760636e9fdd82afe9-json.log",
+        "Name": "/whisper-speaches",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "whisper-hf-cache:/home/ubuntu/.cache/huggingface/hub"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "bridge",
+            "PortBindings": {
+                "8000/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "8093"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware",
+                "/sys/devices/system/cpu/cpu0/thermal_throttle",
+                "/sys/devices/system/cpu/cpu1/thermal_throttle",
+                "/sys/devices/system/cpu/cpu2/thermal_throttle",
+                "/sys/devices/system/cpu/cpu3/thermal_throttle",
+                "/sys/devices/system/cpu/cpu4/thermal_throttle",
+                "/sys/devices/system/cpu/cpu5/thermal_throttle",
+                "/sys/devices/system/cpu/cpu6/thermal_throttle",
+                "/sys/devices/system/cpu/cpu7/thermal_throttle",
+                "/sys/devices/system/cpu/cpu8/thermal_throttle",
+                "/sys/devices/system/cpu/cpu9/thermal_throttle",
+                "/sys/devices/system/cpu/cpu10/thermal_throttle",
+                "/sys/devices/system/cpu/cpu11/thermal_throttle",
+                "/sys/devices/system/cpu/cpu12/thermal_throttle",
+                "/sys/devices/system/cpu/cpu13/thermal_throttle",
+                "/sys/devices/system/cpu/cpu14/thermal_throttle",
+                "/sys/devices/system/cpu/cpu15/thermal_throttle"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "ID": "c04e8aa6c9090035594449b990ff8a9132f1765eb7cde0e760636e9fdd82afe9",
+                "LowerDir": "/var/lib/docker/overlay2/2944d526fa12f9fab7658aea232966a42d2078e4140a27bdd924af0f69a14edd-init/diff:/var/lib/docker/overlay2/2d8bfe62050e6660aac1583204d828f3fb0fc74d7c59b1fb740fedc8e012df59/diff:/var/lib/docker/overlay2/ec8ff0a070a5be6f8dd789310818d059bdf4e7e993f594609d18aa5e83798df2/diff:/var/lib/docker/overlay2/96c43c26a97c2e018ec3148994e37d57b7620ad3aee87d0ea4b06343df7202ef/diff:/var/lib/docker/overlay2/50d62e6a0cc6ff9a9e7a2cd5145225616fe2d18f962cfb3e1bf094899f10d2d9/diff:/var/lib/docker/overlay2/27eeae4fed028867dd840e5a559a9a09ca0653cd5b6690ebb758ceb8986b8af1/diff:/var/lib/docker/overlay2/7cb9569a024a0002aa3feeee9f7c5c253af23bbeb4c71e6ed75058e135325063/diff:/var/lib/docker/overlay2/2be1fae084337ce80cc8c4e88d59d24efb97017bf02e3c534e2299ce810fc239/diff:/var/lib/docker/overlay2/024da6b419f7289c045d7af7363a837de7270998b3d49f59f6446547441bbf92/diff:/var/lib/docker/overlay2/b3835e688d56d3fc05d83393847a1b2bd593053d992396ac74b261488493f17d/diff",
+                "MergedDir": "/var/lib/docker/overlay2/2944d526fa12f9fab7658aea232966a42d2078e4140a27bdd924af0f69a14edd/merged",
+                "UpperDir": "/var/lib/docker/overlay2/2944d526fa12f9fab7658aea232966a42d2078e4140a27bdd924af0f69a14edd/diff",
+                "WorkDir": "/var/lib/docker/overlay2/2944d526fa12f9fab7658aea232966a42d2078e4140a27bdd924af0f69a14edd/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "whisper-hf-cache",
+                "Source": "/var/lib/docker/volumes/whisper-hf-cache/_data",
+                "Destination": "/home/ubuntu/.cache/huggingface/hub",
+                "Driver": "local",
+                "Mode": "z",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "c04e8aa6c909",
+            "Domainname": "",
+            "User": "ubuntu",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "8000/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/home/ubuntu/speaches/.venv/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "HOME=/home/ubuntu",
+                "UVICORN_HOST=0.0.0.0",
+                "UVICORN_PORT=8000",
+                "HF_HUB_ENABLE_HF_TRANSFER=0",
+                "DO_NOT_TRACK=1",
+                "GRADIO_ANALYTICS_ENABLED=False",
+                "DISABLE_TELEMETRY=1",
+                "HF_HUB_DISABLE_TELEMETRY=1"
+            ],
+            "Cmd": [
+                "uvicorn",
+                "--factory",
+                "speaches.main:create_app"
+            ],
+            "Image": "ghcr.io/speaches-ai/speaches:latest-cpu",
+            "Volumes": null,
+            "WorkingDir": "/home/ubuntu/speaches",
+            "Entrypoint": null,
+            "Labels": {
+                "com.inovacaosistemas.service": "whisper",
+                "org.opencontainers.image.licenses": "MIT",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.source": "https://github.com/speaches-ai/speaches",
+                "org.opencontainers.image.version": "24.04"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "cbcf414e0eee9f5d587630357be3b03a2a85c35bc7356ea4296b06fade25aa6e",
+            "SandboxKey": "/var/run/docker/netns/cbcf414e0eee",
+            "Ports": {
+                "8000/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "8093"
+                    }
+                ]
+            },
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "b177a36b7e441948e8ead3519edebca49db343abb971960000af1662c0a3ca8c",
+                    "EndpointID": "1c7a6b502b912313cee03c3d9d70d1e1c7ff8b46c4aeb4f4ed990dd0131cbcd9",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.2",
+                    "MacAddress": "ae:d1:e5:0c:49:24",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": null
+                }
+            }
+        }
+    }
+]
+--- stderr ---

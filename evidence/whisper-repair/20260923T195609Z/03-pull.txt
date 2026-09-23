@@ -1,0 +1,7 @@
+exit_code=0
+--- stdout ---
+latest-cpu: Pulling from speaches-ai/speaches
+Digest: sha256:21e3df06d842fb7802ab470dd77c25f0e8c0d22950e8d8c6ae886e851af53ef8
+Status: Image is up to date for ghcr.io/speaches-ai/speaches:latest-cpu
+ghcr.io/speaches-ai/speaches:latest-cpu
+--- stderr ---

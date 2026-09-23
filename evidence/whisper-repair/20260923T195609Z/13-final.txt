@@ -1,0 +1,82 @@
+exit_code=0
+--- stdout ---
+LISTEN 0      4096       127.0.0.1:8093       0.0.0.0:*                                         
+CONTAINER ID                                                       IMAGE                                     COMMAND                                        CREATED          STATUS          PORTS                      NAMES
+c04e8aa6c9090035594449b990ff8a9132f1765eb7cde0e760636e9fdd82afe9   ghcr.io/speaches-ai/speaches:latest-cpu   "uvicorn --factory speaches.main:create_app"   38 minutes ago   Up 38 minutes   127.0.0.1:8093->8000/tcp   whisper-speaches
+2026-09-23 19:18:27,809:DEBUG:speaches.main:create_app:62:Config: api_key=None log_level='debug' host='0.0.0.0' port=8000 allow_origins=None enable_ui=True whisper=WhisperConfig(inference_device='auto', device_index=0, compute_type='default', cpu_threads=0, num_workers=1, ttl=300, use_batched_mode=False) loopback_host_url=None chat_completion_base_url='http://localhost:11434/v1' chat_completion_api_key=SecretStr('**********') unstable_ort_opts=OrtOptions(exclude_providers=['TensorrtExecutionProvider'], provider_priority={'CUDAExecutionProvider': 100}, provider_opts={})
+2026-09-23 19:18:30,849:INFO:speaches.main:create_app:127:
+
+To view the gradio web ui of speaches open your browser and visit:
+
+http://localhost:8000/
+
+
+INFO:     Started server process [1]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     172.17.0.1:57074 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.17.0.1:57082 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     172.17.0.1:57090 - "GET /health HTTP/1.1" 200 OK
+2026-09-23 19:25:29,179:DEBUG:asyncio:__init__:64:Using selector: EpollSelector
+INFO:     172.17.0.1:41270 - "POST /v1/audio/transcriptions HTTP/1.1" 404 Not Found
+2026-09-23 19:46:03,950:DEBUG:asyncio:__init__:64:Using selector: EpollSelector
+INFO:     172.17.0.1:53434 - "POST /v1/audio/transcriptions HTTP/1.1" 404 Not Found
+INFO:     172.17.0.1:51496 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.17.0.1:51502 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     172.17.0.1:51516 - "GET /v1/models HTTP/1.1" 200 OK
+2026-09-23 19:56:18,918:DEBUG:urllib3.connectionpool:_new_conn:1051:Starting new HTTPS connection (1): huggingface.co:443
+2026-09-23 19:56:19,123:DEBUG:urllib3.connectionpool:_make_request:546:https://huggingface.co:443 "GET /api/models?filter=onnx&filter=text-to-speech&filter=speaches&filter=kokoro&cardData=True HTTP/11" 200 None
+2026-09-23 19:56:19,285:DEBUG:urllib3.connectionpool:_make_request:546:https://huggingface.co:443 "GET /api/models?filter=onnx&filter=text-to-speech&filter=speaches&filter=piper&cardData=True HTTP/11" 200 None
+2026-09-23 19:56:19,509:DEBUG:urllib3.connectionpool:_make_request:546:https://huggingface.co:443 "GET /api/models?filter=ctranslate2&filter=automatic-speech-recognition&cardData=True HTTP/11" 200 None
+Invalid model-index. Not loading eval results into CardData.
+2026-09-23 19:56:19,538:WARNING:huggingface_hub.repocard_data:__init__:368:Invalid model-index. Not loading eval results into CardData.
+2026-09-23 19:56:19,723:DEBUG:urllib3.connectionpool:_make_request:546:https://huggingface.co:443 "GET /api/models/Systran/faster-whisper-medium/revision/main HTTP/11" 200 None
+2026-09-23 19:56:19,727:DEBUG:urllib3.connectionpool:_new_conn:1051:Starting new HTTPS connection (1): huggingface.co:443
+2026-09-23 19:56:19,728:DEBUG:urllib3.connectionpool:_new_conn:1051:Starting new HTTPS connection (1): huggingface.co:443
+2026-09-23 19:56:19,730:DEBUG:urllib3.connectionpool:_new_conn:1051:Starting new HTTPS connection (1): huggingface.co:443
+2026-09-23 19:56:19,732:DEBUG:urllib3.connectionpool:_new_conn:1051:Starting new HTTPS connection (1): huggingface.co:443
+2026-09-23 19:56:19,733:DEBUG:urllib3.connectionpool:_new_conn:1051:Starting new HTTPS connection (1): huggingface.co:443
+2026-09-23 19:56:19,899:DEBUG:urllib3.connectionpool:_make_request:546:https://huggingface.co:443 "HEAD /Systran/faster-whisper-medium/resolve/08e178d48790749d25932bbc082711ddcfdfbc4f/vocabulary.txt HTTP/11" 307 0
+2026-09-23 19:56:19,900:DEBUG:urllib3.connectionpool:_make_request:546:https://huggingface.co:443 "HEAD /Systran/faster-whisper-medium/resolve/08e178d48790749d25932bbc082711ddcfdfbc4f/config.json HTTP/11" 307 0
+2026-09-23 19:56:19,903:DEBUG:urllib3.connectionpool:_make_request:546:https://huggingface.co:443 "HEAD /Systran/faster-whisper-medium/resolve/08e178d48790749d25932bbc082711ddcfdfbc4f/tokenizer.json HTTP/11" 307 0
+2026-09-23 19:56:19,906:DEBUG:urllib3.connectionpool:_make_request:546:https://huggingface.co:443 "HEAD /Systran/faster-whisper-medium/resolve/08e178d48790749d25932bbc082711ddcfdfbc4f/model.bin HTTP/11" 302 0
+2026-09-23 19:56:19,908:DEBUG:filelock:acquire:331:Attempting to acquire lock 140220487996224 on /home/ubuntu/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-medium/9b45e1009dcc4ab601eff815b61d80e60ce3fd8c74c1a14f4a282258286b51ae.lock
+2026-09-23 19:56:19,908:DEBUG:filelock:acquire:334:Lock 140220487996224 acquired on /home/ubuntu/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-medium/9b45e1009dcc4ab601eff815b61d80e60ce3fd8c74c1a14f4a282258286b51ae.lock
+2026-09-23 19:56:19,917:DEBUG:urllib3.connectionpool:_make_request:546:https://huggingface.co:443 "HEAD /api/resolve-cache/models/Systran/faster-whisper-medium/08e178d48790749d25932bbc082711ddcfdfbc4f/vocabulary.txt HTTP/11" 200 0
+2026-09-23 19:56:19,918:DEBUG:urllib3.connectionpool:_make_request:546:https://huggingface.co:443 "HEAD /api/resolve-cache/models/Systran/faster-whisper-medium/08e178d48790749d25932bbc082711ddcfdfbc4f/tokenizer.json HTTP/11" 200 0
+2026-09-23 19:56:19,920:DEBUG:urllib3.connectionpool:_make_request:546:https://huggingface.co:443 "HEAD /api/resolve-cache/models/Systran/faster-whisper-medium/08e178d48790749d25932bbc082711ddcfdfbc4f/config.json HTTP/11" 200 0
+2026-09-23 19:56:19,920:DEBUG:filelock:acquire:331:Attempting to acquire lock 140220487993968 on /home/ubuntu/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-medium/c9074644d9d1205686f16d411564729461324b75.lock
+2026-09-23 19:56:19,921:DEBUG:filelock:acquire:331:Attempting to acquire lock 140220487993440 on /home/ubuntu/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-medium/7818adb6de9fa3064d3ff81226fdd675be1f6344.lock
+2026-09-23 19:56:19,921:DEBUG:filelock:acquire:334:Lock 140220487993968 acquired on /home/ubuntu/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-medium/c9074644d9d1205686f16d411564729461324b75.lock
+2026-09-23 19:56:19,921:DEBUG:filelock:acquire:331:Attempting to acquire lock 140220487993728 on /home/ubuntu/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-medium/242aa06a480a7b5509375c645097e87af5136774.lock
+2026-09-23 19:56:19,922:DEBUG:filelock:acquire:334:Lock 140220487993728 acquired on /home/ubuntu/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-medium/242aa06a480a7b5509375c645097e87af5136774.lock
+2026-09-23 19:56:19,925:DEBUG:filelock:acquire:334:Lock 140220487993440 acquired on /home/ubuntu/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-medium/7818adb6de9fa3064d3ff81226fdd675be1f6344.lock
+2026-09-23 19:56:19,934:DEBUG:urllib3.connectionpool:_make_request:546:https://huggingface.co:443 "HEAD /Systran/faster-whisper-medium/resolve/08e178d48790749d25932bbc082711ddcfdfbc4f/README.md HTTP/11" 307 0
+2026-09-23 19:56:19,936:DEBUG:urllib3.connectionpool:_make_request:546:https://huggingface.co:443 "GET /api/resolve-cache/models/Systran/faster-whisper-medium/08e178d48790749d25932bbc082711ddcfdfbc4f/vocabulary.txt HTTP/11" 200 None
+2026-09-23 19:56:19,939:DEBUG:urllib3.connectionpool:_make_request:546:https://huggingface.co:443 "GET /api/resolve-cache/models/Systran/faster-whisper-medium/08e178d48790749d25932bbc082711ddcfdfbc4f/config.json HTTP/11" 200 None
+2026-09-23 19:56:19,940:DEBUG:urllib3.connectionpool:_make_request:546:https://huggingface.co:443 "GET /api/resolve-cache/models/Systran/faster-whisper-medium/08e178d48790749d25932bbc082711ddcfdfbc4f/tokenizer.json HTTP/11" 200 None
+2026-09-23 19:56:19,942:DEBUG:filelock:release:364:Attempting to release lock 140220487993728 on /home/ubuntu/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-medium/242aa06a480a7b5509375c645097e87af5136774.lock
+2026-09-23 19:56:19,943:DEBUG:filelock:release:367:Lock 140220487993728 released on /home/ubuntu/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-medium/242aa06a480a7b5509375c645097e87af5136774.lock
+2026-09-23 19:56:19,948:DEBUG:urllib3.connectionpool:_make_request:546:https://huggingface.co:443 "HEAD /api/resolve-cache/models/Systran/faster-whisper-medium/08e178d48790749d25932bbc082711ddcfdfbc4f/README.md HTTP/11" 200 0
+2026-09-23 19:56:19,949:DEBUG:filelock:acquire:331:Attempting to acquire lock 140220487993728 on /home/ubuntu/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-medium/68a6ff5e20f337a8b4e27e4ea4cca73afb9a40fb.lock
+2026-09-23 19:56:19,949:DEBUG:filelock:acquire:334:Lock 140220487993728 acquired on /home/ubuntu/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-medium/68a6ff5e20f337a8b4e27e4ea4cca73afb9a40fb.lock
+2026-09-23 19:56:19,963:DEBUG:urllib3.connectionpool:_make_request:546:https://huggingface.co:443 "GET /api/resolve-cache/models/Systran/faster-whisper-medium/08e178d48790749d25932bbc082711ddcfdfbc4f/README.md HTTP/11" 200 None
+2026-09-23 19:56:19,965:DEBUG:filelock:release:364:Attempting to release lock 140220487993728 on /home/ubuntu/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-medium/68a6ff5e20f337a8b4e27e4ea4cca73afb9a40fb.lock
+2026-09-23 19:56:19,965:DEBUG:filelock:release:367:Lock 140220487993728 released on /home/ubuntu/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-medium/68a6ff5e20f337a8b4e27e4ea4cca73afb9a40fb.lock
+2026-09-23 19:56:19,974:DEBUG:filelock:release:364:Attempting to release lock 140220487993968 on /home/ubuntu/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-medium/c9074644d9d1205686f16d411564729461324b75.lock
+2026-09-23 19:56:19,974:DEBUG:filelock:release:367:Lock 140220487993968 released on /home/ubuntu/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-medium/c9074644d9d1205686f16d411564729461324b75.lock
+2026-09-23 19:56:20,004:DEBUG:filelock:release:364:Attempting to release lock 140220487993440 on /home/ubuntu/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-medium/7818adb6de9fa3064d3ff81226fdd675be1f6344.lock
+2026-09-23 19:56:20,004:DEBUG:filelock:release:367:Lock 140220487993440 released on /home/ubuntu/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-medium/7818adb6de9fa3064d3ff81226fdd675be1f6344.lock
+2026-09-23 19:56:20,054:DEBUG:urllib3.connectionpool:_make_request:546:https://huggingface.co:443 "GET /api/models/Systran/faster-whisper-medium/xet-read-token/08e178d48790749d25932bbc082711ddcfdfbc4f HTTP/11" 200 490
+2026-09-23 19:57:04,137:DEBUG:filelock:release:364:Attempting to release lock 140220487996224 on /home/ubuntu/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-medium/9b45e1009dcc4ab601eff815b61d80e60ce3fd8c74c1a14f4a282258286b51ae.lock
+2026-09-23 19:57:04,137:DEBUG:filelock:release:367:Lock 140220487996224 released on /home/ubuntu/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-medium/9b45e1009dcc4ab601eff815b61d80e60ce3fd8c74c1a14f4a282258286b51ae.lock
+
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]
+Fetching 5 files:  20%|██        | 1/5 [00:00<00:00,  4.32it/s]
+Fetching 5 files:  60%|██████    | 3/5 [00:44<00:32, 16.42s/it]
+Fetching 5 files: 100%|██████████| 5/5 [00:44<00:00,  8.88s/it]
+INFO:     172.17.0.1:51530 - "POST /v1/models/Systran/faster-whisper-medium HTTP/1.1" 200 OK
+INFO:     172.17.0.1:44132 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     172.17.0.1:35188 - "GET /health HTTP/1.1" 200 OK
+--- stderr ---
