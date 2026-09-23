@@ -1,0 +1,24 @@
+Command exited with non-zero status 1
+	Command being timed: "/usr/bin/python3 /home/esteban/Sync/Projects/my-transcriver/transcribe.py /home/esteban/Sync/Backups/Android/VoiceRecorder/Vanessa e Esteban 28 de agosto 2025.m4a --backend local --language pt --overwrite -o /home/esteban/Sync/Projects/my-transcriver/evidence/phase0/20260923T164203Z/runs/S01/local/output --model medium"
+	User time (seconds): 3.38
+	System time (seconds): 0.95
+	Percent of CPU this job got: 40%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.62
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 476152
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 3397
+	Minor (reclaiming a frame) page faults: 63625
+	Voluntary context switches: 4394
+	Involuntary context switches: 2061
+	Swaps: 0
+	File system inputs: 689312
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

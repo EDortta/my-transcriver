@@ -1,0 +1,7 @@
+[1/1] ERRO em /home/esteban/Sync/Backups/Android/VoiceRecorder/Vanessa e Esteban 2026-05-21.m4a: Whisper HTTP 413: <html>
+ <head><title>413 Request Entity Too Large</title></head>
+ <body>
+ <center><h1>413 Request Entity Too Large</h1></center>
+ <hr><center>nginx/1.22.1</center>
+ </body>
+ </html>
