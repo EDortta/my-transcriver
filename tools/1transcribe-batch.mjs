@@ -180,7 +180,7 @@ async function waitFinished(page, timeoutMs) {
   throw new Error("Timeout esperando a transcrição.");
 }
 
-async function clickFormat(page, format) {
+async function formatLocator(page, format) {
   const patterns = {
     txt: /^(TXT|Text)$/i,
     srt: /^SRT$/i,
@@ -189,22 +189,19 @@ async function clickFormat(page, format) {
   };
 
   const button = page.getByRole("button", { name: patterns[format] }).first();
-  if (await button.isVisible().catch(() => false)) {
-    await button.click();
-    return true;
-  }
+  if (await button.isVisible().catch(() => false)) return button;
 
   const text = page.getByText(patterns[format]).first();
-  if (await text.isVisible().catch(() => false)) {
-    await text.click();
-    return true;
-  }
+  if (await text.isVisible().catch(() => false)) return text;
 
-  return false;
+  return null;
 }
 
 async function downloadTranscript(page, cfg, inputFile) {
-  const downloadButton = page.getByRole("button", { name: /^Download$/i }).first();
+  let downloadButton = page.getByRole("button", { name: /^Download$/i }).first();
+  if (!(await downloadButton.isVisible().catch(() => false))) {
+    downloadButton = page.getByText(/^Download$/i).first();
+  }
   await downloadButton.waitFor({ state: "visible", timeout: 60000 });
 
   let download = null;
@@ -214,21 +211,15 @@ async function downloadTranscript(page, cfg, inputFile) {
     await downloadButton.click();
     download = await event;
   } catch {
-    const picked = await clickFormat(page, cfg.format);
-    if (!picked) {
-      const allDownload = page.getByRole("button", { name: /^Download$/i });
-      const count = await allDownload.count();
-      if (count > 1) await allDownload.last().click().catch(() => {});
+    // O primeiro clique normalmente abre o seletor de formato.
+    const formatChoice = await formatLocator(page, cfg.format);
+    if (!formatChoice) {
+      throw new Error("Download abriu, mas não encontrei a opção " + cfg.format.toUpperCase() + ".");
     }
 
     const event = page.waitForEvent("download", { timeout: 30000 });
-    if (picked) {
-      download = await event;
-    } else {
-      const picked2 = await clickFormat(page, cfg.format);
-      if (!picked2) throw new Error("Não encontrei a opção de formato do download.");
-      download = await event;
-    }
+    await formatChoice.click();
+    download = await event;
   }
 
   const suggested = download.suggestedFilename();
