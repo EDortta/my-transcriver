@@ -24,7 +24,7 @@ from typing import Iterable, Sequence
 import requests
 
 
-VERSION = "0.3.0"
+VERSION = "0.3.1"
 DEFAULT_WHISPER_URL = "https://whisper.inovacaosistemas.com.br"
 DEFAULT_REMOTE_MODEL = "Systran/faster-whisper-medium"
 DEFAULT_LOCAL_MODEL = "medium"
@@ -92,8 +92,8 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser.add_argument(
         "--remote-chunk-seconds",
         type=int,
-        default=int(os.getenv("TRANSCRIVER_REMOTE_CHUNK_SECONDS", "300")),
-        help="Duração dos chunks enviados ao Whisper remoto (padrão: 300s; 0 desabilita).",
+        default=int(os.getenv("TRANSCRIVER_REMOTE_CHUNK_SECONDS", "60")),
+        help="Duração dos chunks enviados ao Whisper remoto (padrão: 60s; 0 desabilita).",
     )
     parser.add_argument(
         "--remote-retries",
