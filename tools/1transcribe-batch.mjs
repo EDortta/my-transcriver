@@ -16,6 +16,7 @@ const MEDIA_EXT = new Set([".m4a", ".mp3", ".wav", ".ogg", ".opus", ".flac", ".a
 function parseArgs(argv) {
   const cfg = {
     input: DEFAULT_INPUT,
+    file: null,
     output: DEFAULT_OUTPUT,
     profile: DEFAULT_PROFILE,
     limit: 1,
@@ -32,6 +33,7 @@ function parseArgs(argv) {
       return argv[++i];
     };
     if (arg === "--input") cfg.input = next();
+    else if (arg === "--file") cfg.file = next();
     else if (arg === "--output") cfg.output = next();
     else if (arg === "--profile") cfg.profile = next();
     else if (arg === "--limit") cfg.limit = Number(next());
@@ -242,7 +244,15 @@ async function main() {
 
   const stateFile = path.join(cfg.output, ".1transcribe-state.json");
   const state = await loadState(stateFile);
-  const files = await listMedia(cfg.input, cfg.newestFirst);
+  let files;
+  if (cfg.file) {
+    const full = path.resolve(cfg.file);
+    const st = await fsp.stat(full);
+    if (!st.isFile()) throw new Error("--file não aponta para um arquivo: " + full);
+    files = [{ name: path.basename(full), full, size: st.size, mtimeMs: st.mtimeMs }];
+  } else {
+    files = await listMedia(cfg.input, cfg.newestFirst);
+  }
 
   console.log("Encontrados:", files.length, "arquivos");
   console.log("Entrada:", cfg.input);
