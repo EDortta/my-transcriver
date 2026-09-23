@@ -200,6 +200,29 @@ async function snapshot(client, pageId, evidencePath = null) {
   return text;
 }
 
+async function clickVisibleDomText(client, pageId, labels) {
+  const wanted = JSON.stringify(labels.map(x => String(x).toLowerCase()));
+  const fn = `() => {
+    const wanted = ${wanted};
+    const selectors = "button,a,[role=button],[role=menuitem],[role=option]";
+    const visible = el => {
+      const s = getComputedStyle(el);
+      const r = el.getBoundingClientRect();
+      return s.display !== "none" && s.visibility !== "hidden" && r.width > 0 && r.height > 0;
+    };
+    const items = [...document.querySelectorAll(selectors)].filter(visible);
+    const hit = items.find(el => wanted.includes((el.innerText || el.textContent || "").trim().toLowerCase()));
+    if (!hit) {
+      return { clicked: false, candidates: items.map(el => (el.innerText || el.textContent || "").trim()).filter(Boolean).slice(0, 80) };
+    }
+    hit.click();
+    return { clicked: true, tag: hit.tagName, text: (hit.innerText || hit.textContent || "").trim() };
+  }`;
+  const result = await call(client, "evaluate_script", { pageId, function: fn });
+  const raw = textResult(result);
+  return raw;
+}
+
 async function getPageId(client) {
   const result = await call(client, "list_pages", {});
   const raw = textResult(result);
@@ -321,24 +344,26 @@ async function processOne(client, uploadTool, pageId, cfg, item, evidenceDir, in
   const downloadUid =
     findUid(snap, /\bbutton\b.*["']Download["']/i) ||
     findUid(snap, /\bDownload\b/i);
-  if (!downloadUid) throw new Error("Transcrição terminou, mas não encontrei o botão Download.");
 
   const before = await downloadListing();
-  await call(client, "click", { pageId, uid: downloadUid });
-
-  // Se o primeiro clique abrir opções de formato, seleciona a desejada.
-  await new Promise(r => setTimeout(r, 800));
-  let menuSnap = await snapshot(client, pageId);
-  const patterns = {
-    txt: /\b(TXT|Text)\b/i,
-    srt: /\bSRT\b/i,
-    docx: /\b(DOCX|Word)\b/i,
-    pdf: /\bPDF\b/i,
-  };
-  const formatUid = findUid(menuSnap, patterns[cfg.format]);
-  if (formatUid) {
-    await call(client, "click", { pageId, uid: formatUid });
+  if (downloadUid) {
+    await call(client, "click", { pageId, uid: downloadUid });
+  } else {
+    const domResult = await clickVisibleDomText(client, pageId, ["Download"]);
+    if (!/clicked[^a-z]*[:=]?[^a-z]*true/i.test(domResult)) {
+      throw new Error("Transcrição terminou, mas não consegui clicar em Download pelo snapshot nem pelo DOM. " + domResult);
+    }
   }
+
+  // Alguns layouts baixam direto; outros abrem um seletor de formato.
+  await new Promise(r => setTimeout(r, 800));
+  const formatLabels = {
+    txt: ["TXT", "Text"],
+    srt: ["SRT"],
+    docx: ["DOCX", "Word"],
+    pdf: ["PDF"],
+  };
+  await clickVisibleDomText(client, pageId, formatLabels[cfg.format]).catch(() => {});
 
   const downloaded = await waitNewDownload(before, 120000);
   const ext = path.extname(downloaded) || "." + cfg.format;
