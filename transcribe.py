@@ -12,7 +12,11 @@ import hashlib
 import mimetypes
 import os
 import re
+import shutil
+import subprocess
 import sys
+import tempfile
+import time
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable, Sequence
@@ -20,7 +24,7 @@ from typing import Iterable, Sequence
 import requests
 
 
-VERSION = "0.2.0"
+VERSION = "0.3.0"
 DEFAULT_WHISPER_URL = "https://whisper.inovacaosistemas.com.br"
 DEFAULT_REMOTE_MODEL = "Systran/faster-whisper-medium"
 DEFAULT_LOCAL_MODEL = "medium"
@@ -83,7 +87,19 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     )
     parser.add_argument(
         "--timeout", type=float, default=3600,
-        help="Timeout da requisição remota em segundos (padrão: 3600).",
+        help="Timeout por chunk remoto em segundos (padrão: 3600).",
+    )
+    parser.add_argument(
+        "--remote-chunk-seconds",
+        type=int,
+        default=int(os.getenv("TRANSCRIVER_REMOTE_CHUNK_SECONDS", "300")),
+        help="Duração dos chunks enviados ao Whisper remoto (padrão: 300s; 0 desabilita).",
+    )
+    parser.add_argument(
+        "--remote-retries",
+        type=int,
+        default=int(os.getenv("TRANSCRIVER_REMOTE_RETRIES", "2")),
+        help="Tentativas extras para erros transitórios do backend remoto (padrão: 2).",
     )
     parser.add_argument(
         "--timestamps", action="store_true",
@@ -268,12 +284,15 @@ def local_model_name(args: argparse.Namespace) -> str:
     return args.model or DEFAULT_LOCAL_MODEL
 
 
-def transcribe_remote(source: Path, args: argparse.Namespace) -> Transcript:
+def _post_remote_file(
+    source: Path,
+    args: argparse.Namespace,
+    *,
+    model: str,
+    language: str | None,
+) -> dict[str, object]:
     url = args.server_url.rstrip("/") + "/v1/audio/transcriptions"
-    model = remote_model_name(args)
-    language = None if args.language.lower() == "auto" else args.language
     mimetype = mimetypes.guess_type(source.name)[0] or "application/octet-stream"
-
     data = {"model": model}
     if language:
         data["language"] = language
@@ -282,31 +301,131 @@ def transcribe_remote(source: Path, args: argparse.Namespace) -> Transcript:
     if args.api_key:
         headers["Authorization"] = f"Bearer {args.api_key}"
 
-    with source.open("rb") as handle:
-        response = requests.post(
-            url,
-            files={"file": (source.name, handle, mimetype)},
-            data=data,
-            headers=headers,
-            timeout=args.timeout,
-        )
+    attempts = max(1, int(args.remote_retries) + 1)
+    last_error: Exception | None = None
 
-    if not response.ok:
+    for attempt in range(1, attempts + 1):
+        try:
+            with source.open("rb") as handle:
+                response = requests.post(
+                    url,
+                    files={"file": (source.name, handle, mimetype)},
+                    data=data,
+                    headers=headers,
+                    timeout=args.timeout,
+                )
+        except requests.RequestException as exc:
+            last_error = exc
+            if attempt < attempts:
+                time.sleep(min(2 ** (attempt - 1), 5))
+                continue
+            raise RuntimeError(f"Falha de rede ao chamar Whisper: {exc}") from exc
+
+        if response.ok:
+            try:
+                payload = response.json()
+            except ValueError as exc:
+                raise RuntimeError("Whisper retornou resposta que não é JSON") from exc
+            if not isinstance(payload, dict):
+                raise RuntimeError("Whisper retornou JSON em formato inesperado")
+            return payload
+
         detail = response.text.strip().replace("\n", " ")[:500]
+        if response.status_code >= 500 and attempt < attempts:
+            time.sleep(min(2 ** (attempt - 1), 5))
+            continue
         raise RuntimeError(f"Whisper HTTP {response.status_code}: {detail}")
 
-    try:
-        payload = response.json()
-    except ValueError as exc:
-        raise RuntimeError("Whisper retornou resposta que não é JSON") from exc
+    raise RuntimeError(f"Whisper remoto falhou: {last_error or 'erro desconhecido'}")
 
-    text = str(payload.get("text") or "").strip()
-    if not text:
-        raise RuntimeError("Whisper retornou transcrição vazia")
 
-    detected_language = str(payload.get("language") or language or "auto")
+def _remote_chunks(source: Path, chunk_dir: Path, seconds: int) -> list[Path]:
+    if seconds <= 0:
+        return [source]
+
+    ffmpeg = shutil.which("ffmpeg")
+    if not ffmpeg:
+        raise RuntimeError(
+            "ffmpeg é necessário para chunking remoto; use --remote-chunk-seconds 0 "
+            "para enviar o arquivo inteiro"
+        )
+
+    pattern = chunk_dir / "chunk-%05d.mp3"
+    cmd = [
+        ffmpeg,
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-y",
+        "-i",
+        str(source),
+        "-map",
+        "0:a:0",
+        "-vn",
+        "-ac",
+        "1",
+        "-ar",
+        "16000",
+        "-c:a",
+        "libmp3lame",
+        "-b:a",
+        "96k",
+        "-f",
+        "segment",
+        "-segment_time",
+        str(seconds),
+        "-reset_timestamps",
+        "1",
+        str(pattern),
+    ]
+    result = subprocess.run(cmd, capture_output=True, text=True, check=False)
+    if result.returncode != 0:
+        detail = (result.stderr or result.stdout or "").strip()[-1000:]
+        raise RuntimeError(f"ffmpeg falhou ao dividir o áudio: {detail}")
+
+    chunks = sorted(chunk_dir.glob("chunk-*.mp3"))
+    if not chunks:
+        raise RuntimeError("ffmpeg não gerou chunks de áudio")
+    return chunks
+
+
+def transcribe_remote(source: Path, args: argparse.Namespace) -> Transcript:
+    model = remote_model_name(args)
+    language = None if args.language.lower() == "auto" else args.language
+
+    if args.remote_chunk_seconds <= 0:
+        payload = _post_remote_file(source, args, model=model, language=language)
+        text = str(payload.get("text") or "").strip()
+        if not text:
+            raise RuntimeError("Whisper retornou transcrição vazia")
+        return Transcript(
+            text=text,
+            language=str(payload.get("language") or language or "auto"),
+            model=model,
+            backend="remote",
+        )
+
+    with tempfile.TemporaryDirectory(prefix="my-transcriver-") as tmp:
+        chunk_dir = Path(tmp)
+        chunks = _remote_chunks(source, chunk_dir, args.remote_chunk_seconds)
+        texts: list[str] = []
+        detected_language = language or "auto"
+
+        for index, chunk in enumerate(chunks, start=1):
+            print(
+                f"    [chunk {index}/{len(chunks)}] enviando {chunk.name} "
+                f"({chunk.stat().st_size / 1024 / 1024:.1f} MiB)"
+            )
+            payload = _post_remote_file(chunk, args, model=model, language=language)
+            chunk_text = str(payload.get("text") or "").strip()
+            if not chunk_text:
+                raise RuntimeError(f"Whisper retornou transcrição vazia no chunk {index}")
+            texts.append(chunk_text)
+            if payload.get("language"):
+                detected_language = str(payload["language"])
+
     return Transcript(
-        text=text,
+        text="\n\n".join(texts),
         language=detected_language,
         model=model,
         backend="remote",
