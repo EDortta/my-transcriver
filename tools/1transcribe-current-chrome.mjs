@@ -305,34 +305,40 @@ async function configureDownloadModal(client, pageId) {
     const label = labels.find(el => /^Include timestamps$/i.test(norm(el)));
     if (!label) return { ok: false, step: "timestamps-label" };
 
-    let row = label.closest("label,[role=group]") || label.parentElement;
-    for (let depth = 0; depth < 5 && row; depth++, row = row.parentElement) {
-      const controls = [...row.querySelectorAll("input[type=checkbox],[role=switch],button")].filter(visible);
-      for (const control of controls) {
-        let known = true;
-        let checked = false;
+    const lr = label.getBoundingClientRect();
+    const candidates = [...document.querySelectorAll("input[type=checkbox],[role=switch],button")].filter(visible).map(el => {
+      const r = el.getBoundingClientRect();
+      const dy = Math.abs((r.top + r.bottom) / 2 - (lr.top + lr.bottom) / 2);
+      const dx = Math.max(0, r.left - lr.right);
+      return { el, r, dy, dx };
+    }).filter(x => x.dy < 45 && x.r.left >= lr.left).sort((a, b) => (a.dy - b.dy) || (a.dx - b.dx));
 
-        if (control.matches("input[type=checkbox]")) {
-          checked = Boolean(control.checked);
-        } else if (control.getAttribute("aria-checked") != null) {
-          checked = control.getAttribute("aria-checked") === "true";
-        } else if (control.getAttribute("data-state") != null) {
-          checked = /checked|on/i.test(control.getAttribute("data-state") || "");
-        } else if (/checked|active|\bon\b/i.test(String(control.className || ""))) {
-          checked = true;
-        } else if (control.querySelector("svg,path,[data-lucide=check]")) {
-          checked = true;
-        } else {
-          known = false;
-        }
+    const target = candidates[0]?.el;
+    if (!target) return { ok: false, step: "timestamps-control-not-found" };
 
-        if (!known) continue;
-        if (!checked) control.click();
-        return { ok: true, timestampsWasOn: checked, action: checked ? "kept-on" : "turned-on" };
-      }
+    let checked;
+    if (target.matches("input[type=checkbox]")) {
+      checked = Boolean(target.checked);
+    } else if (target.getAttribute("aria-checked") != null) {
+      checked = target.getAttribute("aria-checked") === "true";
+    } else if (target.getAttribute("data-state") != null) {
+      checked = /checked|on/i.test(target.getAttribute("data-state") || "");
+    } else if (/checked|active|\\bon\\b/i.test(String(target.className || ""))) {
+      checked = true;
+    } else {
+      const checkIcon = [...target.querySelectorAll("svg,path,[data-lucide=check]")].some(visible);
+      checked = checkIcon;
     }
 
-    return { ok: false, step: "timestamps-state-unknown" };
+    if (!checked) target.click();
+    return {
+      ok: true,
+      timestampsWasOn: checked,
+      action: checked ? "kept-on" : "turned-on",
+      tag: target.tagName,
+      ariaChecked: target.getAttribute("aria-checked"),
+      dataState: target.getAttribute("data-state")
+    };
   }`;
 
   const tsResult = textResult(await call(client, "evaluate_script", { pageId, function: ensureTimestamps }));
