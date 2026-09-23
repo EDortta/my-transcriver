@@ -1,0 +1,11 @@
+{
+  "name": "my-transcriver-browser-tools",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "1transcribe": "node tools/1transcribe-batch.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.55.0"
+  }
+}
