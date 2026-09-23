@@ -26,6 +26,7 @@ EXTENSIONS = {".3gp",".aac",".aiff",".avi",".flac",".m4a",".m4v",".mkv",".mov",
 def args():
     p = argparse.ArgumentParser(description="Fase 0: benchmark de transcrição.")
     p.add_argument("--source", type=Path, default=DEFAULT_SOURCE)
+    p.add_argument("--file", type=Path, help="Arquivo específico para smoke/comparação.")
     p.add_argument("--samples", type=int, default=5)
     p.add_argument("--seed", type=int, default=20260923)
     p.add_argument("--engines", default="remote,local")
@@ -236,8 +237,14 @@ def main():
     a = args()
     try:
         engines = parse_engines(a.engines)
-        files = discover(a.source, a.max_file_mb)
-        chosen = select(files, a.samples, a.seed)
+        if a.file is not None:
+            candidate = a.file.expanduser().resolve()
+            if not candidate.is_file() or candidate.suffix.lower() not in EXTENSIONS:
+                raise RuntimeError(f"arquivo de mídia inválido: {candidate}")
+            chosen = [candidate]
+        else:
+            files = discover(a.source, a.max_file_mb)
+            chosen = select(files, a.samples, a.seed)
     except RuntimeError as e:
         print(f"ERRO: {e}", file=sys.stderr)
         return 2
