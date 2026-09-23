@@ -11,11 +11,14 @@ Este corte mede **transcrição**. Diarização e identificação de voz serão 
 - obtém duração com `ffprobe`, quando disponível;
 - inventaria ferramentas relevantes instaladas no `devel3`;
 - compara o Whisper remoto e o `faster-whisper` local;
+- envia o remoto em chunks de 300 segundos por padrão, evitando 413/timeout em áudios longos;
 - mede tempo de parede, CPU e RSS máximo via `/usr/bin/time -v`, quando disponível;
 - grava stdout, stderr e cada transcrição;
 - produz `results.json`, `report.md` e `review-template.md`.
 
-Por padrão, o benchmark **não permite download de modelo do Hugging Face**. Para o motor local ele define `HF_HUB_OFFLINE=1`. Se o modelo já estiver no cache, será usado; caso contrário, a execução local falhará deixando evidência.
+Por padrão, o benchmark **não permite download de modelo do Hugging Face**. Para o motor local ele define `HF_HUB_OFFLINE=1`. O modelo `medium` já foi validado no `devel3` em modo offline; portanto a próxima rodada não deve consultar o HF Hub.
+
+A primeira rodada de 2026-09-23 foi diagnóstica: o remoto falhou com HTTP 413/502 ao receber arquivos longos inteiros, e o local falhou porque o modelo ainda não estava cacheado. Ambos os pontos foram corrigidos antes da rodada seguinte.
 
 ## Executar
 
@@ -23,7 +26,7 @@ Por padrão, o benchmark **não permite download de modelo do Hugging Face**. Pa
 git checkout development
 git pull
 
-python3 phase0/benchmark.py
+HF_HUB_OFFLINE=1 python3 phase0/benchmark.py
 ```
 
 A rodada padrão usa 5 arquivos, seed `20260923` e os motores `remote,local`.
@@ -68,3 +71,25 @@ evidence/phase0/YYYYMMDDTHHMMSSZ/
 ```
 
 Os áudios originais nunca são movidos ou modificados nesta fase.
+
+## Smoke test recomendado
+
+Antes de repetir as cinco amostras, valide um único arquivo nos dois motores:
+
+```bash
+HF_HUB_OFFLINE=1 python3 phase0/benchmark.py \
+  --samples 1 \
+  --seed 20260923 \
+  --engines remote,local \
+  --remote-chunk-seconds 300
+```
+
+Se os dois resultados forem `ok`, execute a rodada completa:
+
+```bash
+HF_HUB_OFFLINE=1 python3 phase0/benchmark.py \
+  --samples 5 \
+  --seed 20260923 \
+  --engines remote,local \
+  --remote-chunk-seconds 300
+```
