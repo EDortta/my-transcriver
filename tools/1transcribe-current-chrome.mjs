@@ -184,17 +184,8 @@ function findUid(snapshotText, wanted) {
 }
 
 function escapeRegex(text) {
-  return text.replace(/[.*+?^$()|[\]\\{}]/g, "\\function findUid(snapshotText, wanted) {
-  const lines = snapshotText.split(/\r?\n/);
-  for (const line of lines) {
-    if (!wanted.test(line)) continue;
-    const m = line.match(/\buid=([^\s]+)/i);
-    if (m) return m[1].replace(/^["']|["']$/g, "");
-  }
-  return null;
-}");
+  return text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
-
 function findFileUid(snapshotText, filename) {
   return findUid(snapshotText, new RegExp(escapeRegex(filename), "i"));
 }
