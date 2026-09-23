@@ -1,0 +1,7 @@
+exit_code=1
+--- stdout ---
+--- stderr ---
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+System has not been booted with systemd as init system (PID 1). Can't operate.
+Failed to connect to bus: Host is down
