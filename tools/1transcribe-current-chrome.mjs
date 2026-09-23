@@ -52,7 +52,7 @@ function parseArgs(argv) {
         "  --output DIR            Pasta final das transcrições\n" +
         "  --limit N               Quantos processar (padrão: 1)\n" +
         "  --all                   Todos os pendentes\n" +
-        "  --format txt|srt|docx|pdf\n" +
+        "  --format txt|srt|docx|pdf  (padrão: txt; TXT usa timestamps)\n" +
         "  --timeout-minutes N     Máximo por arquivo (padrão: 180)\n" +
         "  --newest-first          Mais recentes primeiro\n" +
         "  --no-delay              Desativa a pausa adaptativa entre arquivos\n"
@@ -222,6 +222,124 @@ async function clickVisibleDomText(client, pageId, labels) {
   const raw = textResult(result);
   return raw;
 }
+async function speakerState(client, pageId) {
+  const fn = `() => {
+    const body = document.body?.innerText || "";
+    const speakerMatches = body.match(/\\bSpeaker\\s+\\d+\\b/gi) || [];
+    const addSpeaker = [...document.querySelectorAll("button,a,[role=button]")].some(el => {
+      const text = (el.innerText || el.textContent || "").trim().toLowerCase();
+      const style = getComputedStyle(el);
+      const rect = el.getBoundingClientRect();
+      return text === "add speaker" && style.display !== "none" && style.visibility !== "hidden" && rect.width > 0 && rect.height > 0;
+    });
+    return { addSpeaker, speakers: [...new Set(speakerMatches.map(x => x.toLowerCase()))], bodyTail: body.slice(-1000) };
+  }`;
+  return textResult(await call(client, "evaluate_script", { pageId, function: fn, waitForStableDom: false }));
+}
+
+async function ensureSpeakers(client, pageId, timeoutMs) {
+  let state = await speakerState(client, pageId);
+  if (/speaker\\s+\\d+/i.test(state)) {
+    console.log("    speakers já identificados; seguindo...");
+    return;
+  }
+
+  console.log("    identificando speakers...");
+  const clicked = await clickVisibleDomText(client, pageId, ["Add speaker"]);
+  if (!/clicked[^a-z]*[:=]?[^a-z]*true/i.test(clicked)) {
+    throw new Error("Não encontrei o botão Add speaker. Estado: " + state);
+  }
+
+  const started = Date.now();
+  while (Date.now() - started < timeoutMs) {
+    await new Promise(resolve => setTimeout(resolve, 5000));
+    state = await speakerState(client, pageId);
+
+    if (/speaker\\s+\\d+/i.test(state)) {
+      console.log("    speakers identificados.");
+      return;
+    }
+
+    if (/failed|error|try again/i.test(state)) {
+      throw new Error("O 1Transcribe indicou erro na identificação de speakers. " + state);
+    }
+  }
+
+  throw new Error("Timeout aguardando identificação dos speakers.");
+}
+
+async function configureDownloadModal(client, pageId) {
+  const fn = `() => {
+    const visible = el => {
+      const s = getComputedStyle(el);
+      const r = el.getBoundingClientRect();
+      return s.display !== "none" && s.visibility !== "hidden" && r.width > 0 && r.height > 0;
+    };
+    const norm = el => (el.innerText || el.textContent || "").trim();
+    const all = [...document.querySelectorAll("*")].filter(visible);
+
+    const txt = all.find(el => /^\\.?TXT$/i.test(norm(el)));
+    if (!txt) return { ok: false, step: "txt", visibleTexts: all.map(norm).filter(Boolean).slice(-120) };
+    const txtClickable = txt.closest("button,[role=button],label") || txt;
+    txtClickable.click();
+
+    const tsLabel = all.find(el => /^Include timestamps$/i.test(norm(el)));
+    if (!tsLabel) return { ok: false, step: "timestamps-label" };
+
+    let row = tsLabel.closest("label,[role=group]") || tsLabel.parentElement;
+    for (let i = 0; i < 4 && row; i++, row = row.parentElement) {
+      const control = row.querySelector("input[type=checkbox],[role=switch],button");
+      if (!control) continue;
+
+      let checked = false;
+      if (control.matches("input[type=checkbox]")) checked = control.checked;
+      else if (control.getAttribute("aria-checked") != null) checked = control.getAttribute("aria-checked") === "true";
+      else if (control.getAttribute("data-state") != null) checked = control.getAttribute("data-state") === "checked";
+      else checked = /checked|active|on/i.test(control.className || "");
+
+      if (!checked) control.click();
+      return { ok: true, timestampsWasOn: checked };
+    }
+
+    return { ok: false, step: "timestamps-control" };
+  }`;
+  const result = textResult(await call(client, "evaluate_script", { pageId, function: fn }));
+  if (!/"?ok"?[^a-z]*[:=]?[^a-z]*true/i.test(result)) {
+    throw new Error("Não consegui selecionar TXT + timestamps. " + result);
+  }
+  return result;
+}
+
+async function clickDownloadInsideModal(client, pageId) {
+  const fn = `() => {
+    const visible = el => {
+      const s = getComputedStyle(el);
+      const r = el.getBoundingClientRect();
+      return s.display !== "none" && s.visibility !== "hidden" && r.width > 0 && r.height > 0;
+    };
+    const norm = el => (el.innerText || el.textContent || "").trim();
+    const headings = [...document.querySelectorAll("h1,h2,h3,h4,div")].filter(visible);
+    const title = headings.find(el => /^Download Transcript$/i.test(norm(el)));
+    if (!title) return { clicked: false, reason: "modal-title-not-found" };
+
+    let root = title.parentElement;
+    for (let i = 0; i < 6 && root; i++, root = root.parentElement) {
+      const buttons = [...root.querySelectorAll("button,[role=button]")].filter(visible);
+      const target = buttons.find(el => /^Download$/i.test(norm(el)));
+      if (target) {
+        target.click();
+        return { clicked: true, text: norm(target) };
+      }
+    }
+
+    return { clicked: false, reason: "modal-download-not-found" };
+  }`;
+  const result = textResult(await call(client, "evaluate_script", { pageId, function: fn }));
+  if (!/clicked[^a-z]*[:=]?[^a-z]*true/i.test(result)) {
+    throw new Error("Não consegui clicar no Download final da modal. " + result);
+  }
+  return result;
+}
 
 async function getPageId(client) {
   const result = await call(client, "list_pages", {});
@@ -335,35 +453,24 @@ async function processOne(client, uploadTool, pageId, cfg, item, evidenceDir, in
     });
   }
 
+  await ensureSpeakers(client, pageId, cfg.timeoutMinutes * 60 * 1000);
+
   snap = await snapshot(
     client,
     pageId,
     path.join(evidenceDir, "finished-" + String(index).padStart(3, "0") + ".txt")
   );
 
-  const downloadUid =
-    findUid(snap, /\bbutton\b.*["']Download["']/i) ||
-    findUid(snap, /\bDownload\b/i);
-
   const before = await downloadListing();
-  if (downloadUid) {
-    await call(client, "click", { pageId, uid: downloadUid });
-  } else {
-    const domResult = await clickVisibleDomText(client, pageId, ["Download"]);
-    if (!/clicked[^a-z]*[:=]?[^a-z]*true/i.test(domResult)) {
-      throw new Error("Transcrição terminou, mas não consegui clicar em Download pelo snapshot nem pelo DOM. " + domResult);
-    }
+  const openDownload = await clickVisibleDomText(client, pageId, ["Download"]);
+  if (!/clicked[^a-z]*[:=]?[^a-z]*true/i.test(openDownload)) {
+    throw new Error("Não consegui abrir a janela Download Transcript. " + openDownload);
   }
 
-  // Alguns layouts baixam direto; outros abrem um seletor de formato.
-  await new Promise(r => setTimeout(r, 800));
-  const formatLabels = {
-    txt: ["TXT", "Text"],
-    srt: ["SRT"],
-    docx: ["DOCX", "Word"],
-    pdf: ["PDF"],
-  };
-  await clickVisibleDomText(client, pageId, formatLabels[cfg.format]).catch(() => {});
+  await call(client, "wait_for", { pageId, text: ["Download Transcript"], timeout: 30000 });
+  await configureDownloadModal(client, pageId);
+  await new Promise(resolve => setTimeout(resolve, 300));
+  await clickDownloadInsideModal(client, pageId);
 
   const downloaded = await waitNewDownload(before, 120000);
   const ext = path.extname(downloaded) || "." + cfg.format;
