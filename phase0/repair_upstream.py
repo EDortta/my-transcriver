@@ -188,6 +188,20 @@ def main() -> int:
     if models.returncode != 0 or args.model not in (models.stdout or ""):
         return fail(out, "modelo remoto não apareceu em /v1/models após instalação")
 
+    nginx_timeout = step(
+        args.target, out, "11b-nginx-timeout",
+        "conf=/etc/nginx/sites-available/006-whisper.conf; "
+        "sudo -n sed -i "
+        "'s/proxy_read_timeout 120s;/proxy_read_timeout 900s;/; "
+        "s/proxy_send_timeout 120s;/proxy_send_timeout 900s;/' "
+        "$conf && "
+        "sudo -n nginx -t && sudo -n systemctl reload nginx && "
+        "grep -E 'proxy_(read|send)_timeout' $conf",
+        60,
+    )
+    if nginx_timeout.returncode != 0:
+        return fail(out, "não foi possível elevar o timeout nginx do Whisper para 900s")
+
     public = subprocess.run(
         ["curl", "-fsS", "--connect-timeout", "5", "--max-time", "20",
          "https://whisper.inovacaosistemas.com.br/health"],
@@ -216,6 +230,7 @@ def main() -> int:
         "Health local: ok",
         "Models local exit: " + str(models.returncode),
         "Health público exit: " + str(public.returncode),
+        "Nginx read/send timeout: 900s",
         "",
         "O modelo de STT foi garantido pelo repair e fica persistido no volume Docker.",
         "",
