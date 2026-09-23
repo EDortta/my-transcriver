@@ -307,11 +307,23 @@ async function main() {
     files = await listMedia(cfg.input, cfg.newestFirst);
   }
 
+  const filesystemRoot = cfg.file
+    ? path.dirname(path.resolve(cfg.file))
+    : path.resolve(cfg.input);
+
   const transport = new StdioClientTransport({
     command: "npx",
-    args: ["-y", "chrome-devtools-mcp@latest", "--autoConnect"],
+    args: [
+      "-y",
+      "chrome-devtools-mcp@latest",
+      "--autoConnect",
+      "--filesystem-root",
+      filesystemRoot,
+    ],
     stderr: "inherit",
   });
+
+  console.log("Pasta autorizada para upload:", filesystemRoot);
 
   const client = new Client(
     { name: "my-transcriver-1transcribe", version: "0.1.0" },
