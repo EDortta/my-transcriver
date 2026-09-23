@@ -1,0 +1,8 @@
+===== identity =====
+exit_code=0
+--- stdout ---
+2026-09-23T19:07:33+00:00
+dom1-inovacao
+Linux dom1-inovacao 6.12.86+deb12-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.86-1~bpo12+1 (2026-05-08) x86_64 GNU/Linux
+--- stderr ---
+
