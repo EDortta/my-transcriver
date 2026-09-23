@@ -34,7 +34,7 @@ def args():
     p.add_argument("--evidence-dir", type=Path, default=DEFAULT_EVIDENCE)
     p.add_argument("--run-id")
     p.add_argument("--local-model", default="medium")
-    p.add_argument("--remote-chunk-seconds", type=int, default=300)
+    p.add_argument("--remote-chunk-seconds", type=int, default=60)
     p.add_argument("--allow-model-download", action="store_true")
     p.add_argument("--max-file-mb", type=float, default=0)
     p.add_argument("--dry-run", action="store_true")
