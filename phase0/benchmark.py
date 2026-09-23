@@ -33,6 +33,7 @@ def args():
     p.add_argument("--evidence-dir", type=Path, default=DEFAULT_EVIDENCE)
     p.add_argument("--run-id")
     p.add_argument("--local-model", default="medium")
+    p.add_argument("--remote-chunk-seconds", type=int, default=300)
     p.add_argument("--allow-model-download", action="store_true")
     p.add_argument("--max-file-mb", type=float, default=0)
     p.add_argument("--dry-run", action="store_true")
@@ -137,6 +138,8 @@ def run_engine(engine, sample_id, source, run_dir, a):
            "--language", a.language, "--overwrite", "-o", str(output)]
     if engine == "local":
         cmd += ["--model", a.local_model]
+    elif engine == "remote":
+        cmd += ["--remote-chunk-seconds", str(a.remote_chunk_seconds)]
 
     env = dict(os.environ)
     if engine == "local" and not a.allow_model_download:
@@ -176,6 +179,8 @@ def write_reports(run_dir, a, samples, results, inv):
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "source": str(a.source.expanduser()),
         "seed": a.seed,
+        "remote_chunk_seconds": a.remote_chunk_seconds,
+        "local_model": a.local_model,
         "inventory": inv,
         "samples": samples,
         "results": results,
@@ -187,7 +192,9 @@ def write_reports(run_dir, a, samples, results, inv):
         "# Fase 0 — Benchmark de transcrição", "",
         f"- Rodada: `{run_dir.name}`",
         f"- Seed: `{a.seed}`",
-        f"- Fonte: `{a.source.expanduser()}`", "",
+        f"- Fonte: `{a.source.expanduser()}`",
+        f"- Modelo local: `{a.local_model}`",
+        f"- Chunk remoto: `{a.remote_chunk_seconds}s`", "",
         "## Ambiente", "",
     ]
     for k, v in inv.items():
