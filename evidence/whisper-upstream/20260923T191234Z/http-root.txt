@@ -1,0 +1,6 @@
+===== http-root =====
+exit_code=0
+--- stdout ---
+curl: (7) Failed to connect to 127.0.0.1 port 8093 after 0 ms: Could not connect to server
+--- stderr ---
+

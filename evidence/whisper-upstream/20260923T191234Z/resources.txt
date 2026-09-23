@@ -1,0 +1,10 @@
+===== resources =====
+exit_code=0
+--- stdout ---
+               total        used        free      shared  buff/cache   available
+Mem:            62Gi        12Gi        39Gi       3.4Gi        14Gi        50Gi
+Swap:           16Gi          0B        16Gi
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1       273G  218G   42G  85% /
+--- stderr ---
+
