@@ -1,0 +1,6 @@
+===== http-models =====
+exit_code=0
+--- stdout ---
+curl: try 'curl --help' or 'curl --manual' for more information
+--- stderr ---
+

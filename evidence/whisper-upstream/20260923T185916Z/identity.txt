@@ -1,0 +1,6 @@
+===== identity =====
+exit_code=255
+--- stdout ---
+--- stderr ---
+ssh: connect to host 192.168.71.50 port 22: No route to host
+
