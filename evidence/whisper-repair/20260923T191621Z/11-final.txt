@@ -1,0 +1,21 @@
+exit_code=0
+--- stdout ---
+LISTEN 0      4096       127.0.0.1:8093       0.0.0.0:*                                         
+CONTAINER ID                                                       IMAGE                                     COMMAND                                        CREATED          STATUS          PORTS                      NAMES
+c04e8aa6c9090035594449b990ff8a9132f1765eb7cde0e760636e9fdd82afe9   ghcr.io/speaches-ai/speaches:latest-cpu   "uvicorn --factory speaches.main:create_app"   23 seconds ago   Up 11 seconds   127.0.0.1:8093->8000/tcp   whisper-speaches
+2026-09-23 19:18:27,809:DEBUG:speaches.main:create_app:62:Config: api_key=None log_level='debug' host='0.0.0.0' port=8000 allow_origins=None enable_ui=True whisper=WhisperConfig(inference_device='auto', device_index=0, compute_type='default', cpu_threads=0, num_workers=1, ttl=300, use_batched_mode=False) loopback_host_url=None chat_completion_base_url='http://localhost:11434/v1' chat_completion_api_key=SecretStr('**********') unstable_ort_opts=OrtOptions(exclude_providers=['TensorrtExecutionProvider'], provider_priority={'CUDAExecutionProvider': 100}, provider_opts={})
+2026-09-23 19:18:30,849:INFO:speaches.main:create_app:127:
+
+To view the gradio web ui of speaches open your browser and visit:
+
+http://localhost:8000/
+
+
+INFO:     Started server process [1]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     172.17.0.1:57074 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.17.0.1:57082 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     172.17.0.1:57090 - "GET /health HTTP/1.1" 200 OK
+--- stderr ---

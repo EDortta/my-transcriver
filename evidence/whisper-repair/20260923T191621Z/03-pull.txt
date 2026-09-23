@@ -1,0 +1,49 @@
+exit_code=0
+--- stdout ---
+latest-cpu: Pulling from speaches-ai/speaches
+953cdd413371: Pulling fs layer
+c827a4289aa6: Pulling fs layer
+4f4fb700ef54: Pulling fs layer
+d1c41692c50c: Pulling fs layer
+e47841fa403a: Pulling fs layer
+0a368c7486af: Pulling fs layer
+430c0c5efd0c: Pulling fs layer
+579f85658863: Pulling fs layer
+148a61ffa166: Pulling fs layer
+e47841fa403a: Waiting
+0a368c7486af: Waiting
+430c0c5efd0c: Waiting
+579f85658863: Waiting
+148a61ffa166: Waiting
+d1c41692c50c: Waiting
+4f4fb700ef54: Verifying Checksum
+4f4fb700ef54: Download complete
+d1c41692c50c: Verifying Checksum
+d1c41692c50c: Download complete
+953cdd413371: Verifying Checksum
+953cdd413371: Download complete
+953cdd413371: Pull complete
+c827a4289aa6: Verifying Checksum
+c827a4289aa6: Download complete
+430c0c5efd0c: Verifying Checksum
+430c0c5efd0c: Download complete
+579f85658863: Verifying Checksum
+579f85658863: Download complete
+148a61ffa166: Verifying Checksum
+148a61ffa166: Download complete
+c827a4289aa6: Pull complete
+4f4fb700ef54: Pull complete
+d1c41692c50c: Pull complete
+e47841fa403a: Verifying Checksum
+e47841fa403a: Download complete
+e47841fa403a: Pull complete
+0a368c7486af: Verifying Checksum
+0a368c7486af: Download complete
+0a368c7486af: Pull complete
+430c0c5efd0c: Pull complete
+579f85658863: Pull complete
+148a61ffa166: Pull complete
+Digest: sha256:21e3df06d842fb7802ab470dd77c25f0e8c0d22950e8d8c6ae886e851af53ef8
+Status: Downloaded newer image for ghcr.io/speaches-ai/speaches:latest-cpu
+ghcr.io/speaches-ai/speaches:latest-cpu
+--- stderr ---
