@@ -643,6 +643,29 @@ async function moveDownloadedFile(source, destination) {
   });
 }
 
+async function validateDownloadedTranscript(file) {
+  const text = await fsp.readFile(file, "utf8");
+  if (!text.trim()) {
+    throw new Error("O TXT baixado está vazio: " + file);
+  }
+
+  const hasTimestamp =
+    /\[(?:\d{1,2}:)?\d{1,2}:\d{2}\]/m.test(text) ||
+    /(?:^|\n)\s*(?:\d{1,2}:)?\d{1,2}:\d{2}\s/m.test(text) ||
+    /\b\d{1,2}:\d{2}(?::\d{2})?\b/m.test(text);
+
+  if (!hasTimestamp) {
+    throw new Error("O TXT baixado não contém timestamps reconhecíveis: " + file);
+  }
+
+  return {
+    bytes: Buffer.byteLength(text, "utf8"),
+    chars: text.length,
+    hasTimestamp: true,
+    hasSpeakerLabels: /\bSpeaker\s+\d+\b/i.test(text),
+  };
+}
+
 async function downloadExistingMode(cfg) {
   await fsp.mkdir(cfg.output, { recursive: true });
   const evidenceDir = path.join(
@@ -765,6 +788,7 @@ async function downloadExistingMode(cfg) {
           meta.id
         );
         await moveDownloadedFile(tempFile, destination);
+        const validation = await validateDownloadedTranscript(destination);
 
         const record = {
           fingerprint: card.fingerprint,
@@ -776,6 +800,7 @@ async function downloadExistingMode(cfg) {
           format: "txt",
           timestamps: true,
           speakers,
+          validation,
           completedAt: new Date().toISOString(),
         };
         state.completed[key] = record;
