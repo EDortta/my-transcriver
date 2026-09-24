@@ -487,6 +487,21 @@ async function waitForCorrectTranscript(client, pageId, filename, timeoutMs) {
   throw new Error("Timeout aguardando abrir a transcrição correta de " + filename + ". Último estado: " + last);
 }
 
+async function findExistingTranscriptUid(client, pageId, filename, maxLoads = 30) {
+  for (let attempt = 0; attempt <= maxLoads; attempt++) {
+    const snap = await snapshot(client, pageId);
+    const found = findFileUid(snap, filename);
+    if (found) return found;
+
+    const loadMoreUid = findUid(snap, /\bLoad More\b/i);
+    if (!loadMoreUid) return null;
+
+    await call(client, "click", { pageId, uid: loadMoreUid });
+    await new Promise(resolve => setTimeout(resolve, 800));
+  }
+
+  return null;
+}
 async function processOne(client, uploadTool, pageId, cfg, item, evidenceDir, index) {
   await call(client, "navigate_page", {
     pageId,
@@ -496,7 +511,7 @@ async function processOne(client, uploadTool, pageId, cfg, item, evidenceDir, in
   });
 
   let snap = await snapshot(client, pageId);
-  const existingUid = findFileUid(snap, item.name);
+  const existingUid = await findExistingTranscriptUid(client, pageId, item.name);
 
   if (existingUid) {
     console.log("    já existe no 1Transcribe; reaproveitando...");
