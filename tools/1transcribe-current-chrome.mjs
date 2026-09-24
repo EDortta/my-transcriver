@@ -943,6 +943,14 @@ async function processOne(client, uploadTool, pageId, cfg, item, evidenceDir, in
 async function main() {
   const cfg = parseArgs(process.argv);
 
+  if (cfg.downloadExisting) {
+    if (cfg.output === DEFAULT_OUTPUT) {
+      cfg.output = "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-1transcribe-existentes";
+    }
+    await downloadExistingMode(cfg);
+    return;
+  }
+
   await fsp.mkdir(cfg.output, { recursive: true });
   const evidenceDir = path.join(process.cwd(), "evidence", "1transcribe-current-chrome", new Date().toISOString().replace(/[:.]/g, "-"));
   await fsp.mkdir(evidenceDir, { recursive: true });
