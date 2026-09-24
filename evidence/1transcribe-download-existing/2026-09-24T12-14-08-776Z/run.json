@@ -1,0 +1,37 @@
+{
+  "config": {
+    "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder",
+    "file": null,
+    "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-1transcribe-existentes",
+    "limit": 1,
+    "format": "txt",
+    "timeoutMinutes": 180,
+    "newestFirst": false,
+    "adaptiveDelay": true,
+    "downloadExisting": true,
+    "ensureSpeakers": true,
+    "pauseSeconds": 3
+  },
+  "found": 200,
+  "processed": 1,
+  "downloaded": 1,
+  "skipped": 0,
+  "failures": 0,
+  "log": [
+    {
+      "status": "ok",
+      "fingerprint": "\"SEP 23 • 10:02 PM Luis 2x Ô, Luiz, boa noite. Me diz se esse áudio do... você consegue abrir ele e ouvir no 2x que você tanto ama. Vai, me ajuda com isso.\"",
+      "occurrence": 0,
+      "title": "Luis 2x",
+      "transcriptId": "transcript_98209788251664536",
+      "url": "https://app.1transcribe.com/transcript?id=transcript_98209788251664536",
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-1transcribe-existentes/Luis 2x.txt",
+      "format": "txt",
+      "timestamps": true,
+      "speakers": {
+        "state": "generated"
+      },
+      "completedAt": "2026-09-24T12:18:58.421Z"
+    }
+  ]
+}
