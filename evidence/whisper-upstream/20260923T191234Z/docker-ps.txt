@@ -1,0 +1,6 @@
+===== docker-ps =====
+exit_code=0
+--- stdout ---
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+--- stderr ---
+

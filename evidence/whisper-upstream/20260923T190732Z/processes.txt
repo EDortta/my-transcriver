@@ -1,0 +1,10 @@
+===== processes =====
+exit_code=0
+--- stdout ---
+1000995     4867  0.1  0.0 161416 53232 ?        Ssl  06:08   0:39 /opt/codex-bridge/.venv/bin/python3 /opt/codex-bridge/.venv/bin/uvicorn deploy.incus.codexbridge_edge_proxy:app --host 0.0.0.0 --port 8080
+1000000     7232  0.1  0.1 112456 66792 ?        Ssl  06:09   0:48 /usr/local/bin/python3.12 /usr/local/bin/uvicorn main:app --host 0.0.0.0 --port 80
+1000000    15888  0.1  0.1 112504 66904 ?        Ssl  06:10   0:52 /usr/local/bin/python3.12 /usr/local/bin/uvicorn main:app --host 0.0.0.0 --port 80
+root       18093  0.0  0.0      0     0 ?        I<   06:10   0:00 [kworker/R-dio/overlay]
+1000000    20148  0.1  0.1 112496 66588 ?        Ssl  06:10   0:55 /usr/local/bin/python3.12 /usr/local/bin/uvicorn main:app --host 0.0.0.0 --port 80
+--- stderr ---
+

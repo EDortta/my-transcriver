@@ -1,0 +1,4 @@
+Whisper remoto: https://whisper.inovacaosistemas.com.br (Systran/faster-whisper-medium)
+[1/1] Transcrevendo: /home/esteban/Sync/Backups/Android/VoiceRecorder/Fer choro 27 outubro 2024.m4a
+    [chunk 1/1] enviando chunk-00000.mp3 (3.1 MiB)
+Concluído: 0 sucesso(s), 1 falha(s).

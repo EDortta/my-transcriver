@@ -1,0 +1,9 @@
+exit_code=0
+--- stdout ---
+HTTP/1.1 200 OK
+date: Wed, 23 Sep 2026 19:18:32 GMT
+server: uvicorn
+content-length: 27
+content-type: application/json
+
+{"data":[],"object":"list"}--- stderr ---

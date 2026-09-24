@@ -1,0 +1,3 @@
+Whisper remoto: https://whisper.inovacaosistemas.com.br (Systran/faster-whisper-medium)
+[1/1] Transcrevendo: /home/esteban/Sync/Backups/Android/VoiceRecorder/Vanessa e Esteban 2025-11-19.m4a
+Concluído: 0 sucesso(s), 1 falha(s).

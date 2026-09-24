@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "phase": 0,
+  "scope": "transcription-baseline",
+  "generated_at": "2026-09-23T19:49:46.300851+00:00",
+  "source": "/home/esteban/Sync/Backups/Android/VoiceRecorder",
+  "seed": 20260923,
+  "remote_chunk_seconds": 300,
+  "local_model": "medium",
+  "inventory": {
+    "python": "3.10.12",
+    "ffmpeg": "/usr/bin/ffmpeg",
+    "ffprobe": "/usr/bin/ffprobe",
+    "gnu_time": "/usr/bin/time",
+    "whisper_cpp": null,
+    "faster_whisper_python": true
+  },
+  "samples": [
+    {
+      "id": "S01",
+      "path": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Fer choro 27 outubro 2024.m4a",
+      "sha256": "b35f779c23dbbe1fdff58ce5cc43a2573089430e381f5fe5ccf96e2849d2c305",
+      "size_bytes": 4461089,
+      "duration_seconds": 271.476
+    }
+  ],
+  "results": [
+    {
+      "sample": "S01",
+      "engine": "remote",
+      "command": [
+        "/usr/bin/python3",
+        "/home/esteban/Sync/Projects/my-transcriver/transcribe.py",
+        "/home/esteban/Sync/Backups/Android/VoiceRecorder/Fer choro 27 outubro 2024.m4a",
+        "--backend",
+        "remote",
+        "--language",
+        "pt",
+        "--overwrite",
+        "-o",
+        "/home/esteban/Sync/Projects/my-transcriver/evidence/phase0/20260923T194535Z/runs/S01/remote/output",
+        "--remote-chunk-seconds",
+        "300"
+      ],
+      "status": "failed",
+      "returncode": 1,
+      "wall_seconds": 27.454,
+      "user_seconds": 1.27,
+      "system_seconds": 0.05,
+      "cpu_percent": "4%",
+      "max_rss_kb": 51880,
+      "note": "ver stderr.txt"
+    },
+    {
+      "sample": "S01",
+      "engine": "local",
+      "command": [
+        "/usr/bin/python3",
+        "/home/esteban/Sync/Projects/my-transcriver/transcribe.py",
+        "/home/esteban/Sync/Backups/Android/VoiceRecorder/Fer choro 27 outubro 2024.m4a",
+        "--backend",
+        "local",
+        "--language",
+        "pt",
+        "--overwrite",
+        "-o",
+        "/home/esteban/Sync/Projects/my-transcriver/evidence/phase0/20260923T194535Z/runs/S01/local/output",
+        "--model",
+        "medium"
+      ],
+      "status": "ok",
+      "returncode": 0,
+      "wall_seconds": 222.204,
+      "user_seconds": 527.38,
+      "system_seconds": 47.84,
+      "cpu_percent": "258%",
+      "max_rss_kb": 2441828,
+      "output": "runs/S01/local/output/Fer choro 27 outubro 2024.md",
+      "output_chars": 3131
+    }
+  ]
+}

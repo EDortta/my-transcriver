@@ -1,0 +1,20 @@
+{
+  "config": {
+    "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder",
+    "file": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Voz 260911_192111.m4a",
+    "output": "/home/esteban/Downloads/1transcribe",
+    "limit": 1,
+    "format": "txt",
+    "timeoutMinutes": 180,
+    "newestFirst": false
+  },
+  "processed": 1,
+  "failures": 1,
+  "log": [
+    {
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Voz 260911_192111.m4a",
+      "status": "failed",
+      "error": "Error: upload_file falhou: Error: Access denied: path /home/esteban/Sync/Backups/Android/VoiceRecorder/Voz 260911_192111.m4a (canonical: /home/esteban/Sync/Backups/Android/VoiceRecorder/Voz 260911_192111.m4a) is not within any of the configured workspace roots.\n    at call (file:///home/esteban/Sync/Projects/my-transcriver/tools/1transcribe-current-chrome.mjs:112:30)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async processOne (file:///home/esteban/Sync/Projects/my-transcriver/tools/1transcribe-current-chrome.mjs:237:3)\n    at async main (file:///home/esteban/Sync/Projects/my-transcriver/tools/1transcribe-current-chrome.mjs:357:24)"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+===== docker-logs =====
+exit_code=2
+--- stdout ---
+--- stderr ---
+bash: -c: line 1: syntax error near unexpected token `do'
+bash: -c: line 1: `bash -lc for c in $(docker ps -aq 2>/dev/null); do n=$(docker inspect -f '{{.Name}} {{.Config.Image}}' $c 2>/dev/null); echo $n | grep -Eqi 'whisper|speaches' || continue; echo === $c $n ===; docker logs --tail 200 $c 2>&1 || true; done'
+

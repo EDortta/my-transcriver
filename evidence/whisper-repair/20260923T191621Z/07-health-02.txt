@@ -1,0 +1,4 @@
+exit_code=56
+--- stdout ---
+--- stderr ---
+curl: (56) Recv failure: Connection reset by peer

@@ -1,0 +1,22 @@
+{
+  "config": {
+    "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder",
+    "file": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Voz 260911_192111.m4a",
+    "output": "/home/esteban/Downloads/1transcribe",
+    "profile": "/home/esteban/.cache/my-transcriver/1transcribe-profile",
+    "limit": 1,
+    "format": "txt",
+    "headless": false,
+    "timeoutMinutes": 180,
+    "newestFirst": false
+  },
+  "processed": 1,
+  "failures": 1,
+  "log": [
+    {
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Voz 260911_192111.m4a",
+      "status": "failed",
+      "error": "locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /^Import$/i }).first()\u001b[22m\n\n    at openImport (/home/esteban/Sync/Projects/my-transcriver/tools/1transcribe-batch.mjs:139:22)\n    at async main (/home/esteban/Sync/Projects/my-transcriver/tools/1transcribe-batch.mjs:293:9)"
+    }
+  ]
+}\n

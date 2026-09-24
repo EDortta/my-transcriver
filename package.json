@@ -1,0 +1,13 @@
+{
+  "name": "my-transcriver-browser-tools",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "1transcribe": "node tools/1transcribe-batch.mjs",
+    "1transcribe:chrome": "node tools/1transcribe-current-chrome.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.55.0",
+    "@modelcontextprotocol/sdk": "^1.17.0"
+  }
+}

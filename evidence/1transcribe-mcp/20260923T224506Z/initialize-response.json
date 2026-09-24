@@ -1,0 +1,22 @@
+{
+  "status": 401,
+  "headers": {
+    "Date": "Wed, 23 Sep 2026 22:45:07 GMT",
+    "Content-Type": "application/json",
+    "Content-Length": "24",
+    "Connection": "keep-alive",
+    "access-control-expose-headers": "WWW-Authenticate, MCP-Protocol-Version, Retry-After, x-request-id",
+    "Cache-Control": "no-store",
+    "referrer-policy": "no-referrer",
+    "www-authenticate": "Bearer resource_metadata=\"https://api.1transcribe.com/.well-known/oauth-protected-resource/mcp\", error=\"invalid_token\"",
+    "cf-cache-status": "DYNAMIC",
+    "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=cmgowk5vX5ydVrxTG0hD8%2BCDk1wqrYW0vgDd2qkVBCvjLYmAVUvdFyDYZnx1B48GtuoshoW1GTuBTt4XUEIsYTb2OFamAvaiIzz3smf5Jz6EsEjM6jodYHQuvBkY1FWYsMS8Fx15UHlkxW6SBOqnmAe2\"}]}",
+    "Server": "cloudflare",
+    "CF-RAY": "a3fd13f23a42261c-GRU",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "body": {
+    "error": "unauthorized"
+  }
+}

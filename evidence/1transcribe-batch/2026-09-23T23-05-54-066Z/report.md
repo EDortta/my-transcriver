@@ -1,0 +1,1 @@
+# 1Transcribe batch\n\n- Input: /home/esteban/Sync/Backups/Android/VoiceRecorder\n- Output: /home/esteban/Downloads/1transcribe\n- Processados: 1\n- Falhas: 1\n- Formato: txt\n

@@ -1,0 +1,21 @@
+{
+  "config": {
+    "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder",
+    "file": null,
+    "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos",
+    "limit": 1,
+    "format": "txt",
+    "timeoutMinutes": 180,
+    "newestFirst": false,
+    "adaptiveDelay": true
+  },
+  "processed": 1,
+  "failures": 1,
+  "log": [
+    {
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/AUD-20210226-WA0000.m4a",
+      "status": "failed",
+      "error": "Error: Transcrição terminou, mas não encontrei o botão Download.\n    at processOne (file:///home/esteban/Sync/Projects/my-transcriver/tools/1transcribe-current-chrome.mjs:324:27)\n    at async main (file:///home/esteban/Sync/Projects/my-transcriver/tools/1transcribe-current-chrome.mjs:438:24)"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+Whisper local: medium em cpu (int8)
+[1/1] Transcrevendo: /home/esteban/Sync/Backups/Android/VoiceRecorder/Fer choro 27 outubro 2024.m4a
+[1/1] Gravado: /home/esteban/Sync/Projects/my-transcriver/evidence/phase0/20260923T182348Z/runs/S01/local/output/Fer choro 27 outubro 2024.md
+Concluído: 1 sucesso(s), 0 falha(s).

@@ -1,0 +1,1 @@
+[1/1] ERRO em /home/esteban/Sync/Backups/Android/VoiceRecorder/Fer choro 27 outubro 2024.m4a: Whisper HTTP 503: servidor aquecendo, tente novamente em instantes

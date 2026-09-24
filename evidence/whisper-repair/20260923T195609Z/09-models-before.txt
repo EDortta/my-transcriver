@@ -1,0 +1,3 @@
+exit_code=0
+--- stdout ---
+{"data":[],"object":"list"}--- stderr ---

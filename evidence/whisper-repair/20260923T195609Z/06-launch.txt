@@ -1,0 +1,4 @@
+exit_code=0
+--- stdout ---
+running ghcr.io/speaches-ai/speaches:latest-cpu
+--- stderr ---

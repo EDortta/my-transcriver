@@ -1,0 +1,7 @@
+exit_code=0
+--- stdout ---
+dom1-inovacao
+PORT
+CONTAINER
+[]
+--- stderr ---
