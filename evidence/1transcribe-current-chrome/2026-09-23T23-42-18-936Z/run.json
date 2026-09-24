@@ -1,0 +1,21 @@
+{
+  "config": {
+    "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder",
+    "file": null,
+    "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos",
+    "limit": 1,
+    "format": "txt",
+    "timeoutMinutes": 180,
+    "newestFirst": false,
+    "adaptiveDelay": true
+  },
+  "processed": 1,
+  "failures": 0,
+  "log": [
+    {
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/AUD-20210226-WA0000.m4a",
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/AUD-20210226-WA0000.txt",
+      "status": "ok"
+    }
+  ]
+}

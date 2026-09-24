@@ -1,0 +1,119 @@
+{
+  "/.well-known/oauth-protected-resource/mcp": {
+    "status": 200,
+    "headers": {
+      "Date": "Wed, 23 Sep 2026 22:45:07 GMT",
+      "Content-Type": "application/json",
+      "Transfer-Encoding": "chunked",
+      "Connection": "keep-alive",
+      "access-control-expose-headers": "WWW-Authenticate, MCP-Protocol-Version, Retry-After, x-request-id",
+      "Cache-Control": "no-store",
+      "referrer-policy": "no-referrer",
+      "cf-cache-status": "DYNAMIC",
+      "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=sZfMfuN%2B5snUQqIGW%2BEDscdBWOS4Tls7AJkcSGrsjvB%2Bz6rqK3v3vd10Ca%2F0nr2ZOyK4efP5nYlZFGbDHT9Nu%2BQUNSJPw9nTN98hbE52cWHu8Vf4JrWCNqNTOkvOt784b0Usa4AJBlT1FBkgkCBdIkKf\"}]}",
+      "Content-Encoding": "br",
+      "Server": "cloudflare",
+      "CF-RAY": "a3fd13ed398b261c-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": {
+      "resource": "https://api.1transcribe.com/mcp",
+      "authorization_servers": [
+        "https://api.1transcribe.com"
+      ],
+      "scopes_supported": [
+        "recordings:read",
+        "recordings:organize"
+      ],
+      "bearer_methods_supported": [
+        "header"
+      ],
+      "resource_name": "1Transcribe"
+    }
+  },
+  "/.well-known/oauth-protected-resource": {
+    "status": 200,
+    "headers": {
+      "Date": "Wed, 23 Sep 2026 22:45:07 GMT",
+      "Content-Type": "application/json",
+      "Transfer-Encoding": "chunked",
+      "Connection": "keep-alive",
+      "access-control-expose-headers": "WWW-Authenticate, MCP-Protocol-Version, Retry-After, x-request-id",
+      "Cache-Control": "no-store",
+      "referrer-policy": "no-referrer",
+      "cf-cache-status": "DYNAMIC",
+      "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=MvR9hJLh9UMllUNK%2FbzoDXOeEwKszk5%2BPk2swQHPtF%2BbAdF6owAYaqjrRfUs14c%2FdjbGPJs%2BjWfOTKV4H03dSzOkfOcJq5SV60PpylQD%2FUbE%2F%2FALKefXkNoFgmTmdoKy3MNbQpuDNjbF%2B%2FGGcu%2FhHBJr\"}]}",
+      "Content-Encoding": "br",
+      "Server": "cloudflare",
+      "CF-RAY": "a3fd13f01b39261c-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": {
+      "resource": "https://api.1transcribe.com/mcp",
+      "authorization_servers": [
+        "https://api.1transcribe.com"
+      ],
+      "scopes_supported": [
+        "recordings:read",
+        "recordings:organize"
+      ],
+      "bearer_methods_supported": [
+        "header"
+      ],
+      "resource_name": "1Transcribe"
+    }
+  },
+  "/.well-known/oauth-authorization-server": {
+    "status": 200,
+    "headers": {
+      "Date": "Wed, 23 Sep 2026 22:45:07 GMT",
+      "Content-Type": "application/json",
+      "Transfer-Encoding": "chunked",
+      "Connection": "keep-alive",
+      "access-control-expose-headers": "WWW-Authenticate, MCP-Protocol-Version, Retry-After, x-request-id",
+      "Cache-Control": "no-store",
+      "referrer-policy": "no-referrer",
+      "cf-cache-status": "DYNAMIC",
+      "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=mEtnguz8QsSKqMhKbs8LWyxGfrO8iWNoiZ4KPOVQu%2FyZEFYU2qhtu4HAFypkqQZbxWRottldhq9lgHarckGUnWZN0ij9b%2FWW6H3Z3ApAhzSEUCbkcgVo0hpc8Wy86838T%2FaZMo65qWlAASNzhMH24%2BOU\"}]}",
+      "Content-Encoding": "br",
+      "Server": "cloudflare",
+      "CF-RAY": "a3fd13f12ead261c-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": {
+      "issuer": "https://api.1transcribe.com",
+      "authorization_endpoint": "https://api.1transcribe.com/oauth/authorize",
+      "token_endpoint": "https://api.1transcribe.com/oauth/token",
+      "registration_endpoint": "https://api.1transcribe.com/oauth/register",
+      "revocation_endpoint": "https://api.1transcribe.com/oauth/revoke",
+      "response_types_supported": [
+        "code"
+      ],
+      "grant_types_supported": [
+        "authorization_code",
+        "refresh_token"
+      ],
+      "code_challenge_methods_supported": [
+        "S256"
+      ],
+      "token_endpoint_auth_methods_supported": [
+        "none",
+        "client_secret_post",
+        "client_secret_basic"
+      ],
+      "revocation_endpoint_auth_methods_supported": [
+        "none",
+        "client_secret_post",
+        "client_secret_basic"
+      ],
+      "scopes_supported": [
+        "recordings:read",
+        "recordings:organize"
+      ],
+      "authorization_response_iss_parameter_supported": true
+    }
+  }
+}

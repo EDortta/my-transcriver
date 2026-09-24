@@ -1,0 +1,43 @@
+## Latest page snapshot
+uid=36_0 RootWebArea "1Transcribe" url="https://app.1transcribe.com/home"
+  uid=36_1 banner
+    uid=36_2 button
+    uid=36_3 button "BILLING"
+    uid=36_4 button
+    uid=36_5 button
+  uid=36_6 main
+    uid=36_7 region "Use on your computer"
+      uid=36_8 button "Use on your computer Dictation on Mac & Windows"
+    uid=36_9 button "SEP 23 • 8:49 PM Vídeo 6-24 Reforma Protestante, vídeo 6 de 24: "A Inquisição e o Controle da Ortodoxia, séculos XIII a XVI". A partir do século XIII, a Igreja Católica instituiu a Inquisição como um meio de combater heresias e manter a uniformidade doutrinária. A Inquisição procurava garantir que a fé cristã fosse defendida de qualquer forma de dissidência. A Igreja via a heresia como uma ameaça à unidade da cristiandade e, por isso, buscava controlar qualquer divergência teológica ou prática. Aqueles que fossem julgados hereges enfrentavam severas punições, que iam de confissões forçadas a execuções. Nos séculos seguintes, esse sistema de repressão se intensificou, especialmente com o surgimento de movimentos que questionavam a autoridade da Igreja, como os cátaros, um movimento dualista que rejeitava a Igreja e seus sacramentos, e os valdenses, um grupo que pregava a pobreza apostólica e a leitura direta das Escrituras. A intolerância da Inquisição seria, mais tarde, um dos fatores que levariam ao fortalecimento do espírito reformista, à medida que a população começava a questionar os excessos de poder por parte da Igreja."
+      uid=36_10 button
+    uid=36_11 button "SEP 23 • 8:47 PM Vídeo 5-24 Reforma Protestante, vídeo 5 de 24, "A Descoberta das Américas", 1492. Em 1492, Cristóvão Colombo descobriu um novo mundo; esse evento não apenas revolucionou o mapa geopolítico da Europa, mas também trouxe imensos desafios éticos e religiosos para a Igreja Católica. A Igreja logo precisou se posicionar diante das novas terras e povos. Em resposta, o Papa emitiu bulas papais, como a Intercaetera de 1493, que concedia a Portugal e à Espanha o direito de explorar e evangelizar essas terras. A missão de converter os povos indígenas foi vista como uma extensão do mandato cristão. No entanto, o encontro com essas novas culturas também levou a sérias questões sobre a moralidade da conquista e da escravidão. A chegada dos europeus ao "novo mundo" desafiou a Igreja a adaptar sua missão e ética a uma realidade completamente nova, contribuindo para o clima de questionamento que viria a fortalecer a Reforma Protestante."
+      uid=36_12 button
+    uid=36_13 button "SEP 23 • 8:46 PM Vídeo 4-24 Reforma Protestante, vídeo 4 de 24: "O Renascimento e o Redescobrimento Clássico, séculos XIV a XVI". O Renascimento, que floresceu entre os séculos XIV e XVI, foi uma época de renascimento cultural e intelectual na Europa. Inspirado pela descoberta das ideias clássicas greco-romanas, o movimento impactou profundamente o pensamento ocidental, trazendo uma nova visão sobre o homem, a arte e o conhecimento. O humanismo renascentista exaltava o potencial humano e buscava retornar às fontes originais, tanto da cultura clássica quanto das escrituras. Essa "redescoberta" das fontes alimentou um espírito crítico que, por fim, ajudaria a pavimentar o caminho para a Reforma Protestante. Erasmo de Roterdã, uma das figuras centrais desse período, publicou uma edição crítica do Novo Testamento grego, o que influenciou diretamente reformadores como Lutero. A ênfase num retorno à simplicidade e pureza dos textos originais seria crucial para as críticas à Igreja Católica. Esse redescobrimento do conhecimento e o advento da imprensa também facilitaram a disseminação das ideias da Reforma, permitindo que críticas à Igreja se espalhassem rapidamente por toda a Europa."
+      uid=36_14 button
+    uid=36_15 button "SEP 23 • 8:45 PM Voice 001 Gabriel, levántate. Es tarde, tienes que ir a la escuela. Gabriel, levántate. Anda a tomar baño. Gabriel, levántate. Tienes que ir a la escuela, Gabriel. Anda a tomar baño. Gabriel, yo sé que estás cansado. Levántate y anda a la escuela. Levántate, Gabriel. Anda a tomar baño. Levántate. Dale. La escuela te espera, estás tarde. Levántate, Gabriel. Gabriel, levántate."
+      uid=36_16 button
+    uid=36_17 button "SEP 23 • 8:44 PM Frio celeste soprano Peregrinando, vou por Prudente e pelos vales, sempre a brisar; o clima ameno vem a acalmar-me, sinto a frescura a me deliciar. Frio celeste, frio celeste, enche a minh'alma de bem-estar; com alegria sigo cantando, canto a feliz indo acordar. Sombraça rota, nuvens em cima, o frio ameno não vai pagar; sinto a leveza que nunca se apaga, junto ao frescor sempre de andar. Frio celeste, frio celeste, enche a minh'alma de bem-estar; com alegria sigo cantando, canto feliz indo trabalhar. Vai me guiando brisas suaves que me conduzem ao meu lugar; mais e mais perto, clima sentindo, canto feliz só a relaxar. Frio celeste, frio celeste, enche a minh'alma de bem-estar; com alegria sigo cantando, canto feliz indo descansar."
+      uid=36_18 button
+    uid=36_19 button "SEP 23 • 8:44 PM Frio celeste baixo Peregrinando, vou por Prudente e pelos vales, sempre brisar. O clima ameno vem a acalmar-me; sinto a frescura me deliciar. Frio celeste, frio celeste, enche a minha alma de bem-estar. Com alegria sigo cantando, canto feliz indo acordar. Sombras à roda, nuvens em cima, o frio ameno no papagaio. Sinto leveza. Nunca se apaga; junto ao frescor, sempre de andar. Frio celeste, frio celeste, enche a minha alma de bem-estar. Com alegria sigo cantando, canto feliz indo trabalhar. Vá me guiando, brisas suaves, que me conduzem ao meu lugar. Mais e mais perto, clima sentindo, canto feliz só a relaxar. Frio celeste, frio celeste, enche a minha alma de bem-estar. Com alegria sigo cantando, canto feliz indo descansar."
+      uid=36_20 button
+    uid=36_21 button "SEP 23 • 8:43 PM Frio celeste Peregrinando, vou por Prudente e pelos vales, sempre a brisar o Mameno. Vem acalmar-me; sinto a frescura me deliciar. Frio celeste, frio celeste, enche a minh'alma de bem-estar. Com alegria sigo cantando, canto feliz indo acordar. Sombras à roda, nuvens em cima, o frio ameno não vai pagar. Sinto a leveza que nunca se apaga; junto ao frescor, sempre hei de andar. Frio celeste, frio celeste, enche a minh'alma de bem-estar. Com alegria sigo cantando, canto feliz indo trabalhar. Vão-me guiando brisas suaves que me conduzem ao meu lugar, mais e mais perto. Clima sentindo, canto feliz, estou a relaxar. Frio celeste, frio celeste, enche a minh'alma de bem-estar. Com alegria sigo cantando, canto feliz indo descansar."
+      uid=36_22 button
+    uid=36_23 button "SEP 23 • 8:29 PM AUD-20210226-WA0000 Senhoras e senhores, sejam levados na cordial e bem-vinda ao Aeroporto Internacional de Barracas. Para nós e para todos os tripulantes, é um orgulho receber este histórico voo. Lhe damos as graças por trazer as primeiras vacinas ao país. Recibido. Agradecido por la recepción. Es un orgullo como empresa y como pilotos poderosos en esta tremenda solución a una terrible pandemia. Muchas gracias, señor. A usted y a toda la tripulación, bienvenidos. Muchas gracias. Muchas gracias, mexiles. Saludos, el Eco del Tarde. Muchas gracias, Eco del Tarde."
+      uid=36_24 button
+    uid=36_25 button "SEP 23 • 8:15 PM Voz 260911_192111 Um, dois, três, quatro."
+      uid=36_26 button
+    uid=36_27 button "SEP 23 • 7:49 PM Voz 260911_192111 Um, dois, três, quatro."
+      uid=36_28 button
+    uid=36_29 button "Load More"
+  uid=36_30 button "Import"
+  uid=36_31 button "Record"
+  uid=36_32 button "Dictate"
+  uid=37_0 heading "Transcribe Files" level="2"
+  uid=37_1 button "Close modal"
+  uid=37_2 StaticText "Import audio, video, image, or PDF files. Up to 5 at once with Premium."
+  uid=37_3 StaticText "Language in the file"
+  uid=37_4 button "🇧🇷 Português" disableable disabled
+  uid=37_5 button "Importing... 1/1 100%" disableable disabled
+  uid=39_0 image "Monica" url="chrome-extension://ofpnmcalabcbjgholdjcjblkibolbppb/static/global/src/static/monicaLogo.png"
+  uid=39_1 StaticText "Ctrl+M"
+  uid=36_33 StaticText "Explain"

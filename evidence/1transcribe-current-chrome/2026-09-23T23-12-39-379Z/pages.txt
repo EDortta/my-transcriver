@@ -1,0 +1,3 @@
+## Pages
+1: Inspect with Chrome Developer Tools (chrome://inspect/#remote-debugging) [selected]
+2: https://app.1transcribe.com/home
