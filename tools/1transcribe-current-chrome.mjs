@@ -291,10 +291,9 @@ async function configureDownloadModal(client, pageId) {
     const norm = el => (el.innerText || el.textContent || "").trim();
     const all = [...document.querySelectorAll("*")].filter(visible);
     const txt = all.find(el => /^\\.?TXT$/i.test(norm(el)));
-    if (!txt) return { ok: false, step: "txt", visibleTexts: all.map(norm).filter(Boolean).slice(-120) };
-    const clickable = txt.closest("button,[role=button],label") || txt;
-    clickable.click();
-    return { ok: true, selected: norm(txt) };
+    if (!txt) return { ok: false, step: "txt" };
+    (txt.closest("button,[role=button],label") || txt).click();
+    return { ok: true };
   }`;
 
   const txtResult = textResult(await call(client, "evaluate_script", { pageId, function: chooseTxt }));
@@ -304,7 +303,7 @@ async function configureDownloadModal(client, pageId) {
 
   await new Promise(resolve => setTimeout(resolve, 250));
 
-  const ensureTimestamps = `() => {
+  const ensureTs = `() => {
     const visible = el => {
       const s = getComputedStyle(el);
       const r = el.getBoundingClientRect();
@@ -313,47 +312,69 @@ async function configureDownloadModal(client, pageId) {
     const norm = el => (el.innerText || el.textContent || "").trim();
     const labels = [...document.querySelectorAll("*")].filter(visible);
     const label = labels.find(el => /^Include timestamps$/i.test(norm(el)));
-    if (!label) return { ok: false, step: "timestamps-label" };
+    if (!label) return { ok: false, step: "label" };
 
-    const lr = label.getBoundingClientRect();
-    const candidates = [...document.querySelectorAll("input[type=checkbox],[role=switch],button")].filter(visible).map(el => {
-      const r = el.getBoundingClientRect();
-      const dy = Math.abs((r.top + r.bottom) / 2 - (lr.top + lr.bottom) / 2);
-      const dx = Math.max(0, r.left - lr.right);
-      return { el, r, dy, dx };
-    }).filter(x => x.dy < 45 && x.r.left >= lr.left).sort((a, b) => (a.dy - b.dy) || (a.dx - b.dx));
+    let control = null;
 
-    const target = candidates[0]?.el;
-    if (!target) return { ok: false, step: "timestamps-control-not-found" };
-
-    let checked;
-    if (target.matches("input[type=checkbox]")) {
-      checked = Boolean(target.checked);
-    } else if (target.getAttribute("aria-checked") != null) {
-      checked = target.getAttribute("aria-checked") === "true";
-    } else if (target.getAttribute("data-state") != null) {
-      checked = /checked|on/i.test(target.getAttribute("data-state") || "");
-    } else if (/checked|active|\\bon\\b/i.test(String(target.className || ""))) {
-      checked = true;
-    } else {
-      const checkIcon = [...target.querySelectorAll("svg,path,[data-lucide=check]")].some(visible);
-      checked = checkIcon;
+    if (label.tagName === "LABEL" && label.htmlFor) {
+      control = document.getElementById(label.htmlFor);
     }
 
-    if (!checked) target.click();
+    let node = label;
+    for (let depth = 0; !control && depth < 5 && node; depth++, node = node.parentElement) {
+      control = node.querySelector?.(
+        "input[type=checkbox],[role=switch],[aria-checked],[data-state=checked],[data-state=unchecked]"
+      ) || null;
+    }
+
+    if (!control) {
+      const lr = label.getBoundingClientRect();
+      const candidates = [...document.querySelectorAll("button,input[type=checkbox],[role=switch]")]
+        .filter(visible)
+        .map(el => {
+          const r = el.getBoundingClientRect();
+          return {
+            el,
+            dy: Math.abs((r.top + r.bottom) / 2 - (lr.top + lr.bottom) / 2),
+            dx: Math.abs(r.left - lr.right)
+          };
+        })
+        .filter(x => x.dy < 30)
+        .sort((a, b) => (a.dy - b.dy) || (a.dx - b.dx));
+      control = candidates[0]?.el || null;
+    }
+
+    if (!control) return { ok: false, step: "control" };
+
+    let known = true;
+    let checked = false;
+    if (control.matches("input[type=checkbox]")) {
+      checked = Boolean(control.checked);
+    } else if (control.getAttribute("aria-checked") != null) {
+      checked = control.getAttribute("aria-checked") === "true";
+    } else if (control.getAttribute("data-state") != null) {
+      checked = /checked|on/i.test(control.getAttribute("data-state") || "");
+    } else {
+      known = false;
+    }
+
+    if (!known || !checked) control.click();
+
     return {
       ok: true,
-      timestampsWasOn: checked,
-      action: checked ? "kept-on" : "turned-on",
-      tag: target.tagName,
-      ariaChecked: target.getAttribute("aria-checked"),
-      dataState: target.getAttribute("data-state")
+      known,
+      before: checked,
+      action: !known ? "clicked-unknown" : (checked ? "kept-on" : "turned-on"),
+      tag: control.tagName,
+      role: control.getAttribute("role"),
+      ariaChecked: control.getAttribute("aria-checked"),
+      dataState: control.getAttribute("data-state")
     };
   }`;
 
-  const tsResult = textResult(await call(client, "evaluate_script", { pageId, function: ensureTimestamps }));
+  const tsResult = textResult(await call(client, "evaluate_script", { pageId, function: ensureTs }));
   if (!/"?ok"?[^a-z]*[:=]?[^a-z]*true/i.test(tsResult)) {
-    throw new Error("Não consegui garantir Include timestamps ligado. " + tsResult);
+    throw new Error("Não consegui ligar Include timestamps. " + tsResult);
   }
 
   console.log("    download: .TXT + timestamps.");
@@ -666,6 +687,40 @@ async function validateDownloadedTranscript(file) {
   };
 }
 
+async function findHomeCardUidIncremental(client, pageId, fingerprint, occurrence = 0, maxLoads = 100) {
+  for (let attempt = 0; attempt <= maxLoads; attempt++) {
+    const snap = await snapshot(client, pageId);
+    const uid = findHomeCardUid(snap, fingerprint, occurrence);
+    if (uid) return uid;
+
+    const loadMoreUid = findUid(snap, /\\bbutton "Load More"/i);
+    if (!loadMoreUid) return null;
+    await call(client, "click", { pageId, uid: loadMoreUid });
+    await new Promise(resolve => setTimeout(resolve, 650));
+  }
+  return null;
+}
+
+async function returnToHomePreservingHistory(client, pageId) {
+  try {
+    await call(client, "navigate_page", {
+      pageId,
+      type: "back",
+      timeout: 120000,
+    });
+    await new Promise(resolve => setTimeout(resolve, 500));
+    const snap = await snapshot(client, pageId);
+    if (/url="https:\\/\\/app\\.1transcribe\\.com\\/home/i.test(snap)) return;
+  } catch {}
+
+  await call(client, "navigate_page", {
+    pageId,
+    type: "url",
+    url: HOME_URL,
+    timeout: 120000,
+  });
+}
+
 async function downloadExistingMode(cfg) {
   await fsp.mkdir(cfg.output, { recursive: true });
   const evidenceDir = path.join(
@@ -725,7 +780,11 @@ async function downloadExistingMode(cfg) {
       if (cfg.limit > 0 && processed >= cfg.limit) break;
       const key = hashText(card.fingerprint + "#" + card.occurrence);
       const done = state.completed[key];
-      if (done?.output && fs.existsSync(done.output)) {
+      if (
+        done?.output &&
+        fs.existsSync(done.output) &&
+        done.validation?.hasTimestamp === true
+      ) {
         skipped++;
         console.log("[skip]", done.title || key.slice(0, 12));
         continue;
@@ -736,15 +795,12 @@ async function downloadExistingMode(cfg) {
       console.log("[" + processed + "/" + cards.length + "]");
 
       try {
-        await call(client, "navigate_page", {
+        const uid = await findHomeCardUidIncremental(
+          client,
           pageId,
-          type: "url",
-          url: HOME_URL,
-          timeout: 120000,
-        });
-
-        const loaded = await loadAllExistingCards(client, pageId);
-        const uid = findHomeCardUid(loaded.snapshot, card.fingerprint, card.occurrence);
+          card.fingerprint,
+          card.occurrence
+        );
         if (!uid) throw new Error("Não consegui reencontrar o card na home.");
         await call(client, "click", { pageId, uid });
 
@@ -837,6 +893,8 @@ async function downloadExistingMode(cfg) {
         }, null, 2) + "\n",
         "utf8"
       );
+
+      await returnToHomePreservingHistory(client, pageId);
 
       if (consecutiveFailures >= 3) {
         console.error("FUSÍVEL: 3 falhas consecutivas. Interrompendo.");
