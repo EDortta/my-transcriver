@@ -693,7 +693,7 @@ async function findHomeCardUidIncremental(client, pageId, fingerprint, occurrenc
     const uid = findHomeCardUid(snap, fingerprint, occurrence);
     if (uid) return uid;
 
-    const loadMoreUid = findUid(snap, /\\bbutton "Load More"/i);
+    const loadMoreUid = findUid(snap, /\bbutton "Load More"/i);
     if (!loadMoreUid) return null;
     await call(client, "click", { pageId, uid: loadMoreUid });
     await new Promise(resolve => setTimeout(resolve, 650));
@@ -710,7 +710,7 @@ async function returnToHomePreservingHistory(client, pageId) {
     });
     await new Promise(resolve => setTimeout(resolve, 500));
     const snap = await snapshot(client, pageId);
-    if (/url="https:\\/\\/app\\.1transcribe\\.com\\/home/i.test(snap)) return;
+    if (snap.includes('url="https://app.1transcribe.com/home')) return;
   } catch {}
 
   await call(client, "navigate_page", {
