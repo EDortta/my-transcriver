@@ -637,6 +637,8 @@ async function main() {
 
   let processed = 0;
   let failures = 0;
+  let consecutiveFailures = 0;
+  const maxConsecutiveFailures = 3;
   const log = [];
 
   try {
@@ -664,9 +666,11 @@ async function main() {
         };
         await saveState(stateFile, state);
         log.push({ input: item.full, output, status: "ok" });
+        consecutiveFailures = 0;
         console.log("    OK ->", output);
       } catch (err) {
         failures++;
+        consecutiveFailures++;
         const message = err?.stack || String(err);
         log.push({ input: item.full, status: "failed", error: message });
         console.error("    ERRO:", err?.message || err);
@@ -680,6 +684,11 @@ async function main() {
         JSON.stringify({ config: cfg, processed, failures, log }, null, 2) + "\n",
         "utf8"
       );
+
+      if (consecutiveFailures >= maxConsecutiveFailures) {
+        console.error("FUSÍVEL: 3 falhas consecutivas. Lote interrompido para evitar uploads incorretos.");
+        break;
+      }
 
       const reachedLimit = cfg.limit > 0 && processed >= cfg.limit;
       if (cfg.adaptiveDelay && !reachedLimit) {
