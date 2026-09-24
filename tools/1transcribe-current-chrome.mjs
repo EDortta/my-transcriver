@@ -512,6 +512,345 @@ async function findExistingTranscriptUid(client, pageId, filename, maxLoads = 30
 
   return null;
 }
+function hashText(text) {
+  return crypto.createHash("sha256").update(String(text)).digest("hex");
+}
+
+function safeName(name) {
+  const cleaned = String(name || "transcript")
+    .replace(/[\\/:*?"<>|]/g, "-")
+    .replace(/\s+/g, " ")
+    .trim()
+    .replace(/[. ]+$/g, "");
+  return cleaned || "transcript";
+}
+
+function parseHomeCards(snapshotText) {
+  const counts = new Map();
+  const cards = [];
+  for (const line of snapshotText.split(/\r?\n/)) {
+    if (!/\bbutton\s+"[A-Z]{3}\s+\d{1,2}\s*[•·]\s*\d{1,2}:\d{2}\s*(AM|PM)\b/i.test(line)) continue;
+    const fingerprint = line.replace(/^\s*uid=\S+\s+button\s+/, "").trim();
+    const occurrence = counts.get(fingerprint) || 0;
+    counts.set(fingerprint, occurrence + 1);
+    cards.push({ fingerprint, occurrence });
+  }
+  return cards;
+}
+
+function findHomeCardUid(snapshotText, fingerprint, occurrence = 0) {
+  let seen = 0;
+  for (const line of snapshotText.split(/\r?\n/)) {
+    if (!line.includes(fingerprint)) continue;
+    const stripped = line.replace(/^\s*uid=\S+\s+button\s+/, "").trim();
+    if (stripped !== fingerprint) continue;
+    if (seen++ !== occurrence) continue;
+    const m = line.match(/\buid=([^\s]+)/i);
+    if (m) return m[1].replace(/^["\']|["\']$/g, "");
+  }
+  return null;
+}
+
+async function loadAllExistingCards(client, pageId, maxLoads = 100) {
+  let lastSnapshot = "";
+  let cards = [];
+  let stable = 0;
+  let previousCount = -1;
+
+  for (let attempt = 0; attempt < maxLoads; attempt++) {
+    lastSnapshot = await snapshot(client, pageId);
+    cards = parseHomeCards(lastSnapshot);
+
+    if (cards.length === previousCount) stable++;
+    else stable = 0;
+    previousCount = cards.length;
+
+    const loadMoreUid = findUid(lastSnapshot, /\bbutton "Load More"/i);
+    if (!loadMoreUid) break;
+    await call(client, "click", { pageId, uid: loadMoreUid });
+    await new Promise(resolve => setTimeout(resolve, 800));
+    if (stable >= 5) break;
+  }
+
+  lastSnapshot = await snapshot(client, pageId);
+  cards = parseHomeCards(lastSnapshot);
+  return { cards, snapshot: lastSnapshot };
+}
+
+async function waitExistingTranscriptReady(client, pageId, timeoutMs) {
+  const started = Date.now();
+  let snap = "";
+
+  while (Date.now() - started < timeoutMs) {
+    snap = await snapshot(client, pageId);
+    const isTranscript = /RootWebArea .*url="https:\/\/app\.1transcribe\.com\/transcript\?id=/i.test(snap);
+    const busy = /Transcribing file\.\.\.|Importing\.\.\./i.test(snap);
+    const hasDownload = /\bbutton "Download"/i.test(snap);
+    if (isTranscript && !busy && hasDownload) return snap;
+    await new Promise(resolve => setTimeout(resolve, 2000));
+  }
+
+  throw new Error("Timeout aguardando a transcrição existente abrir.");
+}
+
+function transcriptMetaFromSnapshot(snapshotText) {
+  const urlMatch = snapshotText.match(/RootWebArea .*url="([^"]+)"/i);
+  const url = urlMatch ? urlMatch[1] : "";
+  const lines = snapshotText.split(/\r?\n/);
+  const mainIndex = lines.findIndex(line => /\bmain\s*$/.test(line.trim()));
+  let title = "";
+
+  for (let i = Math.max(0, mainIndex + 1); i < lines.length; i++) {
+    const line = lines[i];
+    if (/\bbutton "Copy"/i.test(line)) break;
+    const m = line.match(/\bbutton "([^"]+)"/);
+    if (m && m[1] && !/^(1x|0\.5x|1\.5x|2x)$/i.test(m[1])) {
+      title = m[1];
+      break;
+    }
+  }
+
+  let id = "";
+  try { id = new URL(url).searchParams.get("id") || ""; } catch {}
+  return { title: title || id || "transcript", id, url };
+}
+
+async function ensureSpeakersIfPossible(client, pageId, timeoutMs) {
+  const state = await speakerState(client, pageId);
+  if (/speaker\s+\d+/i.test(state)) return { state: "existing" };
+  const canAdd = /"?addSpeaker"?[^a-z]*[:=]?[^a-z]*true/i.test(state);
+  if (!canAdd) return { state: "unavailable" };
+  await ensureSpeakers(client, pageId, timeoutMs);
+  return { state: "generated" };
+}
+
+async function uniqueExistingDestination(outputDir, title, transcriptId) {
+  const base = safeName(title);
+  let destination = path.join(outputDir, base + ".txt");
+  if (!fs.existsSync(destination)) return destination;
+  const suffix = safeName(transcriptId || hashText(title).slice(0, 12));
+  destination = path.join(outputDir, base + "--" + suffix + ".txt");
+  return destination;
+}
+
+async function moveDownloadedFile(source, destination) {
+  await fsp.mkdir(path.dirname(destination), { recursive: true });
+  await fsp.rename(source, destination).catch(async err => {
+    if (err.code === "EXDEV") {
+      await fsp.copyFile(source, destination);
+      await fsp.unlink(source);
+    } else throw err;
+  });
+}
+
+async function downloadExistingMode(cfg) {
+  await fsp.mkdir(cfg.output, { recursive: true });
+  const evidenceDir = path.join(
+    process.cwd(),
+    "evidence",
+    "1transcribe-download-existing",
+    new Date().toISOString().replace(/[:.]/g, "-")
+  );
+  await fsp.mkdir(evidenceDir, { recursive: true });
+
+  const stateFile = path.join(cfg.output, ".download-existing-state.json");
+  const state = await loadState(stateFile);
+
+  const transport = new StdioClientTransport({
+    command: "npx",
+    args: ["-y", "chrome-devtools-mcp@latest", "--autoConnect"],
+    stderr: "inherit",
+  });
+  const client = new Client(
+    { name: "my-transcriver-download-existing", version: "0.1.0" },
+    { capabilities: {} }
+  );
+
+  let processed = 0;
+  let downloadedCount = 0;
+  let skipped = 0;
+  let failures = 0;
+  let consecutiveFailures = 0;
+  const log = [];
+
+  console.log("Conectando à sessão Chrome já aberta...");
+  await client.connect(transport);
+
+  try {
+    const page = await getPageId(client);
+    const pageId = page.id;
+
+    await call(client, "navigate_page", {
+      pageId,
+      type: "url",
+      url: HOME_URL,
+      timeout: 120000,
+    });
+
+    const inventory = await loadAllExistingCards(client, pageId);
+    const cards = inventory.cards;
+    console.log("Transcrições encontradas:", cards.length);
+    console.log("Saída:", cfg.output);
+
+    await fsp.writeFile(
+      path.join(evidenceDir, "inventory.json"),
+      JSON.stringify(cards, null, 2) + "\n",
+      "utf8"
+    );
+
+    for (const card of cards) {
+      if (cfg.limit > 0 && processed >= cfg.limit) break;
+      const key = hashText(card.fingerprint + "#" + card.occurrence);
+      const done = state.completed[key];
+      if (done?.output && fs.existsSync(done.output)) {
+        skipped++;
+        console.log("[skip]", done.title || key.slice(0, 12));
+        continue;
+      }
+
+      processed++;
+      console.log("");
+      console.log("[" + processed + "/" + cards.length + "]");
+
+      try {
+        await call(client, "navigate_page", {
+          pageId,
+          type: "url",
+          url: HOME_URL,
+          timeout: 120000,
+        });
+
+        const loaded = await loadAllExistingCards(client, pageId);
+        const uid = findHomeCardUid(loaded.snapshot, card.fingerprint, card.occurrence);
+        if (!uid) throw new Error("Não consegui reencontrar o card na home.");
+        await call(client, "click", { pageId, uid });
+
+        const readySnapshot = await waitExistingTranscriptReady(
+          client,
+          pageId,
+          cfg.timeoutMinutes * 60 * 1000
+        );
+        const meta = transcriptMetaFromSnapshot(readySnapshot);
+        console.log("    título:", meta.title);
+
+        let speakers = { state: "skipped" };
+        if (cfg.ensureSpeakers) {
+          speakers = await ensureSpeakersIfPossible(
+            client,
+            pageId,
+            cfg.timeoutMinutes * 60 * 1000
+          );
+          console.log("    speakers:", speakers.state);
+        }
+
+        const before = await downloadListing();
+        const openDownload = await clickVisibleDomText(client, pageId, ["Download"]);
+        if (!/clicked[^a-z]*[:=]?[^a-z]*true/i.test(openDownload)) {
+          throw new Error("Não consegui abrir Download Transcript. " + openDownload);
+        }
+
+        await call(client, "wait_for", {
+          pageId,
+          text: ["Download Transcript"],
+          timeout: 30000,
+        });
+        await configureDownloadModal(client, pageId);
+        await new Promise(resolve => setTimeout(resolve, 300));
+        await clickDownloadInsideModal(client, pageId);
+
+        const tempFile = await waitNewDownload(before, 120000);
+        const destination = await uniqueExistingDestination(
+          cfg.output,
+          meta.title,
+          meta.id
+        );
+        await moveDownloadedFile(tempFile, destination);
+
+        const record = {
+          fingerprint: card.fingerprint,
+          occurrence: card.occurrence,
+          title: meta.title,
+          transcriptId: meta.id,
+          url: meta.url,
+          output: destination,
+          format: "txt",
+          timestamps: true,
+          speakers,
+          completedAt: new Date().toISOString(),
+        };
+        state.completed[key] = record;
+        await saveState(stateFile, state);
+
+        log.push({ status: "ok", ...record });
+        downloadedCount++;
+        consecutiveFailures = 0;
+        console.log("    OK ->", destination);
+      } catch (err) {
+        failures++;
+        consecutiveFailures++;
+        const message = err?.stack || String(err);
+        log.push({
+          status: "failed",
+          key,
+          fingerprint: card.fingerprint,
+          occurrence: card.occurrence,
+          error: message,
+        });
+        console.error("    ERRO:", err?.message || err);
+      }
+
+      await fsp.writeFile(
+        path.join(evidenceDir, "run.json"),
+        JSON.stringify({
+          config: cfg,
+          found: cards.length,
+          processed,
+          downloaded: downloadedCount,
+          skipped,
+          failures,
+          log,
+        }, null, 2) + "\n",
+        "utf8"
+      );
+
+      if (consecutiveFailures >= 3) {
+        console.error("FUSÍVEL: 3 falhas consecutivas. Interrompendo.");
+        break;
+      }
+
+      if (cfg.pauseSeconds > 0) {
+        await new Promise(resolve => setTimeout(resolve, cfg.pauseSeconds * 1000));
+      }
+    }
+
+    await fsp.writeFile(
+      path.join(evidenceDir, "report.md"),
+      [
+        "# 1Transcribe — download de existentes",
+        "",
+        "- Encontradas: " + cards.length,
+        "- Processadas: " + processed,
+        "- Baixadas: " + downloadedCount,
+        "- Já baixadas: " + skipped,
+        "- Falhas: " + failures,
+        "- Output: " + cfg.output,
+        "- Formato: TXT com timestamps",
+        "- Add speaker: " + (cfg.ensureSpeakers ? "sim" : "não"),
+        "",
+      ].join("\n"),
+      "utf8"
+    );
+
+    console.log("");
+    console.log("Concluído. Baixadas:", downloadedCount, "Puladas:", skipped, "Falhas:", failures);
+    console.log("Evidências:", evidenceDir);
+  } finally {
+    await client.close().catch(() => {});
+  }
+
+  process.exitCode = failures ? 2 : 0;
+}
+
 async function processOne(client, uploadTool, pageId, cfg, item, evidenceDir, index) {
   await call(client, "navigate_page", {
     pageId,
