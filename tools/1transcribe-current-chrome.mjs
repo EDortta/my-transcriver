@@ -24,6 +24,9 @@ function parseArgs(argv) {
     timeoutMinutes: 180,
     newestFirst: false,
     adaptiveDelay: true,
+    downloadExisting: false,
+    ensureSpeakers: true,
+    pauseSeconds: 3,
   };
 
   for (let i = 2; i < argv.length; i++) {
@@ -41,6 +44,9 @@ function parseArgs(argv) {
     else if (a === "--timeout-minutes") cfg.timeoutMinutes = Number(next());
     else if (a === "--newest-first") cfg.newestFirst = true;
     else if (a === "--no-delay") cfg.adaptiveDelay = false;
+    else if (a === "--download-existing") cfg.downloadExisting = true;
+    else if (a === "--skip-speakers") cfg.ensureSpeakers = false;
+    else if (a === "--pause-seconds") cfg.pauseSeconds = Number(next());
     else if (a === "-h" || a === "--help") {
       console.log(
         "Uso:\n" +
@@ -55,7 +61,10 @@ function parseArgs(argv) {
         "  --format txt|srt|docx|pdf  (padrão: txt; TXT usa timestamps)\n" +
         "  --timeout-minutes N     Máximo por arquivo (padrão: 180)\n" +
         "  --newest-first          Mais recentes primeiro\n" +
-        "  --no-delay              Desativa a pausa adaptativa entre arquivos\n"
+        "  --no-delay              Desativa a pausa adaptativa entre arquivos\n" +
+        "  --download-existing     Somente baixa o que já existe no 1Transcribe\n" +
+        "  --skip-speakers         No modo download, não executa Add speaker\n" +
+        "  --pause-seconds N       No modo download, pausa entre itens (padrão: 3s)\n"
       );
       process.exit(0);
     } else {
@@ -66,6 +75,7 @@ function parseArgs(argv) {
   if (!["txt", "srt", "docx", "pdf"].includes(cfg.format)) throw new Error("--format inválido");
   if (!Number.isFinite(cfg.limit) || cfg.limit < 0) throw new Error("--limit inválido");
   if (!Number.isFinite(cfg.timeoutMinutes) || cfg.timeoutMinutes <= 0) throw new Error("--timeout-minutes inválido");
+  if (!Number.isFinite(cfg.pauseSeconds) || cfg.pauseSeconds < 0) throw new Error("--pause-seconds inválido");
   return cfg;
 }
 
