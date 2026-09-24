@@ -485,7 +485,7 @@ async function waitForCorrectTranscript(client, pageId, filename, timeoutMs) {
       waitForStableDom: false,
     }));
 
-    const isTranscript = /\\/transcript\\?id=/i.test(last);
+    const isTranscript = /\/transcript\?id=/i.test(last);
     const correctTitle = /"?exactTitle"?[^a-z]*[:=]?[^a-z]*true/i.test(last);
     const importing = /"?importing"?[^a-z]*[:=]?[^a-z]*true/i.test(last);
     const transcribing = /"?transcribing"?[^a-z]*[:=]?[^a-z]*true/i.test(last);
