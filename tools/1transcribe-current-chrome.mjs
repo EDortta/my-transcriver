@@ -662,7 +662,13 @@ async function main() {
 
       const hash = await sha256(item.full);
       const done = state.completed[hash];
-      if (done?.output && fs.existsSync(done.output)) {
+      const finalDone =
+        done?.output &&
+        fs.existsSync(done.output) &&
+        done.format === "txt" &&
+        done.timestamps === true &&
+        done.speakers === true;
+      if (finalDone) {
         console.log("[skip]", item.name);
         continue;
       }
@@ -678,6 +684,10 @@ async function main() {
           output,
           size: item.size,
           completedAt: new Date().toISOString(),
+          format: "txt",
+          timestamps: true,
+          speakers: true,
+          pipelineVersion: 2,
         };
         await saveState(stateFile, state);
         log.push({ input: item.full, output, status: "ok" });
