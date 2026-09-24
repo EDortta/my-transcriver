@@ -501,11 +501,13 @@ async function processOne(client, uploadTool, pageId, cfg, item, evidenceDir, in
   if (existingUid) {
     console.log("    já existe no 1Transcribe; reaproveitando...");
     await call(client, "click", { pageId, uid: existingUid });
-    await call(client, "wait_for", {
+    console.log("    abrindo transcrição existente...");
+    await waitForCorrectTranscript(
+      client,
       pageId,
-      text: ["Download"],
-      timeout: cfg.timeoutMinutes * 60 * 1000,
-    });
+      item.name,
+      cfg.timeoutMinutes * 60 * 1000
+    );
   } else {
     const importUid = findUid(snap, /\bbutton\b.*["']Import["']/i) || findUid(snap, /\bImport\b/i);
     if (!importUid) throw new Error("Não encontrei o botão Import. A sessão pode não estar autenticada.");
@@ -530,12 +532,13 @@ async function processOne(client, uploadTool, pageId, cfg, item, evidenceDir, in
 
     await call(client, "upload_file", uploadArgs);
 
-    console.log("    upload enviado; aguardando conclusão...");
-    await call(client, "wait_for", {
+    console.log("    upload enviado; aguardando importação/transcrição terminar...");
+    await waitForCorrectTranscript(
+      client,
       pageId,
-      text: ["Download"],
-      timeout: cfg.timeoutMinutes * 60 * 1000,
-    });
+      item.name,
+      cfg.timeoutMinutes * 60 * 1000
+    );
   }
 
   await ensureSpeakers(client, pageId, cfg.timeoutMinutes * 60 * 1000);
