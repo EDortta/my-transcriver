@@ -441,6 +441,52 @@ async function waitNewDownload(before, timeoutMs) {
   throw new Error("O navegador não produziu um download completo dentro do tempo esperado.");
 }
 
+async function waitForCorrectTranscript(client, pageId, filename, timeoutMs) {
+  const stem = filename.replace(/\.[^.]+$/, "");
+  const stemJson = JSON.stringify(stem);
+  const started = Date.now();
+  let last = "";
+
+  while (Date.now() - started < timeoutMs) {
+    const fn = [
+      "() => {",
+      "  const stem = " + stemJson + ";",
+      "  const visible = el => {",
+      "    const style = getComputedStyle(el);",
+      "    const rect = el.getBoundingClientRect();",
+      "    return style.display !== \"none\" && style.visibility !== \"hidden\" && rect.width > 0 && rect.height > 0;",
+      "  };",
+      "  const norm = el => (el.innerText || el.textContent || \"\").trim();",
+      "  const els = [...document.querySelectorAll(\"h1,h2,h3,h4,button,a,[role=button],main *\")].filter(visible);",
+      "  const exactTitle = els.some(el => norm(el).toLowerCase() === stem.toLowerCase());",
+      "  const body = document.body?.innerText || \"\";",
+      "  const importing = /\\bImporting\\.\\.\\./i.test(body) || /\\bImporting\\s+\\d+\\/\\d+/i.test(body);",
+      "  const transcribing = /\\bTranscribing file\\.\\.\\./i.test(body);",
+      "  const addSpeaker = els.some(el => norm(el).toLowerCase() === \"add speaker\");",
+      "  const speakers = (body.match(/\\bSpeaker\\s+\\d+\\b/gi) || []).length;",
+      "  const downloads = els.filter(el => norm(el).toLowerCase() === \"download\").length;",
+      "  return { href: location.href, exactTitle, importing, transcribing, addSpeaker, speakers, downloads, title: document.title };",
+      "}",
+    ].join("\\n");
+
+    last = textResult(await call(client, "evaluate_script", {
+      pageId,
+      function: fn,
+      waitForStableDom: false,
+    }));
+
+    const isTranscript = /\\/transcript\\?id=/i.test(last);
+    const correctTitle = /"?exactTitle"?[^a-z]*[:=]?[^a-z]*true/i.test(last);
+    const importing = /"?importing"?[^a-z]*[:=]?[^a-z]*true/i.test(last);
+    const transcribing = /"?transcribing"?[^a-z]*[:=]?[^a-z]*true/i.test(last);
+
+    if (isTranscript && correctTitle && !importing && !transcribing) return last;
+    await new Promise(resolve => setTimeout(resolve, 3000));
+  }
+
+  throw new Error("Timeout aguardando abrir a transcrição correta de " + filename + ". Último estado: " + last);
+}
+
 async function processOne(client, uploadTool, pageId, cfg, item, evidenceDir, index) {
   await call(client, "navigate_page", {
     pageId,
