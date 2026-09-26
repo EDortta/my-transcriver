@@ -1,0 +1,522 @@
+00:24 - 00:36
+Vou perguntar de novo porque eu— Você viu que eu perguntei e você falou "não sei"? Eu perguntei, você ficou quieto. Você não está bravo, querido?
+
+00:37 - 00:40
+É. Não. Eu estou percebendo. Eu estou falando tudo apertado.
+
+00:46 - 00:50
+Pergunta: isso controlou a demontação? Como tem meu corpo?
+
+00:51 - 00:52
+Não, acho que não.
+
+00:53 - 00:54
+Onde você está?
+
+00:55 - 00:55
+Na China.
+
+00:59 - 01:00
+O cara é comunista, cara.
+
+01:02 - 01:02
+É.
+
+01:03 - 01:05
+Na melhor interpretação do—
+
+01:05 - 01:06
+Do Jimmy.
+
+01:08 - 01:10
+Mas o que eu conquistei no time do Jimmy?
+
+01:10 - 01:10
+É.
+
+01:11 - 01:11
+Então.
+
+01:11 - 01:12
+Meu Deus do céu.
+
+01:12 - 01:23
+Mas eles dizem, eles mesmos dizem, se voltar um passo atrás, né, para dar espaço ao crescimento da burguesia, para que então sim possa ter demontação de classe. Palavras dele, né?
+
+01:23 - 01:27
+É. Mas eu acho que ele está falhando miseravelmente na luta de classe.
+
+01:28 - 01:35
+Não, ele não chegou na fase. Segundo ele, Mao Zedong tinha visto isso, né? Agora ele decidiu fazer.
+
+01:36 - 01:42
+Bom, Steve, não há claro que é explosivo de tempo, então por favor—
+
+01:43 - 01:44
+Fala.
+
+01:45 - 01:45
+Como estamos?
+
+01:46 - 01:47
+Morrendo aos pouquinhos.
+
+01:50 - 01:54
+Estamos com um cadastro de—
+
+01:54 - 02:30
+Estamos aí. Estamos vendo de mostrar o mínimo possível. No dia 7, ontem tivemos uma reunião, achamos que era alguma coisa, era somente o primeiro leilão, mas na realidade são mais coisas acumuladas, outras que não estavam acumuladas, que já estavam resolvidas, né? E, enfim, vamos botar alguma coisa no ar, mas vai ser um jogo de uma malina tremenda na época de era palete. Coloquei o Ítalo para mexer no layout, para que tenha a cara e a palete.
+
+02:30 - 02:30
+Uhum.
+
+02:32 - 02:40
+E Adolfo está fazendo uma homologação caseira, porque ele não tem possibilidade de homologação.
+
+02:40 - 02:50
+Posso fazer uma intervenção rapidamente? Você está acompanhando isso aqui? Discordo? Não. Tudo bem. Mas a gente tem que falar tudo mesmo, né?
+
+02:50 - 02:51
+Tá.
+
+02:55 - 02:55
+Tá.
+
+02:55 - 03:07
+Nem eu, como para mim discordo é uma ferramenta de criança para brincar, então, ó, entendeu? Então, né, não vai faltar aqui uma coisa.
+
+03:07 - 03:11
+Mas a gente precisa levar ela a sério, porque foi ela que escolheu para fazer a comunicação interna.
+
+03:11 - 03:37
+Não, eu levo a sério. Eu estou brincando comigo mesmo. Eu disse: "Já já eu vou conectar uma inteligência artificial nela para falar comigo, para ela ver tal coisa". Não, mas é essa situação. Peguei o layout da Carleto da White Label com o Leandro, e aí passei e falei: "Você vira? Faz alguma coisa". Temos que manter a cara de crente depois, mas agora é Carleto.
+
+03:37 - 03:37
+Uhum.
+
+03:38 - 03:49
+É, bom, o Adolfo está gravando as chamadas em vídeo para dizer: "Bom, é isso, né?" E usar dados válidos.
+
+03:49 - 03:49
+Uhum.
+
+03:50 - 03:59
+Então, o Luiz e eu vamos terminar com o Cartoons, no primeiro dia. Que mais, assim, que eu tenha que passar agora?
+
+04:00 - 04:14
+Crédito consignado privado. Cara, é difícil falar com você. Eu falo de um jeito, com ele de outro, com ele é outro nome, mas é o consignado que a gente pega privado da empresa, crédito trabalhador, beleza?
+
+04:14 - 04:14
+Tá.
+
+04:14 - 04:17
+Vou chamar sempre do jeito que o Lula chama, crédito trabalhador.
+
+04:18 - 04:18
+Exatamente.
+
+04:19 - 04:56
+É, Felipe está finalizando as integrações, né, então pensando na jornada de crédito. É, estamos falando de API por hora, então a gente consegue fazer as requisições lá, a gente recebe as chamadas, né, do, como é que fala, dos empregadores e escolhe lá para poder fazer simulações. Está ok. O que não tem? Front-end. Front-end estava para o professor Will, né, que foi um processo que a gente tinha falado, falou assim: "Ah, o Will vem para o front-end também".
+
+04:56 - 05:10
+E aí ele está colocando, só que aí chegou um entrave, que ele construiu a página mocada, mas não tinha API suficiente para poder realizar, né, dar tudo mocado essa parte aí.
+
+05:12 - 05:16
+Temos uma ideia de prazo para entregar isso aí?
+
+05:16 - 05:47
+Olha, é difícil dar um prazo agora, porque a gente, eu preciso agora colocar a API e o front no ar para ver se eu consigo conectar todos, porque ainda, pelo menos para o Steve, já que falou isso, que não está claro como que funciona a jornada de crédito ali na API, certo? É, talvez para você não também não esteja, porque você está bastante longe. É, mas tipo assim, durante uma jornada, aquela tela onde o cara vai no prospect, não tem nada a ver com a API. A API que a gente construiu, ela é totalmente modular.
+
+05:47 - 06:09
+Então, o cara colocou os dados no ar, cadastrou só um cliente, que é uma chamada para cadastrar cliente. E para cadastrar cliente, a gente cadastra o cliente, vai lá, manda os dados do cliente, nome, CPF, e assim por diante. Depois a gente faz outra chamada para cadastrar endereço, outra chamada para cadastrar conta bancária, porque é uma API modular.
+
+06:09 - 06:09
+Uhum.
+
+06:11 - 06:11
+É.
+
+06:11 - 06:36
+Isso para evitar um pouco o arrasto, efeito arrasto dos passos, né, da Chronos. Chronos não está, a API sem passos, atrapalha tudo, porque você modifica um passo e você tem que fazer todos os aplicativos para fazer a parte depois de novo, entendeu? Assim, ao ser modular, evita o arrasto. Tipo, se quer fazer por passo, faz; se não quiser fazer por passo, não faz.
+
+06:37 - 07:09
+Sim. Então, esse é meu entrave de dar um prazo para esse crédito trabalhador. Eu preciso, ó, cara, agora é colocar a API no ar, rodar as migrações, colocar tudo lá, fazer o cadastro do, de qualquer cliente que seja, cadastrar o produto, cadastrar tudo, e falar assim: "Meu, vamos fazer uma jornada de crédito aqui agora, onde está travando". Por isso que eu estou, e aí eu consigo, se a gente conseguir colocar tudo no ar hoje, Steve, eu consigo te falar assim: "Olha, pô, a estimativa talvez seja para esse dia".
+
+07:10 - 07:14
+E esse todo no ar, é, carregaria, o quê? O que que você precisa?
+
+07:14 - 07:17
+A API, tá, que eu já estava nela.
+
+07:18 - 07:20
+E o front-end?
+
+07:20 - 07:28
+O front-end que você viu que hoje eu fiz um deployment agora, na verdade fiz dois, falei somente de um. Fiz dois e um atrás do outro funcionou de boa.
+
+07:28 - 07:29
+Perfeito.
+
+07:29 - 07:35
+Fechou? Agora eu vou entrar no Core agora, vou fazer as configurações lá de migrações e tudo mais.
+
+07:35 - 07:39
+Agora que a dúvida dele, se nós chegar, a dúvida do Anderson é se nós chegamos ou não dia 7.
+
+07:41 - 07:42
+Não, não, não. Dia 7 é Carleto.
+
+07:42 - 07:44
+Dia 7 é Carleto, é. Dia 7 é Carleto.
+
+07:44 - 07:45
+Ah, tá.
+
+07:45 - 07:47
+Meu, crédito trabalhador.
+
+07:47 - 07:48
+Não, não é Carleto.
+
+07:48 - 07:51
+Crédito do trabalhador é uma pressão do BabyCred que o.
+
+07:52 - 07:52
+Isso.
+
+07:52 - 07:53
+É interno.
+
+07:53 - 07:54
+É interno.
+
+07:54 - 07:56
+É interno, e nós não temos dado ainda.
+
+07:56 - 07:57
+Mas é importantíssimo.
+
+07:57 - 08:01
+Não vai ficar sem data até nós entregarmos isso, Carleto.
+
+08:01 - 08:02
+Já.
+
+08:02 - 08:03
+Entregamos assim, agora dia 7.
+
+08:03 - 08:04
+Uhum.
+
+08:04 - 08:06
+Aí depois a gente vai ver isso outro. Se não, vai virar rolo.
+
+08:07 - 08:07
+Sim.
+
+08:07 - 08:08
+Não, é porque é gostoso.
+
+08:08 - 08:10
+Nossa, o foco, o foco.
+
+08:10 - 08:30
+É que para, é, é bacana, mas como eu estou em estrutura, para mim, tipo, eu estou vendo assim, são chamadas que têm que funcionar, são serviços que têm que se comunicar, são logs que têm que existir, segurança que tem que estar sendo observada, tipo, eu, eu, então quando eu fiz, eu vou acompanhando.
+
+08:31 - 08:32
+Não dá, cara.
+
+08:32 - 08:33
+Mas está bom, entendi.
+
+08:33 - 08:36
+É, mas o nosso foco até dia 7 tem que ser Carleto.
+
+08:37 - 08:37
+Tá.
+
+08:37 - 08:38
+Tem que ser Carleto.
+
+08:39 - 08:39
+Tá, entendi.
+
+08:40 - 08:40
+É que, tipo.
+
+08:42 - 08:42
+Beleza.
+
+08:42 - 08:43
+Sim, de fato.
+
+08:43 - 08:44
+Não tem nada que assim está, cara.
+
+08:45 - 08:55
+Tá, e aí Carleto não era somente o BabyLabel, onde a gente ficou, eu fiquei sabendo que não era somente isso, né, que tinha outras partes que já o Adolfo já tinha feito.
+
+08:55 - 09:09
+É, tem que gerar, por exemplo, tem o Cartoons, o Cartoon Plastic, e tem o Carleto Limita Sacado, né? São dois produtos. E esse Limita Sacado ele tem que emitir um CCB lá pela BNP.
+
+09:11 - 09:12
+É BNP ou?
+
+09:13 - 09:49
+BNP. É BNP, crédito consignado, né? É, já essa integração está feita já pelo Felipe, e é um, é um final, tipo assim, ó, peguei o empréstimo, fiz, faz, ó, gera, é, manda lá da Onic, putz, é verdade, é a Onic em casa. É verdade. Não, mas o Felipe já fez essa integração também. Manda para a Onic, ele faz lá a checagem, é, o face liveness, e no final que manda, né, para a BNP, a hora que fala assim, ó, gera uma CCB.
+
+09:49 - 10:08
+E aí o processo interno deles, que é fazer o desembolso, é pagar o cliente e dar a um agente, dar para a gente lá um, eles colocam no lugar, a gente baixa, faz download, está manual mesmo, e para ter essa CCB em mãos.
+
+10:08 - 10:11
+Tá, mas vai rolar tudo certo.
+
+10:14 - 10:15
+É, a gente espera que sim.
+
+10:19 - 10:23
+Nossa, eu vim de Onic agora. Espero que sim.
+
+10:23 - 10:37
+É, porque o Cartoon Plastic é mais fácil, não tem CCB, né? O Cartoon Plastic é mais fácil, não tem CCB. E aí tem consulta de dados do cartão, né, número, fatura, essas coisas todas.
+
+10:37 - 11:04
+Tá, um dos cenários que a gente manejou ontem com o Luiz e o Carlos, e o Carlos, com o Cris e o Júnior, era a questão de que a Carleto viesse com uma carga grande de, tipo, ah, tem uma planilha aqui que não dá para cuidar os aqui, quero pôr tudo lá para dentro. Tá? Aí a gente, se ele vier com isso, a gente vai ganhar uns dias táticos. Tá? Vamos fazer isso. É isso, né?
+
+11:04 - 11:04
+É.
+
+11:05 - 11:09
+Credenciais do DocTools, cara. Você passa o caduf, está direto com ele.
+
+11:12 - 11:13
+Eu acho que não tem intervenção nenhuma.
+
+11:17 - 11:18
+Procura aqui, carregar.
+
+11:21 - 11:23
+Já não está aqui, já entrou no CPC.
+
+11:25 - 11:34
+Vou abrir aqui um tópico aqui no Discord, mas é basicamente o senhor que vai acompanhar.
+
+11:35 - 11:43
+Não, não, normal. Mas lembra que ontem você já fez outra lista assim, ó, onze coisas que você devia, né? Lembra que nós dois devíamos?
+
+11:43 - 11:52
+Ah, sim. É, então, eu fiz essa lista que era a questão de tratar com o Ítalo a identidade visual da Carleto.
+
+11:52 - 11:53
+Tá, eu já, já.
+
+11:54 - 12:12
+Vou ver se quando o Ítalo chegou eu já tinha avançado nisso. O Ítalo não sabe, mas eu já tenho um monte de páginas prontas para ele ter a visão do Carleto. Peguei, joguei esse monte de efeito, falei: "Você vira". Passei o Figma para ele, passei a identidade visual.
+
+12:15 - 12:16
+Gente, putz.
+
+12:21 - 12:43
+Vou precisar de um, de uma, de uma decisão, meu Deus. Credenciais. Eu vou colocar aqui o, o, o Adolfo, talvez você já tenha passado para ele no final, porque essa foi a primeira atividade que você passou para ele, né?
+
+12:44 - 12:44
+Uhum.
+
+12:50 - 12:52
+Ih, pensando que você vai trabalhar daqui hoje, hein?
+
+12:54 - 12:55
+Beleza.
+
+12:58 - 13:04
+Parece que não, mas se eu atravessar a rua aqui, eu cheguei encharcado ontem.
+
+13:07 - 13:18
+Vou colocar o Steven também. Steven, vamos mandar mensagem só para o, só para o Discord.
+
+13:20 - 13:20
+Está bom.
+
+13:22 - 13:25
+Que é uma plataforma nova.
+
+13:27 - 13:38
+Está bom. O nome dele que eu tenho colocado, mas outro meio que parece que está aqui com a camiseta etiquetado "Chefe". Eu vou colocar outro assim: "Captain".
+
+13:43 - 13:52
+Beleza. Vamos terminar isso aqui. Aí, beleza. A gente precisa perguntar mais alguma coisa ou você pode liberar agora para a gente, porque a gente tem bastante trabalho.
+
+13:53 - 13:57
+Não, mas é, é, assim, credenciais. Você vai averiguar no e-mail.
+
+13:57 - 13:57
+Isso.
+
+13:58 - 14:12
+Tá. O que mais que está faltando? Só isso? Porque a identidade visual está sendo feita. Você vai mexer na API, que na realidade o que você vai mexer na API é criar aqueles bafos, aquelas coisas que estavam faltando.
+
+14:14 - 14:22
+Cara, acredito que é só isso mesmo, são as credenciais e outra, depois, dentro da DocTools, fazer as configurações das credenciais das Carletos também.
+
+14:25 - 14:27
+Aí é uma coisa com a Carleto.
+
+14:27 - 14:29
+É, a gente vai terminar com a Carleto e terminar esse papo lá.
+
+14:29 - 14:39
+Ó, quero consultar a margem do Anderson agora. Não dá, não. Primeiro, você não é funcionário de uma prefeitura. Segundo, se fosse, cadê as credenciais dessa prefeitura? Não tem, né?
+
+14:39 - 14:46
+Tá, não poderíamos ter credenciais da prefeitura ou é conveniente chegar no atendimento sem credenciais?
+
+14:47 - 14:51
+Não, a gente já entrou aqui já. Então eu já peço para eles agora.
+
+14:51 - 14:51
+Tá.
+
+14:52 - 14:53
+Porque aí, por exemplo, a gente.
+
+14:54 - 14:59
+Porque a DocTools, o Steven, você só pega o CPF do cara lá.
+
+14:59 - 15:01
+Sim, aí a consulta é diferente.
+
+15:02 - 15:02
+É.
+
+15:03 - 15:07
+Tá, mas para fazer o restante do serviço, nós precisamos das credenciais da prefeitura.
+
+15:09 - 15:14
+É, são, na verdade, não são as credenciais do DocTools, né? São as credenciais do.
+
+15:14 - 15:15
+Não, são duas coisas diferentes.
+
+15:15 - 15:15
+Beleza.
+
+15:15 - 15:16
+Uma coisa é a DocTools.
+
+15:17 - 15:17
+São, são.
+
+15:17 - 15:18
+Essa é uma questão.
+
+15:19 - 15:19
+É que.
+
+15:19 - 15:20
+E a outra.
+
+15:20 - 15:24
+É a credencial da prefeitura, mas que a gente vai encurtar dentro da DocTools.
+
+15:25 - 15:25
+Isso.
+
+15:25 - 15:25
+Exato.
+
+15:26 - 15:27
+Agora que é bem complicado.
+
+15:27 - 15:32
+É credencial de qual sistema? Que é o sistema de averbação da prefeitura, certo?
+
+15:32 - 15:32
+É.
+
+15:37 - 15:37
+Só um.
+
+15:37 - 15:38
+Consignant.
+
+15:38 - 15:39
+Consignant.
+
+15:39 - 15:40
+É, consignant.
+
+15:40 - 15:40
+Tá.
+
+15:41 - 15:42
+Cara, é só consignant?
+
+15:43 - 15:47
+As cinco prefeituras que a Carleto tem, o Luiz falou para a gente ontem, é só consignant.
+
+15:47 - 15:48
+Tá.
+
+15:48 - 15:52
+Aí eu vou solicitar para eles. Aí a gente vai mandando aí.
+
+15:53 - 15:54
+Nos contratos lá não tem.
+
+15:55 - 16:28
+Aquilo lá não me ajudou, cara. Porque assim, uma que eu li não me lembro de pôr nenhuma. Aí eu peguei e coloquei, aí eu joguei no ChatGPT e falei assim: "E aí, põe essa". Aí ele falou: "Ah, é um contrato com excesso de serviço". Ah, tá bom. É, porque talvez tenha alguma cláusula. Eu fiquei com medo de ter alguma cláusula, por exemplo, de: "Olha, a gente tem contrato, por exemplo, com a DocTools ou com a Consignant, e não pode, de hipótese alguma, essas empresas podem fornecer essas informações para terceiros".
+
+16:28 - 16:30
+E no caso que entra o terceiro é a gente.
+
+16:31 - 16:31
+Uhum.
+
+16:31 - 16:33
+Né? E não tinha nada disso.
+
+16:33 - 16:33
+Entendi.
+
+16:34 - 16:36
+Segundo o ChatGPT, né?
+
+16:36 - 16:36
+Uhum.
+
+16:37 - 16:38
+Beleza.
+
+16:40 - 16:41
+A gente manda ali.
+
+16:42 - 16:43
+Fechou?
+
+16:43 - 16:44
+Fechou.
+
+16:44 - 16:59
+É, a minha proposta é que para dia 7, tipo, dia 8 um de nós tem que morrer. Porque senão, se a gente consegue apresentar para a Carleto, manter Carleto como cliente, né, eles vão achar que é fácil. Um dos dois tem que sacrificar a vida.
+
+17:00 - 17:00
+Ficou.
+
+17:00 - 17:02
+Está vendo? Foi difícil, fulano morreu.
+
+17:02 - 17:05
+É, aí está a ressistência.
+
+17:06 - 17:06
+Falou.
+
+17:09 - 17:09
+Falou.
+
+17:10 - 17:10
+Está bom, ó.
+
+17:11 - 17:29
+Tá bom,.
+

@@ -1,0 +1,252 @@
+{
+  "completed": {
+    "001bae3694971028f79e45b04c3a9899a9a3e17b0a486d229f6ce40e84fcf0b1": {
+      "completedAt": "2026-09-25T21:12:50.061371Z",
+      "elapsedSeconds": 815.48,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Esteban e Felipe Gaia 2026-07-31.m4a",
+      "mtimeNs": 1785509569000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Esteban e Felipe Gaia 2026-07-31.md",
+      "size": 11538442
+    },
+    "005140dd2937ba79f79bda1996f1fb8c5cc5d24364831f76454d04bc99ca8fb2": {
+      "completedAt": "2026-09-25T21:57:01.760619Z",
+      "elapsedSeconds": 1321.979,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Pedrinho e o chevettim.m4a",
+      "mtimeNs": 1788524770000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Pedrinho e o chevettim.md",
+      "size": 21638544
+    },
+    "01dd4992fb37856e91288d7277a3e5ab939f3cb61c945fd4081d40ee3dda3380": {
+      "completedAt": "2026-09-26T05:46:55.404595Z",
+      "elapsedSeconds": 3536.669,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Vanessa 29 maio.m4a",
+      "mtimeNs": 1748545490000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Vanessa 29 maio.md",
+      "size": 59904110
+    },
+    "05f78683431e8697df971c6bfd409d8270897392642d2298310cee263c81f0bc": {
+      "completedAt": "2026-09-26T04:47:58.727850Z",
+      "elapsedSeconds": 2583.302,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Esteban e Vanessa 2026-03-26.m4a",
+      "mtimeNs": 1774552019000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Esteban e Vanessa 2026-03-26.md",
+      "size": 59117646
+    },
+    "1d2f525875a0f168c40d6ee5f32305ef5ebd8d7b0cd214cb3043ee97ee9d537c": {
+      "completedAt": "2026-09-26T09:46:59.070999Z",
+      "elapsedSeconds": 3629.142,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Vanessa e Esteban 2026-02-26.m4a",
+      "mtimeNs": 1772132532000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Vanessa e Esteban 2026-02-26.md",
+      "size": 62679269
+    },
+    "285b27889acbe3e0ddc7ea6b5c072cf3647681c861b15f766768ee1062c8af16": {
+      "completedAt": "2026-09-25T22:08:12.407540Z",
+      "elapsedSeconds": 670.645,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Moabe gastro.m4a",
+      "mtimeNs": 1784730106000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Moabe gastro.md",
+      "size": 24371614
+    },
+    "3933ca0f8adfeebdbf3e54a99d90f838e874e8d3118395c8cd4c581a4ea09723": {
+      "completedAt": "2026-09-26T01:49:04.118029Z",
+      "elapsedSeconds": 2374.158,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Vanessa e Esteban 2026-08-20.m4a",
+      "mtimeNs": 1787252905000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Vanessa e Esteban 2026-08-20.md",
+      "size": 44612178
+    },
+    "39775db4ecde7a3c2db1917258a69df6f1e605b56e666ad22842cf55290714af": {
+      "completedAt": "2026-09-26T04:04:55.420346Z",
+      "elapsedSeconds": 2860.396,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Vanessa e Esteban 2026-08-06.m4a",
+      "mtimeNs": 1786042881000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Vanessa e Esteban 2026-08-06.md",
+      "size": 58808200
+    },
+    "3c61e3be5227c18ef8c6f0db7476b6a71cf29b83b08ed94914e8c4e784a6f728": {
+      "completedAt": "2026-09-25T21:21:37.766665Z",
+      "elapsedSeconds": 527.704,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Marcas após ressurreição.m4a",
+      "mtimeNs": 1788887925000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Marcas após ressurreição.md",
+      "size": 12528919
+    },
+    "417a30fbec959ebec6f1b34c955308c7099ad346caae810f8bb1a8210076b07b": {
+      "completedAt": "2026-09-26T03:17:15.018399Z",
+      "elapsedSeconds": 2528.991,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Vanessa e Esteban 2025-12-04.m4a",
+      "mtimeNs": 1764875023000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Vanessa e Esteban 2025-12-04.md",
+      "size": 56155457
+    },
+    "4bec5435674b1803822abf248ec3553b649c0ba53c3ccc99cb4a2b2b03102f08": {
+      "completedAt": "2026-09-25T23:23:13.160418Z",
+      "elapsedSeconds": 1427.145,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Conselhos comerciais para Adriana.m4a",
+      "mtimeNs": 1787695021000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Conselhos comerciais para Adriana.md",
+      "size": 31291074
+    },
+    "63b389dc56331b39aabc5cc3223e404472adef6d31ecb020b631dccbb0400879": {
+      "completedAt": "2026-09-25T22:36:40.220479Z",
+      "elapsedSeconds": 1707.81,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Voice 029.m4a",
+      "mtimeNs": 1764624060000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Voice 029.md",
+      "size": 26188332
+    },
+    "6ca89a8010c6e11a39a9af524c5588fd5865324e560aa131507000d6b7918622": {
+      "completedAt": "2026-09-26T00:39:24.070198Z",
+      "elapsedSeconds": 1628.612,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Escrituras - parte 3.m4a",
+      "mtimeNs": 1784397772000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Escrituras - parte 3.md",
+      "size": 35837709
+    },
+    "7683c400b467f7bf0f1020968c88c2837578dff642de576cd34666b74ec80b42": {
+      "completedAt": "2026-09-26T11:23:29.291723Z",
+      "elapsedSeconds": 2657.289,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Vanessa e Esteban 2026-02-19.m4a",
+      "mtimeNs": 1771527832000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Vanessa e Esteban 2026-02-19.md",
+      "size": 63924895
+    },
+    "7774fbb039733d2bd4da727fb83ef3dad5ec3fb142a3e31fc2888fdc678cb03d": {
+      "completedAt": "2026-09-25T23:47:58.067821Z",
+      "elapsedSeconds": 1484.904,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Porota.m4a",
+      "mtimeNs": 1787958375000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Porota.md",
+      "size": 31564669
+    },
+    "80fc9e74c2ade23e942d14f359ddbf515863fc7c3d7e30ba967031d2c440ca92": {
+      "completedAt": "2026-09-26T06:47:57.029905Z",
+      "elapsedSeconds": 3661.619,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Voice 015.m4a",
+      "mtimeNs": 1750273950000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Voice 015.md",
+      "size": 60000761
+    },
+    "82709b401e183ace3796564a3043f101cca7278902a28388bae46e3202ec1011": {
+      "completedAt": "2026-09-25T21:34:59.776559Z",
+      "elapsedSeconds": 801.996,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Renata e João o mudinho.m4a",
+      "mtimeNs": 1785004577000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Renata e João o mudinho.md",
+      "size": 14860566
+    },
+    "8cd7b2880bcf77fff716df3acc74f1040dcc59059e4298cbb01b1e0840b9356f": {
+      "completedAt": "2026-09-26T10:39:11.999367Z",
+      "elapsedSeconds": 3132.925,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Vanessa Esteban 2026-04-16.m4a",
+      "mtimeNs": 1776366697000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Vanessa Esteban 2026-04-16.md",
+      "size": 63083438
+    },
+    "9658c6eb1cdd61f1674f93f273b7afb3966117617ff32eeee9a48e181e9e7a68": {
+      "completedAt": "2026-09-25T20:56:41.889161Z",
+      "elapsedSeconds": 32.277,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Voz 260911_192046.m4a",
+      "mtimeNs": 1789165256000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Voz 260911_192046.md",
+      "size": 65382
+    },
+    "9fa8f43bf724d5f27de37f4d3dc87ce56bc6d0d002562da842360d4aef741cad": {
+      "completedAt": "2026-09-25T22:59:26.011137Z",
+      "elapsedSeconds": 1365.786,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Escrituras - parte 1.m4a",
+      "mtimeNs": 1784388564000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Escrituras - parte 1.md",
+      "size": 28792597
+    },
+    "ab87f4106d2d58779c9f1715f43a3fbd23df0b6275c38b397dd1e0403f88be2a": {
+      "completedAt": "2026-09-26T07:40:24.944372Z",
+      "elapsedSeconds": 3147.907,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Vanessa e Esteban 2026-07-30.m4a",
+      "mtimeNs": 1785438227000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Vanessa e Esteban 2026-07-30.md",
+      "size": 60782929
+    },
+    "ad4437815cc7c36c068e9e4e938adb62ac1593294092774e5208fcc6bb7588ae": {
+      "completedAt": "2026-09-25T20:59:14.565152Z",
+      "elapsedSeconds": 125.496,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Voz 260731_192316.m4a",
+      "mtimeNs": 1785537037000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Voz 260731_192316.md",
+      "size": 7156779
+    },
+    "b42ba027df55af0103efc4b7039e69b07028957bedcd071197a6a02abf81702c": {
+      "completedAt": "2026-09-26T02:35:06.018689Z",
+      "elapsedSeconds": 2761.895,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Vanessa e Esteban 2026-08-27.m4a",
+      "mtimeNs": 1787857641000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Vanessa e Esteban 2026-08-27.md",
+      "size": 47884984
+    },
+    "b4bce621de6056d97dbef697b185a576f33232a06555f4c6d37588cb010dab51": {
+      "completedAt": "2026-09-25T20:57:09.067557Z",
+      "elapsedSeconds": 27.176,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Voz 260402_150407.m4a",
+      "mtimeNs": 1775153132000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Voz 260402_150407.md",
+      "size": 1370802
+    },
+    "b9bc49d7f818c2148a2674c92a5584684ec074433dbfb241857cedaa338f51c9": {
+      "completedAt": "2026-09-26T08:46:29.924000Z",
+      "elapsedSeconds": 508.232,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Jéssica teste gravidez.m4a",
+      "mtimeNs": 1750520907000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Jéssica teste gravidez.md",
+      "size": 62259409
+    },
+    "d7b00c401fa97c99554a953a83e162e937f636f87337ef0e493eccb7e52b5423": {
+      "completedAt": "2026-09-26T12:58:07.938798Z",
+      "elapsedSeconds": 2566.927,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Vanessa e Esteban 2026-06-18.m4a",
+      "mtimeNs": 1781809225000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Vanessa e Esteban 2026-06-18.md",
+      "size": 64624774
+    },
+    "e36c060f85a971459af1a910f3be4088727ce04ec9b962eb4bdd98fe97521afb": {
+      "completedAt": "2026-09-26T12:15:21.005553Z",
+      "elapsedSeconds": 3111.709,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Vanessa e Esteban 2026-04-08.m4a",
+      "mtimeNs": 1778180967000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Vanessa e Esteban 2026-04-08.md",
+      "size": 64081316
+    },
+    "e70c70e31890a2de6fd50b84239bdd3b1ba67824ff61d6be7010e0650a9fd46b": {
+      "completedAt": "2026-09-26T00:12:15.454027Z",
+      "elapsedSeconds": 1457.38,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Cinco pães, dois peixes e um olhar singelo.m4a",
+      "mtimeNs": 1784513835000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Cinco pães, dois peixes e um olhar singelo.md",
+      "size": 32271843
+    },
+    "edb4dd40850e04de2bf3e6122044970407eceba0038f9da4926c92ce1682d169": {
+      "completedAt": "2026-09-26T08:38:01.688767Z",
+      "elapsedSeconds": 3456.734,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Vanessa e Esteban 2026+02-12.m4a",
+      "mtimeNs": 1770922861000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Vanessa e Esteban 2026+02-12.md",
+      "size": 61668639
+    },
+    "fa57b5babe904ea1b55e94336afedd1635c253ed792e22732ed195eb47347fcd": {
+      "completedAt": "2026-09-26T01:09:29.956147Z",
+      "elapsedSeconds": 1805.884,
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Escrituras - parte 2.m4a",
+      "mtimeNs": 1784395151000000000,
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Escrituras - parte 2.md",
+      "size": 41205006
+    }
+  },
+  "failed": {},
+  "running": {
+    "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Vanessa e Esteban 2026-06-02.m4a",
+    "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Vanessa e Esteban 2026-06-02.md",
+    "sha256": "7ddf5abdbc4103ae411032cbaa5d65a8208f5d7f8f50e667b7807481732211f7",
+    "startedAt": "2026-09-26T12:58:07.941477Z"
+  },
+  "schema": 1
+}

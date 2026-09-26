@@ -1,0 +1,28 @@
+# Transcrição — Jéssica teste gravidez.m4a
+
+- Fonte: `Jéssica teste gravidez.m4a`
+- Backend: `local`
+- Idioma: `pt`
+- Modelo: `medium`
+- Duração: `01:03:34`
+- Confiança do idioma: `90.5%`
+
+## Transcrição
+
+Bom dia, tudo bem? Bom dia, e esse cara que vive? Tudo bem contigo? Figuei, comprei essa outra vez que a Horaver pediu. Bom dia, Horaver. Bom dia, tudo bom? Não, espera. Vem cá, vem, vem. Tem alguma coisa agora? Não sei, não sei. Você veio tomando alguma coisa agora? Não sei, não sei.
+
+Eu venho mexer aqui. Olha, ele vai destacar assim, você não pode inverter ele para cima, tá? Como vai fazer? Vai usar um vasilho, um copinho? Não sei. Porque ele não tem copinho. Não, vamos pegar um copinho. Não, um vasilho. É, porque dá para usar, dá para fazer... Dá para fazer o que? Dá para lavar. Calma, irmão. Calma, isso aqui. O que você está falando? Você está falando no celular dele? Não sei o que você está falando. Eu quero conversar com ele. Como? Você vai só até ali, não mais aqui, tá? E ele vai ficar muito seguido. Vou fazer isso aqui. Um pouquinho hoje, uma coisinha assim. E ele não pode molhar mais do que a foto, tá? Não pode ir para dentro. Não, a gente coloca junto. Não, você coloca. Não, eu coloco, mas até onde que eu vou colocar? Você lembra qual foi a foto? Tem em algum lugar.
+
+Não, foi 21 de maio. 21 de maio? Na casa também. Você entendeu o que eu quero? Não entendi, é só a ponta sem tocar no plástico. A ponta de papel. Isso, deixa eu ver. Aí depois coloca a tampa de novo e deixa horizontal. Entendi, tem como deixar no ponto de urina também. Tem. Vai ser melhor assim. Aí são 20. Aí você deixa lá, 20 segundos, a gente conta com o relógio. A gente deixa lá. Depois de 20 segundos, eu vou dar uma simbolzinha. O simbolo de espera descarar. Então você deixa lá, 20 segundos. Você deixa 20 segundos, tira. Aí deixa tampa, deixa 1 a 3 minutos. Deixa 30 ali, do jeito que você possa calar. Tá, e aí vai...
+
+Não, não vou ir abrir. Não, entendi. Uma tampa. Aí volta a colocar a tampa? Isso, volta a colocar a tampa. Coloca a tampa e deixa o medidor de teste na horizontal. Isso, assim. Aí depois você vai aguardar, de uma a três minutos e vamos lá. Isso. Tem dois aqui. Tem dois? Não é um. Ah, tem um aqui. Só um. Vamos tirar aqui. Conseguiram? Põe aqui. Deixa ele aqui. Tá tudo certo, Jéssica? Tá aqui o barulho. Pode tirar que eu coloco lá, do jeitinho? Colocar até o observante? Sim. Mostra ele antes pra mim. Mostra aqui. Tira a tampa, coloca lá. Acho melhor tirar a tampa lá. Coloca lá em cima dele. Como é que é? Nossa. Deixa ela ver, Gabriel. Pra ser juntos, isso. É só pra... Não, é só colocar. Não tem nada que ligar. Tá, põe aqui. Põe ele aqui. Eu queria ver se você tinha deixado certo só isso. Tá deitado, né? Na vertical tá deitado. Horizontal. Horizontal. Tá lá, né? Tá lá na mesinha, assim.
+
+Na pinta. Porque o fulano está doido aqui. É a decisão. Não é? Tudo certo.
+
+Vem aqui. Você tem falado com quem, filho? Com quem você falou isso? Falou com sua mãe? Uma amiga? Uma tia? Vai esperar falar? Primeiro pra ver se está.
+
+Você tem que ser. Primeiro. Primeiro coletar? Não. Não, não sou besta. Vai arrancar só pra que parta da parte daqui. Porque aqui onde fica o... Você sabe que ainda não tem tempo de ação? Você tira aqui o... É, mas já tem vez que você conseguiu fazer assim. Não, mas aí o cara também... Assim. Aqui é burrice. Porque se você deixar assim, ele é da nossa vida. E aí não vai tocar. Toca a mesma parte dele. O Gabriel, segunda-feira... O Gabriel, segunda-feira, ele vai fazer testes de HIV, si, filhos, tudo isso. Vou ficar vivo. Não engravida. Vou tirar uma foto. Tá tranquilo agora? Agora é quando você vai apanhar dele. Você é muito burro. Engravidar alguém pra não ser culo 21. Não, mas não tá grávida. Nossa senhora. Tu é minha não. Estou feliz. Calma aí. Calma aí. Você não deixa eu estar um paro. Deixa ele sim. Calma, calma. Você reclama dele? Ele teria dado erro no manual. Teria dado erro?
+
+Teria. Não, mas tá de boa. A gente fez três test diferentes, todos eram negativos. Agora é um quarto aí. Estou feliz. Estou feliz. Pronto. Já tenho a faca pra me matar. Já estou suave. Alguma lição pra você perder algo? Sim. Quando eu falo, você tem que sair do país. Já falo não dá complicação. Vê, sai do país. Estou brincando. Vou usar a camisinha. Vou usar a camisinha. Você não esconde por ele? Não, você não esconde por ele. Você entende que tem muitas doenças muito graves. Se você pegar uma doença venenha agora. E você ficar grávida aqui nos anos. A criança pode ter algum problema? Você entende isso? Você deve ter algumas doenças venenhas que matam. Como a Whites, por exemplo. Você pode matar? Não. Você está consciente disso? Eu não queria muito mais falar com você porque eu não é minha filha. Mas, sério. Espero que aprenda alguma coisa. Como você disse que vai?
+
+Vou sair, vou dar uma volta. Eu acho que ele vai pra casa. O certo é pôr o seu tênis que é filho. Eu quero fazer o final. Vai, senta ali fora. Não, vamos conversar lá dentro. Onde? Aqui. Vai, vai. Ela não ia embora. Pelo amor de Deus, eu não quero ir embora. Esse menino está me seguindo. Eu quero te ajudar com a faca. Não deixa eu te ajudar com ela. Vai, sério? Eu estava tão nervoso que nem coloquei a tampa. Será que faz muita diferença quando a tampa? Não, sim, sim. Você lembra? Sim. Entendi. Estando nervoso. Mas eu acho que ele teria detectado, né? Ele teria detectado, né? Mesmo se senta. Sim. Calma, por que eu estou detectando? Estando nervoso. Fiz quatro testes diferentes, todos eram negativos. E? E o quê? Não. Nunca vi isso na minha vida. Nunca vi isso na minha vida. Mas é uma decisão unilateral. Mas é uma decisão unilateral. É. É uma decisão unilateral. É uma decisão unilateral.

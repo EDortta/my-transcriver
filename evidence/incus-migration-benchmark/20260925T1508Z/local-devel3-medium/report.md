@@ -1,0 +1,32 @@
+# Fase 0 — Benchmark de transcrição
+
+- Rodada: `local-devel3-medium`
+- Seed: `20260923`
+- Fonte: `/home/esteban/Sync/Backups/Android/VoiceRecorder`
+- Modelo local: `medium`
+- Chunk remoto: `60s`
+
+## Ambiente
+
+- python: `3.10.12`
+- ffmpeg: `/usr/bin/ffmpeg`
+- ffprobe: `/usr/bin/ffprobe`
+- gnu_time: `/usr/bin/time`
+- whisper_cpp: `None`
+- faster_whisper_python: `True`
+
+## Amostras
+
+| ID | Arquivo | SHA-256 | Bytes | Duração (s) |
+|---|---|---|---:|---:|
+| S01 | Fer choro 27 outubro 2024.m4a | `b35f779c23dbbe1f…` | 4461089 | 271.476 |
+
+## Execuções
+
+| Amostra | Motor | Estado | Parede (s) | CPU user | CPU sys | RSS máx. KiB | Saída/nota |
+|---|---|---|---:|---:|---:|---:|---|
+| S01 | local | ok | 231.885 | 529.34 | 47.11 | 2183640 | runs/S01/local/output/Fer choro 27 outubro 2024.md |
+
+## Observação
+
+Esta primeira rodada mede execução e produz transcrições lado a lado. Qualidade linguística será revisada manualmente porque ainda não existe uma transcrição de referência confiável. Diarização e identificação de voz entram nas próximas iterações da Fase 0.

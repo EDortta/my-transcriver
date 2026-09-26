@@ -1,0 +1,1299 @@
+00:00 - 00:28
+O time que eu tava até inicialmente, quando eu conversei com você e com o Márcio, eu falei: "Claro, esse time não funciona. Eu paro com isso aqui." Mas hoje, parar com isso aqui significa parar com a empresa, porque o Rafael não vai tocar. A menos que aí eu tenha uma decisão absurdamente radical, que é fazer o seguinte: "Ó, o time web não tá funcionando, desliga o time web." Quem vai programar é o Rafael, eu vou voltar a programar o que precisar. Ah, tem uma demanda que a gente não consegue atender, demite o cliente.
+
+00:28 - 00:40
+Pronto, não dá. Despensa metade da equipe, vou viver com o que eu tenho aqui. Eu acho que eu vivo uns, pelo menos, uns 5, 6 anos tranquilamente pra pagar as minhas contas? Tranquilamente metade do produto, né?
+
+00:41 - 00:41
+É, mas—
+
+00:41 - 00:44
+Não é o que eu quero. Não é o que eu quero quando você abre uma empresa.
+
+00:44 - 00:49
+Você não tem 5, 6 anos de vida pela frente. E outra, deixando a empresa boa, você pode vender ela num valor—
+
+00:50 - 00:51
+É, e a gente não quer—
+
+00:51 - 00:54
+Pode crescer, né? A gente não quer andar pra trás.
+
+00:54 - 01:23
+Não. Então, entramos na outra alternativa. Quer dizer, vamos trazer, pelo contrário, vamos abrir mais gente pro time, de preferência mais gente com conhecimento pleno, né? E eu não sei até que ponto vai ser possível, porque eu confesso, né, tá até aqui, ó. Mas eu não— eu não consigo ver isso funcionando.
+
+01:23 - 01:23
+Entendi.
+
+01:23 - 01:57
+Né? O que não quer dizer que eu não acredite que funciona. Eu acredito que é possível, né? Ontem eu tava ouvindo um podcast de empresas falando como é que o Twitter usa isso, como é que o Spotify usa isso, como é que outras empresas— quer dizer, são empresas gigantescas— e um cara até dizendo pra fazer isso de uma maneira que, na minha opinião, é totalmente inversa. Você nunca comece com microserviço. Faz um monolito, depois você vai transformando. Eu falei: "Ué, não faz sentido. Já que você vai começar assim, você tem que começar certo, né?"
+
+01:57 - 02:10
+Mas ele passou lá 1h40 dizendo que por que isso tem que ser— ah, ele trabalha não sei onde, na Digital Ocean, trabalha nos sites bam, bam, bam, vai, e tal, ó, funciona melhor assim e tal. Eu falei: "Bom."
+
+02:12 - 02:14
+Tipo, essa é mais ou menos a situação que você já tem, né?
+
+02:14 - 02:46
+É. E aí eu— o que eu tô imaginando, né, pro time. Eu falei: "Eu acho que nós estamos realmente no momento de eu falar assim: olha, Rafael vai manter o que a gente tem, ponto. Ele é programador, vai segurar as coisas como estão." Mas numa empresa de tecnologia, segurar as coisas como estão é papo buraco, né? Eu preciso evoluir, e pra evoluir eu preciso de um time extremamente bem alinhado. E se eu não colocar o Rafael nesse time, ele vai espanar também em pouco tempo, né? Então, tá, essa é a minha realidade.
+
+02:46 - 02:49
+Esse é o rumo que eu preciso alinhar.
+
+02:49 - 02:53
+É, os microserviços entram aí como uma possibilidade, mas não como uma obrigação, tá?
+
+02:53 - 02:54
+Uhum.
+
+02:55 - 02:59
+Claro, eu tenho que fazer uma referência ao sexo, evidentemente, né, mas—
+
+02:59 - 03:00
+Só pra não perdermos o—
+
+03:00 - 03:16
+Pra não perder— não, mas tem uma sexóloga feminista dos anos 70 que tem uma frase que grudou na minha cabeça, que é a mesma que está agora lutando pra resgatar a masculinidade, né, porque—
+
+03:17 - 03:18
+Quem não viu que esse é da merda?
+
+03:18 - 03:19
+Sim, sim.
+
+03:19 - 03:19
+Só as mulheres, né?
+
+03:19 - 03:24
+Só as mulheres. Não, algumas mulheres. Mas ela fala assim, diz: "Só periféricamente ali."
+
+03:24 - 03:25
+Sim, sim, sim.
+
+03:25 - 03:26
+Olha aqui, ó.
+
+03:26 - 03:26
+Sim, sim. É só periférico.
+
+03:26 - 03:28
+Olha a merda ali na frente. Mas não, eu não—
+
+03:28 - 03:29
+É só periférico.
+
+03:29 - 03:47
+A gente resolve isso aqui. É, eu estou colhendo os frutos dessa merda. Mas tudo bem. O laço, a frase dela é ao respeito do orgasmo feminino, que isso nós passamos rapidamente de dizer às mulheres: "vocês podem ter orgasmo" a dizer: "vocês devem ter".
+
+03:47 - 03:48
+Virou uma obrigação.
+
+03:48 - 03:57
+Sim, virou uma obrigação. Então, a gente já passou, você e eu já passamos por, tipo, orientação a objetos, que era panaceia, ia resolver todos os nossos problemas. A minha cliente sabe disso.
+
+03:57 - 03:57
+Promessa, sim, que—
+
+03:58 - 04:24
+Né? Sim. Não, porque se você joga todo o seu banco no esse que ele ou esse que ele traz, não, né, e tal. Sempre a promessa da pílula sagrada que resolve tudo. Eu, junto com isso, eu tenho lido outro livro que vai na direção não contrária, mas tipo, mais prudente. Tipo, olha, nem toda solução de software precisa ser microserviço, tá? Você tem que analisar muito bem. Então, o que você está numa transição.
+
+04:25 - 04:39
+Eu acho que o Rafinha, aquele dia que nós falamos de transformar tudo o que ele está fazendo em Pascal em API, mantém o Pascal, mantém a API em Pascal, tá? Os outros vêm consumindo essa API. A gente só vai mudar a interface.
+
+04:39 - 05:07
+É, o que eu tava pensando em fazer já, é, de repente, até criar uma máquina aqui pra ele. Eu falei assim: "Rafa, já que nós vamos fazendo essa transição, e aí quero uma opinião tua, mas o que me parece prudente é o seguinte, ó: por que sair do Delphi?" Então, vamos lá. Primeiro, porque nós estamos usando Delphi Pirata. Isso não é legal em nenhum momento. Isso pode me gerar um problema grande. Então, já que vamos criar uma API, vamos fazer em Lazarus. Tá? Free e é Pascal. Tá? Então, sai do Delphi, cria uma máquina clara.
+
+05:07 - 05:14
+Ele já fala: "Rafa, a partir de agora, tudo que você for criar novo de API que for integrar nos novos, vamos fazer em Lazarus."
+
+05:15 - 05:20
+E nós pegaríamos aquela de usuários que você falou, que é comum para todos eles? Foi isso que você falou?
+
+05:20 - 05:20
+Como?
+
+05:20 - 05:22
+Usuários, você falou que era para todos.
+
+05:22 - 05:25
+Então, aí entra em situações assim, vamos entrar—
+
+05:25 - 05:27
+Tipo, porque precisamos ter uma situação específica, né?
+
+05:27 - 05:55
+Então, por exemplo, nós vamos entrar agora em Clouds, né? Estamos fazendo cadastros. O primeiro deles é o cadastro de usuários. Eu preciso cadastrar a empresa, cadastrar o usuário. Cara, imobiliária precisa disso, comercial precisa disso, eu preciso disso com foto. Então, aonde a questão do microserviço me chamou atenção. O que eu tinha pensado, na minha visão monolítica, né, é: desenvolvemos um aplicativo aqui que faz tudo Ctrl+C, Ctrl+V, ajusto Ctrl+C, Ctrl+V. Mas, de qualquer maneira, eu tenho 3, e a hora que eu faço um ajuste em um, eu tenho que ficar replicando.
+
+05:55 - 05:58
+Enquanto que num microserviço, algo que me parece—
+
+05:58 - 05:58
+Sim, não é—
+
+05:58 - 06:02
+Você corrigiu aqui, subiu, já atualizou todo mundo. A coisa é linda.
+
+06:02 - 06:21
+E ele insiste em, diferente do que vá na maré, insiste em não ter versionamento de microserviço. Tipo, não, não existe versão. É ele. Ele existe, ele tem que funcionar. Tipo assim, tem que funcionar pra trás e pra frente. Aquele software que tá mais atrasado tem que continuar funcionando, o outro que é mais novo tem que funcionar.
+
+06:21 - 06:40
+É, ele não me— ele me desperta algumas questões de como, né, que é, por exemplo, assim, ah, tem uma equipe que mexe nesse microserviço, só essa equipe mexe com isso daqui, porque aí você ganha uma produção, etc. e tal. Tá, e o cara dali tá de férias. Você faz o quê? Se você tem um time pequeno, é mais difícil você segurar isso. Ó, o cara responsável pelo cadastro de usuários é o Rafael.
+
+06:40 - 06:42
+O Rafael saiu de férias, tá doente.
+
+06:42 - 06:54
+É, e aí? Ou o Rafael tá numa outra demanda que precisa ser entrega muito rápida, e eu tenho um negócio aqui que eu preciso corrigir. Eu não posso pôr outra pessoa. E o que ele coloca é: você vai pôr outra pessoa, você corre um risco gigante de fazer uma caca.
+
+06:55 - 06:59
+É, mas aí voltamos na ideia da rotatividade que nós tínhamos mencionado aquela vez.
+
+06:59 - 07:00
+Sim, eu acho que faz sentido.
+
+07:00 - 07:08
+Tá? Tipo assim, você ter uma equipe que rotaciona na parte do front-end e outra que rotaciona nos back. E isso inclui os microserviços e companhia, né?
+
+07:08 - 07:22
+Então, eu acho— eu descobri já há algum tempo, mas eu tô vendo isso com muita clareza cada vez mais— eu tenho um problema sério que eu sou muito otimista. Eu sempre olho pra uma situação e falo: "Cara, dá."
+
+07:23 - 07:24
+Mas e você, programador?
+
+07:24 - 07:24
+Dá.
+
+07:24 - 07:27
+Se o programador não é otimista—
+
+07:27 - 07:30
+E custa isso. Chega uma hora que você fala: "Não faz sentido."
+
+07:30 - 07:30
+Aí é o pesare.
+
+07:30 - 07:55
+Uma das coisas que o Pedro me falou, e que ele— vamos lá, eu tive uma conversa de desligamento com ele e tal, porque uma das coisas que ele tá muito chateado, né, ele falou: "Cara, eu tô saindo daqui, eu tô—" que foi o fato daquela primeira equipe web que nós contratamos, ele falou: "Cara, eu saí de férias, voltei, a equipe inteira se desligou. Eu tô me sentindo um gosto, né? Eu já tava fazendo aquilo porque a gente tava tendo algumas dificuldades na questão de desenvolvimento.
+
+07:55 - 08:22
+Eu comecei a fazer a liderança da equipe e a equipe inteira foi embora e tal." E eu falei: "Cara—" até coloquei, falei: "Pedro, vamos analisar de outra maneira?" O mesmo fato, tá? A equipe tava aqui, tava trabalhando com você, coordenando. Você saiu de férias, eles vieram trabalhar comigo. Trabalhando comigo, todo mundo pediu a conta. Ninguém deu conta de trabalhar comigo. O problema é meu, não é teu, né? Ele falou: "Tá, mas eu fico imaginando quanto que você gastou nisso." Eu falei: "Cara, mais do que meu carro." No lixo, né?
+
+08:22 - 09:02
+E eu começo a olhar, eu tô trabalhando naquela conta digital, fazendo algumas antecipações de boleto pros clientes e tal. E aí eu comecei a estudar um pouco de investimento pra ver como é que roteiros e tal. Cara, dá um trabalho desgraçado você fazer 3 mil reais de investimento, de rentabilidade de investimento. Aí você contrata gente, paga 3,5, 4, pra serviços que não são entregues, que não— então, isso tá começando a me preocupar de verdade, sabe? E aí eu fico olhando assim: até que ponto vale a pena, né, ficar assumindo riscos que— não sei.
+
+09:02 - 09:15
+Mas vamos lá. A questão do time, a gente tá procurando aí mais 2 front-ends e mais 1 back-end. Eu acredito que o Rafael pode ser considerado um back-end nesse time.
+
+09:15 - 09:15
+Sim, sim.
+
+09:16 - 09:29
+Embora ele vá trabalhar com uma linguagem diferente, mas a partir do momento que virar tudo API, tá tudo certo. Então, eu acredito que, assim, nós teríamos 1, 2, 3 duplas.
+
+09:29 - 09:29
+Sim.
+
+09:29 - 09:33
+Pra trabalhar nos 3 projetos, rotacionando. Mas 3 duplas em 3 projetos.
+
+09:34 - 09:38
+É tipo o que está no foto iria pro gestão? Tipo, essa rotação que você diz?
+
+09:38 - 09:38
+Isso.
+
+09:39 - 09:40
+Isso, exatamente.
+
+09:40 - 09:42
+Exato. Então, assim, eu penso assim.
+
+09:42 - 09:44
+3 duplas, 3 projetos, tá?
+
+09:44 - 09:46
+3 duplas em 3 projetos. E vamos ver.
+
+09:46 - 09:49
+3 meses, talvez, em cada projeto, uma coisa assim.
+
+09:49 - 09:50
+Pode ser. Ou—
+
+09:50 - 09:51
+Ou menos, inclusive.
+
+09:51 - 10:21
+É, ou de repente— eu acho que, assim, inicialmente não dá pra ser diferente disso. Ó, vamos todo mundo trabalhar gestão X, imobiliária. Estamos trabalhando na imobiliária. Porque enquanto a gente não entregar alguma coisa aqui, não adianta começar 3 coisas e aí, né? Então, talvez, até pelo problema que nós estamos com o sistema de imobiliária, eu acho que a gente tem que dar um avanço significativo, migrar todo mundo que tá aqui pra cá. Esse sistema tem que substituir esse antes da gente começar a falar sobre: "Ah, então vamos migrar também os sistemas comerciais, vamos migrar também—"
+
+10:22 - 10:28
+É, mas isso aqui deveria gerar tal conhecimento que depois nós pudéssemos replicar o conhecimento e as práticas boas.
+
+10:28 - 10:52
+Então, mas aí, por exemplo, eu penso assim: tá, o sistema de imobiliária precisa de um cadastro de usuários. Por que não? Já que a hora que o cadastro de usuário tiver pronto, eu já habilito do foto também. Ó, foto, cadastro de usuário, a partir de agora é esse. Ah, se der um problema no cadastro de usuário do foto, já não é mais Delphi. Já qualquer pessoa dessa equipe pode pegar isso e resolver. Ah, nós vamos ter que ter um Cloud pra cadastrar fornecedores.
+
+10:52 - 11:02
+Nós vamos ter que ter um controle de caixa, vamos ter que ter contas a pagar e contas a receber. Conforme a gente vai liberando, eu já vou desativando do Delphi e colocando ele pra utilizar esse outro aqui.
+
+11:02 - 11:14
+Ou seja, em outras palavras, estaríamos traduzindo, transformando as coisas que foram feitas em Delphi para esse back-end feito em talvez Lazarus, ou talvez PHP, ou Node, ou qualquer coisa assim. O que você tá pensando?
+
+11:15 - 11:46
+É, algo nesse sentido. Mas, na minha visão, seria o seguinte: não é esse o objetivo, né? O objetivo é construirmos o sistema de imobiliária, tá? Ao construir o sistema de imobiliária, então, vamos lá, eu vou fazer um cadastro de usuários e um cadastro de fornecedores, por exemplo. Eu não consigo chegar pra uma imobiliária e falar: "Ô, vem trabalhar comigo porque eu tenho cadastro de usuário e fornecedor." Não dá, né? Mas eu tenho um cadastro de usuário e de fornecedor no meu sistema de formatura que pode estar lá amanhã ou amanhã depois.
+
+11:46 - 11:49
+E se isso aqui é um módulo, né, é um serviço.
+
+11:49 - 11:49
+É um serviço.
+
+11:49 - 11:51
+É, eu posso chegar no meu sistema foto.
+
+11:52 - 11:52
+Isso.
+
+11:52 - 12:03
+E quando o usuário clicar lá pra abrir fornecedor ou pra abrir usuários, o sistema abre uma outra janela. O sistema do Sicoob faz isso. Eu achei isso— hora que eu olhei, eu falei: "Cara, que coisa horrível."
+
+12:03 - 12:04
+Assustador, né?
+
+12:04 - 12:15
+Horrível. Eu falei: "Cara, horrível, mas inteligente." Porque eu não preciso esperar isso aqui estar inteiro pronto pra eu poder utilizar essa versão nova, né?
+
+12:16 - 12:44
+Tá, mas vamos separar as ideias, tá? Tipo assim, tipo assim, eu entendo, ou seja, olha só, eu entro aqui, eu sempre senti isso de você. Eu entro, você tem uma marca, você tem um conjunto de cores, você tem uma identidade visual. Eu entendo que a parte front-end, por isso que eu falei de equipes rotativas no front-end, tem que ser desenvolvida de forma que seja coerente. Para o usuário final, não vai ficar tão aberrante que nem essa que você propõe.
+
+12:44 - 12:46
+É, vai ficar aberrante porque—
+
+12:46 - 12:48
+Não, tudo bem, tudo bem, porque—
+
+12:48 - 12:48
+Porque eu tenho hoje.
+
+12:49 - 12:51
+Você tem hoje. Tá, entendi, entendi.
+
+12:51 - 12:52
+É isso que ele vai sentir.
+
+12:53 - 12:56
+Entendi. Por outro lado, vai sentir que a equipe tá trabalhando, que a empresa tá indo atrás.
+
+12:56 - 13:06
+Isso que eu falei, eu acho que é até melhor do que: "Ah, mas o cara vai entrar aqui, ele está vendo essa tela, depois ele clica, vai pra um outro negócio." Eu falei: "Quando você passa numa estrada?" Eu tive que ir pra—
+
+13:06 - 13:07
+Sim, sim.
+
+13:07 - 13:14
+Eu passei em Rio Preto ali. Cara, tá horrível a estrada. Mas do lado eles estão construindo, você olha, você fala: "Puta, daqui a pouco vai ficar top isso aqui, hein."
+
+13:14 - 13:15
+Isso, é verdade.
+
+13:15 - 13:18
+Ameniza aquela sensação de: "Nossa, isso aqui tá uma bosta."
+
+13:18 - 13:18
+Isso.
+
+13:19 - 13:29
+Né? Então, o cara que olha isso aqui e ele vai pra um lugar mais bonito, ele vai falar: "Ô, daqui a pouco esse negócio aqui vai estar filé, daqui a pouco tá tudo lá." É melhor do que esse cara ficar mais, não sei quanto tempo aqui.
+
+13:29 - 13:29
+Sim, sim, sim.
+
+13:30 - 13:37
+E de repente indo embora e só ouvindo promessas de que: "Ó, vai acontecer." Não, ele tá vendo que: "Ó, isso tá bom."
+
+13:37 - 13:39
+Tem de tudo. Eu acho que concordo. Essa é a visão.
+
+13:40 - 13:52
+Né? Eu acho que isso é bacana. Agora, bom, esses são os planos na minha visão. Me fala você, qual é a tua opinião em relação a isso? Qual é a tua opinião?
+
+13:52 - 14:24
+Não, eu tenho ido acompanhando essa ideia. Tipo, eu estou te apoiando nessa ideia de que, sim, algumas coisas são válidas de ir pra microserviços. Eu acho que o momento é certo com a saída do Pedro. Eu acho que o Rafa precisa, sim, desse amparo emocional, tudo mais, mas também precisa um foco: "Cara, você não tá jogado fora, você não tá desperdiçado, ó, vamos fazer isso aqui." Só que, e aí vem uma crítica, você, a sua ansiedade faz você ir pra cá, ir pra lá, ir pra cá. Que eu já falamos disso algumas vezes, né? Então—
+
+14:24 - 14:27
+É, é. Tô tentando respirar. Tô tomando remédio.
+
+14:27 - 14:28
+É isso que é a pergunta.
+
+14:28 - 14:33
+Tô tomando remédio pra isso. Verdade. Um remédio que me ajuda em— eu descobri que eu tenho TDAH.
+
+14:33 - 14:38
+Ah, é? Pronto. Já vê quem tá diagnosticado, afilhado, aí já vai.
+
+14:38 - 14:40
+Aí tô tomando um medicamentinho que tá me ajudando um pouco.
+
+14:40 - 14:41
+Tá te ajudando, tá.
+
+14:42 - 14:42
+Um pouco.
+
+14:43 - 14:44
+Tá calmo.
+
+14:44 - 14:49
+Eu tô tomando ele à metade porque, olha, eu respeito o médico, mas olha, eu preciso—
+
+14:49 - 14:50
+Mas ele não sabe tudo.
+
+14:52 - 14:55
+Mas eu tô dizendo assim, o remédio não vai me transformar em outra pessoa, tá? Mas—
+
+14:56 - 15:27
+Não, mas vai te dar tempo pra assinar, pra você ser um pouquinho mais, né? Porque isso traz, traz na equipe essa circunstância dessa sensação de instabilidade. Tipo, vamos fazer isso, mas daqui a pouco eu vou ter que fazer outra coisa, qualquer outra, tá? Então, se ao Rafa nós damos esse suporte, damos uma linguagem e um propósito bem claro, essas 3 coisinhas, suporte, linguagem, propósito, tá? Eu acho que funciona, e funciona muito bem. A empresa fica com todo o know-how com que estamos, um Rafa muito mais aprimorado, tá?
+
+15:27 - 15:42
+E os outros não têm por que desenvolver isto, que temos alguém que tem o know-how e vai fazer, tá? Somente temos que combinar certinho a estrutura dessa comunicação, primeira coisa. A outra questão, insisto na questão da rotatividade entre as equipes de front-end.
+
+15:43 - 15:43
+Tranquilo.
+
+15:43 - 15:54
+Isso, pra mim, me parece que estamos tranquilos. A Aninha tira da questão de fazer integração, ela não soube, não aprendeu, não entendeu, não quis, tá fora da ossada, tá tudo certo. Não, é melhor—
+
+15:55 - 15:56
+Vamos errar rápido.
+
+15:56 - 15:56
+Isso.
+
+15:57 - 15:57
+É, é.
+
+15:57 - 15:58
+E corrigir rápido.
+
+15:58 - 16:23
+Parar. É isso, tá? E eu acho que ela vai se sentir melhor. Hoje, cedo na reunião, ela perguntou ao respeito da prototipagem, aí eu falei: "Faz então, pega com o Bruno, que o Bruno tem noção porque esse camarada não vai estar mais, tá? Na questão do produto, não sei o quê, tal, tal." Tá bom, pega o Bruno, rascunha num papel, passa pro Alexandre, pede autorização, vê se é isso que ele quer, não rascunha num papel.
+
+16:23 - 16:49
+Uma vez que tá no papel, vai no Figma, prototipa todo ele, manda de novo pro Alê, e guarda lá no Bitrix, tá? Aí vamos mantendo a progressão do serviço. Aí a modificação, faz o HTML e entrega. Tá bom assim? Tá, tá bom. Aí eu já cobrei da equipe o restante, tá? Então, a equipe que está no bank, ela tem conhecimento suficiente pra mexer no front nessa questão da integração. Então, vamos cortar um pouco mais grosso, tipo, não é tanto front e back.
+
+16:49 - 16:58
+Pra nós ainda continua, mas olha, o cara que mexe no bank, ele vai ter que abrir a tela de front-end e vai ter que fazer a integração. Ganhamos em produtividade.
+
+16:59 - 17:02
+O back vai fazer a integração? Porque até então, o combinado, se não me engano, era o front.
+
+17:03 - 17:18
+É, é, é claro, porque aí, mas fica esperando, ficou esperando da Aninha, tal, não sei o quê, que não, não, não. Mas o front tem, o back tem toda a informação e sabe fazer, porque a linguagem é a mesma, é JavaScript lá e não aqui embaixo. Então faz.
+
+17:18 - 17:18
+Sim.
+
+17:19 - 17:27
+Para que ser? É que nem isso daqui, funciona, tá? Mas é que nem orientação a objeto, funciona. Ok, mas peraí. Não é a pílula azul celeste.
+
+17:27 - 17:37
+Eu não tô louco, porque eu tô indignado como o Lennon, por exemplo, "ah não, a rotina do e-mail tá pronta". Cara, por que você não? Não, o back tá pronto. Pô, o front tá aqui.
+
+17:37 - 17:39
+Isso. Então, mas—
+
+17:39 - 17:39
+Não, mas eu não faço front.
+
+17:40 - 17:40
+Exato.
+
+17:41 - 17:52
+Aqui? Você não tem que fazer, você não tem que— é copiar com o control C, control V, no app, né? Mas, cara, tá aqui. Ninguém vai desenhar um front diferente pra você. É isso aqui, é só copiar essa porra aqui.
+
+17:54 - 18:19
+Não, o front, o front não, espera. O front tem que ser entregue a tela, tipo, já está essa tela. Não tem mais nada. Essa tela do gestão X, essa tela do foto, sei lá, mas está tela e terminou. Não tem nada que você mexa com tela. Agora, a questão da integração, a lib da integração, essa vai ser meio como que universal entre o front-end. Tipo, como que integra? Ah, integra assim, chama assim, faz assim.
+
+18:19 - 18:21
+Eu não sei se eu tô doido, tá? Mas me corrige.
+
+18:21 - 18:37
+Sim. Doido assim, louco não, mas doido. O que eu falei? Cara, é isso aqui. A tela do e-mail é essa, né? Então, eu não sei se alguém tem que desenhar isso aqui no Figma pra ele.
+
+18:40 - 19:08
+É, mas aí nós temos, por exemplo, tudo bem. O que ele precisa? Precisa uma linha destas pronta, tá? Tudo isto precisa estar pronto, entendeu? Tipo, ah, não, vai fazer, então precisa tudo isto, precisa uma linha desta pronta. Por quê? Porque isso daqui é alimentado pelo back-end. Então, ele vai ter que puxar, vai ter que replicar, e isso é o trabalho de integração, tá? Esse 8 aqui, esse 512, quem que está, tudo isso é comunicação com o back-end, mas ele vai entender que, ó, tem que fazer. É aqui que vai fazer.
+
+19:08 - 19:18
+Uma vez que fez isto e uma linha, ele tem que se virar. E onde que está o navegador embaixo? O navegador de páginas. Aqui, ó, o navegador de páginas. É isso, tá? É isso.
+
+19:19 - 19:22
+Então, aí eu falei, cara, eu já discuti demais com esses meninos, eu acho que—
+
+19:23 - 19:47
+Não, mas vamos alinhar, tipo, e vamos escolher esse rumo, aí nós vamos fixar o parafuso nesse rumo, né? Tipo assim, a Ana vai fazer o front, o que vamos esperar da Ana? Uma tela que dê pra ver. Ela encaixou no sistema, colocou no projeto, tá lá, quando clica aparece. Fechou. A partir daí o cara pega, tá? Esse aqui me parece que é a questão. A partir daqui, né, o back pega, por quê?
+
+19:47 - 20:10
+Porque a livraria, e aí falamos em livraria, porque aí sim, ela vai em uma cópia em cada uma das telinhas, que é a que vai fazer a integração. Porque toda integração, e eu venho insistindo nisso com eles, tem que ser idêntica. Aí, ah, não, mas e se for somente um resultado? Não me interessa, cara. A listagem é listagem. Se no banco dela vai ter 100 mil registros.
+
+20:10 - 20:11
+Você vai pegar o—
+
+20:12 - 20:12
+Estandariza entrada.
+
+20:13 - 20:13
+For zero.
+
+20:14 - 20:16
+Sim, a 1 e pronto, e acabou.
+
+20:16 - 20:16
+E o variável.
+
+20:17 - 20:38
+Isso, e tchau, e o filtro também. Então, e eu não sei se o Dalton e o Lennon me entenderam, né, pelo que eu vi depois. Mas assim, alinhando com o Márcio e Pablo, a gente alinha com o resto da equipe. É isso que vai acontecer. Tá, bom, então estamos alinhados nessa questão de equipes rotativas em cima.
+
+20:38 - 20:38
+Estamos alinhados.
+
+20:39 - 20:57
+Estamos alinhados. Terminar um produto e ir gerando know-how de como que é feito para depois rotacionar as equipes de back-end. E esse back-end não é tão dividido do front. Ele tem essa questão de pegar o que o pessoal de design fez e, a partir daí, ele toca. Tá.
+
+20:57 - 21:07
+Deixa eu perguntar uma coisa que você colocou aqui que eu não sei se é o que nós falamos. Você falou assim: "Vamos terminar um projeto antes de pegar o outro."
+
+21:07 - 21:10
+Porque você mencionou que não dava para começar várias coisas ao mesmo tempo.
+
+21:10 - 21:25
+Isso. Mas é possível, isso é uma pergunta, é possível que a gente pegue parte desse projeto que já está ficando pronto? Eu nem falo tanto do sistema comercial, porque o comercial tá ali, não tem começo pra ele, então, né, tá solido.
+
+21:25 - 21:26
+Mas você falou dois, o foto e o—
+
+21:27 - 21:38
+Mas o foto, de repente, tela de usuário, tela de cadastro do cliente, eu consigo, pô, tá pronto, tá no imobiliário, testado, não dá pra trazer meu imobiliário pra cá, mas eu já consigo fazer o foto.
+
+21:38 - 21:38
+Sim, é isso.
+
+21:38 - 21:39
+Legal, show, beleza.
+
+21:39 - 21:39
+É isso.
+
+21:39 - 21:48
+É, não vou trazer coisas do foto para o time. Ó, não, gente, mas ó, aqui o contrato, não, não, não. Mas o contas a pagar igual, caixa igual, então, tal, beleza.
+
+21:49 - 22:03
+Isso. E aí, o que vai acontecer? Chega no final do ano, você vai ter possibilidade, você vai ter um conjunto de serviços ou microsserviços que te vai permitir construir uma outra coisa, talvez, que te foi solicitada e você sempre adiou porque, cara, eu tenho que reconstruir.
+
+22:03 - 22:09
+Eu tenho um sistema de cobrança, por exemplo. E aí, vou falar com o meu time do sistema de cobrança.
+
+22:09 - 22:16
+Você chegou a falar com o Luiz ao respeito da— eu entro na mesma marcha que tu, eu vou falar mais devagar. Você chegou a falar com o Luiz?
+
+22:17 - 22:17
+Quem é o Luiz?
+
+22:18 - 22:21
+Luiz Henrique, o meu sócio lá da Cronos, ao respeito.
+
+22:21 - 22:22
+Ah, eu conversei com ele aquele dia.
+
+22:22 - 22:24
+E depois não conversou mais.
+
+22:24 - 22:31
+Na verdade, assim, o que aconteceu? Ele me passou os valores que eu trabalho. Eu falei: "Luiz, eu já pago menos do que isso hoje."
+
+22:31 - 22:31
+Tá.
+
+22:31 - 22:59
+Né? Aí ele falou: "Olha, o que acontece? Hoje minha empresa tá enquadrada com não sei o que lá. Eu tô indo pra Brasília daqui algum tempo, que eu vou tentar mudar a classificação dela. Quando isso for aprovado, eu sou entendido como outra coisa, quase como um banco de fato, né? E aí eu tenho outras margens pra gente conversar." Eu falei: "Cara, então show, a hora que você tiver alguma resposta, me dá um toque, etc."
+
+22:59 - 23:15
+O Luiz é muito esquecido. Mas porque foi depois, porque aí me preocupou outra coisa. Você pode até estar trabalhando com uma margem boa, mas depois você mesmo falou que entrava muito dinheiro pela tua conta e você falou, você brincou até, disse: "Você acha que a receita—"
+
+23:15 - 23:37
+Sim, sim. Eu andei procurando algumas informações com advogado, contabilidade, etc. e tal. Eu fiz uma alteração no CNAE da minha empresa. Então, tanto que assim, eu tenho a G que faz um desenvolvimento de sistemas, eu abri a Cronos. A Cronos eu alterei o CNAE dela. Então, a Cronos, hoje um dos CNAEs da Cronos é meios de pagamento. Então, já justifica essa movimentação, né?
+
+23:37 - 23:39
+Tá, então, tá. Conversou com o seu contador, tá certo.
+
+23:39 - 23:40
+Sim.
+
+23:40 - 23:41
+Me despreocupou com isso.
+
+23:41 - 23:41
+Então, fica tranquilo, tá?
+
+23:41 - 23:44
+Tá. Eu vou continuar a falar com o Luiz, só porque eu acho que—
+
+23:45 - 24:17
+É, não, eu prefiro se, de repente, ele me entrega uma solução pronta, usar a dele. Porque hoje eu tô vendo que, assim, cada serviço desse que eu preciso construir é muita coisa. Pela primeira vez, eu tô assumindo que, assim, tem um pedido de uns clientes de formatura que eu não vou fazer. Existe uma solução pronta no mercado, eu vou integrar e entregar. Pronto, ao uso do cara, através do meu sistema. Porque, ah, é muito fácil fazer. Quem vai fazer? Vai ficar pronto quando? Quem vai testar?
+
+24:17 - 24:18
+E quem que vai?
+
+24:18 - 24:19
+A gente tá pronto essas coisas.
+
+24:19 - 24:19
+Porra.
+
+24:19 - 24:20
+É, não.
+
+24:20 - 24:22
+Não, e permite o cara se especializar naquilo.
+
+24:22 - 24:34
+Exato. Então, numa situação dessa que ele me entrega, o cara tem condição de receber o cartão, ele vai ter uma conta, ele abre o extrato dele, já tá tudo formatado, já tá seguindo legislação. Porra, tem por que eu refazer a rota?
+
+24:34 - 24:42
+Não, e a equipe deles é só pra isso. Ele diminuiu, enxugou a equipe, tá? E estão escrevendo todo o software de novo.
+
+24:42 - 25:03
+Então, uma das coisas que eu tive uma situação bastante delicada com o Pedro e que me ajudou a tomar a decisão de não insistir em mantê-lo aqui, foi algumas situações, tá, eu tô fazendo antecipação de coletas pra alguns clientes, né? Pedro, não pode ter erro aqui.
+
+25:03 - 25:05
+Deixa eu pôr a música de novo, que tá pra você.
+
+25:06 - 25:08
+Você não pode ter erro aqui. E adivinha? Tinha.
+
+25:09 - 25:09
+Mas é claro.
+
+25:09 - 25:21
+Eu olhei e falei: "Cara, eu tô achando que eu tô ganhando 10, eu tô perdendo 200, né?" Só que a hora que você descobre isso, o buraco já tá. Aí ele: "Ui, rapaz, tava errado mesmo." Mas eu já arrumei o código, viu? Fica tranquilo.
+
+25:25 - 25:25
+Que bom.
+
+25:27 - 25:27
+Menos mal.
+
+25:27 - 25:28
+Obrigado.
+
+25:28 - 25:29
+Deus me livre.
+
+25:29 - 25:30
+Se não tivesse arrumado.
+
+25:30 - 25:50
+Eu não, eu fico pensando quantos outros buracos tem ali que não foram, né? Então, assim, cara, vamos pegar isso que a gente já tem pronto e segue o barco, não tem por que, né? A gente começa a querer abraçar o mundo e não dá certo. Então, se de repente ele, eu não sei se me passou o contato dele, eu fui lá, né? Então, se ele—
+
+25:50 - 25:52
+Não, você falou e eu já te passei o contato.
+
+25:52 - 26:06
+Me liga, se você puder, vou ligar pra ele. Porque de repente ele já conseguiu até esse negócio que ele ia. E às vezes ele tem um valorzinho bacana ali. Se com ele eu empatar o que eu já tenho, amigo, eu—
+
+26:06 - 26:07
+Sim, porque te tira dor de cabeça.
+
+26:07 - 26:08
+Claro.
+
+26:08 - 26:09
+Só por isso já compensa.
+
+26:10 - 26:10
+É.
+
+26:11 - 26:22
+Tá. Então, tá. Então, vamos revisar de novo, se estamos alinhados. Rafinha, acompanhamento emocional, tá? Sim, que é muito importante. Lázaros, API, tal.
+
+26:23 - 26:30
+Eu penso que a gente deixando claro pra ele: "Olha, você tá no time, eu vou colocar ele do grupo dos meninos e—"
+
+26:30 - 26:31
+Entendi.
+
+26:31 - 26:48
+Por isso até que eu acho importante, de repente, a gente já compartilhar a tela de usuários, ou seja lá qual, qualquer outro. Pra que de fato ele olhe e fale: "Cara, tá, tem mais gente aí trabalhando comigo, né?" E aí ele não vai olhar. Porque hoje, pela conversa que eu tive com ele, a sensação dele é assim: "Eu tô carregando a gente nas costas."
+
+26:48 - 26:49
+Isso.
+
+26:49 - 27:19
+Enquanto você tá brincando com outra equipe aí pra ver se funciona alguma coisa, porque até agora não tem nada. Então, isso não é legal. Em nenhum momento isso é bacana. Então, a partir do momento que ele entender: "Rafa, realmente é necessário que você nos dê o suporte aí em uma situação ou outra que não esteja funcionando, mas você tem uma responsabilidade com o time de entregar coisas novas também." Ele é um pouco movido a isso, acho que pelo programador é. Então, o fato da gente estar integrando isso daí ajuda nessa questão do apoio emocional dele.
+
+27:19 - 27:22
+Sim. Não, é isso basicamente. Esse aqui é.
+
+27:22 - 27:22
+É.
+
+27:23 - 27:26
+Porque a vulnerabilidade dele é sempre sentir isso dele.
+
+27:27 - 27:34
+Eu penso que então, assim, é importante. E é importante dizer pra ele: "Olha, você vai fazer parte de um time que a gente vai trabalhar diferente, ok?"
+
+27:34 - 27:35
+Isso.
+
+27:35 - 27:58
+Então, agora não é mais Delphi, você vai usar Lázaros nessa outra máquina. Eu acho que até a gente podia criar uma máquina virtual pra ele também entender. Ó, você trabalha no mesmo ambiente que os meninos e tal. Então, aqui é Lázaros e essa semana você precisa entregar isso aqui. A gente sabe que eu vou ter que dar uma demanda um pouco menor pra ele, porque ele tá segurando todos os outros sistemas até agora. Mas é importante, eu acho, que ele comece a nos—
+
+27:59 - 28:18
+Tá. Aí você me orienta no que eu posso ir, tipo, cobrando dele. Tipo, às vezes você tem alguma coisa assim, por exemplo, "Ah, a consulta do CEP tá sendo feita com ele, ele já faz isso." Vamos começar com uma coisa bem simplesinha, tipo, estabelecer um rito de como que funciona e nos entendemos lá pra frente.
+
+28:19 - 28:19
+Bacana.
+
+28:19 - 28:28
+Alguma coisa assim. Tá. Márcio, ontem foi o dia de eu tive que ir no psiquiatra, eu tinha esquecido. Graças ao bom Deus, foi muito bom.
+
+28:29 - 28:31
+Graças ao bom Deus você foi, ou graças a ele você esqueceu?
+
+28:31 - 28:32
+As duas coisas, eu acho.
+
+28:33 - 28:35
+Ai, ai, ai.
+
+28:36 - 28:55
+Mas não, tá. E depois foi um rolo, porque a psicóloga do Gabriel queria me ver e aí eu marquei um horário e aí justo tinha marcado dentista e depois clínico geral. Enfim, das três até as— Não tem furo em qual ele não me meta algum negócio.
+
+28:56 - 28:56
+Tá certo.
+
+28:57 - 29:09
+Literalmente, não fica. Não, como diz o povão, zuvido ficou, né? O restante, cara, já tem enfiado tanta coisa em tanto lugar que eu já me desconheço. Não, outro dia eu tava indo pro—
+
+29:09 - 29:10
+Ou de repente, nesse momento, você começou a se conhecer?
+
+29:11 - 29:22
+Sim, sim, também, né? Eu tava indo pro urologista pela segunda vez. Não, não, isso é verdade, isso não é piada. Eu estava olhando se a camisa que eu estava usando não era a mesma que eu tinha usado da última vez.
+
+29:22 - 29:22
+Isso é perigoso.
+
+29:22 - 29:33
+Isso é perigoso. Falei: "Não, eu não acredito que eu esteja pensando isso." Aí eu comecei a fazer uma lista das pessoas, eu digo: "Não, eu vou ter que contar." Aí você tava na lista, evidentemente.
+
+29:33 - 29:36
+Não sei se você—
+
+29:37 - 29:39
+Não sei como interpretar isso, mas—
+
+29:39 - 29:40
+Tá legal, vamos lá.
+
+29:40 - 29:41
+Não, mas é—
+
+29:41 - 29:42
+Você precisa de parte de um—
+
+29:42 - 30:02
+Não sei, eu falei: "Não, é doentio de amizade." Não, mas é assim, eu tô agilizando particularmente o que no serviço público demora, né? Então, por exemplo, um monte de coisas assim. E aí eu tô literalmente aproveitando isso que eu peguei da G pra investir em saúde. Literalmente isso que eu tô fazendo.
+
+30:02 - 30:02
+Legal.
+
+30:03 - 30:33
+Tá? Então, tipo, não me dispensa nos próximos meses que eu preciso. Não, mas sério. Mas voltando ao assunto, Márcio, ontem à noite estivemos falando sobre a exigência dos exercícios pra fazer, tal, tal. A Rafa me pediu que eu fizesse, mas vocês não tinham feito. Eu digo: "Não, fizemos sim, tal, tal." Aí eu fui, procurei mesmo, já, drog, procurei, achei os exercícios pra fazer, para os candidatos, né?
+
+30:33 - 30:33
+Ah, tudo bem.
+
+30:33 - 30:33
+É isso.
+
+30:34 - 30:34
+Eu já tinha, pô.
+
+30:35 - 30:41
+Então, mas a Rafa pediu pra ele. Aí eu acho: "O que ela tá pedindo que você elabore?" Digo, porque já tinha elaborado.
+
+30:41 - 30:46
+Não, você já tinha, usa aquele. Eu acho que ela só bobeou, ao invés de pedir pra você, pediu pra ele.
+
+30:47 - 30:51
+Não, normal. Porque ele acaba—
+
+30:51 - 30:51
+Acaba fazer outro.
+
+30:51 - 31:20
+Acaba vindo pra mim. Aí ele elaborou, eu não vi ainda. Porque ele, isso foi conversa de ontem à noite, aí ele me mandou durante a viagem. Eu conversei com eles hoje, alinhei isso que eu te disse, né? E algumas dúvidinhas aí do Paulo e do Márcio sobre como proceder, com algumas coisas que têm a ver com aquilo que eu te disse de integração. Mas se estamos alinhados nisso, Alê, então eu acho que funciona melhor, tá? A integração desse jeito.
+
+31:20 - 31:28
+Tipo, Leno vai pegar, então Leno, você vai ter que abrir o código do front e fazer a chamada e fazer o preenchimento dos dados.
+
+31:28 - 31:29
+Então, mas Leno é front?
+
+31:30 - 31:32
+Leno está usando LenoBack.
+
+31:33 - 31:37
+Ah, LenoBack, tá. Você falou Leno e entendi Pablo, que loucura. Tá, LenoBack.
+
+31:37 - 31:42
+É, o Pablo está mais no nível do Márcio, ele joga bem em qualquer rodada.
+
+31:42 - 31:43
+Ótimo.
+
+31:43 - 31:44
+Tá? Aí—
+
+31:44 - 31:56
+Na sua percepção, vamos lá, agora, com a gente trazendo aí mais três pessoas de nível pelo menos pleno, né? Ou júnior, mas pelo menos já pessoas—
+
+31:56 - 31:57
+Já pleno, já que estejam programadas.
+
+31:57 - 32:09
+Será que convém manter o Leno? Porque o Leno me parece que é um cara que, assim, ele toma tempo da equipe. E eu não sei se hoje é o momento pra gente fazer isso. Eu—
+
+32:09 - 32:10
+Ele tá mais pra um aprendiz, né?
+
+32:10 - 32:35
+Então, eu acho que o momento da gente ter aprendiz é daqui seis meses ou um ano. Agora o negócio tá rodando. Eu acho bacana a ideia de aprendiz, acho legal. Tem que trazer os meninos, né, como contribuição da sociedade. E, de fato, ter uma mão de obra que tá aprendendo, porque amanhã, depois, se sai alguém, você consegue repor, etc. e tal. Mas, fato, o aprendiz ele toma tempo. Ponto. Será que nós estamos no momento hoje de ter uma pessoa que toma mais tempo? Eu acho que—
+
+32:35 - 32:52
+Então, para a produção do software, não. Para o que você tem como objetivo, que, tipo, o que eu entendi para abril, ou a coisa funciona ou funciona, porque senão não faz mais sentido, né? Você falou de maio, mas na minha cabeça é abril, né? Tipo, ou funciona ou funciona e não faz mais sentido.
+
+32:52 - 32:52
+Sim.
+
+32:53 - 33:11
+Sim. Daqui a seis semanas, ou esse troço realmente saiu, decolou, ou não vai decolar nunca mais. Inclusive, mais, hoje, na reunião que eu falei, foi: "Ó, esses errinhos de digitação, de coisa, digo, esqueça, não pode mais acontecer." Não faz sentido.
+
+33:11 - 33:12
+Na minha percepção, tem umas coisas muito diferentes.
+
+33:12 - 33:13
+Não faz sentido.
+
+33:13 - 33:14
+Ah, mas eu esqueci de testar.
+
+33:15 - 33:15
+Não.
+
+33:15 - 33:16
+Eu também não tava pegando tão bem.
+
+33:16 - 33:36
+Eu insisti com o Bruno a fazer os testes. E eu insisti no seguinte: "Bruno, quando a gente testa uma coisa, a gente testa geralmente 1, 2, 3, 4. O usuário vai fazer 3, 2, 1, 4, 3, 4, 2, 1. Vai fazer a ordem que ele quiser, do jeito que ele quiser." Digo, então, vai ter que aprimorar por isso daí. Aí ele concordou, porque é verdade.
+
+33:37 - 33:40
+É, ele já tá com os olhos. Vai saber usar aquilo.
+
+33:40 - 33:48
+Não, e aí eu falei, digo, você tem que lembrar a música. "Escolha bem seus parceiros de labuta, companheiro e companheiro." E o usuário foi e sempre vai ser o usuário.
+
+33:48 - 33:48
+Exato.
+
+33:48 - 34:11
+Tá? É, ele vai, ele vai. Então, aí, não, o Leno está mais para aprender, sim. Agora, eu não quero falar apenas emocionalmente, né, tal, não quero, mas talvez se a gente fizesse ele falar com o Rafa a respeito da integração da tela, de usuários, por exemplo.
+
+34:12 - 34:14
+Mas eu não tô entendendo o que você quer.
+
+34:15 - 34:28
+Porque o Leno é o Leno eu consigo colocar no front. O Leno eu consigo colocar no front, porque a tela está pronta. As caixinhas estão todas prontas, as desenhinhas, está tudo legalzinho.
+
+34:28 - 34:29
+A Ana entregou.
+
+34:29 - 34:30
+A Ana entrega.
+
+34:30 - 34:30
+Legal.
+
+34:30 - 34:44
+O que ele vai fazer é focar somente: "Não, isso é usuário, não tem a ver com imobiliário, não tem a ver com foto, não tem a ver com ninguém. É somente usuário, só controle de usuário." E a API como tem que funcionar, tem que funcionar assim. E quem que tá fazendo a API do usuário? Ah, o Rafael.
+
+34:45 - 34:46
+O Rafa manhã, não sei quem.
+
+34:47 - 34:49
+É. Agora, de imediato, seria isso.
+
+34:49 - 34:49
+Sim.
+
+34:50 - 35:01
+Poderia ser bom. Não tô dizendo que seja. Poderia ser bom. Agora, eu não sei quanto tempo o Leno tem de casa, não sei quanto vai custar manter ele, não sei se vai ser mais barato mandar ele embora e trazer alguém.
+
+35:01 - 35:05
+É, eu estou, assim, racionalmente achando que não faz sentido manter.
+
+35:05 - 35:05
+Fechou, então.
+
+35:06 - 35:19
+Porque, primeiro, aí eu não sei a qualidade do código dele pelo tempo que ele tem, como é que tá. Isso precisaria, na realidade, de uma resposta tu e do Márcio. Pelo tempo que ele tá aqui. E aí?
+
+35:19 - 35:20
+O código dele é melhor que o do Leno.
+
+35:21 - 35:26
+O que não é, o que não quer dizer muita coisa, né? Porque até onde eu vi, o do Dalton é horrível, né?
+
+35:27 - 35:27
+É, é, o do Dalton.
+
+35:28 - 35:47
+O Dalton é horrível. Então, ser melhor do que ele é a base, né? Mas o que me preocupa dele, assim, o cara entra às oito, às nove, porque oito e meia chega, ele não tá lá ainda, e sai às onze. Aí depois ele trabalha à noite numa situação que o Márcio já falou pra mim: "Eu não sei o que ele tá fazendo à noite." Eu falei: "Cara, vocês que estão coordenando não sabem o que ele tá fazendo."
+
+35:47 - 35:50
+É, mas depois o Márcio se corrigiu, né? Mas o Márcio também é tudo.
+
+35:50 - 35:51
+Me ajuda, né?
+
+35:51 - 35:54
+É tudo coração, que nem a gente, né? Às vezes, né? E isso é ruim pro negócio.
+
+35:55 - 36:07
+É demais, né? Então, é onde eu penso que, assim, talvez, estrategicamente, se a gente desliga o Leno agora, tiramos do time uma pessoa que tá tomando o nosso tempo, colocamos no time mais três pessoas que vão ajudar. A gente ganha velocidade.
+
+36:08 - 36:08
+Tá bom.
+
+36:08 - 36:35
+A hora que o projeto estiver andando, aí a gente traz gente pra aprender de novo. Racionalmente, essa é a minha ideia hoje, mas ele tá no time por um motivo, né? Se de repente vocês falarem: "Olha, talvez ele, essa visão que você trouxe é interessante, talvez ele no front, alinhado com o Rafael, a gente libera as outras pessoas pra trabalhar em coisas específicas de imobiliária, por exemplo."
+
+36:35 - 36:45
+Porque olha só, Márcio, aqui no que nós vamos dar agora, tudo que nós desenvolvemos de usuário em Node, nós vamos ter que usar o que o Rafa vai ter que traduzir para Lázaros.
+
+36:45 - 36:54
+É, nós estamos falando de usuários, mas assim, me parece que até a tela de usuários no Gestão já tem alguma coisa.
+
+36:55 - 36:58
+Já, já, já tem. Por isso que eu te digo. Não, por isso que eu te digo, Márcio.
+
+36:59 - 37:01
+Então, eu falei usuários, mas...
+
+37:01 - 37:03
+Tá, então vamos pensar melhor. O que seria?
+
+37:03 - 37:06
+Outra, não sei. Eu acho que usuários seria a primeira.
+
+37:06 - 37:10
+A reclamação dele hoje foi a integração com o WhatsApp. Como que está isso?
+
+37:10 - 37:11
+De quem?
+
+37:11 - 37:17
+Do Leno. Porque estavam falando do Leno, o que fazer com o Leno. Foi aí que começou. E aí estavam falando ao mesmo tempo do Rafa, o que fazer com o Rafa.
+
+37:18 - 37:25
+É. Vamos lá. O que foi pedido para o Leno? "Leno, você vai entregar pra gente a integração com o e-mail e a integração com o WhatsApp."
+
+37:25 - 37:25
+Isso.
+
+37:25 - 37:36
+Então, falei: "Olha, conversa com o Pedro. O Pedro vai sair da empresa." Eu já fiz isso mesmo, de propósito, falei: "Conversa com o Pedro, o Pedro vai sair da empresa, então conversa com ele agora, alinha suas dúvidas, porque eu preciso de ajuda."
+
+37:36 - 37:37
+Foi o que eu falei hoje com o Leno do WhatsApp.
+
+37:38 - 37:41
+É do WhatsApp. Então, beleza. Não, beleza. Tá, tá, tá. Aí...
+
+37:41 - 37:43
+Não, você falou hora do Pedro e-mail. Eu falei hora do Pedro WhatsApp hoje.
+
+37:43 - 38:00
+É, eu já tinha falado do e-mail que ia dar mais. Aí nós conversamos do WhatsApp. E aí, não, beleza, então eu vou conversar com o Pedro, tal, tal, tal. Aí no outro dia, aí você falou: "Pedro, não falei, ele já passou as coisas que eu preciso." Beleza, o Pedro não tá mais no time. Você vai fazer a integração do WhatsApp agora. E aí, ele sabe fazer? Porque se ele fez o que eu pedi, ele tem que saber.
+
+38:00 - 38:01
+Então, a questão...
+
+38:01 - 38:03
+Se ele chegar pra mim e falar assim: "Cara, tô perdido, meu amigo."
+
+38:03 - 38:18
+Não, a reclamação dele foi que ele chama com o token que o Pedro forneceu, com a API que o Pedro forneceu, ele chama a API lá do WhatsApp, sei lá do quê, porque eu não vi ainda, ele me mandou na viagem, tá? E ele obtém uma mensagem de erro lá, mas somente diz erro.
+
+38:19 - 38:27
+Maravilha. Se o problema for esse, é mais um motivo pra gente trabalhar ele e o Rafa junto, porque o Rafa também me ajudou na construção da API do WhatsApp.
+
+38:27 - 38:31
+Tá, então vamos por isso, vamos por esse lado, então?
+
+38:31 - 38:32
+Vamos, beleza.
+
+38:32 - 38:37
+Tá, fechou. Então, não estamos tirando o Leno, mas estamos redirecionando, estamos trazendo o Rafa.
+
+38:37 - 38:41
+Estamos trazendo o Rafa e redirecionando o Leno direto pra front.
+
+38:41 - 38:42
+Isso.
+
+38:42 - 38:43
+Alinhado com o front.
+
+38:43 - 38:46
+É, um front que não é front, né? Vamos por esse.
+
+38:47 - 38:49
+É, porque front daqui a pouco ele trava e eu não posso fazer nada direito.
+
+38:49 - 38:51
+Sim, sim, sim, sim, sim. Vamos.
+
+38:51 - 39:00
+Ok. Então, nós vamos colocar o Rafa construindo as APIs e ele fazendo as APIs funcionarem no desenho que a Ana fizer. Pronto. É isso? O que foi?
+
+39:01 - 39:13
+Não, eu estava pensando em marcar uma reunião. Não, não, vim só pra te ver. Eu estava pensando em marcar uma reunião com eles agora, mas eu acho que o Leno não pode depois da uma, das duas da tarde.
+
+39:13 - 39:18
+É, no meio-dia ele já deve ter ido, na verdade. Porque ele tem aula, acho que tem uma aula.
+
+39:19 - 39:20
+Tá, vamos, vamos.
+
+39:21 - 39:21
+Ele já não está.
+
+39:21 - 39:36
+Tá, tá, tá. Tá, tá. Eu acho importante isso, já incluir o Rafa lá. Tá, gostei, gostei. Fica bom. E a Aninha, eu preciso falar com ela como que ficou, mas ela tem, você passou alguma coisa já? Não, ainda não.
+
+39:37 - 39:37
+Do quê?
+
+39:38 - 39:42
+Do layout que ela falou que precisava. Porque eu falei pra ela que era a redação dela hoje.
+
+39:43 - 39:43
+Não, então não.
+
+39:43 - 39:44
+Então tá.
+
+39:44 - 39:58
+Eu não falei, eu estava numa reunião até agora há pouco e não falei com ela depois. Eu falei com ela ontem, ela tinha me mostrado ontem alguma coisa em cima do que eu tinha pedido, gostei, o cara me mostrou ontem, mas se ela teve dúvida em cima, depois do que eu falei com ela ontem, ela não me trouxe.
+
+39:59 - 40:11
+Porque ela hoje disse que precisava de um, como se chama? Um esboço, ah, esqueci o nome. Mas eu falei pra ela: "Faz o..."
+
+40:11 - 40:14
+Falei: "Ana, tá lindo. É isso aqui que eu quero."
+
+40:14 - 40:17
+"Faz o design, mas é isso ou é outra tela?"
+
+40:17 - 40:18
+Essa é a tela que nós conversamos ontem.
+
+40:18 - 40:25
+Não, porque ela falou de uma tela que não tá pronta, que não tem nada. Ah, ela falou: "Não tem o layout de uma outra tela." Aí eu me perdi.
+
+40:25 - 40:28
+Ah, então isso já tá pronto, ela já deve estar indo pro próximo passo.
+
+40:28 - 40:42
+Isso. Aí no outro, o que eu ofereci pra ela, pra fazer rápido, tá? Porque me parece mais simples, tipo, caneta e papel. Tipo, faz num papel junto com o Bruno, manda pro Alê, se é isso, aí sim, começa a gastar tempo com o Figma. Se ele autoriza, tá, mas não.
+
+40:42 - 40:44
+Mas ela não fez nada.
+
+40:44 - 40:44
+Ela não fez nada.
+
+40:44 - 40:46
+Não, não sei, ela não me falou nada.
+
+40:46 - 40:47
+Tá, ok.
+
+40:47 - 40:58
+Eu acho que eu preciso falar com eles. Gente, embora eu fale isso, não acontece. Se eu entro na reunião de manhã, alguém tem dúvida? Não, tá tudo bem. Gente, se estiverem em dúvida durante o dia, me acionem. Me mandem uma mensagem. Às vezes eu estou numa reunião, estou falando com alguém.
+
+40:58 - 41:00
+Sim, em algum momento vai ser respondido.
+
+41:00 - 41:10
+É assíncrona a comunicação, mas ela acontece. Mas eles esperam eu entrar e, gente, alguém entrou: "Ah, eu tenho, ó, me ajuda aqui." Numa dessas, ela ficou o dia inteiro esperando.
+
+41:11 - 41:18
+Quando você entra nas reuniões, eu simplesmente me coloco num lugar secundário só, porque, tipo, eu acho que você que tem que tomar a dianteira, tá?
+
+41:19 - 41:21
+Nem sempre. Às vezes eu entro na reunião só pra ajudar.
+
+41:21 - 41:28
+Não, não, quando você entra e eu estou, não, nas reuniões das outras, não. Outro dia você entrou, eu continuei, tipo, ah, o Alê entrou, eu tô no meio.
+
+41:28 - 41:28
+Exatamente.
+
+41:28 - 41:33
+Mas tipo assim, não, você entrou no início e final do sprint.
+
+41:33 - 41:34
+Ah, e tudo bem.
+
+41:34 - 41:35
+Aí eu acho que eu te.
+
+41:35 - 41:45
+Até porque, vamos lá, tivemos o início, demos o direcionamento, garantir que o barco saia daqui e chegue lá é contigo. Você vai fazer um contorno bem próximo.
+
+41:45 - 41:46
+Sim, sim, sim, sim, sim, sim, sim.
+
+41:46 - 41:48
+O barco chegou, então vamos lá, gente, olha.
+
+41:48 - 41:53
+Tá. O banco de dados, você chegou a ver uma coisa? Porque eu falei: "Bom, se ele vai dar uma olhada estruturalmente."
+
+41:54 - 41:55
+Fiquei com medo.
+
+41:59 - 42:01
+Ele não tá dentro do padrão.
+
+42:01 - 42:28
+Eu chamei, eu chamei o Márcio, até falei pra ele, falei: "Cara, ó, eu fiz a coisa mais tosca do mundo. Eu abri o sistema, preenchi um cadastro, abri o banco de dados. Cara, tem informação duplicada, tem informação que não tem no banco e não foi pedida na tela." E aí eu fiquei: "Tá, tá desarmado, não sei o quê." E aí, óbvio que eu ouço a coisa que mais me deixa preocupado no mundo. É, no fim eu fiz, mas a gente arruma. Aí eu olho e falo: "Cara, então tá, beleza."
+
+42:29 - 42:36
+Eu volto, eu volto nos textos unitários, cara, eu volto nessa questão. Sem isso a gente não tem qualidade de produto.
+
+42:36 - 42:38
+O que é teste unitário? Vamos lá.
+
+42:38 - 42:54
+Tem dois textos unitários que têm que ser feitos. Um que tem a ver com, ou três, melhor dizer, mas um que tem a ver com o código, tá? Então, o texto unitário é um conjunto de, você já está cansado de saber, tá? É um conjunto de scripts que faz testes de chamada de API, tá? E você sabe.
+
+42:55 - 43:04
+Por isso que eu queria, pra mim, isso tem outro nome. Eu chamo isso de teste automatizado, porque não é feito pelo desenvolvedor. Na minha percepção, esse é o trabalho do Bruno.
+
+43:05 - 43:11
+Os textos automatizados são unitários porque eles se dedicam a tratar uma unidade do sistema.
+
+43:12 - 43:12
+Entendi.
+
+43:13 - 43:19
+Então, eles tratam disto, tá? Ele chama, ele é responsável de chamar a API, por exemplo, pra fazer todo o crude de qualquer coisa.
+
+43:19 - 43:22
+Ele vai preencher dez cadastros de usuários toda vez que ele for.
+
+43:22 - 43:29
+Ele vai usar informação randômica, tá? E esse teste sabe o que é esperar de retorno.
+
+43:29 - 43:29
+Ok.
+
+43:30 - 43:34
+Tá? Então, tem testes positivos, tipo, isso daqui tem que passar.
+
+43:35 - 43:36
+E isso aqui tem que dar erro.
+
+43:36 - 44:03
+E isso aqui, e aí tem os testes negativos. Isso aqui tem que dar erro. É um CPF que está intencionalmente errado, uma data de nascimento que está atravessada, sexo que está indefinido quando deveria estar, sei lá, esse tipo de coisa, qualquer coisa. Então, você conhece a regra de, esse daqui tem que dar erro. Se não dá erro, é porque está errado, né? Então, esses testes automatizados unitários se dedicam justamente a tratar uma unidade que pode ser compatível com o microserviço que está sendo testado, tá?
+
+44:03 - 44:05
+Quem faz esses testes automatizados?
+
+44:05 - 44:13
+Esse teste tem que ser o próprio programador. Por quê? Porque ele vai fazer o teste e sabe onde exigir o programa que erre.
+
+44:13 - 44:17
+Então, mas ele vai abrir a tela aqui e testar ou ele vai construir isso?
+
+44:17 - 44:46
+Não, isso não. Não, espera, estamos falando só da parte automatizada, vamos dizer, da parte da API, em que você testa a API. Então, pra ter uma garantia de uma parte do sistema, que, vamos dizer, aqui vai te dar o suporte para o restante, que é a que não se vê, é a parte baixa do iceberg, tá? Essa está funcionando o quê? Ela não pode passar, não pode fazer merge para testes, né? Se isso não está legal no micro do programador.
+
+44:47 - 44:47
+Nem tem que ir pro Bruno.
+
+44:48 - 45:01
+Não, não pode ir pra ninguém, tá? O programador tem que passar os próprios testes. Só que aí vem o segundo estágio. Outro programador, aí que nós não temos perna pra fazer, mas talvez entraria o Bruno, tá? Porque o Bruno me falou que ele sabe fazer alguma coisa.
+
+45:02 - 45:03
+Sabe bastante.
+
+45:03 - 45:14
+Aí está. Não, eu senti humildade da parte dele. Eu senti humildade da parte dele. Não, alguma coisa eu sei. Eu consigo fazer sim. Posso fazer em Python? Claro, claro.
+
+45:14 - 45:16
+Ele fala que é Selenium, se eu não me engano, mas...
+
+45:16 - 45:32
+É, o Selenium é uma livraria que emula o navegador. Mas ainda não cheguei lá. Este outro programador, porque ele já testou, porque ele já viu outro erro, vai examinar os testes de erro e ele vai incrementar os testes de erro, tá? Tipo assim, ah, mas peraí.
+
+45:33 - 45:34
+Que não são os testes negativos.
+
+45:35 - 46:05
+Sim, sim, sim. São os testes negativos ou de erros. Tipo, isso aqui tem que dar erro. Tipo, quando eu mando este conjunto de informações, eu já mandei e ele aceitou como positivo, como que está válido, tá? Não. Esse conjunto de informações tem que, tipo, às vezes uma combinação de dados, tipo, a cidade com CEP não bate, por exemplo, né? E ele aceitou, engoliu de boa. Não. Você tem que me corrigir lá na ponta. Então, esse daqui tem que dar errado. E aí você estabelece um pingue-pongue aqui.
+
+46:05 - 46:30
+Nós não temos também perna pra fazer isso, mas temos que fazer em algum momento, tá? Por quê? Porque esse pingue-pongue você estabelece entre o programador de desenvolvimento e o outro de teste, no caso o Bruno, tá? Tipo, não passa, cara. Não passou por aqui. Aí depois sim vem o usuário, depois vem o Selenium. Só que o Selenium, tipo, ele vai fazer em sequência. A gente tem que fazer um que, tipo, faça, tipo, usuário.
+
+46:31 - 46:31
+Aleatoriamente.
+
+46:31 - 46:52
+Sim, tipo, pega aleatório, diz: "É o primeiro carro que eu vou preencher este. O que acontece se eu preencho isto?" E aí pipocaram os erros, né? Fala: "Não, você preencheu o endereço, não preencheu o CEP, por exemplo." E devolve um erro em tela, não devolve, o que faz? Então, de futuro, em algum momento, eu vou ter um Bruno 2.
+
+46:53 - 47:20
+Eu tenho um menino muito bom aqui na empresa, que eu estou pensando o que eu faço com ele. Porque ele é muito bom tecnicamente falando. O Alan, que fica montando o CEP 2, etc. O Alan está na equipe de suporte. E ele é muito bom no suporte porque ele conhece muito bem a ferramenta, mas não é o perfil dele. Ele é técnico. Eu estava pensando, inclusive, em ter recentemente uma conversa com ele em pedir para que ele estude banco de dados. E ele ser o cara do banco de dados.
+
+47:20 - 47:51
+Mas a gente pode, de repente, começar a falar com ele: "Bruno, eu quero que você estude teste." E o Alan, né? E começar a trazê-lo para o lado do desenvolvimento, porque eu tenho já outras pessoas também boas que estão fazendo suporte, alinhamento, etc. e tal, mas que têm uma linguagem mais fácil de ser entendida. O Alan é meio secão, né? "Eu estou com um problema tal, resolve assim." Acabou. Ele resolveu o problema do cara, resolveu. Não é assim. Você está lidando com o usuário: "Cara, ó, não, estou aqui com você, etc. e tal."
+
+47:51 - 47:59
+Então, como ele tem um perfil mais analista, eu estou pensando em trazê-lo para o time de cá. De repente, a gente pode já começar a colocar ele.
+
+47:59 - 48:05
+Essa é outra coisa que eu gostaria de falar com o Alan. Eu não preciso como ficamos com a questão dos servidores ali, porque.
+
+48:05 - 48:07
+Ainda mais com a saída do Pedro agora, temos que.
+
+48:07 - 48:07
+É, é.
+
+48:08 - 48:09
+Mas vamos lá, depois a gente entra nisso.
+
+48:10 - 48:17
+É, é, não, isso é um problema, mas poderia ser uma boa. Se ele é técnico, se ele entende o mínimo de programação.
+
+48:17 - 48:33
+Eu acho que ele conhece muito pouco, mas ele tem uma, assim, ele já, por iniciativa própria, estudou um pouco de banco de dados, ele já tem um selectzinho, um ou outro. Então, assim, eu acho que se a gente não for buscar no mercado, se eu tivesse que escolher alguém dentro da empresa, eu acho que seria essa pessoa.
+
+48:33 - 48:51
+Tá, esse poderia ser, a gente poderia colocar ele, empalmar ele já com o Bruno, tá? Para eles andarem juntos, né? Tipo assim, o Bruno vai passando para ele conhecimento e o Alan, com esse conhecimento técnico que ele tem, complementaria ele, faria uma dupla bastante interessante. Até porque ele poderia imaginar como automatizar isso, tá?
+
+48:51 - 49:01
+Isso. Ele seria esse elo, né? A programação dos usuários. Eu conheço muito a parte de usuário e conheço alguma coisa aqui. Legal, então vamos. Você vai segurar os dois lados.
+
+49:02 - 49:12
+Aqui nós estamos falando de controle de qualidade. Estamos falando da qualidade do software e a cara que apresentamos para o cliente.
+
+49:13 - 49:28
+Se ele deixa passar, eu acho que até a vinda dessa figura é importante, como ele está no suporte, ele sabe o problema que é um erro. Então, bicho, você sabe que se der merda isso aqui, a injeção de saco que o time vai.
+
+49:28 - 49:29
+O Bruno está no suporte também?
+
+49:30 - 50:02
+O Bruno hoje está fazendo alguma coisa de suporte por conta do, eu estava falando isso com a Júlio ontem, algumas coisas que eu vou ter que realinhar na engenharia de cargas da GE. Foi passado para o Bruno tempos atrás, como a equipe parou de trabalhar com o sistema em Python, o Bruno estava, né? E agora, o que eu faço? Bruno, então, vamos fazer o seguinte, dá uma mão para a gente segurando o atendimento, enquanto as duas meninas que fazem o atendimento, elas vão fazer venda. Precisa trazer dinheiro para o time, etc. e tal.
+
+50:02 - 50:22
+Então, as meninas deveriam estar focadas na parte de venda e o Bruno nos auxiliando nisso daí. Então, hoje ainda está assim. Mas eu estou vendo que isso não vai dar para muito tempo. Talvez a gente tenha que chegar para o Bruno e falar: "Cara, você não atende mais suporte, esquece o suporte, eu trabalho isso aqui."
+
+50:22 - 50:22
+O Bruno.
+
+50:23 - 50:24
+O que vocês falarem para mim que isso é necessário.
+
+50:25 - 50:30
+O Bruno tem feito umas contribuições interessantes por essa visão, essa macrovisão que ele tem do sistema.
+
+50:32 - 50:34
+Que acabou vindo por conta do suporte até.
+
+50:34 - 50:43
+Exato. Não, por isso que eu levei, quando você fala do Alan, tipo, então não me tira o Alan do suporte, porque isso é muito importante.
+
+50:44 - 50:47
+Mas o Alan está no suporte do comercial, é outra coisa.
+
+50:47 - 50:47
+Ah, tá.
+
+50:48 - 50:49
+É indiferente.
+
+50:49 - 51:18
+É, mas ele pode imaginar a burrada, ao ver a tela, ele pode imaginar a burrada de uso e exigir do sistema. Porque a ideia é um teste de estresse, né? O teste final, o teste é um estresse de uso, né? Não é um estresse de carga, tá? Mas de uso. Tipo, o que acontece se o cara deixa o campo vago? E isso precisa de pessoas que pensem, que tenham criatividade, tipo.
+
+51:20 - 51:23
+Não. Acho que vocês dois seriam um bom time, sim.
+
+51:23 - 51:25
+Bruno e Alan.
+
+51:25 - 51:26
+E Alan. Eu acho que sim.
+
+51:26 - 51:32
+Tá. Então, tá. E voltando ali atrás com o Rafa e o Leno.
+
+51:32 - 51:33
+Temos Rafa e Leno aí.
+
+51:33 - 51:35
+Com a integração de WhatsApp.
+
+51:35 - 52:01
+Com a integração de WhatsApp, integração de pesquisa restritiva, enriquecimento de dados, acho que a gente pode fazer o seguinte: quais as APIs aí que já foram desenvolvidas que a gente precisa colocar, por exemplo, algo que a gente precisa nessa tela, mas eu nem mencionei ainda. Nessa tela, eu preciso fazer uma pesquisa restritiva desse proprietário aqui. Então, até nas telas anteriores tem uma lupinha aqui, e nessa aqui eu nem coloquei, porque quando você clica na lupa e está aqui, o que você quer fazer com esse cara? Pesquisar se ele deve, será?
+
+52:01 - 52:01
+Será?
+
+52:01 - 52:09
+Você quer fazer enriquecimento de dados? Então, eu falei: "Não vou nem pôr isso aqui agora." E são pesquisas que já estão prontas nos outros sistemas.
+
+52:10 - 52:12
+Nossa, aí vai entrar muito bem.
+
+52:12 - 52:24
+Exato. Rafa, você vai fazer, você vai pegar a API que já está pronta, conversa com o Leno aqui, e vocês vão implementar isso nessa tela e em todas as outras, porque isso é uma coisa que precisa ter nas telas de cadastro. Eu acho que isso é muito legal. Vamos almoçar?
+
+52:24 - 52:26
+Eu ia pedir para ser convidado para almoçar.
+
+52:27 - 52:28
+Eu estou lendo seus pensamentos.
+
+52:29 - 52:30
+Isso me preocupa.
+
+52:30 - 52:31
+Isso preocupa?
+
+52:31 - 52:32
+Vamos lá almoçar.
+
+52:33 - 52:37
+Precisamos almoçar em algum momento, eu estou começando a ficar com fome.
+
+52:37 - 52:38
+Vamos lá aqui.
+

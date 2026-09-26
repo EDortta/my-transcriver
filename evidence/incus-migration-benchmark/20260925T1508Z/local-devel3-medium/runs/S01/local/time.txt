@@ -1,0 +1,23 @@
+	Command being timed: "/usr/bin/python3 /home/esteban/Sync/Projects/my-transcriver/transcribe.py /home/esteban/Sync/Backups/Android/VoiceRecorder/Fer choro 27 outubro 2024.m4a --backend local --language pt --overwrite -o /home/esteban/Sync/Projects/my-transcriver/evidence/incus-migration-benchmark/20260925T1508Z/local-devel3-medium/runs/S01/local/output --model medium"
+	User time (seconds): 529.34
+	System time (seconds): 47.11
+	Percent of CPU this job got: 248%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:51.88
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2183640
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 4920
+	Minor (reclaiming a frame) page faults: 20707600
+	Voluntary context switches: 2208612
+	Involuntary context switches: 872990
+	Swaps: 0
+	File system inputs: 3975528
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

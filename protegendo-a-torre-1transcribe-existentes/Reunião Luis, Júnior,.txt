@@ -1,0 +1,1149 @@
+00:00 - 00:37
+Eu não estou falando mal dele, não é isso. Está bem difícil a comunicação com o Anso nos últimos dias, ele está bem corrido lá com as coisas da Cross, então eu não quero nem ficar meio com bola dividida, entendeu? E aí a gente queria entender, pelo menos falar aqui por mim e pelo Luiz, quanto contribui aí, e a gente vai compondo. A gente está fazendo ao vivo. Eu queria entender como que está o prazo, porque um dos prazos que foi dado pelo Anderson é dia 7 para a Carleto, o negócio do cartão.
+
+00:37 - 01:14
+E, assim, a primeira pergunta é: como que ele dá o prazo se a gente nem testou e nem validou? É uma dúvida que a gente tem. E, não entregando dia 7, eu vou ter que ver quem aqui pode responder à altura que tenha conhecimento do que foi feito, até onde nós estamos, para que, enfim, consiga segurar o cliente. Por outro lado, ontem a gente esteve lá em São Paulo, a gente fez um bate-volta lá em São Paulo, e o Pinheiro Neto deixou bem claro que mudou todas as regras do regulatório para CD e IP.
+
+01:15 - 01:53
+Então aumentaram a régua: de 0 a 10 estava a 3, foram para 11, por causa desses últimos acontecimentos e tal. Então eu falei para o Luiz, coisa que eu venho comentando, né: a gente vai ter que se posicionar com a BV nos próximos dias para passar até o cenário atual e, como consequente que eles fazem parte da Dicred, né, eles vão querer perguntar em que etapas que nós estamos, do SLT, lá do FGTS, do cartão. E aí a gente, eu, particularmente, estou meio no escuro, porque a gente fica sabendo por partes, né?
+
+01:53 - 02:30
+Então, partes do front, parte do back, parte lá do Millennium. E a gente queria dar essa geral. Não sei se vocês vão precisar coletar esses dados, entender o que vocês podem passar para a gente, entendeu? Porque eu, por mim, eu, por mim, a gente vai ter que conversar com o Anderson, não é falar mal do Anderson pelas costas, longe disso, a gente gosta dele. É que não está tendo tempo hábil para ele, né, acompanhar e a gente ter essa clareza, entendeu? Então eu confesso que está meio desconfortável isso, sabe?
+
+02:30 - 02:41
+E aí é mais esse papo, assim, tranquilo que a gente está tendo com vocês, pela confiança, por tudo que a gente está vendo nos acontecimentos, entendeu?
+
+02:43 - 03:05
+O prazo do cartão surge porque eu apertei o Adolfo para ver como que estávamos indo, né? E aí o Adolfo me passou data de quinta-feira passada. Eu passei data de segunda-feira para o Anderson. O Anderson falou: "Vamos passar dia 7 para ter gordura." Menos mal que fizemos isso, porque.
+
+03:05 - 03:06
+Já tinha dado ruim.
+
+03:07 - 03:47
+Já tinha dado ruim, tá? No meio de tudo isso, o Adolfo passou por alguns problemas particulares, de saúde, questão de relacionamento, né? E a outra questão é que o pessoal da Algorics não tem um procedimento, uma forma de homologação estandarizada, tá? É tudo feito na unha, na mão, na hora, tá? O que que o Calegari e eu tivemos várias reuniões já com ele, a última de hoje foi: "Você vai pegar dados, nós vamos dar dados reais", porque ele disse assim, o Adolfo falou: "Vocês não aceitam dados fictícios".
+
+03:47 - 04:31
+Então pegamos os dados do Luiz, os dados meus, e você vai filmar fazendo as chamadas, tá? Se isso estiver ok, fechou. Nós temos a homologação pronta, e isso eu acho que é uma carta bastante importante para o cliente. Não que seja mais importante, mas sem as outras, mesmo com as outras, sem essa, tudo se perde. Então estávamos nisso hoje com ele, tá? Não é um processo que esteja, que seja demorado demais, porque o Adolfo tem falado assim, bem claramente, que está pronto, que está funcionando, que ele faz as chamadas, que funciona, tal, tal.
+
+04:31 - 04:34
+Foi isso que ele falou, certo?
+
+04:34 - 04:34
+Sim.
+
+04:35 - 04:41
+Tá. Não sei. Isso por conta das datas, né?
+
+04:42 - 04:43
+Isso, por conta da Algorics.
+
+04:44 - 04:45
+Isso, por conta da Algorics.
+
+04:45 - 04:52
+É o que nos prende de homologação, mas não é só isso que nos prende, né? A gente precisa ter um sistema montado ali para poder rodar.
+
+04:53 - 04:58
+Tá. De 0 a 10, então, 10 seria o excelente. A gente entrega.
+
+04:58 - 04:58
+Do Carleto.
+
+04:58 - 05:00
+Do dia 7, quando? A gente entrega.
+
+05:01 - 05:17
+Do Carleto, né? É difícil. Eu não estou conseguindo precisar uma data, assim, ó, dia 7 ou dia 10, dia 15, porque não está indo na velocidade que a gente espera.
+
+05:17 - 05:18
+Mas a gente está pronto pelo tempo, pelo cliente.
+
+05:19 - 05:26
+Porque não está indo na velocidade que a gente espera. Lá, por exemplo, primeiro mês, primeiro mês de planejamento, que eu vi lá.
+
+05:27 - 05:31
+Porque é a quarta vez que o Anderson vai quebrar o prazo com o Carlos.
+
+05:31 - 06:06
+É. Ó, primeiro planejamento, olha. Primeira semana, integração com Algorics. Segunda semana, integração com a QITEC. Terceira semana, com a ABMP. Isso era o planejamento, cara, não foi possível, né? E por quê? Por que que não é possível? Porque essas coisas não estão acontecendo na velocidade que a gente acha que deveria acontecer por conta de, às vezes, de um processo, ou às vezes da velocidade de desenvolvimento do programador, né?
+
+06:06 - 06:47
+Bom, dito isso, com relação à Carleto, eu acredito, tá, que dia 7 realmente não vai conseguir entregar, mas dia 7 a gente vai abrir o front aqui para você fazer um login e imputar uma proposta. Vai mostrar o erro, vai acontecer, mas vai acontecer. Eu acredito que é possível, porque a página de digitação de proposta do front-end está pronta, a gente precisa publicar. A digitação de proposta no core, na nossa API, está pronta. A integração está pronta. A gente precisa conectar tudo isso e colocar para rodar.
+
+06:47 - 06:51
+Dia 7 eu acho que a gente consegue fazer isso, né?
+
+06:51 - 07:34
+Por isso que eu precisava ter essa conversa, porque do outro lado, de lá, da Carleto, o Fabrício fechou o contratinho sem prefeitura, e ele falou: "Dia 7 a gente está operando", entendeu? Então, assim, a gente tem que construir aqui, eu não sei nem por onde começar. Menos pior mesmo, menos problemático, porque a última vez é que eu não passei o telefone para ninguém. O que eu escutei, nada agradável. Palavras dele. Ele falou assim: "Olha, Júnior, com todo respeito, ou vocês não sabem o que vocês estão fazendo, ou vocês são muito pouco profissionais". Entendeu?
+
+07:34 - 08:11
+"Vocês são, assim, muito amadores". Aí eu falei: "Não, o Fabrício não entende". Aí fui passando, tal, não sei o quê. Aí, beleza. Aí mandei o áudio, o Luiz está no grupo lá, falei com o Anderson. O Anderson, por mera liberação dele, passou dia 7. Isso tem 20 dias atrás, sei lá, 15 dias atrás, eu não sei. Aí ontem vim com o Luiz, falei: "Luiz, o Anderson já..." O Luiz fez uma simples pergunta: "Tá, como que ele vai liberar se a gente nem testou?" Eu falei: "É, e agora?" E amanhã é dia 5, entendeu?
+
+08:12 - 08:24
+E hoje parou de funcionar lá o negócio da Kronos, que não tem nada a ver com a gente. Quer dizer, o cara está mais pistola ainda, entendeu? Então eu falei assim: "Não sei".
+
+08:25 - 08:26
+De fora para uma terceira mesmo.
+
+08:27 - 08:27
+É, sim.
+
+08:27 - 08:30
+Por mais que ele saiba, mas na prática está.
+
+08:30 - 09:08
+A gente consegue individualizar, mas a impressão é de estar na mesma cozinha. São panelas diferentes, mas está na mesma cozinha, entendeu? E aí eu não sei, está chegando a um ponto muito crítico. Outro ponto que é muito preocupante é a questão da BV. A BV com toda propriedade vai vir cobrar a gente agora na próxima reunião do final de ano, que com certeza eles vão pedir. A gente tem que estar preparado. A gente tem que preparar o que que a gente vai mostrar, o que que a gente temos com a Millennium.
+
+09:08 - 09:35
+Não sei se vocês trataram alguma coisa mais aí desses últimos dias, se evoluiu, como que está com eles, porque a gente está perdendo muito espaço para o mercado, a gente está perdendo. Regulatório veio, ferrou ontem. Regulatório jogou um padical assim que, só para você ter uma ideia, para começar o processo tem que depositar 9.500, 9.500. Isso, só aí. Primeiro.
+
+09:35 - 09:35
+9.500.
+
+09:36 - 09:36
+Na CD.
+
+09:36 - 09:37
+Em qual operação?
+
+09:37 - 09:37
+Na CD.
+
+09:37 - 09:38
+Qualquer operação.
+
+09:38 - 09:43
+Para começar a exceder 9.500, tem que. Só isso já.
+
+09:43 - 09:44
+A gente analisando mais.
+
+09:44 - 10:08
+Aí fora as outras coisas de cabine, PSTI, isso, PIX, tal, tal, tal, tal, que também é outro parque. O que que isso reflete na gente? Na esteira nossa de crédito, se a gente não mostra o que a gente fez aqui internamente, imagina nós numa reunião da BV falar: "Agora é 9.500, o PIX cabine, aconteceu isso", e a gente não, entendeu? Assim, seria um caos para a gente.
+
+10:09 - 10:09
+Me explica.
+
+10:10 - 10:13
+Me explica o quê? É porque a fechada do ano, a virada do ano está aí.
+
+10:14 - 10:14
+Sim.
+
+10:15 - 10:19
+Me explica o que que a BV pretende ver, espera ver da gente, porque eu não estou sabendo.
+
+10:19 - 10:50
+Então vamos lá. O que que eu falei da minha boca? Lembra naquela reunião lá? Que a gente estava lá na Kronos ainda, que a gente estava na reunião, e o Anderson falou em 60 dias está pronto. Era junho, julho. E eu falei: "Em setembro está pronto". Era para ser em julho que era 60 dias. O setembro passou. Eu dei um: "Ah, não, outubro. Agora outubro a gente agora está finalizando, porque teve a Millennium, o Millennium que atrasou lá um pouco, a gente vai".
+
+10:50 - 10:51
+Ventureando.
+
+10:51 - 11:27
+Agora chegou em novembro. E eu estou cagando de medo da hora que abre o manual aí, que dia que nós vamos sentar? Porque eu não sei para onde que eu vou, entendeu? E aí a gente vai ter que, até antes, dar já uma ótica de mercado. Olha, agora a CD mudou, está aí, 9.500, já tirou as nossas pretensões. Deu, literalmente, deu ruim. Provavelmente nós não vamos ter a CD no grupo, porque nós não temos 9.500.000 para protocolar, né? A não ser que eles, eles têm, eles vão, eu e o Luiz, pouco provável.
+
+11:27 - 11:31
+Sim, mas se nós não temos produtor, eles não vão porque não tem por que investir.
+
+11:31 - 12:08
+Exatamente. Agora, e o investimento que a gente tinha separado com eles da Zicred, o que que a gente entregou? Essa é a minha preocupação, entendeu? Por quê? Porque se, Deus o livre, estou sendo aqui o pessimista agora, Carleto dá pau, SLT não, eu não sei para onde que a gente vai, para onde que eu vou, entendeu? E eu falei isso, eu falei com o Luiz e não discordo. É ruim brigar com o Carleto? É ruim? É ruim brigar com o Zé, com o Mané? É péssimo. Agora com a BV, para onde está o imprudente?
+
+12:08 - 12:11
+A BV, eu não estou vendo nada de imprudente.
+
+12:12 - 12:33
+Assim, ó, é que a gente está indo de novo pelo mesmo caminho, que é: o programador fica desesperado, faz qualquer coisa. Não estou falando que vocês vão fazer qualquer coisa, mas é que nós estamos entrando no mesmo caminho que a gente foi sempre na Kronos. A gente expõe a verdade, tudo que o Júnior está falando não é verdade, é a situação real mesmo, mas a gente fez isso com a Kronos.
+
+12:33 - 13:02
+A gente expõe a verdade, os programadores se desesperam, começam a fazer qualquer coisa porque têm que entregar, porque quando você tem que entregar rápido, você não vai fazer do jeito, você vai pular caminhos, você vai pular etapas, você vai fazer do jeito que tem que fazer. Eu não queria chegar nesse nível. Por quê? Porque nós começamos a fazer um sistema inteiro do zero para não usar aquela porcaria que nós tínhamos lá, que era o sistema legado, que foi feito todo à base disso. O Esteban viveu isso na Kronos.
+
+13:02 - 13:34
+A gente metia pressão, o Esteban Pedro vestia a cueca do lado contrário dos avessos, passava por cima de tudo e desenvolvia o sistema. Nós entregávamos o sistema para o cara. O cara ficava contente porque a gente cumpriu o prazo. Dois meses depois, duas semanas depois, três meses depois, o que aconteceu? Nós éramos vistos como um craco, e foi assim que a gente construiu a Kronos. Eu não quero, de verdade, começar isso tudo de novo na Zicred, não é a minha intenção a gente fazer essa mesma coisa. Só que onde que nós erramos?
+
+13:34 - 14:05
+Nós não estamos errando agora de expor para vocês a verdade, porque tudo que o Júnior está falando é real, é o fato, é a verdade. Mas nós erramos onde? Em acreditar nos prazos. Ali nós erramos. Por quê? Porque nós ainda acreditando nos prazos, a gente fez o quê? A gente virou lá para eles e falou: "É possível?" Porque quando a gente vendeu lá, o comercial vendeu, e o comercial falou 60 dias, o comercial não sabia nem o que era que ele estava vendendo. O comercial não sabia nada do que era que ele estava vendendo.
+
+14:05 - 14:38
+Só que ele foi lá e vendeu. Nós vimos isso como uma oportunidade. E a gente falou: "Vamos, Anderson, dá para pegar isso e fazer 60 dias? Quantas pessoas a gente precisa contratar? Precisa montar esse time aqui, aqui, aqui." Está tudo aí. O time inteiro está montado. Nós contratamos gente para dar com pau, para colocar no tem gente contratada que eu nunca vi nem a cara deles ainda, que eu nem sei quem é. Por quê? Porque foi o que nos pediram. Nós fizemos tudo o que era para fazer. O prazo era 60 dias.
+
+14:38 - 15:01
+Cara, já passou 120 quase dos 60. Nós já dobramos o prazo de 60, entendeu? E agora a gente está num nível que é o quê? Que a gente está nesse ponto que agora, dia 7, tem uma nova promessa, que tem que entregar para um cara, que se não tiver entregue vai dar ruim, mas vai dar ruim com força, porque já é a terceira vez que ele pega prazo de novo.
+
+15:01 - 15:02
+É a quarta.
+
+15:02 - 15:37
+É a quarta. Quarta vez que ele pega prazo de novo com o Anderson, entendeu? E agora já não está mais no nível amigável que era antes. Agora já está nesse nível do cara falar: "Não, vocês são muito amadores. Vocês não sabem o que vocês estão fazendo." Essa é a conversa. Do outro lado, eu. Cara, tem etapa do sistema que nem eu sei ainda como que nós vamos resolver. Eu que sou o cara que estou planejando com o UX do sistema. Por exemplo, hoje chegou uma demanda lá do Vitor, que é da mesa de análise.
+
+15:37 - 15:48
+Quem aqui já fez uma mesa de análise? O Caio Garve fez? Eu nunca nem vi o que é uma mesa de análise de crédito. Mesa mesmo de análise de crédito, entendeu?
+
+15:48 - 16:30
+Não, de análise de crédito não. A mesa que chegou lá, ô Luiz, é que assim, todo documento que entra aqui, por exemplo, a gente vai digitar uma proposta de crédito. Então, seguindo as normas que a Adriele passou para nós, para a gente gerar uma CCB, qualquer que seja ela, por exemplo, crédito do trabalhador, que seja, a gente precisa pegar comprovante de endereço, comprovante de o que é o cara mesmo, documento do cara. E alguém precisa entrar ali e falar assim: "Olha, esse documento, essa CNH, a CNH a gente consegue pegar pela Único, mas esse comprovante."
+
+16:30 - 16:37
+Mas vai trazer da Único para dentro desse painel, para que a mesa possa olhar. Porque a mesa, quem é a mesa? Às vezes a mesa.
+
+16:37 - 16:38
+A mesa entrega dia 7?
+
+16:39 - 17:04
+Às vezes a mesa é o fundo, entendeu? O fundo de investimento. Às vezes a mesa é ele, porque ele quer, antes de aprovar uma proposta, ele quer bater o olho na documentação, como é no caso da RC Card lá. Nenhuma proposta passa para aprovado se o fundo lá, uma funcionária da Fictor, não der o de acordo, entendeu? Mas eu citei só esse exemplo da mesa, só para exemplificar a conclusão, porque é o seguinte.
+
+17:04 - 17:05
+Sim.
+
+17:05 - 17:38
+Nós estamos construindo um negócio que é muito maior do que qualquer um de nós poderíamos imaginar. Essa é a base, do que eu poderia imaginar, do que o Júnior poderia imaginar, do que vocês que estão programando poderiam imaginar, e também do que o Anderson poderia imaginar. Agora, vamos atribuir culpa a quem tem culpa, que é real. Se a gente vai pegar um software para fazer do zero, nós não temos que capturar todos os requisitos. É mais tempo planejando do que executando para poder fazer uma coisa funcionar de verdade.
+
+17:38 - 18:01
+Juntou naquelas reuniões que teve lá e fizeram vários planejamentos e várias estruturas. Só que no meio do caminho a gente vai descobrindo que tem situações e coisas que a gente precisa e que a gente vai saber que precisa quando o fundo chega dizendo que precisa. Por exemplo, a Millennium. Nós não sabíamos que nós íamos ter que integrar com a API da Millennium. Vocês sabiam?
+
+18:01 - 18:01
+Não.
+
+18:02 - 18:03
+Eu também não. Nós ficamos sabendo.
+
+18:03 - 18:04
+A API pegou paga paga.
+
+18:04 - 18:05
+Exatamente.
+
+18:05 - 18:06
+Mas chegou no final.
+
+18:06 - 18:29
+Nós ficamos sabendo quando nós fomos lá na Millennium e eles falaram: "Não, funciona diferente aqui. Aqui tem essa API, pronto." Aí vamos de novo, nós temos que desenvolver outras coisas. Então assim, não é que de toda culpa ou de todo problema está 100% em cima do Anderson, de mim ou do Calegari ou do Esteban ou do Júnior. Não. Até porque não vai adiantar agora a gente resolver isso.
+
+18:29 - 19:03
+Então era isso que ia falar. Eu acho que antes que eu estoure, eu acho que nós precisamos definir exatamente o que que vocês precisam dia 7, porque para mim o que me passaram foi: precisa estar trabalhando o private label, precisa integrar com o Algorics. Aí para mim, para chegar nisso, eu tenho dois caminhos. Eu tenho Algorics com o Rodolfo e eu tenho toda a questão de interface gráfica, toda a parte de uso, lançamento, tudo tem que chegar lá para entregar para o Adolfo e mandar para o Algorics. Fechar um ciclo. Eu estou nessa.
+
+19:03 - 19:08
+Mas e aí, o que mais? Porque nós vamos ter que trabalhar essa proporção de análise.
+
+19:08 - 19:38
+Mas é por isso que eu perguntei quando o Júnior falou: "Mas como vai entregar dia 7? Você não testou nem fez nada." Por quê? O que que eu penso? Ok, é isso daí mesmo. Para a Carleto, é isso que tem que entregar, é o private label funcionando, com a marca deles, escrito Carleto lá. Nem que a gente não tenha como Zicred, só tenha Carleto, mas tem que estar com o Carleto lá funcionando. Então, beleza. Para a Carleto, é isso que eles precisam. Agora, como que o cliente faz, por exemplo, a jornada de contratação?
+
+19:38 - 19:51
+Como que ele pede o cartão private label? Porque nós temos aqui pelo UX a jornada para o Core Ban pedir o cartão private label para o cliente, que é a jornada do Core Ban que está lá na prefeitura e ele pede.
+
+19:51 - 19:52
+Sim. Mas não para o cliente.
+
+19:53 - 20:17
+Isso. Não, para o cliente final. Não para o cliente final. Para o cliente final, a jornada dele pedir o cartão é onde? É lá no aplicativo, que é o que o William estava trabalhando. Lembra que o William até brincou quando ele veio aqui: "Se eu tivesse uma API, eu já tinha terminado o aplicativo." Essa entrega do dia 7 inclui? Isso não inclui? O que que o Anderson diz que precisa entregar dia 7? O que que vocês acreditam que é possível entregar dia 7?
+
+20:17 - 20:21
+Para a gente poder entender o que que a gente vai fazer dia 7.
+
+20:21 - 20:24
+O que o Anderson perguntou é a respeito da Algorics só.
+
+20:25 - 20:27
+Tá, mas o private label não é só.
+
+20:27 - 20:27
+O Core Ban.
+
+20:27 - 20:30
+O private label é emissão de CCB.
+
+20:30 - 20:30
+Sim, sim, sim.
+
+20:31 - 20:31
+Cálculo de crédito.
+
+20:31 - 20:33
+Toda a linha tem que chegar lá.
+
+20:33 - 20:45
+Não, é que a pergunta a Luiz, vou falar o que eu entendi, tá Luiz? Temos a jornada de crédito do Core Ban e temos a solicitação do cartão de plástico, no aplicativo ali.
+
+20:45 - 20:45
+Isso.
+
+20:46 - 20:49
+Dia 7 é a jornada do Core Ban.
+
+20:50 - 20:54
+Tá, a jornada do Core Ban de solicitação de um cartão.
+
+20:55 - 21:25
+É, na verdade eu estou fazendo o limite sacado, que aí a gente gera uma CCB. De qualquer forma, tem que emitir. Vai na Algorics e fala assim: "Emite um cartão e aí a gente pega e aí depois a gente averba isso aí, joga isso num averbador para poder receber isso e não manda o cartão para o cara." É um produto que vai ficar aqui. Quem que vai decidir se manda o cartão para o cara ou não? A nossa configuração lá do produto private label com limite sacado.
+
+21:25 - 21:39
+Mas um pouquinho antes disso. A gente define se manda o cartão para o cara ou não manda, e a gente define quanto que a gente manda de limite para o cara, baseado na consulta de margem que o cara tem disponível. Essa parte que é aquela integração com aquele.
+
+21:39 - 21:39
+Averbador.
+
+21:39 - 21:43
+Com aquela, eu esqueci o nome lá, como chama? Bank Tools?
+
+21:44 - 21:44
+Isso.
+
+21:44 - 21:47
+Essa parte com a Bank Tools, a gente fez a integração?
+
+21:47 - 21:54
+Isso foi as primeiras atividades que o rapaz fez lá e a gente testou e funcionou.
+
+21:54 - 22:00
+Está consultando margem então. Então hoje a gente tem consulta de margem, ok, através da Bank Tools.
+
+22:01 - 22:16
+Exato. Consulta de margem não é bem isso, porque ele é igual ao Algorics. Você coloca uma proposta lá e aí ele te retorna, fala assim: "Olha, esse cara aqui tem tanto de margem."
+
+22:16 - 22:17
+É, consulta de margem.
+
+22:17 - 22:25
+O que você faz quando você coloca uma proposta? É que assim, às vezes, por exemplo, é igual ao Algorics. Algorics a gente coloca uma proposta lá e essa proposta é um cartão.
+
+22:26 - 22:32
+É, porque para o Algorics a gente só manda para ele. Emite um cartão com 3.000 de limite. Ele obedece só.
+
+22:32 - 22:45
+Isso. Agora o averbador, a gente vai lá e coloca uma proposta e aí ele define para a gente o limite máximo. Esse cara pode pegar até 5.000 reais.
+
+22:46 - 23:19
+Então não é porque não era para o cliente não vai aparecer que nós vamos colocar uma proposta e depois que ele traz o limite. Para o cliente só aparece porque a jornada é assim. Eu digito o CPF do cliente. Em alguns órgãos ele exige a matrícula, outros só exigem o CPF, mas vamos citar um exemplo. Em alguns só exige o CPF. Eu digito o CPF do funcionário público ali do servidor, a Bank Tools consulta lá na averbadora e me traz: "Esse servidor tem 280 reais de margem disponível."
+
+23:20 - 23:26
+Isso, exatamente. Só que a hora que a gente faz isso, a gente tem que estar emputando uma proposta dentro do sistema deles. É só essa nomenclatura que.
+
+23:26 - 23:29
+Ah, tá, entendi. Mas para o cliente a jornada é: digitou o CPF.
+
+23:30 - 23:30
+Sim.
+
+23:30 - 23:31
+É aquilo que está no UX.
+
+23:31 - 23:31
+É.
+
+23:32 - 24:07
+Tá. Aí beleza. Voltou lá que tem 280 de margem disponível para aquele servidor, para aquele funcionário público. Voltou da Bank Tools. Quando volta essa informação, a gente tem que inserir isso na nossa matriz e tabela de cálculo para definir que se o cara fizer em 36 parcelas, estou falando número hipotético, ele vai ter 3.000 de limite. Se ele fizer em 56 parcelas, ele vai ter 4.800 de limite. Se ele fizer em 60 parcelas, ele vai ter 6.000 de limite. Por quê? Porque baseado na margem que ele tem, a margem disponível é.
+
+24:07 - 24:08
+Por mês.
+
+24:08 - 24:20
+É por mês. Então quanto mais parcelas ele fizer, maior vai ser o limite. Então essa parte é aquela etapa do UX de mostrar as possíveis propostas. Essa etapa também é o.
+
+24:20 - 24:28
+Se eu investiria no caso, isso aí a gente ia casar com as nossas tabelas de comissão, por exemplo. Porque aí entra a nossa faixa de valores.
+
+24:29 - 24:32
+Isso, mas isso está planejado para o dia 7?
+
+24:34 - 24:34
+Não.
+
+24:35 - 24:39
+Porque como que a gente vai fazer uma jornada de contratação de cartão sem essa parte?
+
+24:42 - 24:43
+O que mais?
+
+24:43 - 25:04
+Nós íamos colocar, meu planejamento, tá? Eu ia colocar lá as tabelas de comissões, as faixas de valores e falar assim, chegar para vocês e falar assim, eu ia copiar para dizer o mínimo. Ia copiar da SEC e falar assim: "Ó Luiz, é isso aqui." Não, tudo bem. É isso daí mesmo. Beleza, copiar da SEC, daquele modelo que está lá na SEC, funciona.
+
+25:05 - 25:17
+Exato. E aí, beleza. Aí o cliente vai falar assim: "Quanto que você quer?" Certo? "Quanto que você quer emprestado?" "Ah, eu quero, sei lá, quero.
+
+25:18 - 25:23
+Se eles derem o João da Silva lá da prefeitura tal. Puxa.
+
+25:25 - 25:26
+Não entendi a pergunta.
+
+25:26 - 25:29
+Se eles pegaram os dados reais lá de um servidor que eles já sabem.
+
+25:29 - 25:31
+Se eles tiverem os dados de consulta.
+
+25:31 - 25:37
+Já traz a margem do cara? Bom, teoricamente sim, a gente conseguiria. Eu não sou funcionário público.
+
+25:37 - 25:44
+É para isso, para isso eles precisam passar para nós as credenciais de consulta lá de algum município e a gente colocar para consultar.
+
+25:46 - 26:15
+Enfim, aí o que que eu ia falar? "Olha, eu quero, sei lá, 20.000 reais de empréstimo. Ou 10, ou 1.000, sei lá, o que for." E aí ia se encaixar naquela, ia entrar dentro de uma parcela daquela e escolher o parcelamento dele. Essa questão aí da quantidade de margem liberada que ainda não está casada. Por exemplo, eu preciso saber quanto que o cara pode pegar baseado no tanto que ele quer.
+
+26:15 - 26:38
+Por exemplo, se ele quiser 1.000 reais em 36 parcelas, tem que ter lá uma margem disponível de acordo com o que a Bank Tools liberar para a gente. Por exemplo, a gente vai emprestar 1.000 reais para o cara a 3,9% em 36 vezes. A parcela vai dar o valor. Aquela parcela tem que caber dentro da margem do cara.
+
+26:39 - 27:07
+Isso. Só que é que no UX, baseado na margem que traz, ele apresenta o que eu tenho disponível. Ele pega a margem que tem e ele apresenta todas as opções que tem disponível. E tem um lugar lá que dá para eu editar o valor. "Não, tá, tem disponível aqui para mim 7.000, mas eu só quero 2." Aí eu vou lá e coloco que é 2. Aí ele recalcula baseado na informação que eu emputei. Mas a ordem é diferente. Ele traz toda a margem disponível e mostra tudo que tem para mim de crédito.
+
+27:07 - 27:19
+E aí se eu quiser um crédito menor do que aquele, eu altero o valor e escolho o que eu quero. X. Não, tudo bem que eu tenho 12.000, mas eu só quero 3. Eu vou lá e emputo 3, aí ele recalcula e mostra para mim.
+
+27:19 - 27:25
+Mas Luiz, a gente teoricamente, não estou falando que o dinheiro é infinito, mas teoricamente a gente não tem limite.
+
+27:27 - 27:28
+Como assim não tem limite?
+
+27:28 - 27:32
+O cara traz lá quanto que ele pode pagar por mês, certo?
+
+27:32 - 27:33
+Então esse é o limite.
+
+27:33 - 27:37
+Eu posso pegar de 1.000 a 1.000.000 e pagar aquele valor de parcela.
+
+27:37 - 27:53
+Não. A regra é clara. Eu não posso em um município, por exemplo, parcelar em mais de 60 vezes. Então como que eu vou dar 1.000.000 para ele se 60 vezes do que ele tem de margem disponível só dá para ele pegar 12.000 reais, entendeu?
+
+27:53 - 28:00
+Olha, vamos conversar sobre isso amanhã de novo, que aí eu vou conversar com o Adolfo sobre isso para a gente ver como que está.
+
+28:00 - 28:04
+Com o Adolfo ou com quem que está mexendo com?
+
+28:04 - 28:07
+Ele que fez isso. Foi a primeira atividade dele. A gente conversou lá na Kronos ainda.
+
+28:07 - 28:10
+Ele que fez a parte da Bank Tools, a integração com o Bank Tools.
+
+28:10 - 28:11
+Isso, Bank Tools ficou com ele.
+
+28:12 - 28:12
+Tá.
+
+28:13 - 28:14
+Então ele é pronto.
+
+28:14 - 28:15
+Sim.
+
+28:15 - 28:42
+É que é isso. É que se a gente ir por esse caminho, assim, se a gente continuar indo por esse caminho, dia 5, o cliente falou que precisa e o Anderson chega aqui e fala: "Ó, nós precisamos disso para o dia 7." Sem olhar os mínimos detalhes, olhar dentro da cozinha e saber que para funcionar isso tem que ter aquilo, aquilo, aquilo, aquilo, aquilo, aquilo, você imagina, você acha que a gente vai ter um sistema que não, daqui a pouco nós vamos estar cheios de rendimento, porque eu descobri que no meio do caminho.
+
+28:42 - 28:48
+Se a gente fizer dessa forma, a gente entrega um produto agora que daqui a um mês ele está completamente diferente.
+
+28:48 - 28:55
+Exatamente. Exatamente. E aí a gente volta para aquela remendeira toda, pronto, era melhor ter ficado com o sistema da SEC. Pelo menos a gente não estava vendendo.
+
+28:55 - 28:56
+Não, tudo bem, é verdade.
+
+28:57 - 29:02
+É verdade. Mas se for para ter sistema remendado, remendar para remendar. Agora.
+
+29:02 - 29:04
+Como foi essa frase? Sistema de quem?
+
+29:05 - 29:05
+Da SEC.
+
+29:05 - 29:06
+Quem que é SEC?
+
+29:06 - 29:10
+É o outro sistema antigo que trabalhava, acho que era o nosso? Esse código é nosso?
+
+29:10 - 29:15
+Foi o Wagner, o Pedro e um monte de gente que trabalhou.
+
+29:15 - 29:16
+Calegário, Felipe.
+
+29:16 - 29:20
+Calegário Felipe, programa bonito. Era um sistema nosso.
+
+29:20 - 29:20
+E o que aconteceu com o valor do compressor?
+
+29:22 - 29:25
+Não, nós passamos. Ele parou. Ele está lá e só existe.
+
+29:25 - 29:31
+Ele está estagnado. A gente não vai usar mais ele. A gente não vai usar mais ele porque a gente começou do zero a construir esse novo, entendeu?
+
+29:31 - 29:44
+Isso que eu estou aqui, estou ouvindo vocês, muito bacana, mas essa reunião de cozinha, de fogão, de beira de fogão, tipo assim, é a que eu preciso para eu poder dimensionar. Ninguém pode me chegar e perguntar qualquer coisa de dados?
+
+29:44 - 30:16
+Mas essa reunião nós já tivemos lá atrás, quando vocês começaram o desenvolvimento. Essa reunião o Anderson capturou todos os requisitos lá atrás, quando começaram o desenvolvimento. Só que, ok, está todo atarefado e tudo mais, não está conseguindo acompanhar aqui. Não adianta só chegar aqui e falar: "Pessoal, dia 7 eu preciso de tal coisa." Por quê? Porque o que vocês conversaram lá há quatro meses atrás, ninguém mais lembra se isso não foi documentado nas etapas e fluxos que tinha que ser. E pelo que eu entendi, não está documentado nas etapas e fluxos.
+
+30:16 - 30:21
+Se estivesse, a gente não estava com essa certeza de que a Bank Tools não tem, entendeu?
+
+30:21 - 30:22
+Claro.
+
+30:23 - 30:24
+Então é isso.
+
+30:24 - 30:36
+Ao mesmo tempo que eu estou cuidando de qualidade e produção de código, aí de repente eu tenho que ficar sabendo um monte de coisa que na primeira, na segunda reunião era eu estava do tipo: "Estou tranquilo porque tem o Anderson."
+
+30:36 - 30:39
+Ok, agora vamos encarar a realidade.
+
+30:39 - 30:39
+Eu não consigo responder pelo Anderson.
+
+30:39 - 31:12
+Agora vamos encarar a realidade. Não temos o Anderson. Não temos o Anderson por quê? Por uma questão de falta de tempo dele ou por uma questão de acreditar que ele daria conta de pegar, não deu e nós não temos o Anderson. Essa é a real. Então assim, vamos já considerar daqui em diante que nós não temos o Anderson. O Anderson não tem projeto nenhum na cabeça dele. O Anderson só tem um: "Ah, dia 7 dá." Pode falar para o cliente: "Dia 7 dá." Isso para nós não está adiantando, não está funcionando.
+
+31:12 - 31:28
+Então o que a gente tem que fazer? Vamos dar dois passos para trás, vamos validar o projeto como um todo. Em paralelo, o que eu preciso para o dia 4? Para o dia 7 vai ter que estar o quê? Esse remendo que não vai estar funcionando, mas vai estar.
+
+31:28 - 31:41
+Tá. Mas eu venho desde quinta-feira pedindo para os programadores entrarem, se alinharem e a minha fala tem sido: "O Luiz Henrique precisa entrar e experimentar o software do jeito que está." Entendeu?
+
+31:41 - 31:41
+Sim.
+
+31:42 - 31:42
+Tá?
+
+31:42 - 31:43
+Não, eu concordo.
+
+31:44 - 31:58
+Então tipo assim, para ver a coisa, tipo: "Ah, mas falta aqui e aqui." Porque eu acho muito mais rápido você fazer uma crítica e dizer: "Isso aqui não funciona, falta tal." Qual coisa do que eu ficar de olhos fechados achando que tenho um Anderson que me está esperando.
+
+31:59 - 32:12
+Se tiver qualquer coisa para eu ver, eu vou bater no fluxo do Figma, que foi o que eu desenvolvi, e junto com o Rafa lá e vou falar: "Isso está certo, isso está errado, isso está faltando, isso não está." Beleza. Só que hoje é dia 4, dia 7 é o dia da entrega.
+
+32:12 - 32:13
+É amanhã.
+
+32:13 - 32:25
+Considerando que nós temos essa questão e a gente precisa mostrar alguma coisa, que eu já vi que não vai estar pronto, mas a gente precisa mostrar alguma coisa pronta como carneta. E eu acho.
+
+32:26 - 32:39
+O que nós estávamos trabalhando hoje era justamente para poder pôr online a parte gráfica para poder visualizar e entregar para você, que foi isso que você e eu conversamos.
+
+32:40 - 32:40
+Sim.
+
+32:40 - 32:41
+Tá? Tipo, não.
+
+32:41 - 32:48
+Esse online que você vai colocar, você já sobe ele só com a logo, tudo a mesma coisa, só com a logo da carneta.
+
+32:48 - 32:55
+Cenário lindo. A gente faz a demonstração e eles não falam nada. É, cenário péssimo.
+
+32:55 - 32:59
+Então a gente já vai ter que fazer a demonstração dizendo: "Olha, não, cenário péssimo."
+
+32:59 - 33:08
+Esses fluxos aqui que a gente precisa é um banco de dados real. Real, porque ele está dentro das prefeituras, ele sabe e vai falar: "Consulta para mim."
+
+33:08 - 33:17
+Aí eu vou falar: "Cadê as credenciais do convênio com a prefeitura para a gente poder colocar na Bank Tools para poder fazer as contas?"
+
+33:17 - 33:19
+Tá, isso nós ganhamos um dia, Pedro.
+
+33:19 - 33:25
+Não, eu sei, mas não vai ter chance de ele bater o olho aí e perguntar.
+
+33:25 - 33:32
+Tem que perguntar lá para o Anderson se ele não deu essas credenciais, porque ele colocou.
+
+33:34 - 33:38
+Sim, faz sentido. Às vezes o Anderson está com as credenciais que a gente não tem.
+
+33:38 - 33:45
+Entendeu? Porque o Anderson está no tratativo com as prefeituras lá. Ele colocou os com ciganete e tudo para o Anderson não está.
+
+33:45 - 33:56
+É, lá na Bank Tools, o Adolfo sabe disso, possivelmente tem que saber. Na Bank Tools, nós vamos ter que colocar as credenciais da prefeitura para saber se ele está dentro.
+
+33:56 - 34:04
+Sabe o que eu estou vendo aqui? O Anderson chegou a me mandar um contrato de uma prefeitura. Eu não entendi nada do que estava escrito.
+
+34:05 - 34:08
+Mas eu acho que nesse contrato ele não vai estar isso não, da credencial.
+
+34:08 - 34:08
+Não vai estar não?
+
+34:09 - 34:09
+Não.
+
+34:09 - 34:10
+Então não.
+
+34:10 - 34:29
+O que nós vamos ter que fazer na Bank Tools, nós vamos ter que talvez reativar uma reunião com a Bank Tools lá, com o Adolfo. Por quê? Porque eu entendi que a Bank Tools espera que a gente coloque as credenciais da com ciganete, as nossas credenciais com ciganete lá no software deles. Esse painel foi isso.
+
+34:29 - 34:30
+Entendi.
+
+34:30 - 35:05
+Então essas credenciais vêm de onde? Vêm da prefeitura. A prefeitura cria um usuário para nós com as credenciais para nós colocarmos na Bank Tools. E aí a prefeitura nos dá autorização para consultar a margem do município. As prefeituras que ele vai começar, que a Carlito vai começar, usa todas com ciganete. Nós começamos só com 5, que é a 5 que usa com ciganete. Bank Tools já tem integração com a com ciganete. Logo o que nós temos que pegar? Os tokens, as credenciais da com ciganete, colocar dentro da Bank Tools e fazer um teste. É isso.
+
+35:05 - 35:27
+E daqui para frente, nesse novo momento, o que nós vamos ter que fazer? Nós vamos ter que organizar a cozinha, considerando que o Anderson não vai ter condição de nos ajudar, por mais que ele tentou, não dá. E nós vamos ter que ajustar a cozinha aqui entre nós. Entre nós o quê? A gente precisa muito, muito, muito de planejamento e cronograma.
+
+35:27 - 35:28
+Eu preciso de uma reunião pelo menos 15:00.
+
+35:29 - 35:30
+De execução e tudo.
+
+35:31 - 35:33
+Precisamos de uma reunião pelo menos 15:00.
+
+35:34 - 35:38
+E credenciais da Bank Tools e credenciais da.
+
+35:39 - 35:47
+Definir sprints, entrega, validação, correção e faz essa reunião 15:00. E faz os sprints 15:00 também.
+
+35:49 - 36:00
+E terceiro, pensar o que a gente vai demonstrar nos próximos dias, no geral. Criar uma apresentação, fazer alguma coisa, porque.
+
+36:01 - 36:10
+A primeira coisa talvez seria pegar e mudar a identidade visual que nós estamos tendo na nossa parte gráfica, já mudar para a Carlito. Porque isso requer.
+
+36:11 - 36:13
+O Leandro tem todo.
+
+36:13 - 36:16
+Posso colocar o Leandro em contato com o Ítalo?
+
+36:16 - 36:20
+Sim. Ver o que o Ítalo precisa lá da Carlito e o Leandro passa tudo.
+
+36:21 - 36:21
+Excelente.
+
+36:22 - 36:54
+O William tem que desenvolver o aplicativo da Carlito. O William é rápido para fazer isso. Sendo assim, por quê? Porque quanto mais enchimento de linguismo a gente mostrar, menos a gente vai apanhar. Então a gente mostra o APK com a carta da Carlito. Isso bem, não está funcionando. Mas olha, nós estamos terminando, entendeu? Porque vocês sabem que nós tivemos problemas, teve fluxo que a gente teve que fazer diferente, que é real. Teve fluxo que a gente aprendeu a fazer no decorrer do desenvolvimento. Eles sabem que nós estamos desenvolvendo para eles para usar para nós também.
+
+36:54 - 37:20
+Então vamos contar com isso. É a primeira vez que a gente vai mostrar alguma coisa. Se a gente mostrar alguma coisa, mesmo que esteja enchendo linguiça, mostra o APK, mostra o fluxo funcionando ali na web. Ah, não vai dar para consultar a margem. Beleza, vamos pular essa parte aqui, mas funciona assim o fluxo. Porque agora para consultar a margem, nós vamos pegar as credenciais, se o Anderson já não estiver com elas. Vamos pegar as credenciais, aí vai consultar a margem.
+
+37:20 - 37:30
+E aí a gente marca uma próxima reunião de apresentação, que agora nós temos que terminar isso daqui, isso daqui, isso daqui, e ganhamos esses dias focado no private label, então.
+
+37:31 - 37:37
+Tá. Então dia 7, de 0 a 10, vocês acham que 0 entregar para vocês?
+
+37:38 - 37:41
+Funcionando 0, porque justamente por conta desse.
+
+37:42 - 37:58
+Mas é tudo isso que a gente falou aqui agora mesmo. Nós vamos entregar mais desse modelo, entendeu? De apresenta o que foi construído até aqui, isso é isso, é isso. Agora os próximos passos, nós vamos ter que pegar as credenciais, vamos pegar aquilo, pegar aquilo e falar: "Nós vamos continuar."
+
+38:02 - 38:10
+Podemos sacrificar outros programadores também e entrar de luto. Se tinha nome, por exemplo, então a gente fala. Ok. Se tiver que sacrificar alguém, sacrifique o Anderson.
+
+38:11 - 38:12
+Não, não.
+
+38:12 - 38:13
+Estou brincando.
+
+38:13 - 38:15
+Nós temos outros.
+
+38:16 - 38:17
+Temos outros candidatos.
+
+38:22 - 38:25
+Está muito legal. Sempre o líder vai ser culpado.
+
+38:26 - 38:26
+Então.
+
+38:26 - 38:57
+Os nossos programadores não têm culpa nenhuma. Sabe por quê? Porque eles só fizeram o papel deles. Do quê? Ah, ficou dormindo no programa O, não entregou do jeitinho que entregar. Ok. Quem não fez o papel de cobrar, de acompanhar e de fazer o que tinha que ser feito é o líder, entendeu? Então sempre o líder, sempre a responsabilidade para o líder. Aí o líder sabe. Não, a culpa de eu fracassar é daquele fulano ali. Aí ele trata com aquele fulano individualmente. Porque não tem jeito. Só que a gente sabe que o Anderson não conseguiu fazer.
+
+38:57 - 39:19
+Só que sabendo que ele não conseguiu fazer, é mais bonito a gente já ter faz tempo falado: "Olha, pessoal, toquem aí porque eu não vou." Porque daí ferrou todo mundo. Então como ele não fez isso, nós vamos fazer isso por ele. Nós vamos falar: "Anderson não deu, não deu, então nós vamos tocar por aqui." E aí a gente está aqui todo dia, a gente faz as coisas do jeito que tiver que fazer mesmo.
+
+39:19 - 39:44
+Se tiver que trazer as pessoas mais para perto aqui, mais para presencial, vamos ter que trazer e vamos ter que contar com a colaboração deles, deles entenderem que nós estamos em um momento de war room. Por quê? Afinal, o dia não está chegando, aí vai todo mundo parar. E se eles quiserem parar também, nós vamos ter que trabalhar até lá. Afinal, não vai dar para parar ninguém, porque nós estamos em um desespero ferrado. Então a gente vai ter que fazer essa força para a gente poder.
+
+39:45 - 39:49
+O Adolfo até quanto podemos exigir dele? Quatro horas por dia?
+
+39:49 - 39:52
+E aí assim, meio-dia cai a picareta mesmo.
+
+39:54 - 39:54
+Como que é?
+
+39:55 - 39:59
+Assim, a gente tem uma programação que a gente faz.
+
+39:59 - 40:04
+Como que é os programadores e os contratos? A maneira como o Anderson trabalhou a negociação com cada um deles.
+
+40:04 - 40:49
+Bom, o Ítalo e o Adolfo, eles são home office, empresa, mas é trabalho com empresa mesmo. Então a comunicação geralmente é assíncrona. A gente coloca atividade lá no GitHub. A parte do Ítalo ainda é meio mais autogerenciada, porque não temos aqui das pessoas que a gente já trabalhou, especialista em front-end. Eu desenrolo, eu sei fazer ali um Hello World, uma telinha bonitinha e tal. Mas especialista em front-end é ele. Então ele autogerencia as suas atividades. Ele conversa muito com o Vítor.
+
+40:49 - 40:49
+Com o Vítor, isso.
+
+40:50 - 41:17
+Só que ele é atividade. Ele fala assim: "Quem é esse aqui para fazer? Vai ali pegar água para mim. Se a água não estiver ali, parou." Beleza. Já o Adolfo, ele é mais ele é quatro horas só por dia, contrato de quatro horas. Veio para trazer a experiência dele que trabalha no mercado financeiro já. Só que assim, ele só tem quatro horas.
+
+41:19 - 41:19
+Então.
+
+41:20 - 41:20
+E.
+
+41:21 - 41:24
+Mas entrega, nas quatro horas ele entrega? Na visão de vocês.
+
+41:27 - 41:28
+Entrega pouco, para falar a verdade.
+
+41:30 - 41:33
+Eu peguei ele no colo assim no dia primeiro.
+
+41:33 - 42:01
+O meu passo nessa nova gestão, o meu passo nessa nova gestão é olhar isso, entendeu? Por quê? Porque nós estamos há 120 dias pagando todo mundo, não deixamos pagar ninguém. 120 dias pagando todo mundo. E tem um manco que não entrega o que precisa entregar e está há 120 dias lá. Assim, comigo não dá 120 dias. Não, é a questão rápida. Não está funcionando, não está entregando o que precisa entregar, vamos ter que trocar. Por quê? Porque senão depois chora todo mundo. É melhor chorar só um do que chorar seis, sete, oito.
+
+42:01 - 42:06
+Porque se a gente não entregar, a gente não recebe. Quem não receber, a gente não paga mais ninguém.
+
+42:06 - 42:07
+É verdade.
+
+42:11 - 42:15
+Beleza. Aí temos os que entrou muito bem para mim foi o Mateus.
+
+42:17 - 42:19
+Não, o Mateus é uma coisa assim.
+
+42:19 - 42:20
+E o Will.
+
+42:20 - 42:37
+E o Will. O Mateus, o Vítor, Mateus e o Will. São os três que entregam o que precisa ser entregue. E tipo, estica um pouco mais. Mostra onde aquilo lá pode não funcionar, abre a boca se acha que aquilo lá está errado.
+
+42:38 - 42:38
+São mais proativos.
+
+42:39 - 42:39
+Muitíssimo mais.
+
+42:43 - 42:43
+Isso.
+
+42:44 - 42:46
+É isso que a gente tem agora. Vamos.
+
+42:46 - 42:48
+E quem são mais os passivos que.
+
+42:49 - 42:52
+Adolfo, o.
+
+42:52 - 42:53
+Como é que chama? O Ítalo?
+
+42:54 - 42:56
+Adolfo e o Vítor são os dois.
+
+42:56 - 42:59
+O Ítalo está com um problema de background faz 20 dias.
+
+43:01 - 43:03
+E insistem que o problema está no seu lado.
+
+43:03 - 43:06
+E isso o Anderson não cobrou? Vocês não viram assim?
+
+43:06 - 43:20
+Não. Para mim o Anderson estava trabalhando pessoalmente com cada um, com o Guimê. Tá. Tem alguma chance dele estar trabalhando individualmente com cada um e a gente está tudo errado aqui?
+
+43:22 - 43:23
+Na prática, é possível sim.
+
+43:23 - 43:33
+Não. Na prática, nos resultados que nós estamos tendo, para alguém que entende do mercado financeiro, que supostamente sabia o que estava definindo, não. Porque eu.
+
+43:33 - 43:34
+Concordo.
+
+43:34 - 43:43
+Se você me pergunta quanto tempo leva eu sendo programador, nunca na vida iria ter dado um prazo apertado. Não dá.
+
+43:44 - 43:44
+Faz um favor para mim.
+
+43:45 - 43:46
+Eu preciso de um antecedente.
+
+43:47 - 43:57
+Faz um favor para mim. Pergunta para cada um destes, pergunta para eles como parceiro de trabalho e eles sabem que você estava ajudando o Anderson na finanças.
+
+43:57 - 43:57
+Sim, sim, sim.
+
+43:57 - 44:03
+Pergunta para cada um deles se tem rotina de conversa com o Anderson, como está o direcionamento.
+
+44:03 - 44:04
+Ok.
+
+44:04 - 44:15
+Tem? Ok, fulano tem. Ciclano tem, Ciclano tem. A decisão já está tomada de que o Anderson. Isso daí não é para tomar decisão. É só para a gente não ser injusto. É só para a gente não ser injusto, entendeu?
+
+44:15 - 44:18
+Não, tudo bem. Tudo bem.
+
+44:21 - 44:23
+O Mateus também tem esse acesso com o Anderson?
+
+44:24 - 44:30
+Não, praticamente é só comigo e com o Estevão. É porque ele está aqui todo dia, então é mais comigo.
+
+44:30 - 44:31
+Ele fica mais aqui local.
+
+44:32 - 44:56
+Então fechou. E amanhã então, Carlito, vê essa questão desse fluxo da Bank Tools mesmo, que é uma etapa que vai precisar, porque no começo do pedido do cartão, a primeira tela é consulta de margem. Se nós começarmos a apresentação, essa primeira tela não está funcionando, eu acho que está tudo certo. Porque não dá para pedir cartão lá no algoritmo se não constar a margem do carro.
+
+44:58 - 45:03
+É, não é assim. A gente tem que colocar o limite. Eles que dão o limite também, não é?
+
+45:04 - 45:05
+Eles quem?
+
+45:05 - 45:06
+O algoritmo.
+
+45:06 - 45:08
+Não, somos nós que mandamos.
+
+45:08 - 45:09
+Ah, é verdade. A gente que coloca o limite.
+
+45:09 - 45:10
+É, a gente coloca o limite.
+
+45:11 - 45:21
+Eles são o gestor do cartão só. O sistema deles que no futuro, se Deus quiser, nós vamos nem do sistema deles. A gente vai até essa etapa de desenvolvimento.
+
+45:21 - 45:26
+CLT como o quê? Como caminhão daquele último dia lá que a gente falou?
+
+45:26 - 45:28
+CLT é consignado privado, não é?
+
+45:28 - 45:28
+É.
+
+45:30 - 45:32
+Perfeito.
+
+45:35 - 45:37
+Eu acredito.
+
+45:37 - 46:10
+Eu acredito, Júnior. Esses dois, essas duas coisas, que são complix com o Adolfo e o crédito trabalhador com o Felipe. Qual fase que a gente está com a QTEC? A gente bate qual é o fluxo de contratação? Coloca CPF, RG e vai que eles retornam para a gente. Tem um detalhe que a gente descobriu há pouco tempo, que é, por exemplo, se o cara tiver dois empregos, qual empresa que a gente vai usar? Então tem que.
+
+46:10 - 46:24
+Mas lá no UX tem tudo isso. Na hora que na primeira vez que consulta a margem dele, aparece a lista de empregadores. A primeira tela que aparece é a lista de empregadores. Tem lá 10 empregadores. Aí o barban tem que escolher qual empregador ele vai consultar.
+
+46:24 - 46:25
+E aí ele vai fazer a simulação.
+
+46:26 - 46:26
+Isso.
+
+46:27 - 46:33
+Bom, de fato, eu vou abrir aqui. Eu não tinha visto isso, mas eu já imaginei que seria assim, porque não tem outra saída.
+
+46:34 - 46:35
+É, não tem esse não.
+
+46:36 - 47:13
+Então escolhe aqui, gente, eu falei para ele ontem, tem que ter uma rota para consultar os empregadores, que no caso e tem que estar elegível ainda. E aí a partir daí escolheu, aí a gente já faz a simulação. A gente já faz simulação com base nas nossas tabelas. Lembra que lá na SEP a gente chegou a mostrar para você uma simulação? Mostra os disponíveis. Fala assim: "Você pode pegar até R$ 3.000 em duas, três, quatro, cinco, seis parcelas. Pode pegar R$ 7.000, não quero nenhuma dessas, quero digitar."
+
+47:13 - 47:42
+Ele coloca lá o valor e aí faz a simulação. Beleza, é isso aqui. Está ok? Está ok. Então aí começa toda a questão só com a QTEC. A partir do momento que fala assim: "Olha, está ok", aí fica tudo do lado da QTEC. Vai mandar, vai imputar a proposta lá, aí vai pegar a assinatura do cara, vai gerar a CCB deles lá e vai falar assim: "Olha, está aqui a proposta, desembolsado e a proposta está ok."
+
+47:44 - 47:44
+Então.
+
+47:45 - 47:53
+Então, beleza, respondendo a sua pergunta, que falou muito disso para nada. São duas frentes. Eu acredito que essa a gente consiga terminar primeiro do que a UX.
+
+47:56 - 47:56
+Isso.
+
+47:57 - 47:59
+Você fala como se você não tivesse outra carga.
+
+48:00 - 48:01
+Que eu não tivesse o quê?
+
+48:01 - 48:02
+Outra carga.
+
+48:02 - 48:03
+É que não é ele que está na.
+
+48:03 - 48:06
+Não, é o Felipe. A minha carga.
+
+48:06 - 48:08
+Mas o Felipe também.
+
+48:08 - 48:14
+O Felipe é o que mais cumpre prazo. O código dele não está tão ruim não, né?
+
+48:16 - 48:16
+Nem tão ruim.
+
+48:17 - 48:19
+Não, para o que os outros dizem, não está tão ruim não.
+
+48:23 - 48:27
+Nós estamos aqui. Aí ele chega e diz: "Verifica o código do carro."
+
+48:27 - 48:30
+Ei, ei, aqui cai. Você dá um passo para trás.
+
+48:30 - 48:31
+Então, não.
+
+48:31 - 48:34
+Cara, não está tão ruim.
+
+48:34 - 48:34
+Não está.
+
+48:34 - 48:36
+Dá, dá, está. Não faz o quê?
+
+48:37 - 48:37
+Tem que dar.
+
+48:37 - 48:38
+Tem que dar.
+
+48:40 - 48:41
+A caminhoneta está indo para o carro.
+
+48:42 - 49:02
+O Wagner falava muito que o Felipe e o Bruno, do Felipe é assim, ele tem preguiça muitas vezes de raciocinar para fazer do jeito certo. Então o Wagner, estava falando do Wagner, o Felipe desenvolveu um vai e volta, um vai e volta tão tremendo para uma coisa que ele resolvia com tal coisa. Ele precisa ter mais ou menos.
+
+49:02 - 49:23
+Não, pode ser que isso seja verdade. Eu não tiro a veracidade do veredito do nosso colega programador. Mas quem mais me lê a documentação, quem mais pergunta e quem mais se adapta é ele. Quem mais chega perto da documentação é ele. Mesmo assim, erra. Quem olha a gente descobriu um buraco.
+
+49:23 - 49:25
+Não, mas eu entendo, eu entendo.
+
+49:26 - 49:28
+Eu fiquei preocupado quando você falou aqui atrás.
+
+49:28 - 49:29
+Não, eu entendo.
+
+49:30 - 49:31
+Não.
+
+49:31 - 49:53
+Trabalhando na SEP, no sistema da securitizadora, eu ia falar: "Ah, que bom, deixa. Deixa ele fazer porque a gente precisa entregar, a gente precisa colocar o cardpix para rodar." Mas nós não estamos. Nós estamos trabalhando no sistema novo, que nós só começamos ele do zero, porque nós nos comprometemos em desenvolver ele com boas práticas.
+
+49:54 - 49:59
+Mas eu peguei, olha, eu peguei bastante ele no colo. Você vê que eu faço as envios das metas.
+
+49:59 - 50:01
+Mas é, não está ruim. Não está ruim.
+
+50:02 - 50:08
+Não, mas não é essa frase que eu quero ouvir. Está bom. Está bom. Eu nem
+
+50:08 - 50:14
+meu código eu erro que esteja bom. Você quer que eu veja o código de outro? Bom.
+
+50:15 - 50:23
+Inclusive, tem um outro problema também no nosso time. Me coloca uns códigos lá, só que eu não posso falar nada para ele.
+
+50:23 - 50:24
+Então.
+
+50:28 - 50:28
+Falar.
+
+50:31 - 50:32
+Ele está com a caneta na mão.
+
+50:33 - 50:43
+Eu? Eu acho que eu vou ter que ficar na garagem. Tipo, eu faço, mas é assim, não é? Não gosta, vai ser de novo. Não, mas vai ser.
+
+50:45 - 50:47
+Entendi. Então é discordância de como vai ser.
+
+50:48 - 50:54
+Não, não, não, não, não, não. Não é discordância. Você não discorda comigo mesmo? É rebeldia.
+
+50:54 - 50:55
+Você está sempre certo.
+
+50:56 - 50:57
+É rebeldia.
+
+50:58 - 50:58
+Não.
+
+50:58 - 51:40
+Você vê o seguinte. Não, não, eu falo sério. Eu adotei aquela premissa. Não, o código certo, o código sério, o código do zero. Bacana. Então o que precisa? Precisa haver um núcleo que ele sempre se repita para a gente poder fazer aquela coisa toda de poder poupar recursos. Eu não quero ter uma conta de 5.000 dólares na minha conta. Pela minha responsabilidade. Entendeu? Por mês ainda. Ok. Tá. O que você ia fazer agora?
+
+51:41 - 51:41
+Embora.
+
+51:47 - 51:49
+Não quero saber.
+
+51:49 - 51:51
+Mais alguma coisa, Júnior?
+
+51:51 - 51:51
+Não, obrigado.
+
+51:52 - 51:53
+Luiz?
+
+51:53 - 51:53
+Não.
+
+51:54 - 51:55
+Certeza, por Deus.
+
+51:57 - 51:57
+Valeu.
+
+51:58 - 51:59
+Falou. Até.
+
+52:09 - 52:09
+Falou.
+
+52:15 - 52:16
+Duas coisas.
+
+52:17 - 52:23
+Está. O negócio lá da Carleto, de identidade visual. Nós temos identidade visual dele?
+
+52:23 - 52:28
+Tem gente que pega agora, eu falo agora com o Bento. Vítor Bento.
+
+52:28 - 52:37
+Eu falo assim: "Olha, identidade visual da Carleto. Em que pé que está? Não tem nada, mas nunca foi passado para você fazer?" "Não, nunca foi passado."
+
+52:38 - 52:38
+Agora já é bastante.
+
+52:39 - 52:40
+Não, mas responde.
+
+52:41 - 52:42
+Não, não, tudo bem. Não, não, não, espera.
+
+52:43 - 52:43
+Vamos alinhar, vamos alinhar.
+
+52:43 - 52:45
+Bento, você não vai picareta assim, não.
+
+52:46 - 52:52
+Não, não, não é porque seja picareta, é por respeitar horário. Outra coisa. Que coisa é essa que não temos código antigo que funciona?
+
+52:53 - 52:53
+Não, minha gente.
+
+52:55 - 52:55
+Funciona?
+
+52:57 - 53:00
+Não é que funciona. Existe.
+
+53:00 - 53:02
+Não estou perguntando se ele presta.
+
+53:02 - 53:03
+Funciona.
+
+53:03 - 53:04
+Eu faço um apply no end.
+
+53:05 - 53:09
+Não, Estevão. Ele não tem nada implementado do que a gente precisa. Ele não tem nada.
+
+53:09 - 53:18
+Ah, tá. Porque senão você sabe o que ele vai fazer. Pega essa pistola toda, refatora com GPT e acabou.
+
+53:18 - 53:20
+Não, ele não funciona, por exemplo.
+
+53:21 - 53:22
+Não, isso só funciona para o cara de.
+
+53:22 - 53:25
+Não, se não funcionar, não funciona. Fim. Para mim é o problema.
+
+53:31 - 53:36
+Eu achei que esse tipo assim, não. Tem a parte A, B, C, D que funciona.
+
+53:39 - 53:42
+Você quer ir com um espeto comigo e a gente alinha a próxima?
+
+53:43 - 53:44
+Bora.
+
+53:44 - 53:44
+Tá.
+
+53:45 - 53:47
+Aqui no postinho aqui?
+
+53:48 - 53:49
+Aí é cara do pai de Deus, não é?
+
+53:50 - 53:51
+É aqui, pô.
+
+53:56 - 53:57
+Esse aqui nem é espetinho japonês.
+
+53:59 - 54:00
+Espetinho japonês dói menos, pelo menos.
+
+54:01 - 54:02
+O quê?
+
+54:02 - 54:04
+Espetado japonês dói menos, pelo menos.
+
+54:05 - 54:06
+Vamos então aqui.
+
+54:07 - 54:10
+Não, não, estava brincando. Foi uma desculpa tática.
+
+54:16 - 54:18
+Não, mas o posto é aqui do lado.
+

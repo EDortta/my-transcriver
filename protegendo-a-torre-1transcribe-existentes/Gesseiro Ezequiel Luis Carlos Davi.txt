@@ -1,0 +1,1494 @@
+00:00 - 00:24
+Prazo do cliente, orçamento e controle financeiro. Depois, ao longo do tempo, a gente vai aprimorando com outras funções, como disparar o orçamento do cliente, né, ou coisas desse tipo. Mas pelo menos ter a base estrutural que a gente precisa. Só que o maior desafio que a gente tem, nesse desenvolvimento, pelo menos eu acho que é esse, é fazer o cálculo do orçamento. Por quê?
+
+00:24 - 00:53
+Porque eu entendo, e aí nós vamos usar de vocês para ter essa informação, eu entendo que, por exemplo, se eu vou fazer uma parede... se eu estiver errado você me corrige, mas se eu vou fazer uma parede de 2 metros, é 1 material. Se a parede tiver 6 metros, a cada não sei quantos metros tem que ter tal coisa, tal coisa, tal coisa, então tem que ter somatória de materiais. É isso ou não é isso? Ou quando que tem variações de necessidades de material?
+
+00:54 - 00:56
+A variação de material é na altura.
+
+00:57 - 00:58
+Sempre na altura?
+
+00:58 - 01:04
+É. Bom, sim e não. Vai estar sempre os 60, o espaçamento de 60.
+
+01:04 - 01:06
+A independência é fazer 3 ou 100 metros.
+
+01:06 - 01:08
+Sempre o espaçamento é de 60.
+
+01:09 - 01:09
+Ora.
+
+01:09 - 01:19
+A altura que vai ter. Uma parede de 6 metros eu já fiz, só uma parede só, de 10. Mas o correto já é fazer ela dupla, entendeu?
+
+01:20 - 01:20
+Tá, entendi.
+
+01:20 - 01:33
+Então você conta ela duas vezes, né? Porque a maioria das vezes o cliente lá não aceita por causa disso aqui. Mas daí você explica: "o correto é esse, mas está aqui o preço dessa e dessa". Eu sempre faço os dois, né?
+
+01:33 - 01:34
+É a questão de precificação.
+
+01:34 - 01:35
+E ele escolhe.
+
+01:35 - 01:44
+Por exemplo, para fazer ela normal, simples, é 10. Depois de duplicar, é 20. Tá, com isso aí a gente consegue fazer.
+
+01:44 - 01:57
+Entendi. A minha ideia era que esse orçamento não fosse só um orçamento para o cliente ter a visão, mas que gerasse também uma lista de materiais que a gente vai usar naquele serviço.
+
+01:57 - 01:58
+Para ele saber o que está usando.
+
+01:58 - 02:12
+Isso. Para a gente saber o que a gente vai usar de material. Eu estou criando uma complexidade maluca. Mas eu penso que seria o caminho. Por quê? Se é o orçamento de parede, a gente sabe quanto que a gente vende o metro da parede.
+
+02:13 - 02:13
+Sim.
+
+02:13 - 02:44
+Já está. Na nossa cabeça, seria muito simples colocar aqui no sistema: "é orçamento de parede de gesso, é tantos por metro". É só colocar quantos metros, o sistema já calcula. É X reais o orçamento, porque é só parede. Agora, o que a gente vai usar de material nessa parede? Porque a ideia seria fazer o quê? Fazer um sisteminha que tivesse um lugar para cadastrar os materiais. Aí você tem uma ideia. Para cadastrar os materiais, e todos os materiais mesmo.
+
+02:44 - 03:01
+E a gente dizer para o sistema: "olha, para fazer uma parede, a cada 60 centímetros eu uso tal coisa". E o sistema vai identificar que se eu quero fazer um orçamento de 1,20 metro, é duas vezes tal coisa. E vai gerar para nós essa lista de materiais.
+
+03:02 - 03:03
+Que vai ser utilizada.
+
+03:03 - 03:03
+Que vai ser utilizada.
+
+03:04 - 03:06
+Mas para o cliente, a lista não mostra.
+
+03:06 - 03:06
+Para o cliente não.
+
+03:06 - 03:07
+Só o que vai ser usado.
+
+03:07 - 03:07
+A gente só mostra.
+
+03:08 - 03:12
+Não, para o cliente só mostra para a parede de 4 metros.
+
+03:12 - 03:13
+De drywall.
+
+03:13 - 03:14
+De drywall. Não mostra.
+
+03:14 - 03:14
+Para o cliente.
+
+03:14 - 03:35
+Vai usar tantos perfis, tantos... não. Para nós, seria uma lista de materiais que nós vamos utilizar. Por quê? Porque com isso a gente consegue acompanhar o nosso custo real de cada obra. Agora, a pergunta: isso é possível fazer já com esse desenvolvimento de IA?
+
+03:35 - 03:47
+Sim. Mas eu tenho uma pergunta de conhecimento geral, né? Você mesmo falou. Por exemplo, você deu o exemplo de: "olha, tem duas formas de fazer isso aqui".
+
+03:47 - 03:48
+Sim.
+
+03:49 - 04:17
+Faço com 10, são 6 metros de pé direito, mas eu faço com 10, mas o certo é fazer com 1,20. Certo? Então aí nós temos dois materiais diferentes. Mas eu sei que não são somente dois, né? Tem várias outras coisas. Tem qualidade, tem as dimensões, tem... não sei. Não consigo imaginar aqui. Mas se é, por exemplo, se tem reforço, se não tem. Tem várias coisas que a gente esteve vendo, que é bem amplo o panorama, né?
+
+04:17 - 04:32
+É. No orçamento, você vai em parede dupla, né? Ferragem dupla. O plaqueamento é o mesmo, as duas placas. Mas a ferragem dupla e ligando uma na outra, ou uma madeirinha, ou a placa mesmo. Para não dar o barranco.
+
+04:32 - 04:59
+O que nós vamos fazer é destrinchar isso, tá? E justamente nesses pedaços que você acaba de elencar, você vai nos ajudar a dizer: "olha, esse tipo de orçamento funciona assim, precisa disto, disto e daquilo". Que foi o que ele falou, né? Olha, então aí você vai ter um... vamos inventar algum jeito de te mostrar o tipo de orçamento que você está fazendo. Porque uma coisa é você orçar metro quadrado, outra coisa é você orçar metro lineal.
+
+05:00 - 05:00
+Isso.
+
+05:00 - 05:00
+Certo?
+
+05:00 - 05:01
+É.
+
+05:01 - 05:02
+Uma coisa...
+
+05:02 - 05:03
+Três metros.
+
+05:03 - 05:07
+Isso. Uma coisa é uma parede com 3 metros de altura, outra coisa é com 6. Certo?
+
+05:08 - 05:08
+Isso.
+
+05:08 - 05:17
+Então aí por aí vamos. Uma coisa é se vai ter muito recorte, porque eu vou ter que picotar, porque tem três portas. Essa parede de 9 metros.
+
+05:17 - 05:19
+Três portas é entra fechado.
+
+05:19 - 05:20
+Entra fechado.
+
+05:20 - 05:21
+Entra fechado.
+
+05:21 - 05:26
+Tem trabalho que você faz na porta, o custo... ah, mas não vai o material aqui. Mas e o custo de recuar?
+
+05:26 - 05:29
+Que nem aqui. Se tivesse outra paletinha dessa ali.
+
+05:29 - 05:44
+Entra, mas quanto serviço? Porque olha só, uma coisa é você orçar o orçamento que vai mostrar para o cliente, a cara. Outra coisa é o teu interno, que é o que evita que você tenha desperdício de material, que te faz uma análise de custo real.
+
+05:44 - 05:46
+É o que o Luiz falou, né? Ele quer o custo do.
+
+05:47 - 05:48
+Isso. Porque aí você.
+
+05:48 - 06:01
+Agora, para nós orçar isso aí, a gente já sabe: "o orçamento é 100 mil, eu vou ter 50 de custo de material". Na hora que a gente fizer o orçamento, fechando ou não, a gente vai ter essa informação. É isso aí que você explicou.
+
+06:01 - 06:04
+Essa é a ideia. E também, pensando agora no sistema.
+
+06:04 - 06:05
+E tem mais.
+
+06:06 - 06:07
+E tem mais.
+
+06:07 - 06:14
+Mas pensando também no sistema, Estevão, de que o sistema vai ser reutilizável para outros clientes.
+
+06:14 - 06:15
+Sim, já.
+
+06:15 - 06:18
+Porque explicando isso para vocês, tá? Nós somos.
+
+06:20 - 06:21
+Gente, tudo bem?
+
+06:22 - 06:22
+Tudo bem.
+
+06:22 - 06:23
+Tudo bem.
+
+06:23 - 06:23
+Tudo bem.
+
+06:26 - 06:26
+Beleza?
+
+06:26 - 06:26
+Bom dia.
+
+06:27 - 06:55
+Então, pensando nessa ideia de que o sistema vai ser reutilizável para outros clientes, explicando para vocês, aqui nós somos uma empresa de tecnologia, desenvolvendo esse sistema. Então, a gente está desenvolvendo esse sistema para atender à demanda da DEC e do jeito que a DEC precisa. Mas, naturalmente, na nossa cabeça é: uma vez que esse sistema está desenvolvido, nós vamos vendê-lo no mercado. Porque senão não faz muito sentido. Nós é bonzinho, mas nós não é bobo.
+
+06:55 - 06:55
+É trouxa, né?
+
+06:58 - 07:06
+Por quê? Porque nós vamos ter todo o trabalho para desenvolver o sistema e tudo mais. Nós vamos conseguir atender a DEC Gesso, mas no futuro esse sistema.
+
+07:06 - 07:07
+Ganha mais, sim, isso aí.
+
+07:07 - 07:24
+Ganha em cima disso. Vende para empresas de Prudente, de outro lugar, ele vende. Ok? Então, nós temos que construir o sistema pensando como? Pensando em atender a demanda da DEC. Mas nós temos que pensar que pode ser que o gesseiro Joãozinho, lá de Florianópolis.
+
+07:24 - 07:25
+Precisa no programa.
+
+07:25 - 07:41
+Ele não. Ele não considera a mesma métrica sua, de que uma parede acima de 5 metros, por exemplo, tem que ser dupla. Ele acha que a parede acima de 6 metros tem que ser dupla. Então, dentro do sistema, o sistema tem que permitir que essas regras.
+
+07:41 - 07:42
+Seja configurável.
+
+07:42 - 07:52
+Sejam configuráveis. Exatamente. Um ponto mais para a gente entender aqui. Existe uma normativa, um manual das normas.
+
+07:52 - 07:53
+Uma NBR, né?
+
+07:53 - 08:09
+Existe, né? Então, ok. Então, entendo eu que o sistema deve seguir as normas. Só que o sistema deve permitir que o gesseiro que quer fazer essas loucuras de fazer uma parede, de seguir com uma parede alta, porque o cliente falou: "não, pode fazer, porque eu garanto que ele faça".
+
+08:11 - 08:13
+Isso. Então, o sistema tem que permitir. E ele assume a responsabilidade, né?
+
+08:13 - 08:14
+Como?
+
+08:14 - 08:16
+O gesseiro assume a responsabilidade.
+
+08:17 - 08:25
+O sistema pode até emitir um alertazinho para o gesseiro quando ele for fazer. "Olha, para essa medida, pela norma, recomendamos tal coisa", para evitar o erro.
+
+08:26 - 08:39
+E no orçamento também não dá para pôr para a hora que passar: "ó, aqui é dupla", né? Porque você pode achar ela simples, mas o risco seu é esse. A norma está aqui. Aí o cara já vai ficar assustado. Pô, não faço, não faço, não faço.
+
+08:41 - 08:46
+Eu acredito que é possível, mas aí assim, é perfil.
+
+08:47 - 08:51
+É fácil entender que ele está tomando nota das coisas, que ele não está conversando com a natureza.
+
+08:51 - 08:51
+Não, não, não.
+
+08:53 - 08:53
+Ah, bom.
+
+08:55 - 08:57
+O que ele pode estar fazendo é assistindo algum vídeo de vez em quando.
+
+08:58 - 09:03
+Não. É que o TDAH igual eu. Eu falei: "deixa eu ver só".
+
+09:03 - 09:05
+Não, estou anotando tudo.
+
+09:05 - 09:06
+Pode falar aí, Estevão.
+
+09:06 - 09:18
+Porque aí, no caso, para fazer um... entra na linha da parede. Para fazer a parede, o que usa? Quais são os materiais? É com esse. Desde o parafuso, vai ter que entrar um parafuso lá.
+
+09:18 - 09:19
+Sim.
+
+09:19 - 09:29
+Porque quantos parafusos usa por metro quadrado? Dentro das normas. Aí, se o gesseiro vai usar, por exemplo, é 30 parafusos, de repente ele vai lá e usa.
+
+09:29 - 09:34
+Aquele programa que você tem da trevo, não dá exato, né?
+
+09:34 - 09:36
+Não dá exato. Ele dá proporcional.
+
+09:36 - 09:42
+Eu peguei o exemplo da trevo, porque eu fui e pesquisei. Mas parece que aquele programa é muito para vender o material deles.
+
+09:42 - 09:43
+É, ele não dá exato.
+
+09:43 - 09:46
+Não. Você pega a metragem e a troca e você vai usar tanto.
+
+09:47 - 09:48
+É bom mostrar para a gente.
+
+09:49 - 09:49
+Entendeu?
+
+09:50 - 10:01
+Nós fizemos ali onde era a telhaça, ali nesse parquinho, aí nós que fizemos. Rapaz, nós pedimos material por isso aí, a sorte de nós conseguir o devolver. Só botar bica e virar tudo.
+
+10:01 - 10:02
+Mas lá é o sistema.
+
+10:02 - 10:03
+O que aconteceu?
+
+10:03 - 10:04
+Sobrou material demais.
+
+10:05 - 10:06
+É igual o orçamento do Gil, né?
+
+10:07 - 10:07
+É.
+
+10:07 - 10:14
+O Gil lá. O orçamento do Gil, pedimos umas placas lá. Rapaz, sobrou placa até hoje.
+
+10:14 - 10:16
+O piso aqui que eu pedi ali, sobrou uma caixa fechada.
+
+10:17 - 10:19
+Cálculo dele foi exagerado demais.
+
+10:19 - 10:23
+O piso ali que eu acabei de pedir, um pouquinho ali, sobrou uma caixa. Uma caixa grande que eu preciso.
+
+10:23 - 10:27
+Mas eles deixam normalmente para quem sobra mesmo, mas é 10%.
+
+10:28 - 10:30
+É, sobrou lacrada. A caixa lacrada.
+
+10:31 - 10:37
+Então, mas aí no caso lá da Sport Time lá, foi o seguinte: é a metragem que passou. Eles mudaram tudo.
+
+10:39 - 10:40
+E sobrou até.
+
+10:41 - 10:43
+Lembra que foi... entendeu? Era para um tanto lá, não, recua.
+
+10:44 - 10:45
+Aí tem que sobrar.
+
+10:45 - 10:50
+Lógico que sobra. Não sobra. Naquele tanto, ele tem a margem mesmo, mas naquele tanto não.
+
+10:50 - 10:55
+Não, ele aumentou, né? Mas tinha feito já e pediu para aumentar mais 3 metros. Não diminuiu.
+
+10:55 - 10:56
+Mas foi de boca.
+
+10:56 - 10:58
+É, aumentou o serviço.
+
+10:58 - 10:59
+Ah, mesmo. Bate.
+
+11:00 - 11:15
+Então, se ele dá exato, então ali já tem. E o que dá para fazer também é a gente fazer aqui na calculadora mesmo. Uma placa X parafuso, X, X, X, e ali.
+
+11:16 - 11:17
+Não, eu não sei, mas até ter um sistema.
+
+11:18 - 11:40
+Eu concordo. Isso, isso mesmo. Até ter um sistema eu concordo. Mas a ideia é que quando tiver o sistema, ele já remita o orçamento para o cliente e para você, que é o que o sistema da Temper faz lá. Para nós, ele já emite o plano de corte, ele já faz a lista de materiais. Plano de corte, eu acho que a gente não precisa disso.
+
+11:40 - 11:40
+Não.
+
+11:41 - 11:43
+Nesse estágio, eu acho que ele terceiro.
+
+11:43 - 11:44
+Isso, exatamente.
+
+11:44 - 11:44
+Problemas.
+
+11:44 - 11:48
+É. Mas ele já faz isso, entendeu? Então, a ideia seria.
+
+11:48 - 11:49
+Esse é o prédio, né?
+
+11:49 - 11:56
+Pelo menos ele trazer uma lista dos materiais que precisa para comprar. Claro que no começo nós vamos conferir tudo, né? Não, vamos ver se é isso mesmo.
+
+11:56 - 11:56
+Se é isso mesmo.
+
+11:56 - 12:05
+Baseado na experiência que vocês têm. Mas vamos ver se parametrizou. E a gente segue a regra, a norma. Ou o que tiver configurado lá, ele vai sempre emitir a lista.
+
+12:05 - 12:06
+Não dá certo.
+
+12:06 - 12:19
+Não tem tanta variação. O gesso, diferente da esquadria, meu, esquadria tem 8 mil perfis. 3 mil perfis, sei lá. Mas é muita coisa. O gesso não.
+
+12:19 - 12:19
+O gesso não.
+
+12:19 - 12:20
+É os mesmos materiais.
+
+12:20 - 12:25
+O gesso é assim, é uma parede, é os mesmos materiais. É um teto, é os mesmos materiais.
+
+12:26 - 12:28
+O que ele fez é superfície.
+
+12:29 - 12:29
+A espessura.
+
+12:29 - 12:35
+A espessura é uma. Mas a superfície do gesso, se ele tem algum desenho, alguma coisa.
+
+12:35 - 12:36
+Não, não. Decorativo é a parte.
+
+12:36 - 12:37
+Aí entra a parte.
+
+12:37 - 12:37
+É a parte.
+
+12:38 - 12:39
+Mas vocês fazem o serviço.
+
+12:39 - 12:39
+Sim.
+
+12:40 - 12:41
+Aí está. Essa é que é a questão.
+
+12:42 - 12:42
+Decorativo.
+
+12:42 - 12:43
+Decorativo aí é um.
+
+12:43 - 12:51
+Aí é um decorativo. Aí vai colocar, por exemplo, vai adicionar lá. Se é sanca, vai adicionar tantos metros de sanca. Como que é o nome da sanca?
+
+12:51 - 12:52
+Sanca aberta.
+
+12:53 - 12:56
+Sanca aberta, sanca invertida, sanca. Aí vai cadastrar a sanca.
+
+12:56 - 12:57
+Botelho, columinação.
+
+12:58 - 13:03
+Aí são materiais que a gente já usa no próprio drywall, porém em menos quantidade.
+
+13:05 - 13:17
+Tem a... nós falamos de ilha, né? Mas agora colocaram um novo nome. É... tem um novo nome. Até a Yasmin me passou: "você faz esse tipo de serviço?" Eu assustei.
+
+13:18 - 13:18
+Você tem baixada?
+
+13:19 - 13:26
+Não, isso aí eu nunca fiz, não. A Yasmin me manda o projeto. "Não, Yasmin, isso aí é isso aqui. Isso aí eu faço." Às vezes mudou o nome, aí esqueci.
+
+13:26 - 13:29
+Uns extras que eu fiz lá na casa dela.
+
+13:30 - 13:35
+É, então. Eu estou tentando lembrar o nome que ela falou também. Enfim, mas há vários, né? Esse aqui é o gesso.
+
+13:35 - 13:35
+É vários.
+
+13:35 - 13:38
+Vai buscar e vai colocar no material mesmo. É o material mesmo.
+
+13:39 - 13:39
+Isso é verdade.
+
+13:40 - 13:41
+O gesseiro é um artesão.
+
+13:42 - 14:04
+O custo muda de cada um, porque a parede nós usamos montante. Então, o montante tem um valor. O forro nós usamos o F530, é outro valor. Sanca é mais cantoneira, é outro valor. Então, varia os materiais, os valores dos materiais. Mas a placa é a mesma. Ah, não sei se a pessoa pega.
+
+14:04 - 14:06
+A gente só trocou a ideia.
+
+14:06 - 14:07
+Antes chama, né? Que tem.
+
+14:07 - 14:40
+Tem o sisteminha deles lá. É o pé direito, fazer uma parede de 3 metros de altura, pé direito, coloquei 12 metros quadrados. Então, ele trouxe aqui só a parte estrutural de guia. As guias, o que vai levantar, montante, 3 peças de guia, 7 montante. Para fazer uma parede de 3 metros de altura, 12 metros quadrados. Vou mudar aqui para 6 metros, pé direito. Pé direito máximo, ele já te dá. Pé direito máximo de 4,60.
+
+14:41 - 14:43
+Maiores conjuntos de departamento externo.
+
+14:44 - 14:46
+Então, já entra o que o Carlinho falou. Ele é o técnico.
+
+14:48 - 15:03
+Mas é que eles fazem isso, porque a venda do material é eles que fazem. Então, no nosso caso, nós vamos advertir. Pé direito máximo de 4,60. Para valores maiores do que isso, recomenda-se que você.
+
+15:03 - 15:04
+Tem que fazer a recomendação.
+
+15:04 - 15:05
+Isso, recomendação técnica.
+
+15:06 - 15:13
+Aí quem é o técnico? O instalador junto com o arquiteto e engenheiro. Porque alguém vai ter que assinar a resposta.
+
+15:14 - 15:21
+É isso. Se ele querer, né? A dupla, ele entende das normas, a gente não precisa.
+
+15:22 - 15:22
+Duplica.
+
+15:22 - 15:23
+Mas ele entende das normas.
+
+15:23 - 15:24
+Tudo certo.
+
+15:24 - 15:25
+Isso aí é coisa.
+
+15:26 - 15:29
+Estoque. Vocês trabalham com estoque? Não.
+
+15:30 - 15:31
+Estoque seria o gesso liso, né?
+
+15:31 - 15:33
+Não, estoque é estocamento e material.
+
+15:33 - 15:35
+Não, ainda não. Entendi estoque.
+
+15:36 - 15:38
+É, não, não. Mas tudo bem. Mas foi interessante sua resposta também.
+
+15:39 - 15:42
+O estoque, não. Tem ideia, mas...
+
+15:42 - 15:45
+Faz um pedido de orçamento, depois faz um pedido, né?
+
+15:47 - 15:49
+A visão dele é de sistema, entendeu?
+
+15:49 - 15:50
+Sistema.
+
+15:50 - 15:59
+Sim. Trabalhamos com estoque. Ou seja, é assim, hoje nós temos estoque. O Carlinho interpretou: "nós temos estoque hoje?" Não, não temos estoque. Acabou o estoque.
+
+16:00 - 16:01
+Não tem.
+
+16:01 - 16:16
+Então, nós temos estoque. Nós trabalhamos com estoque 5. Nós trabalhamos 5 estoque. Por quê? Porque isso daí faz diferença. Por quê? Porque daí nós vamos desenvolver no sistema o controle de estoque do que tem de material, entendeu? Então, sim.
+
+16:16 - 16:20
+Até no próprio orçamento, fechou, você já sabe do seu estoque o que vai sair.
+
+16:20 - 16:22
+Isso aí a gente tem que comprar.
+
+16:22 - 16:29
+Vamos fazer uma historinha aí, então. É tipo o que você está querendo fazer, tipo mais ou menos um sistema que a gente trabalhou na telhaça, o sanca.
+
+16:31 - 16:34
+Eu gostei da comparação. É meio parecido.
+
+16:35 - 16:36
+Sanca é.
+
+16:36 - 16:37
+Sanca é.
+
+16:37 - 16:39
+Ele entra na divisão da alma do cara e traz tudo.
+
+16:40 - 16:41
+Divisão da alma, gostei.
+
+16:41 - 16:45
+É, no caminho da fé é como um sanca.
+
+16:47 - 16:48
+Você está falando do.
+
+16:48 - 16:49
+Sim.
+
+16:50 - 16:50
+Eles são bem grandes.
+
+16:51 - 16:52
+É o que eu falei com o Carlinho.
+
+16:53 - 17:22
+Desde cadastro, isso é interessante. Luiz Arcanjo, é o meu cliente, cadastrei ele. O próprio sistema vai te gerar seu código. 100003, por exemplo. 103, vamos colocar aqui. Aí eu não vou procurar o Luiz chegou na loja ou me fez um pedido de orçamento. Vou colocar lá Luiz Arcanjo. Eu sei que é 103, vou colocar 203. Já pegou todos os dados dele, já vem. Já vem tudo no sistema ali. O que ele precisa? Aí a gente vai inserir.
+
+17:22 - 17:33
+Ah, uma parede de drywall, na hora que a gente colocar todos esses dados, a gente já sabe o que vai usar de material. É isso. O cliente vai na parede de drywall e o valor.
+
+17:35 - 17:39
+Um desenho que o cliente vai no orçamento. Um desenho de uma parede e o valor.
+
+17:39 - 18:16
+Para nós fica registrado. Para fazer essa parede, vai usar isso, isso, isso, isso, isso. Seria isso. Sim, mas tem uma questão aí, que eu acho importante aos efeitos desse projeto. Do projeto de colocar o gesso. Então, a historinha linda é assim. Você entra na casa do seu cliente, vai conter uma sala de convivência. Nessa eu vou colocar gesso em tal parede. Agora eu vou para a cozinha, tem um outro ambiente. Eu tenho a cozinha. Aí eu tenho que colocar uma zanca, por exemplo. Eu vou para, sei lá, o banheiro.
+
+18:16 - 18:23
+Eu vou colocar a zanca, vou colocar gesso na parede. Entende? Seria separado por ambientes.
+
+18:23 - 18:24
+Por ambiente. Cada cômodo.
+
+18:25 - 18:57
+Claro. Então, na hora de fazer o orçamento, você tem mais volume. Você fala: "opa, bacana, é isto que eu estou." Vamos falar de ambientes. Aí dá outra possibilidade para o cliente dizer: "então vou fazer isto, isto e aquilo, e aquilo outro não." Então vamos fazer a sala, a cozinha, mas o banheiro não. Isso. Entendeu? Mas aí dá para o controle, porque eu volto na casa, nessa tua história, eu volto na casa, eu puxo o 103, o Henrique Arcanjo, e aí eu tenho o orçamento dele, desta casa.
+
+18:57 - 19:01
+E aqui eu vejo: "olha, faz um ano, mais 30, 40 de serviço."
+
+19:01 - 19:02
+Sim, fica registrado.
+
+19:02 - 19:15
+Exato. E aí, o que eu estava fazendo? "Ah, era isto." Qual que foi o nosso compromisso? É isso. Olha, não dá para saber. Não dá para fazer, porque os preços mudaram. Olha, ainda consigo, porque tenho material. Você sabe disso. Esse tipo de coisa. Entendeu?
+
+19:17 - 19:50
+E também para o cliente enxergar o orçamento por cômodo, fica muito melhor. Eu lembro quando eu peguei o orçamento das esquadrias de alumínio lá. Porque é uma terror, você vê oito janelas. Eu falo: "mas onde que tem oito janelas na minha casa?" Não, é porque uma era dupla, do cômodo tal. Então, até para exibir o orçamento, seria interessante se o orçamentista colocou lá: "parede de gesso tal, cômodo, quarto." Ele mostrasse que isso daí é o do quarto. Porque para o cliente fica uma visão muito melhor.
+
+19:50 - 19:59
+E ao mesmo tempo armazena todo esse conjunto de informação realmente que precisa para depois tomar outras decisões ou vender outras coisas.
+
+19:59 - 20:26
+É. Engajo nessa ideia é que o orçamentista não necessariamente é o gesseiro. Então, você pode mandar ele e ele pode associar com aquela sala, com aquele dormitório, fotos do local, as dimensões do local. Coisas que saíram do comum. Por exemplo, "nossa, cara, ele tem uma baita uma janela que ocupa." A parede inteira. Aquele gesso. Então, não posso contabilizar tudo isto? Ou devo? Não sei.
+
+20:27 - 20:27
+Sim.
+
+20:30 - 21:07
+Aqui nesse exame de orçamento, mais ou menos qual vai ser isso para o... Bom, nós vamos fazendo assim já, né? Mesmo no aplicativinho que eu baixei aqui, do Rodrigo. Cômodo por cômodo. Duas folhas. Cômodo por cômodo. Vamos mostrar aqui como é que ficou. Aí, se me permite, não passa na frente, não. Para vocês desenvolverem isso, o que vocês precisam de nós? "Passa, olha, eu preciso disso, disso, dessa informação, isso, isso, isso, isso." Para nós trazer para vocês.
+
+21:08 - 21:22
+Vai ser esses pontos de encontro, assim, de conversa. Acho que é lista de material. Tipo assim, foi de um distribuidor lá de gesso. É pegar uma lista geral de tudo que ele vende. Entendeu? Para a gente poder ir tendo essa dimensão.
+
+21:23 - 21:25
+Sim. E inserindo, né? E alimentando.
+
+21:26 - 21:26
+É.
+
+21:26 - 21:39
+Às vezes você tem que mandar um catálogo, por exemplo, você já usou ele, o catálogo do ano passado, atrasado. Alguma coisa você tem que mandar assim um catálogo, por exemplo? Joga para a gente, para a gente dar uma olhada, para ter noção das coisas que estamos falando.
+
+21:39 - 21:45
+A parede tem três espessuras. 70, 10 e 12.
+
+21:46 - 21:47
+70, 100 e 120, né?
+
+21:48 - 22:01
+Isso. Seria. Que aí eu estou falando do perfil, né? Só o perfil. Ela fraca, ela já fica maior, né? Aí tem que mandar os três.
+
+22:02 - 22:38
+É tudo, porque difere preço. Difere. Então, a 70, a 90 e a 120. Cada uma vai ser um preço. Ah, é o mesmo nome. Tudo leva o nome Montante. O que difere uma da outra é a Montante 70, Montante 90 e Montante 120. Entendeu? A guia 70, a guia 90, a guia 120. Que é o que muda o peso e muda a guia, né? É uma marcha e fêmea, vamos dizer assim. Entendeu? Muda por causa do custo. Entendeu? Muda por causa do custo. Agora, o gesso em si, o revestimento, é o mesmo.
+
+22:38 - 22:39
+A estrutura é que muda.
+
+22:40 - 22:40
+A estrutura é que muda.
+
+22:41 - 22:48
+É o que vai mudar. Aí é a questão: "ah, eu quero uma placa verde, que é na área molhada. Eu quero uma placa rosa, que é para antichama."
+
+22:49 - 22:51
+Ela já vem colorida. Vocês não fazem.
+
+22:51 - 22:59
+Já vem colorida, não. Aí também difere preço. Entendeu? O parafuso que usa nelas é a mesma. No mundo, o parafuso é o mesmo.
+
+22:59 - 23:01
+Mas o acabamento, o gesso daquela mesma.
+
+23:01 - 23:18
+O acabamento também é o mesmo. Entendeu? O que muda no grosso é estrutural. Estrutural. E no caso da placa, dependendo do ambiente. É esses detalhezinhos que pegam e dão um nó na cabeça do cliente. Eu não posso fazer um orçamento para ele.
+
+23:20 - 23:28
+Aí convida vocês para fazer um estúdio, por exemplo. É diferente fazer um estúdio, que tem que ter som mínimo, né?
+
+23:29 - 23:35
+É diferente. A gente vai desde a espessura da parede até as mantas, o isolamento.
+
+23:36 - 23:37
+Os perfis, o isolamento dos perfis.
+
+23:38 - 23:46
+Então, na hora de fazer o aplicativo, nós temos o ambiente, quanto nome, isso aqui é um quarto, mas o tipo de ambiente.
+
+23:46 - 23:54
+Isso. Porque o estúdio já é placa dupla, né? Tem placa para usar duas, placa em cima da outra. Já muda bastante.
+
+23:55 - 24:11
+Até mais aí a questão, assim, não sei, ter uma ideia. É ter a listagem de material que usa. Na hora que a gente for gerar o orçamento, esse orçamento automaticamente já busca ou aplicar. Sendo dupla.
+
+24:14 - 24:15
+Para o investimento duplo?
+
+24:15 - 24:18
+Investimento duplo. Man de rocha.
+
+24:19 - 24:20
+É, se você informar.
+
+24:20 - 24:21
+Porque eu acho.
+
+24:21 - 24:22
+Você informa lá e ele busca.
+
+24:23 - 24:48
+Então, se na hora de criarmos o material, associarmos no sistema, associarmos ele com o tipo de ambiente, o tipo de aplicação final, quando eu lá na outra ponta, estou com o aplicativo, o orçamentista vai lá e diz que esse daqui vai ser um estúdio, por exemplo, de som, ele já sabe que material que ele vai usar do outro lado. E ele pode até dar uma prévia, se for o caso, já.
+
+24:49 - 24:52
+O cliente pula dessa altura, ficou caro. Mas ele está fazendo dentro das normas.
+
+24:53 - 25:00
+É, assim, é acústico? O ambiente é acústico ou não é acústico? Porque às vezes não é um estúdio, às vezes é um quarto.
+
+25:00 - 25:04
+Se ele vai estar exposto a... Se está numa cozinha, por exemplo, eu acho que muda.
+
+25:04 - 25:07
+Sala de aula, né? Sala de aula tem que ter que ser gente.
+
+25:08 - 25:12
+Entende? Então, precisamos saber dessas coisas. Precisamos aprender a profissão de vocês.
+
+25:12 - 25:14
+Não seria uma adição de um.
+
+25:14 - 25:15
+Adicional.
+
+25:15 - 25:18
+Adicional. Não, não seria uma adição assim.
+
+25:18 - 25:18
+Aplicação.
+
+25:19 - 25:24
+É, porque pode ser um quarto, mas aí você tem a opção de você setar ele como acústico.
+
+25:24 - 25:28
+Sim, claro. Não quer que ninguém tenha o som do lado de fora. Não, aqui eu quero silêncio total.
+
+25:29 - 25:31
+Sim, sim.
+
+25:31 - 25:31
+Sim, sim.
+
+25:32 - 25:48
+E, bom, o que eu entendi agora, vamos para o que o Davi veio, fez de ontem para hoje uma ideia mais ou menos. Pelo que eu entendi, Davi, essa visão aí seria a visão que o cliente mesmo calcula o orçamento dele? Seria isso?
+
+25:48 - 26:06
+Isso. É para ele ter uma base de quanto ficaria. Eu peguei como base o que o Estevão mandou lá no grupo, né? Os cálculos que ele pediu lá no chat do PT. Vou colocar aqui. E 2,80.
+
+26:11 - 26:13
+A medida é 10 centímetros, tá?
+
+26:13 - 26:14
+Beleza.
+
+26:14 - 26:18
+Em lugar de metros, não é? Quando vocês fazem o orçamento.
+
+26:18 - 26:18
+É o de metros.
+
+26:18 - 26:21
+Então, é metros. 2,80.
+
+26:21 - 26:22
+Isso.
+
+26:22 - 26:26
+Sempre. Então, 0,60 para 60 centímetros. Ok.
+
+26:27 - 26:30
+É uma luminária diferente, né? É uma luminária que trabalha no sentido.
+
+26:30 - 26:30
+Centímetros.
+
+26:31 - 26:31
+Ok.
+
+26:31 - 26:41
+Vai ter para o cliente, né? As chapas de drywall, montagem, guia, parafuso, maçã junte. E aí aqui teria o botão para mandar mensagens para o aniversário.
+
+26:41 - 26:56
+Aí deixa eu fazer só um ponto. Aí você e eu conversamos nisso mesmo. Isso daí, beleza. Estava ótimo se nós fôssemos vender para o cliente material. Entendeu? Agora, a ideia é isso. Para nós aqui, nós precisamos disso mesmo.
+
+26:56 - 26:57
+Porque na hora da compra.
+
+26:58 - 26:59
+Aparecer para nós.
+
+26:59 - 26:59
+Ah, entendi.
+
+27:00 - 27:08
+Não para o cliente lá na ponta. Entendeu? Porque se aparecer para o cliente lá na ponta, ele usa o nosso sistema para calcular. Aí ele vai lá no Gio, compra o material.
+
+27:09 - 27:11
+Ele vai saber o nosso lucro.
+
+27:12 - 27:47
+Compra o material e ainda contrata os nossos gesseiros como freelance para fazer para ele. É como se a gente pudesse ter isso daí sim, mas em área alugada. Sim, para nós. Tanto é que eu gostei bastante, Davi, desse modelo. Eu vi a parte administrativa. Mas se desse para a gente dar um comando aí, trazer toda a parte administrativa para esse layout, porque está clean o sistema, está bem.
+
+27:48 - 27:48
+Está bem.
+
+27:48 - 28:07
+Está bem bacana. Entendeu? Para nós mesmos utilizarmos ali, como se isso fosse administração. É, eu lembro que você tem duas áreas, né? Isso. Aí é a parte de administração, por exemplo. Daria para a gente colocar essa administração lá naquele template mesmo?
+
+28:08 - 28:09
+Sim. Como assim? Espera aí.
+
+28:10 - 28:45
+Assim, por exemplo. Porque a priori não vai existir aquela outra parte. Vai lá para a outra parte que você foi. Abre uma outra guia. Que é a parte do cliente. A versão cliente. Administrativa é só a versão cliente. A priori, o que acontece? É como se essa versão cliente, minha pergunta e o desejo, é como essa versão que você fez para o cliente, se ela pudesse ser o nosso sistema.
+
+28:46 - 28:47
+Ah, claro. Beleza.
+
+28:47 - 29:12
+Tudo que tem no administrativo, vamos gerenciar os clientes, vamos fazer ali, naquele menuzinho ali e tudo mais. Porque, visualmente, essa versão ficou bem mais atrativa, entendeu? Para a gente poder vender esse sistema. Então, agora é mais um aspecto visual. A outra lá do administrativo ficou como um sistema comum mesmo, que tem ali o menu e as opções, ok. É porque seria trazer todas essas funcionalidades para dentro desse layout.
+
+29:13 - 29:15
+Beleza. Beleza. Fechou.
+
+29:18 - 29:33
+E aí considerar que nós vamos até pensar no futuro, pode ser que talvez no nosso site, o cliente possa entrar ele mesmo e ele fazer uma cotação com a gente. Eles fazem um orçamento, eles falam: "eu preciso fazer", que é isso que o Davi fez.
+
+29:34 - 29:48
+Que no caso assim, geralmente, o Luiz, o pessoal, eles mandam a área quadrada, a cotação deles. Seria interessante colocar, eu tenho uma área aí de 10, 14, 15.
+
+29:49 - 30:13
+Beleza. Esse daí é o povo que está acostumado a trabalhar com vocês e que fala: "eu quero tantos metros de forro". Igual eu falei do Leandro, é tantos metros de forro lá. Agora, a pessoa que está na internet navegando e fala: "poxa, eu acho que eu podia fazer uma parede de gesso aqui no quartinho". Ele não sabe que é o metro quadrado que é tudo, ele só sabe que ele precisa fazer uma parede. Aí ele vai entrar lá no nosso sistema e ele vai lá no simular o orçamento, Davi, por favor.
+
+30:13 - 30:33
+Ele vai lá no simular o orçamento, no serviço, "o que eu quero? Parede simples". Entendeu? Porque ele é o leigo. Ele só sei que eu quero uma parede. Aí ele vai colocar ali o comprimento dessa parede, a altura. E aí o nosso sistema calcula a área do metro quadrado. Porque se a gente exigir que ele coloque a área do metro quadrado, ele não sabe nem calcular o metro quadrado. Entendeu?
+
+30:34 - 30:35
+Entendi.
+
+30:36 - 30:39
+E ele só diz: "eu quero uma parede que a altura dela é 3 metros".
+
+30:39 - 30:40
+3 por 3.
+
+30:40 - 31:04
+E a largura é 3 por 3. Porque isso ele sabe, o tirar e meter ele sabe. Agora, vai ter uma senhorinha, dona de casa, querendo muitas vezes fazer uma cotação, uma possibilidade de uma cotação. Então, tem que ser o mais simples possível, entendeu? Ao invés da gente colocar lá: "digite aqui quantos metros quadrados de forro você quer". Não, é a altura, e a largura, e o comprimento da parede, e aí o sistema calcula.
+
+31:05 - 31:06
+O sistema calcula para ela.
+
+31:06 - 31:32
+Isso, exatamente. Calcula para ela e calcula para nós. Olha lá, escolha o sistema construtivo. Parede simples, parede dupla, dupla estrutura, que daí está falando, acho que é acústico, corta-fogo, corta-fogo, né? Corta-fogo. Corta-fogo, forro, teto ou revestimento. Aí a gente vai definindo, no momento de montar o orçamento.
+
+31:32 - 31:33
+Vai.
+
+31:33 - 31:35
+O que vai selecionar.
+
+31:35 - 31:38
+E fazer e usar, né? Uma parede dupla, né? A área da parede dupla.
+
+31:39 - 31:39
+Sim.
+
+31:40 - 31:42
+É, porque tudo que eu fiz aqui tem conhecimento de tamanho.
+
+31:42 - 31:49
+Sim, mas é isso que eu ia falar agora. O ideal era nós pegar isso aí e dar um treino. "Porra, sei que dá para mudar aqui, dá para mexer aqui."
+
+31:49 - 31:50
+É, eu disse só uma.
+
+31:50 - 31:55
+Às vezes alguma coisa diverge um pouco do que a gente aconselhou.
+
+31:55 - 31:56
+É só um projeto para você entender.
+
+31:56 - 32:00
+É, isso é um esboço, nós podemos disponibilizar para vocês.
+
+32:00 - 32:24
+Isso, para nós fazer um treino. Que nem eu fiz um, eu fiz não. Nós achamos eu e o moreno ali, o Felipe. Ah, pesquisando tal, tal, tal. Achamos um até interessante. Só que ele pecou no financeiro, ficou fraquinho o financeiro dele, não era incluso. Faltou bastante coisa. Mas eu procurei aqui, não achei mais, sumiu.
+
+32:25 - 32:30
+Porque talvez, se a parte de orçamento dele era legal, a gente consegue tirar algumas ideias.
+
+32:30 - 32:33
+Agregar, agregar, entendeu? Aí na hora que eu começar.
+
+32:33 - 32:37
+Nós vamos trazer novidade e fazer coisa diferente, entendeu? Porque se a gente ir para o mercado com mais mesmo.
+
+32:37 - 32:40
+Mas eu não estou... não, não. A hora que eu comecei.
+
+32:40 - 33:06
+Na hora que eu comecei a usar, a utilizar, eu fiz até uns três, quatro orçamentos mesmo, ele foi me limitando, me limitando. Entendeu? Aí eu até falei com o cara, entrei em contato com ele, aí ele criou, era um gesseiro. "Porra, eu estou vendendo, mas os caras querem usar de graça, não sei o quê, não sei o quê. Na hora que pagar, ninguém paga. Então, não tem como eu ficar alimentando e arrumando." Eu falei: "Ó, se eu puder melhorar isso, isso, isso, fui dando as ideias para ele.
+
+33:06 - 33:30
+Dentro do nosso segmento aqui, para atender a nossa necessidade." Aí o que eu fiz? Uma sugestão. Nós poder dar um treino, ver: "Ó, aqui, nós conseguimos melhorar aqui, melhorar ali." Já pensando no profissional que vai comprar lá na frente. É por isso que a gente precisa, porque eu sei desenvolver, você sabe fazer essas coisas, eu não sei. Então, é disso que eu preciso ali, né? Da sua opinião, o que você acha que pode melhorar, o que tem que entrar.
+
+33:30 - 33:36
+Eu vou te fazer outra pergunta. Vai ser só PC ou vai rodar num?
+
+33:36 - 33:39
+Não, é para ser responsivo, rodar também no celular.
+
+33:39 - 33:41
+Porque aí você dá na obra aqui para ter cara que a coisa está ótima.
+
+33:42 - 33:44
+É, no futuro a gente pode pensar tanto no aplicativo.
+
+33:45 - 33:46
+Senta aí que eu vou limpar tudo.
+
+33:48 - 33:48
+É.
+
+33:48 - 33:49
+Né? Por aplicativo.
+
+33:49 - 33:50
+Claro.
+
+33:50 - 33:51
+E outra coisa, sendo aplicativo.
+
+33:51 - 33:53
+Porque aplicativo tem tudo.
+
+33:53 - 33:59
+A fala de um bobo, a fala de um bobo. Tendo como aplicativo, a probabilidade de venda é maior.
+
+33:59 - 34:00
+Sim, sim.
+
+34:00 - 34:16
+É, mas o back office administrativo tem que ser tudo desktop. Porque, beleza, ele que está na rua, a versão do aplicativo é ele que está na rua, o orçamentista. Agora, todo o restante, lista de material, tudo é desktop.
+
+34:16 - 34:17
+Tudo é construção.
+
+34:18 - 34:22
+Eu não sei se dá para começar pelo aplicativo, porque o aplicativo vai ser uma.
+
+34:22 - 34:24
+Não, o que dá para começar é essa daí.
+
+34:25 - 34:25
+É.
+
+34:25 - 34:29
+Essa daí. Essa daí eu acho que, assim, é o candidato principal.
+
+34:29 - 34:30
+Sim, sim.
+
+34:31 - 34:35
+Mas vai usando, depois vai ajustando, né? Ajeitando ele, né?
+
+34:35 - 34:39
+Agora, de início, você já está com isso bem, vai fazer uns testes.
+
+34:41 - 34:41
+É, normal.
+
+34:42 - 34:52
+Sim, não, isso é a trilha, essa trilha. Primeiro faz uns testes. Não, não solta, você está louco? E aí passar lista de material. E passar lista de material que usa em tudo.
+
+34:52 - 34:55
+Inverter o motor. Vamos sair andando.
+
+34:55 - 35:04
+Nós vamos fazer essa mix de forro, de parede, de sanca, cortineiro. A sanca e a cortineira são as mesmas coisas.
+
+35:04 - 35:06
+O decorativo.
+
+35:07 - 35:13
+Mas você entendeu? Você recebeu um catálogo daqueles velhos, sabe? Às vezes você recebe um monte de material em tudo PDF.
+
+35:14 - 35:15
+E manda PDF agora, né?
+
+35:16 - 35:17
+E manda PDF. Melhor ainda, mais fácil.
+
+35:18 - 35:19
+Manda tudo de informação diferente.
+
+35:19 - 35:24
+Eu vou criar um grupo nosso. Isso daí centraliza a comunicação toda lá.
+
+35:27 - 35:29
+Porque mesmo que não use agora, fica guardado.
+
+35:30 - 35:38
+Posso perguntar? Se você quiser que levar a lapada, eu já levo aqui no print do mundo. Mas você já sabe porque está apanhando, né?
+
+35:38 - 35:39
+Ah, pelo menos, né?
+
+35:39 - 35:40
+Você não chega.
+
+35:40 - 35:42
+Porque apanhar na dúvida é duro, né?
+
+35:42 - 35:44
+Você não chega a processar, mas porque você está com olho roxo.
+
+35:45 - 35:48
+Criança não tem medo de apanhar, criança às vezes é uma abusada, hein?
+
+35:48 - 35:49
+É.
+
+35:49 - 35:50
+Para bater.
+
+35:50 - 36:01
+Então, uma média de quanto tempo, mais ou menos, para o negócio ficar pronto? Mais ou menos. Guarda.
+
+36:02 - 36:03
+Vai apanhar de todo mundo.
+
+36:04 - 36:04
+A média.
+
+36:05 - 36:07
+Não, um esboço nós temos aí já, né?
+
+36:08 - 36:08
+Sim.
+
+36:09 - 36:10
+O cara é empolgado.
+
+36:10 - 36:13
+Eu sei que é trabalho. Ou inovação, coloca você.
+
+36:13 - 36:21
+Sim. Nós trazendo as informações, tudo é lógico que você vai depender de nós, né? Você não vai estar sozinho nisso.
+
+36:21 - 36:27
+Luiz, a gente trabalharia quanto tempo nesse projeto? Mais ou menos, tem uma ideia?
+
+36:31 - 36:37
+Sendo por IA, eu não tenho base de tempo. É algum desses dois ou não? É nenhum dos dois?
+
+36:38 - 36:39
+Aí ficou para mais longe.
+
+36:39 - 36:45
+Porque assim, eu trabalho até às duas aqui. E aí o Luiz falou que ia ver com o júnior, né?
+
+36:45 - 36:46
+Não, vou te mandar aí.
+
+36:46 - 36:47
+Ficar o dia inteiro?
+
+36:48 - 36:48
+É.
+
+36:48 - 36:54
+Eu não sei, dá para tentar dividir, né? E aí, eu não sei.
+
+36:55 - 36:56
+É no longo prazo ainda, não?
+
+36:56 - 37:03
+Não, prazo é uma média, porque eu estou usando esse aplicativo e o meu aqui. Qualquer coisa eu te mando para você ver como é que é.
+
+37:03 - 37:07
+Beleza, beleza. O Luiz tinha mandado lá no nosso grupo lá.
+
+37:19 - 37:20
+Mandou um bom dia.
+
+37:29 - 37:34
+Era um daqueles mesmos, legal. Você que não estava se reconhecendo.
+
+37:58 - 38:15
+Ah, é esse aqui. Agora eu teria foto. Eu fiz uns contatos com os arquitetos, aí eu mandei assim: "Bom dia. Tudo bem com você?" Chamava pelo nome. "Bom dia."
+
+38:16 - 38:16
+Estevão.
+
+38:16 - 38:35
+"Bom dia, Estevão. Tudo bem com você?" Só isso. Aí ele fica curioso. "Quem é?" Fazia foto aqui no escritório. "Quem é? Quem é?" Agora você responde. Aí eu fico em tubo. Estratégia, né?
+
+38:36 - 38:42
+O cara me fala: "Oi, bom dia." Mesmo não falando meu nome, eu deixo ele lá. Só falou bom dia?
+
+38:42 - 38:43
+Mas com essa forma.
+
+38:44 - 38:48
+Eu não entro nessa mania louco. Mas a maioria entra.
+
+38:48 - 38:48
+Entra.
+
+38:49 - 38:49
+É?
+
+38:49 - 38:53
+Não, ele tem razão. Estou dizendo que comigo não vai funcionar. Eu entendi.
+
+38:54 - 38:59
+O negócio aqui é: "Pera aí, quem é? Quem é você?"
+
+38:59 - 39:00
+Está certo.
+
+39:00 - 39:01
+Vai resolver seus problemas.
+
+39:02 - 39:20
+Está certo. Eu vou estar no minuto, caramba.
+
+39:22 - 39:22
+É.
+
+39:24 - 39:24
+Está aí.
+
+39:25 - 39:26
+Ezéquiel.
+
+39:28 - 39:29
+Vou contar uma piada do Ezéquiel.
+
+39:39 - 39:39
+Beleza.
+
+39:40 - 39:43
+Tem catálogo, quem vai fornecer essas meninas lá?
+
+39:43 - 39:44
+Catálogo não.
+
+39:44 - 39:47
+As meninas lá de fora mandam? Não mandam? Difícil.
+
+39:48 - 39:49
+Não.
+
+39:51 - 39:56
+RC? Roberto Severino?
+
+39:56 - 39:57
+Catálogo de valor?
+
+39:58 - 40:01
+Não, só de produto. Não precisa valor. Só para ele conhecer o que é o quê.
+
+40:02 - 40:04
+As fotos. Eles não amam.
+
+40:05 - 40:08
+Os nomes, sim.
+
+40:08 - 40:09
+Instagram, tudo bem?
+
+40:09 - 40:10
+Não, eu não achei.
+
+40:11 - 40:12
+Eu não sei onde está esse microfone.
+
+40:13 - 40:13
+Qualquer coisa.
+
+40:13 - 40:14
+Eu não consegui achar em casa.
+
+40:15 - 40:16
+Aí você tem um PDF com lista de nomes?
+
+40:17 - 40:19
+Mas sim, agora eu posso criar.
+
+40:19 - 40:19
+Agora pode ser?
+
+40:19 - 40:21
+Mas é um trabalhão para vocês.
+
+40:22 - 40:23
+É, então, mas as lojas não mandam.
+
+40:23 - 40:24
+Mas se você tem um fornecedor.
+
+40:28 - 40:36
+Não vai mandar a foto e o nome. A foto e o nome. Eu acho que as lojas não vão mandar não.
+
+40:37 - 40:37
+O quê?
+
+40:37 - 40:42
+Um catálogo, né? Para ele saber o que é.
+
+40:42 - 40:49
+Você não manda uma dimensão, sabe? Aquilo que você falou, uma coisa são eles. Beleza. Outra coisa é esse mundo.
+
+40:51 - 40:54
+Que às vezes, por uma questão de mercado, eles trabalham com um conjunto.
+
+40:54 - 41:08
+Sim, enquanto uma questão prática de um distribuidor. Quantos itens na janela você já vende para você? Uma lista de um distribuidor de gesso. Quantos itens vocês acham mais ou menos que ele faz?
+
+41:09 - 41:11
+Um distribuidor?
+
+41:11 - 41:16
+Um distribuidor de gesso.
+
+41:16 - 41:18
+Aquilo que vocês usam no dia a dia.
+
+41:18 - 41:18
+Contando tudo.
+
+41:19 - 41:19
+É.
+
+41:20 - 41:23
+Umas 20 itens, né?
+
+41:24 - 41:25
+Muito tranquilo.
+
+41:25 - 41:28
+Não, muito não. Já para a casa mesmo.
+
+41:30 - 41:35
+Vamos colocar três, quatro tipos de placa. Cinco, com a cimentícia. Cinco tipos de placa.
+
+41:35 - 41:49
+Não, mas tranquilo, é só para ter uma base. Era 50 ou era 2.500? Só para ter uma ideia, uma base. Porque aí tem um catálogo, se não tiver, se não achar mesmo, não tem um catálogo. Se for poucos itens, dá para pedir para o chat GPT.
+
+41:50 - 41:53
+Porque a massa de balde é a mesma. O gesso é o mesmo.
+
+41:53 - 41:54
+Só muda a marca.
+
+41:54 - 42:04
+A fita é a mesma. Da parede para ir para o forro. Então, acaba eliminando bastante item, né? Então, do forro para a parede, o que mudaria era o perfil.
+
+42:07 - 42:08
+E as espessuras da parede, só.
+
+42:08 - 42:10
+E as espessuras da parede.
+
+42:10 - 42:10
+E são três.
+
+42:10 - 42:11
+É.
+
+42:11 - 42:16
+São três espessuras. O produto é o mesmo, praticamente, só muda a largura.
+
+42:17 - 42:26
+Então, dá para fazer no escrito, né? Para ele saber qual que é qual, aí a foto que é difícil. É, a foto nós tínhamos que arrumar.
+
+42:27 - 42:27
+Para entender o quê?
+
+42:27 - 42:30
+Sim, aqui é um montante tal, um montante tal.
+
+42:30 - 42:32
+Vocês vão achar.
+
+42:32 - 42:34
+Faz um tour aqui no barracão ali, nós te mostramos.
+
+42:37 - 42:45
+Vai ser alguma coisa assim. Só para conhecer, quando está com o kit de montante, você entender o que é o montante. Qual que é a função do montante? O montante é o que vai vertical.
+
+42:45 - 42:46
+É como um trilho, né?
+
+42:46 - 42:48
+Porque as lojas estão em cima.
+
+42:48 - 42:49
+Aqui é como se fosse um trilho.
+
+42:49 - 42:50
+Mas ele está para queimar.
+
+42:51 - 42:52
+O que está em pé é montante.
+
+42:54 - 42:54
+Não, não, não.
+
+42:54 - 42:58
+Eu entendi, mas já me imagino ele como se fosse um trilho, mas é uma encaixada.
+
+42:58 - 43:02
+Aí vem a fonte que vai guiar.
+
+43:02 - 43:03
+Aí vem o trilho de carga.
+
+43:03 - 43:04
+Nada é o nosso.
+
+43:05 - 43:17
+Produto. Mas eu preciso saber o preço do F-15, do preço da placa, eles não mandam. Não, a gente não pode. Faz um orçamento aí, uma lista, que eu te mando o valor fechado. Eles não mandam.
+
+43:19 - 43:20
+E como você faz orçamento de surpresa?
+
+43:22 - 43:28
+Porque aqui a gente vai aqui no Silvio, né? Mas nem lá. A gente pegou esse aí em Miraçatuba, eles não mandam.
+
+43:28 - 43:35
+Eu fazia assim, passando por cliente. "Olha, eu quero comprar gesseiro, o cara me indicou o seio para comprar de R$ 46,00."
+
+43:35 - 43:36
+O Jumar, pelo conhecimento, manda.
+
+43:36 - 43:40
+Ele me dava tudo, o que mais não falou.
+
+43:42 - 43:58
+O Jumar manda. Agora, se a gente for pedir uma quantidade, eles vão falar: "Não, quantas placas você precisa?" Eu coloco lá 100 placas. 100, 100, vocês mandam o valor total. Aí a gente tem um desconto, aí dá o desconto. A gente não sabe o valor. Então, é assim, a foto, aí eles não vão mandar mesmo.
+
+43:59 - 44:01
+Mas nós destrinchamos aí para vocês.
+
+44:02 - 44:15
+A gente acha, a gente consegue, né? E calcula ali o metro, o que vai dentro do metro de forro, o que vai dentro do metro de parede, aí nós te mandamos tudo, você tem tudo ali. X parafuso, X metros de fita, X.
+
+44:15 - 44:50
+Mas você já entendeu o que o sistema vai fazer para a construção? Isso é muito parecido com o, depois eu mostro para vocês o que a gente usa da Denver, lá do Manage CIS. Você pode cadastrar um novo item, aí tem lá. Qual que é o tipo do item? Janela. Ele sabe que é uma janela. Aí é o perfil. Você pode usar de 20 ou de 30, aí você define. Janela, perfil, de 20. Tem vidro, vidro. Vidro quantos milímetros? De tanto. Aí ele cria um produto, que é a janela.
+
+44:50 - 45:11
+Eu posso fazer o orçamento já de uma janela, de tantos metros que ele já sabe tudo o que vai, porque eu cadastrei individualmente todos os itens atrelados à janela. Acho que o sistema, nós iremos desenvolver ele em um modelo mais ou menos parecido, né? Tipo assim, eu cadastro parede.
+
+45:13 - 45:16
+Mas isso vai acontecer tudo aqui atrás. Vamos chamar já de back-end.
+
+45:18 - 45:23
+É no back-office. Mas esse back-office tem que ficar disponível também para o gesseiro.
+
+45:24 - 45:26
+Para ele cadastrar?
+
+45:26 - 45:34
+É. Porque pode acontecer, e acontece muito isso. Por exemplo, acontece um arquiteto manda um negócio que ele nunca viu.
+
+45:35 - 45:35
+Surreal.
+
+45:36 - 45:49
+É. Ele vai ter que colocar uma parede com tanto de montante, tanto de isso, tanto daquilo, tanto daquilo, e ele vai criar um item personalizado. Entendeu? Então, também, essa possibilidade.
+
+45:49 - 46:05
+Porque até porque nós trabalhamos muito com projeto, né? Os projetos às vezes são um negócio meio fora da casinha, vamos dizer assim. Aí fica em aberto para você poder inserir. Você não seria planta do projeto? Você seria planta do projeto? Isso é super interessante.
+
+46:06 - 46:07
+Sim.
+
+46:07 - 46:15
+Pode simplesmente fotografar o projeto, e aí ele já te dá os ambientes. Pode ser muito interessante.
+
+46:16 - 46:29
+É, porque no projeto vem descrito o que é gesso, o que não é. Então, ele faz a leitura, o CR ali faz a captura, leitura disso e já monta tudo.
+
+46:29 - 46:35
+Ok. Beleza.
+
+46:35 - 46:36
+Certo?
+
+46:36 - 46:36
+Sim.
+
+46:37 - 46:45
+Por enquanto, para nós está certo. E nós vamos falar nesse grupo aqui, questão de mandar para vocês a listagem de material, já pode começar.
+
+46:46 - 46:46
+Certo, fechou.
+
+46:47 - 46:48
+Sim, pode. Tudo o que você achar, joga lá.
+
+46:49 - 46:50
+Vai jogando lá no grupo.
+
+46:50 - 46:53
+Vai jogando lá que a gente vai, quanto mais informação tiver nesse momento, melhor.
+
+46:54 - 46:54
+Para vocês verem.
+
+46:58 - 46:59
+Vai ser rapidinho.
+
+47:01 - 47:01
+Vamos aí.
+
+47:02 - 47:03
+Eu também seria ótimo.
+
+47:03 - 47:04
+De ontem para hoje.
+
+47:05 - 47:06
+Então, já deu.
+
+47:07 - 47:07
+Prontinho à noite.
+
+47:08 - 47:08
+Onde você quiser.
+
+47:09 - 47:09
+Onde você.
+
+47:10 - 47:10
+É.
+
+47:10 - 47:11
+A expectativa é alta.
+
+47:12 - 47:12
+É verdade.
+
+47:13 - 47:13
+Melhor surpresa.
+
+47:13 - 47:15
+Melhor surpresa.
+
+47:20 - 47:20
+Bom dia, Deice.
+
+47:21 - 47:21
+Bom dia.
+
+47:23 - 47:24
+Você vai para o grupo?
+
+47:24 - 47:26
+Não, já foi na mesa.
+
+47:29 - 47:31
+Ainda não. Vou subir ele agora para você.
+

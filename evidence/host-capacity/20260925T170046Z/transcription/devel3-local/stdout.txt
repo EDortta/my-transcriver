@@ -1,0 +1,4 @@
+Whisper local: medium em cpu (int8)
+[1/1] Transcrevendo: /home/esteban/Sync/Backups/Android/VoiceRecorder/Esteban e Felipe Gaia 2026-07-31.m4a
+[1/1] Gravado: /home/esteban/Sync/Projects/my-transcriver/evidence/host-capacity/20260925T170046Z/transcription/devel3-local/output/Esteban e Felipe Gaia 2026-07-31.md
+Concluído: 1 sucesso(s), 0 falha(s).

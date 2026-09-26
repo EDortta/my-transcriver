@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-25T17:16:39.338620+00:00",
+  "selected_audio": {
+    "path": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Esteban e Felipe Gaia 2026-07-31.m4a",
+    "size_bytes": 11538442,
+    "sha256": "001bae3694971028f79e45b04c3a9899a9a3e17b0a486d229f6ce40e84fcf0b1"
+  },
+  "settings": {
+    "cpu_seconds": 8.0,
+    "remote_dir": "/tmp/my-transcriver-host-benchmark",
+    "keep_remote": false,
+    "language": "pt",
+    "remote_model": "Systran/faster-whisper-medium",
+    "transcribe_timeout": 1200
+  },
+  "host_ranking": [
+    {
+      "name": "devel3",
+      "score": 11596.241,
+      "status": "ok"
+    },
+    {
+      "name": "dom1",
+      "score": 357.738,
+      "status": "ok"
+    }
+  ],
+  "transcription_ranking": [
+    {
+      "name": "devel3-local",
+      "status": "ok",
+      "projected_60min_minutes": 71.27
+    },
+    {
+      "name": "whisper-incus",
+      "status": "failed",
+      "projected_60min_minutes": 5.34
+    }
+  ],
+  "host_results": [
+    {
+      "host": "devel3",
+      "fqdn": "devel3",
+      "platform": "Linux-5.15.0-187-generic-x86_64-with-glibc2.35",
+      "python": "3.10.12",
+      "cpu_count": 4,
+      "cpu_model": "Intel(R) Core(TM) i3-9100F CPU @ 3.60GHz",
+      "meminfo_kb": {
+        "MemTotal": 16287904,
+        "MemAvailable": 4935208
+      },
+      "disk_free": {
+        "cwd": {
+          "total": 943441317888,
+          "used": 800642764800,
+          "free": 94798938112
+        },
+        "audio_parent": {
+          "total": 943441317888,
+          "used": 800642764800,
+          "free": 94798938112
+        }
+      },
+      "tools": {
+        "ffmpeg": "/usr/bin/ffmpeg",
+        "ffprobe": "/usr/bin/ffprobe",
+        "whisper_cli": null,
+        "faster_whisper_python": true,
+        "vosk_python": true
+      },
+      "audio": {
+        "path": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Esteban e Felipe Gaia 2026-07-31.m4a",
+        "size_bytes": 11538442,
+        "duration_seconds": 705.312
+      },
+      "benchmarks": {
+        "cpu_hash": {
+          "loops": 8022,
+          "loops_per_second": 1002.75,
+          "seconds": 8.0,
+          "digest_prefix": "0d23c69487c7"
+        },
+        "ffmpeg_decode": {
+          "command": [
+            "/usr/bin/ffmpeg",
+            "-nostdin",
+            "-hide_banner",
+            "-loglevel",
+            "error",
+            "-i",
+            "/home/esteban/Sync/Backups/Android/VoiceRecorder/Esteban e Felipe Gaia 2026-07-31.m4a",
+            "-f",
+            "null",
+            "-"
+          ],
+          "returncode": 0,
+          "wall_seconds": 0.516,
+          "stdout_tail": "",
+          "stderr_tail": "",
+          "audio_seconds_per_wall_second": 1366.88
+        }
+      },
+      "name": "devel3",
+      "target": "local",
+      "status": "ok",
+      "orchestrator_wall_seconds": 8.654
+    },
+    {
+      "host": "dom1-inovacao",
+      "fqdn": "dom1.nuomed.com.br",
+      "platform": "Linux-6.12.86+deb12-amd64-x86_64-with-glibc2.36",
+      "python": "3.11.2",
+      "cpu_count": 16,
+      "cpu_model": "Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz",
+      "meminfo_kb": {
+        "MemTotal": 65937116,
+        "MemAvailable": 51328036
+      },
+      "disk_free": {
+        "cwd": {
+          "total": 292588748800,
+          "used": 252330668032,
+          "free": 25320591360
+        },
+        "audio_parent": {
+          "total": 292588748800,
+          "used": 252330668032,
+          "free": 25320591360
+        }
+      },
+      "tools": {
+        "ffmpeg": null,
+        "ffprobe": null,
+        "whisper_cli": null,
+        "faster_whisper_python": false,
+        "vosk_python": false
+      },
+      "audio": {
+        "path": "/tmp/my-transcriver-host-benchmark/sample.m4a",
+        "size_bytes": 11538442,
+        "duration_seconds": null
+      },
+      "benchmarks": {
+        "cpu_hash": {
+          "loops": 3198,
+          "loops_per_second": 399.75,
+          "seconds": 8.0,
+          "digest_prefix": "34eda1f7570b"
+        },
+        "ffmpeg_decode": null
+      },
+      "name": "dom1",
+      "target": "ssh-whisper.inovacaosistemas.com.br",
+      "status": "ok",
+      "orchestrator_wall_seconds": 42.934
+    }
+  ],
+  "transcription_results": [
+    {
+      "name": "devel3-local",
+      "kind": "local",
+      "model": "medium",
+      "status": "ok",
+      "returncode": 0,
+      "command": [
+        "/usr/bin/python3",
+        "/home/esteban/Sync/Projects/my-transcriver/transcribe.py",
+        "/home/esteban/Sync/Backups/Android/VoiceRecorder/Esteban e Felipe Gaia 2026-07-31.m4a",
+        "--backend",
+        "local",
+        "--language",
+        "pt",
+        "--overwrite",
+        "-o",
+        "/home/esteban/Sync/Projects/my-transcriver/evidence/host-capacity/20260925T170046Z/transcription/devel3-local/output",
+        "--model",
+        "medium"
+      ],
+      "audio_duration_seconds": 705.312,
+      "wall_seconds": 837.808,
+      "realtime_factor": 1.1879,
+      "audio_seconds_per_wall_second": 0.8419,
+      "projected_60min_minutes": 71.27,
+      "output": "transcription/devel3-local/output/Esteban e Felipe Gaia 2026-07-31.md",
+      "output_chars": 6786
+    },
+    {
+      "name": "whisper-incus",
+      "kind": "remote",
+      "url": "https://whisper.inovacaosistemas.com.br/v1/audio/transcriptions",
+      "model": "Systran/faster-whisper-medium",
+      "status": "failed",
+      "http_status": 503,
+      "error": "servidor aquecendo, tente novamente em instantes\n",
+      "text_chars": 0,
+      "audio_duration_seconds": 705.312,
+      "wall_seconds": 62.752,
+      "realtime_factor": 0.089,
+      "audio_seconds_per_wall_second": 11.2397,
+      "projected_60min_minutes": 5.34
+    }
+  ]
+}

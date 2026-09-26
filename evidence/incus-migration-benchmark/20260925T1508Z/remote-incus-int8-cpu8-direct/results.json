@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-25T15:20:00.367539+00:00",
+  "candidate": "remote-incus-int8-cpu8-direct",
+  "url": "https://whisper.inovacaosistemas.com.br/v1/audio/transcriptions",
+  "model": "Systran/faster-whisper-medium",
+  "language": "pt",
+  "sample": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Fer choro 27 outubro 2024.m4a",
+  "duration_seconds": 271.4765,
+  "size_bytes": 4461089,
+  "status": "failed",
+  "wall_seconds": 72.051,
+  "realtime_factor": 0.2654,
+  "audio_seconds_per_wall_second": 3.7678,
+  "error": "servidor aquecendo, tente novamente em instantes\n",
+  "text_chars": 0
+}

@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "completed": {
+    "09d900fecb2d472d9df6d99816ce644aacfa46bcb1d5cf74453243cbd8d765f7": {
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/AUD-20210226-WA0000.m4a",
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/AUD-20210226-WA0000.txt",
+      "size": 782543,
+      "completedAt": "2026-09-23T23:42:30.978Z"
+    },
+    "1b072004667f8784c570f3008a9ba90876a16aa78089bddc8ab1aa9037ce3423": {
+      "input": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Urologista.m4a",
+      "output": "/home/esteban/Sync/Projects/my-transcriver/protegendo-a-torre-brutos/Urologista.txt",
+      "size": 15006836,
+      "completedAt": "2026-09-24T01:06:17.835Z"
+    }
+  }
+}

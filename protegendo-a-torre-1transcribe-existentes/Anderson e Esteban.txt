@@ -1,0 +1,2364 @@
+00:00 - 00:31
+Hahaha. Tempeão e tiroteio. E tem mesmo. Mulher é muito viada, viu. Ai, ai, ai. Tem letra pra tudo quanto é gosto, vai. O resumo tá bem feito? É aquilo mesmo ou tem outra coisa?
+
+00:31 - 00:38
+É isso aí. É isso aí. O primeiro passo vai ser o... o algorit—
+
+00:42 - 00:44
+Vai falando que eu vou anotando.
+
+00:44 - 00:45
+Tá.
+
+00:48 - 00:49
+O primeiro entra no algorit—
+
+00:50 - 00:56
+Algorit. Então ele vai ser um microserviço de private labels.
+
+00:58 - 01:01
+Uhum.
+
+01:04 - 01:11
+E aí esse microserviço, ele vai estar conectado numa... ele vai ter integração direta com o front.
+
+01:12 - 01:12
+Uhum.
+
+01:15 - 01:19
+Não é boa coisa não, hiperbásico. Hiperbásico não é boa coisa não.
+
+01:20 - 01:20
+Uhum.
+
+01:20 - 01:25
+Que aí aquela ideia... é o que você colocou aqui, né, do Flutter, o mapa da Chronos lá e tal.
+
+01:26 - 01:26
+Uhum.
+
+01:26 - 01:35
+Aqui. Só que ele vai ter que estar integrado com o... o gestor de cache.
+
+01:36 - 01:37
+O quê?
+
+01:37 - 01:37
+O dashboard.
+
+01:38 - 01:58
+Então. Mas aí, é... tipo assim, quando você fala que vai estar integrado com o front, no caso o Flutter, é uma API. E essa outra também é outra API, mas então não é mais algoritmo. Esse outro vamos ter que dar um nome pra ele. É dashboard de crédito? Como que vai chamar?
+
+01:58 - 02:03
+Não, esse é o microserviço de private labels.
+
+02:03 - 02:10
+Sim, esse é o que nós vimos agora, de algoritmo. Mas você falou: "mas tem que estar também conectado com o dashboard".
+
+02:11 - 02:14
+Sim. Mas o dashboard eu entendo que ele vai ser um outro microserviço.
+
+02:16 - 02:20
+Você tá falando da... da tela ou tá falando da API?
+
+02:23 - 02:23
+Da... da tela.
+
+02:24 - 02:41
+Da tela. Tudo bem. É outro cliente. Mas a API é a mesma, então quando estamos falando de integrar com o algoritmo, tá? Então aí nós vamos ter uma API de... é... de dashboard. No nosso serviço, tá? Nós vamos ter...
+
+02:41 - 02:42
+Sim.
+
+02:42 - 02:53
+Algoritmo está aqui. Algoritmo está aqui. Aí estamos nós. E aqui nós temos o Flutter. E aqui nós temos o dashboard.
+
+02:53 - 02:53
+O dashboard. Exato.
+
+02:54 - 03:04
+Isso. Não interessa aqui se forem... na minha visão agora, nesse momento, se eles são... é... a mesma tela, telas diferentes, que no caso são bem diferentes, bem distintas.
+
+03:04 - 03:04
+Exato.
+
+03:05 - 03:21
+Eu tô perguntando mais aqui, o backend, como que vai ficar. Tipo, vai ser um microserviço realmente para cada um com APIs distintas? Que eu acho que seria mais interessante, né? Tipo, aqui nós temos uma API que somente conecta com lá, e outra que conecta com sei lá o quê.
+
+03:21 - 03:21
+Sim.
+
+03:22 - 03:23
+Tá? Mas tudo chega nesse hub aqui.
+
+03:26 - 03:27
+É isso. É isso.
+
+03:28 - 03:37
+Aí eu posso separar para dar manutenção. É mais fácil. Tipo... cara, o que que está piscando assim? Está deixando louco.
+
+03:38 - 03:38
+Hum.
+
+03:39 - 03:52
+É verdade. E agora, moço? Já arrisquei.
+
+03:52 - 03:53
+Achou.
+
+03:57 - 04:01
+Tá, agora já sabe. É a segunda da segunda... é a do meio. A segunda da segunda...
+
+04:02 - 04:02
+Tá.
+
+04:02 - 04:20
+É a do meio. Nossa, mas tá deixando louco isso aí. É... eu acho que é mais interessante um pequeno serviço ali, que vai ser: "Ah, esse responde pela conexão com algoritmo. Esse responde pela conexão sei lá com quê". Não interessa. Cada um separadinho. A entrada depois aqui a gente faz um roteadorzinho.
+
+04:21 - 04:26
+Tá. Então você já tá pensando em ter um... na verdade tem um microserviço aqui que é o hub.
+
+04:27 - 04:27
+Sim.
+
+04:28 - 04:28
+Certo?
+
+04:28 - 04:29
+Aí depois é...
+
+04:30 - 04:40
+Que é quem vai se conectar com o algoritmo e com N outros parceiros desse segmento. Só que eu tenho um cara na frente que é um API gateway.
+
+04:41 - 04:41
+Uhum.
+
+04:42 - 04:42
+Né?
+
+04:43 - 04:43
+Sim.
+
+04:43 - 04:47
+Que aí esse cara se conecta com esses fronts. É isso?
+
+04:47 - 04:48
+Mais ou menos isso.
+
+04:48 - 04:48
+Tá.
+
+04:49 - 04:53
+Sim. A ideia minha é separar projetos, né, e que estejam bem identificados.
+
+04:54 - 04:54
+Sim.
+
+04:54 - 04:58
+Tipo, cada serviço vai ter seu servidor próprio, nem que seja uma Docker, entendeu? Mas tipo, tá aqui.
+
+04:59 - 04:59
+Sim.
+
+05:00 - 05:03
+Docker, Proxmox, qualquer porcaria. Não interessa. Não tô casado com nenhum deles.
+
+05:03 - 05:16
+Eu que tinha pensado também. Não, perfeito. É isso aí. A questão é... o que eu acho que é a grande definição que a gente precisa fazer é: esse microserviço, ele tem a sua base própria.
+
+05:16 - 05:17
+Base de dados.
+
+05:17 - 05:25
+Ele tem um banco de dados próprio, ele tem o seu backend, ele... enfim, ele tem um... é uma aplicação completa.
+
+05:26 - 05:29
+Sim. Sem chegar na cerimonialítica, ela é completa.
+
+05:29 - 05:39
+Né? E esse cara, é... a gente vai ter que identificar o que que a gente vai ter que replicar de dado com outros microserviços.
+
+05:39 - 05:40
+Aham.
+
+05:40 - 05:48
+Pra... justamente pra gente não ficar consultando a base de dados desse cara toda hora. Que é pra isolar a responsabilidade dele.
+
+05:48 - 06:05
+Tá. Então vamos a um exemplo prático. Então, traduzido assim, é melhor a gente errar agora do que depois levarmos o erro mais pra frente. Então nós temos um banco de dados, que esse vai responder por esses serviços que estão aqui.
+
+06:05 - 06:06
+Sim.
+
+06:06 - 06:12
+Tá? Vamos chamar o conjunto A. Tá? Aqui o básico. Tem algo e não sei mais... algoritmo e não sei quê mais.
+
+06:12 - 06:12
+Uhum.
+
+06:13 - 06:20
+Tá? Aí você tá propondo que os microserviços B repliquem alguns dados pra cá.
+
+06:20 - 06:21
+Exato.
+
+06:21 - 06:42
+Tá? Isso é uma opção. Nós temos, por exemplo, como fazer isso direto com esse aqui. Esse aqui ele replica, esse aqui o master, e esse aqui o slave. Tá? Ou agora não se chama mais master slave, se chama de... mudaram a nomenclatura porque master e slave não pode mais. É principais secundários, sei lá, não sei como é que chama.
+
+06:42 - 06:44
+Politicamente incorreto chamar de master slave.
+
+06:44 - 06:48
+É. O ponto é que foi o ponto de saída do cara do mais aquele, mesmo logo.
+
+06:48 - 06:49
+Ai, que isso.
+
+06:49 - 06:51
+Tá. É...
+
+06:51 - 06:54
+Não, mas a replicação que eu digo não é nesse nível.
+
+06:54 - 07:00
+Tá. Não, não. Eu entendi. Uma forma seria... uma forma seria a nível de banco de dados.
+
+07:00 - 07:01
+Sim. Sim.
+
+07:01 - 07:07
+Que seria, tipo assim, até em certo sentido, até a mais prática, se for ver.
+
+07:07 - 07:07
+Uhum.
+
+07:08 - 07:32
+Porque isenta a gente disso também. Mas poderíamos ter aqui um serviço A-prima, que esse serviço consulta esse A-prima aqui, que é para... que ele conhece os objetos que são compartilhados, que são de domínio desse cara aqui. Por exemplo, o cadastro do cliente, onde que está? Tá aqui, tá aqui, tá lá. Onde que está?
+
+07:32 - 07:33
+Uhum.
+
+07:33 - 07:37
+Seja lá quem for, onde se originou o dado, esse é o domínio daquele dado.
+
+07:37 - 07:38
+Uhum.
+
+07:39 - 07:48
+Tá? E aí poderíamos ter um microserviço que só servisse para atender a isso. Então os outros se conectam com esse microserviço, chamam ele.
+
+07:48 - 07:48
+Uhum.
+
+07:49 - 07:59
+Não necessariamente ficariam consultando o banco. Por quê? Eu sou da ideia de colocar um Redis no meio. Tipo assim, foi, voltou, ficou no Redis. Para todo mundo aqui na frente, né?
+
+07:59 - 07:59
+Sim.
+
+08:00 - 08:03
+Tá? Então não fica puxando do servidor.
+
+08:03 - 08:04
+Direto do... do...
+
+08:04 - 08:04
+Do servidor.
+
+08:05 - 08:05
+Sim.
+
+08:05 - 08:37
+Alguma coisa sim, mas esse sou eu trabalhando, você me diz. A vantagem, qual que é a vantagem? A vantagem, evidentemente, é que o domínio é domínio. Esse é o domínio do cliente. É aqui. Aí a gente define onde que é o domínio do cliente depois. Por enquanto estou colocando junto com o algoritmo. Tá? Mas qual que é a desvantagem? A desvantagem é que esse aqui, em lugar de fazer um select, ele tem que fazer o select, tem que fazer a consulta. Tá? Essa é a desvantagem. A desvantagem é que o código fica mais complicado aqui.
+
+08:37 - 08:38
+Exatamente.
+
+08:39 - 09:06
+Aí... e replicação... aí eu acho que esse serviço não some de vez. Por exemplo, ah, tá? Vamos replicar. Bom, então esse serviço que responde pela replicação. Tipo, me dá os dados modificados. Eu atualizei faz 15 minutos atrás. Me dá os dados modificados. Aí ele responde: "É isto". Ele pega e joga numa base de dados. Agora, aqui, quando for atualizar esse dado, sendo que o domínio é esse outro aqui, ele teria que mandar pra lá. Ele pode consultar aqui.
+
+09:07 - 09:07
+Uhum.
+
+09:08 - 09:09
+Mas ele tem que mandar pra lá.
+
+09:10 - 09:10
+Entendi.
+
+09:11 - 09:12
+Porque a raiz é lá.
+
+09:12 - 09:12
+Entendi.
+
+09:13 - 09:16
+Porque aí nós temos outro serviço C aqui.
+
+09:18 - 09:33
+É, é. É, mas aí aqui nesse cenário é pensando que esses serviços, eles vão ter a possibilidade de mudar dados que pertencem a esse domínio. Que eu acredito que não seja o caso pra esse projeto, entendeu?
+
+09:34 - 09:42
+Pode ser. Pode ser. Aqui nunca, nunca... por exemplo, se o cliente está aqui, nunca vai ser modificado o telefone aqui embaixo? Não pode.
+
+09:42 - 09:43
+Não. Aqui pode.
+
+09:43 - 09:43
+Então.
+
+09:44 - 09:50
+Esse cara... não, pera, pera aí. Ó, qual que é a origem da modificação?
+
+09:51 - 09:51
+Uhum.
+
+09:51 - 09:52
+Então...
+
+09:53 - 09:53
+É claro.
+
+09:53 - 09:58
+A gente... a gente vai ter dois canais aqui de interação com o usuário.
+
+09:58 - 09:58
+Sim.
+
+09:58 - 09:58
+Né?
+
+09:59 - 10:00
+Ou o dispositivo móvel.
+
+10:00 - 10:01
+Ou o...
+
+10:01 - 10:01
+O dashboard.
+
+10:01 - 10:06
+O dashboard. Esses dois caras, eles vão poder modificar informações.
+
+10:06 - 10:06
+Sim.
+
+10:07 - 10:19
+Então eu... eu entendo assim, que o domínio, a gente vai ter que ter um banco... um banco de dados aqui mais conectado ao dashboard do que ao Flutter, obviamente, porque o Flutter...
+
+10:19 - 10:19
+Tá.
+
+10:19 - 10:23
+Né? Mas eu tenho... o dashboard, vamos supor que é o nosso origem de dados.
+
+10:23 - 10:24
+Ótimo. Tá bom. Me parece bem.
+
+10:24 - 10:27
+Né? Por isso que eu penso nele como um serviço.
+
+10:27 - 10:27
+Tá.
+
+10:27 - 10:33
+Tá? Um serviço também, não só o visual. Então ele tem o banco de dados principal.
+
+10:33 - 10:33
+Tá.
+
+10:33 - 10:38
+Ele é o domínio da informação. Todos os outros serviços, incluindo esse aqui.
+
+10:38 - 10:39
+Sim, basicamente.
+
+10:39 - 10:47
+Eles vão consumir... vão... aliás, vão manipular os dados que ele recebe do dashboard.
+
+10:47 - 10:48
+Tá.
+
+10:48 - 10:48
+Entendeu?
+
+10:48 - 10:49
+E vão guardar onde?
+
+10:50 - 10:51
+No banco de dados dele próprio.
+
+10:53 - 10:54
+Aí vai ficar a informação dele ou você ia guardar?
+
+10:55 - 10:58
+Não. Mas só a informação que ele... que ele...
+
+10:58 - 10:58
+Que é do domínio dele.
+
+10:59 - 10:59
+Que ele gera.
+
+10:59 - 11:00
+Que é do domínio dele.
+
+11:00 - 11:12
+Exatamente. Então imagina o seguinte: pra essa questão do cartão de crédito, pra eu fazer a solicitação do cartão de crédito, tem toda aquela parte do cadastro, do cliente e tudo mais, que é interessante pra nós no dashboard. Todos aqueles dados.
+
+11:13 - 11:13
+Sim.
+
+11:14 - 11:17
+Pra que esses dados sejam compartilhados com os outros microserviços.
+
+11:17 - 11:17
+Sim.
+
+11:18 - 11:24
+Porém, nos microserviços de private label, eu vou usar só o nome e o CPF, por exemplo.
+
+11:24 - 11:24
+Sim.
+
+11:25 - 11:28
+Entendeu? Então o que que o dashboard faz quando ele recebe um dado?
+
+11:28 - 11:29
+Consulta.
+
+11:29 - 11:35
+Ele encaminha esse... só esses dois atributos do cliente.
+
+11:35 - 11:36
+Uhum.
+
+11:36 - 11:42
+E gera um cadastro de cliente dentro do banco de dados desse hub.
+
+11:42 - 11:42
+Tá.
+
+11:42 - 11:52
+Esse hub vai manipular o dado, fazer a solicitação do cartão de crédito, gerar o seu dado de domínio, que seria as informações pertinentes ao cartão de crédito.
+
+11:52 - 11:52
+Tá.
+
+11:53 - 11:56
+Compartilhar esses dados de domínio dele com o dashboard.
+
+11:56 - 11:57
+Inverter isso daqui.
+
+11:57 - 11:57
+Exato.
+
+11:58 - 11:59
+Sim, sim, sim, sim, sim. Não, tudo bem.
+
+11:59 - 12:21
+E... e só que assim, eu... pelo menos é o que eu imagino, de fato replicar o dado justamente pra facilitar o código. Eu não tenho que ficar consultando base de dados externa ou microserviço externo pra recuperar dados que são só de consulta. Eu não... eu não tenho... eu não vou usar aquele dado pra fazer uma manipulação, entendeu?
+
+12:22 - 12:38
+Tá. Então, é... toda tabela ser replicada, ela teria que, ao meu ver, assim, ela teria que ter um ID, certo? Que depois precisamos discutir isso, que eu tenho toda uma teoria sobre isso aí.
+
+12:38 - 12:39
+Sim.
+
+12:39 - 12:43
+É... e aqui seria a origem do dado ou o domínio.
+
+12:44 - 12:44
+Sim.
+
+12:45 - 12:50
+Tá? Ou o domínio. E aqui vem o que eu quiser colocar, não me interessa.
+
+12:50 - 12:50
+Perfeito.
+
+12:51 - 12:51
+Tá?
+
+12:51 - 12:52
+Uhum.
+
+12:52 - 13:09
+Então o que acontece? Quando eu estou... pra simplificar, eu tenho o microserviço dashboard, o microserviço cartão de crédito, tá? E o XX, certo?
+
+13:09 - 13:09
+Sim.
+
+13:09 - 13:14
+Então aqui ele vai dizer: "Ó, isso daqui veio do dashboard".
+
+13:16 - 13:16
+Ok.
+
+13:17 - 13:28
+Então, é... existe um serviço, um microserviço, não posso chamar microserviço porque confunde com a ideia de microserviço, mas um serviço de sistema, um DIMM.
+
+13:29 - 13:29
+Sim.
+
+13:29 - 13:32
+Tá? Que a única coisa que ele faz é ficar atualizando.
+
+13:32 - 13:33
+Uhum.
+
+13:33 - 13:56
+Ele pega... ah, sim, claro, claro, claro, claro, claro, claro. Última atualização. Última atualização, tá? Não preciso. Então eu pego e chamo, né, o microserviço que for apropriado, eu vou chamar em sequência. Vou chamar este, vou chamar o outro, vou chamar o outro.
+
+13:56 - 13:57
+Uhum.
+
+13:57 - 14:03
+Tá? Tipo, me dá os dados desse, sei lá, é... 11:41.
+
+14:03 - 14:03
+Uhum.
+
+14:04 - 14:19
+Tá? 15, que foi a última vez que eu... que eu atualizei. Ele devolve esses dados. Como devolve ID e tem origem, tá? Então eu sei que esse dado veio de lá. Isso evita confusões.
+
+14:19 - 14:19
+Uhum.
+
+14:20 - 14:27
+Tá? Esse ID eu... eu depois eu quero conversar por causa que eu... eu entendo que ele tem que... não tem que colisões.
+
+14:28 - 14:28
+Uhum.
+
+14:28 - 14:30
+E aqui eu marco essa... essa data.
+
+14:31 - 14:32
+Ok.
+
+14:32 - 14:37
+E... e guardo isso. Então esse ficaria funcionando. Aí replicaria pra cá, vamos dizer, ele puxaria os dados.
+
+14:38 - 14:38
+Ok.
+
+14:38 - 14:45
+Não seria o contrário. Ou você quer ao contrário? Que isso daqui, quando o dado é mudado, avise os consumidores.
+
+14:46 - 14:50
+Sim. Seria bom. Só que assim, tem uma forma de resolver isso.
+
+14:50 - 14:53
+Não, aí a gente só dispara um API dizendo: "Tenho dados novos".
+
+14:54 - 14:55
+Se a gente usa a fila.
+
+14:56 - 14:56
+Uhum.
+
+14:57 - 14:58
+Um VertingQ, um...
+
+14:58 - 14:59
+Qualquer um que tenha.
+
+14:59 - 15:11
+SQL, qualquer um. Sempre que qualquer microserviço modificar algum dado, ele dispara pra fila. E aí a gente puga os consumidores. Cada microserviço vai ter os seus...
+
+15:11 - 15:13
+Tá, mas o que acontece se ele está desatualizado? Vai cair nesse.
+
+15:15 - 15:17
+Não, ele vai... ele vai permanecer na fila.
+
+15:18 - 15:21
+Tá, tudo bem. Fila com... com resiliência.
+
+15:21 - 15:23
+Exato. Com resiliência. Exatamente.
+
+15:23 - 15:26
+Ok. Entrega única. Mandatória.
+
+15:27 - 15:27
+É.
+
+15:27 - 15:32
+Que tem aquele... aquele flags de... de dizer qualquer entrega, uma entrega, pelo menos uma.
+
+15:32 - 15:41
+Exato. Exatamente. É uma forma da gente garantir e da gente compartilhar esse dado de forma transparente pra cada serviço.
+
+15:42 - 15:47
+Só que aí esse daqui precisa saber que o dado dele vai ser conhecido por este, por este e por este.
+
+15:47 - 15:48
+Não necessariamente.
+
+15:48 - 15:50
+Posso fazer um broadcast então.
+
+15:50 - 15:50
+Sim.
+
+15:50 - 15:53
+E quem for interessado pega.
+
+15:53 - 15:59
+Vai... vai pegar aquele dado e fazer o... o tratamento. E o mesmo, o inverso. Porque como...
+
+15:59 - 16:00
+Sim, não. Aí vale.
+
+16:00 - 16:01
+É, porque eu...
+
+16:01 - 16:03
+São duas filas, uma de ida e outra de volta. É isso?
+
+16:03 - 16:10
+Porque cada... cada serviço, ele vai gerar dados ali que são pertinentes e vão aparecer lá no dashboard. Então o dashboard vai consumir esses dados também, então...
+
+16:10 - 16:33
+Tá, mas é uma fila única pra todo mundo? Ou são duas filas? Uma... ou seja, 2 vezes N, né? Porque, por exemplo, uma fila única, todos eles, inclusive esse daqui, tá? Vamos chamar ele de Y, tá? Todos eles jogam dados na mesma fila e consomem a mesma fila. Que eu acho isso...
+
+16:34 - 16:34
+Sim.
+
+16:34 - 16:37
+Se não fui eu a origem, está ok de eu receber a mensagem.
+
+16:38 - 16:38
+Sim.
+
+16:39 - 16:39
+Fechou?
+
+16:39 - 16:48
+Perfeito. Perfeito. Mas aí, usando fila, você acha que ainda há necessidade desse DIMM?
+
+16:48 - 16:52
+Se você me garante que a... a fila chega a mensagem, não tem.
+
+16:52 - 16:53
+Não tem.
+
+16:53 - 16:53
+Não tem necessidade.
+
+16:53 - 16:54
+Até porque...
+
+16:54 - 17:00
+Eu... eu mesmo assim escreveria um desse pra uma... uma questão de manutenção. Tipo, eu tô com esse banco aqui, meu.
+
+17:01 - 17:01
+Uhum.
+
+17:01 - 17:06
+É... tipo de teste, você conecta lá e puxa tudo que tiver desde a última data que eu preciso ver.
+
+17:06 - 17:06
+Entendi.
+
+17:06 - 17:07
+Né?
+
+17:07 - 17:07
+Entendi.
+
+17:07 - 17:09
+Então é... é válido por isso.
+
+17:09 - 17:10
+Sim.
+
+17:10 - 17:15
+Mas tirando, colocar numa fila fica melhor, realmente. Mas eu manteria essa questão aqui.
+
+17:15 - 17:17
+Não, não. Tem que ter.
+
+17:17 - 17:17
+Tá.
+
+17:17 - 17:21
+Tem que ter. Agora, com relação ao ID...
+
+17:21 - 17:21
+Uhum.
+
+17:23 - 17:31
+É... obviamente que... como que a gente vai gerar esse ID? Eu... eu particularmente gosto do UUID.
+
+17:31 - 17:32
+Uhum.
+
+17:32 - 17:35
+Né? Até pela capacidade do...
+
+17:35 - 17:39
+Uhum. Não, não, não. Quanto... não, não, não. Isso... sem lugar a dúvidas.
+
+17:39 - 17:45
+É. O único ponto que eu acho... e aqui eu precisava saber a sua opinião a respeito.
+
+17:46 - 17:47
+Uhum.
+
+17:47 - 17:48
+Eu gosto muito de NoSQL.
+
+17:49 - 17:49
+Eu também.
+
+17:51 - 18:01
+Trabalhando com NoSQL, a gente poderia... e aqui talvez uma viagem grande, tá? Talvez ter um... um outro serviço gerador de IDs.
+
+18:01 - 18:02
+Uhum.
+
+18:02 - 18:27
+Por entidade. Não tem entidade cliente. Esse cara gera o ID original do cliente. E esse ID, ele é usado em todos os microserviços. Pra gente não ter um... eu tenho a marcação aqui de qual que é o domínio daquele... de onde partiu aquele dado, mas eu sei que o ID que tá naquele registro no microserviço de cartão de crédito é o mesmo ID que vai estar no...
+
+18:27 - 18:27
+Sim.
+
+18:27 - 18:28
+No dashboard.
+
+18:29 - 18:40
+Então depois eu mostro. Dá uma olhada aí. Eu me enfrentei... eu venho me enfrentando com esse problema, na realidade, desde os anos 90.
+
+18:40 - 18:40
+Uhum.
+
+18:40 - 18:47
+E eu vou te dizer onde que originou esse... essa situação e por quê, da minha teoria ao respeito dos...
+
+18:47 - 18:47
+Uhum.
+
+18:47 - 19:00
+Dos identificadores únicos. É... tinha um engenheiro que queria trabalhar com o nosso software offline, num tempo que não tinha rede de dados, não tinha essas coisas, tá? Era 98, uma coisa assim.
+
+19:00 - 19:00
+Uhum.
+
+19:02 - 19:09
+E ele queria sair, fazer os orçamentos em campo. Ele ia lá pro Mato Grosso, pra qualquer canto, e lá ele fazia as coisas.
+
+19:09 - 19:09
+Uhum.
+
+19:09 - 19:12
+Quando chegasse no hotel, ele queria que os dados aparecessem aqui na base.
+
+19:12 - 19:13
+Entendi.
+
+19:13 - 19:20
+Tá? É... ou seja, ele ia ter muito tempo, horas, dias, às vezes semanas, inclusive, dele estar completamente desconectado.
+
+19:21 - 19:22
+Entendi.
+
+19:22 - 19:32
+Então aí que eu comecei a quebrar a cabeça como fazer, né? Porque você gerava... naquele tempo a gente usava muito o identificador único do... do próprio banco de dados, as chaves geravam autoincremento.
+
+19:32 - 19:33
+Uhum.
+
+19:34 - 19:48
+Funcionava quando era Desktop. Muito bonito. E daí que eu comecei a me debater com isso. Esse artigo aí, ele trata da melhor saída justamente quando você não tem conexão permanente. Tipo, que é uma situação de catástrofe.
+
+19:48 - 19:49
+Uhum.
+
+19:49 - 19:58
+Tá? Que quando, por exemplo, ah, ficou funcionando somente um serviço, ele gerou cadastro e tal, como que você sabe que ele não vai colidir nunca com outro, né? Então a base teórica tá aí.
+
+19:59 - 19:59
+Legal.
+
+19:59 - 20:01
+Tá com a coloentropia também.
+
+20:02 - 20:03
+Legal. Perfeito.
+
+20:03 - 20:06
+E dá uma olhada a ver o que que... o que que você acha.
+
+20:07 - 20:07
+Uhum.
+
+20:07 - 20:18
+O ID, ele estatisticamente é a colisão muito baixa, tá? Muito baixa. A proposta aí que a colisão seja zero. E tem rastreabilidade.
+
+20:18 - 20:18
+Uhum.
+
+20:19 - 20:25
+Ou seja, eu sei é quando e em que servidor foi feito, porque você pode ter vários servidores aqui atrás, né?
+
+20:25 - 20:26
+Sim.
+
+20:26 - 20:28
+Então isso... isso resolve essa parada também.
+
+20:29 - 20:30
+Excelente.
+
+20:30 - 20:36
+Tá? Vou ler depois com calma. É... lê e eu quero que você... você diz não e não, e tá tudo certo.
+
+20:36 - 20:37
+Uhum.
+
+20:37 - 20:38
+Pra mim tá tudo certo. Somente...
+
+20:40 - 20:40
+Perfeito.
+
+20:40 - 20:43
+Quero que você... aí evita ter um serviço pra gerar ID.
+
+20:44 - 20:44
+Sim.
+
+20:44 - 20:54
+Porque ele é autônomo. Ele... ele funciona... foi pensado pra funcionar sozinho em caso de... de... de catástrofe. "Ah, fiquei sozinho e o servidor de tal coisa não existe". Não interessa, ele continua rodando.
+
+20:54 - 20:54
+Uhum.
+
+20:55 - 20:56
+Tá?
+
+20:56 - 20:57
+Excelente.
+
+20:58 - 21:03
+Tá. NoSQ, você vai querer usar o KMongo, vai querer usar Drift.
+
+21:03 - 21:06
+Porque você tem.
+
+21:06 - 21:16
+Não, não. Eu... é Mongo é o que há. É... o meu... meu framework eu levei pra um modelo parecido com Mongo, né? Aquele que usa redes e Postgres.
+
+21:16 - 21:16
+Sim.
+
+21:17 - 21:22
+Então o programador não conhece, conhece de coleções. Ele sabe de coleções e exigências das coleções.
+
+21:22 - 21:22
+Uhum.
+
+21:22 - 21:27
+Tá? Do... como é que chama? Do... dos constraints, tá?
+
+21:27 - 21:27
+Uhum.
+
+21:28 - 21:35
+Limites, tipo de dados, todas essas coisas. Mas a ideia por trás é a estrutura do Mongo, tipo uma coleção de documentos.
+
+21:36 - 21:36
+Sim.
+
+21:36 - 21:36
+Tá?
+
+21:37 - 21:37
+Sim.
+
+21:37 - 21:38
+Então vamos de Mongo.
+
+21:38 - 21:39
+Sim.
+
+21:40 - 21:40
+Só que aí o Mongo...
+
+21:41 - 21:52
+É... é que assim, na verdade eu acho que é... vale a... a... um pouco da gente refletir a respeito, porque o Mongo é muito bom pra quantidades muito grandes de... de dados.
+
+21:52 - 21:52
+Sim.
+
+21:53 - 21:55
+Eu não vejo quantidades muito grandes de dados aqui.
+
+21:55 - 21:56
+Não.
+
+21:56 - 22:01
+Não sei se você enxerga diferente, mas eu... eu não... não vejo aqui que vai... a gente vai ter muito dado.
+
+22:01 - 22:05
+É... é... minha resposta é não.
+
+22:05 - 22:05
+Uhum.
+
+22:05 - 22:12
+No sentido de que eu entendo que aquilo lá que eles falaram de white label, que eu... lembra que eu cheirei no início, tá?
+
+22:15 - 22:16
+Você ganhou a aposta.
+
+22:16 - 22:53
+Ganhei a aposta. Estamos empatados. Mas aquilo lá, é... eu entendo que outra... outra white label vai precisar de umas novas instâncias de cada um desses serviços, tá? Mesmo que talvez ocasionalmente a gente diga: "Cara, é melhor conectar esse daqui, da Algorics, é melhor ter somente um, porque estão pagando muito por vários serviços". Entende esse tipo de coisa? Então não há muitos dados quando consideramos somente uma white label, mas pode vir muitos se justamente pegarmos clientes que vão se multiplicar aquele em fungo, né?
+
+22:53 - 22:54
+É.
+
+22:54 - 23:11
+Então não sei. Agora, para mim tanto faz um ou outro. O SQL, a grande vantagem é que você encontra mais pessoas preparadas pra trabalhar com SQL. Se bem que eu tenho uma vírgula muito grande a respeito disso, porque eu ainda não vi em carne e osso, tá? Mas dizem que existe.
+
+23:16 - 23:18
+Igual a criança e...
+
+23:18 - 23:18
+Sim.
+
+23:18 - 23:21
+Né? A criança e... e... como é que é? Funeral de anão.
+
+23:22 - 23:24
+Funeral de anão. É, ninguém sabe que existe.
+
+23:24 - 23:24
+Ninguém nunca viu.
+
+23:25 - 23:25
+Nunca viu.
+
+23:25 - 23:25
+É.
+
+23:26 - 23:56
+Nunca viu. É... mas... mas é mais... mais simples, talvez, é... entender o que que o programador tá fazendo se eu forço ele a usar uma estrutura. É... hoje, por exemplo, eles podem ser semiestruturados, né? Por exemplo, MySQL, Postgres, eles metem JSON aqui dentro e a pesquisa e tudo por dentro. Então dá pra fazer uma semiestrutura também. Que eu não vejo a necessidade, mas...
+
+23:56 - 23:58
+É, eu também. Eu tenho um pouco de medo de trabalhar nesse formato.
+
+23:59 - 24:05
+Eu também. Um pouco. Eu nunca usei. Eu fiz os testes e falei: "Ah, que lindo".
+
+24:06 - 24:07
+Lindíssimo.
+
+24:07 - 24:07
+Ah, lindíssimo.
+
+24:07 - 24:07
+Eu usei.
+
+24:08 - 24:09
+Lindíssimo.
+
+24:09 - 24:13
+Bom, pra quem sabe o que tá fazendo, é excelente. Mas pra quem não sabe...
+
+24:14 - 24:14
+Então.
+
+24:15 - 24:18
+A possibilidade de fazer do cara botar fogo no servidor de banco de dados.
+
+24:19 - 24:36
+Sim. Sim. Sim. Sim. Então a... a questão é que você com NoSQ ou... ou um semiestruturado, o programador diz: "Ah, me falta tal coisa". Aí ele coloca lá dentro, em lugar de simplesmente ver se a estrutura comporta, se já temos isso em algum outro lugar.
+
+24:36 - 24:36
+Uhum.
+
+24:39 - 24:53
+Tá. E aí você... você que decide. Pra mim tanto faz. Somente o... o... se fosse Mongo, lembre-se que nós precisamos de... de três servidores para garantir o Mongo, né? Isso que os próprios autores dizem, né?
+
+24:53 - 24:53
+Sim.
+
+24:54 - 25:01
+Então aí temos que ver a questão de custos disso. Eu não sei onde que eu... onde que ele está querendo hospedar, o que que ele está querendo fazer.
+
+25:02 - 25:02
+Sim.
+
+25:03 - 25:03
+Tá?
+
+25:04 - 25:28
+É... é... em relação ao Mongo, eu tenho uma boa experiência por conta do meu projeto lá, né? Que eu fiz também, né? Esse modelo de microserviço, todo cada microserviço tem o seu próprio banco de dados Mongo. Então tem um... tem um... dá pra gente encontrar é... é... servidores mais baratos e montar a nossa própria estrutura de cluster do Mongo e tal. Então é... não vejo muito desafio.
+
+25:28 - 25:37
+Porém, não vamos bater o martelo nisso ainda, que eu acho que é legal a gente discutir com o Calegari pra ver o que que ele... o que que ele pensa.
+
+25:37 - 25:37
+Sim.
+
+25:37 - 25:41
+Né? É... até pra gente também não...
+
+25:41 - 25:42
+Não, não, eu decidi tudo.
+
+25:43 - 25:54
+E faz assim e aí o cara não sabe o que que vai tá fazendo lá na frente, né? Mas eu... eu particularmente eu acho que é... apesar dessa questão que você levantou, né, do...
+
+25:54 - 25:55
+Uhum.
+
+25:55 - 26:01
+A flexibilidade muito grande pode trazer um problema se o cara não sabe o que tá fazendo.
+
+26:01 - 26:01
+Uhum.
+
+26:02 - 26:16
+Mas ao mesmo tempo, na loucura que a gente sabe que é, né, os negócios aqui com os nossos amigos, a gente precisa de flexibilidade. Então talvez é a gente tentar encontrar um meio termo e, né?
+
+26:17 - 26:18
+Vamos... vamos conversar com o Calegari?
+
+26:18 - 26:18
+Uhum.
+
+26:18 - 26:24
+E quando falamos aqui de microserviços, a comunicação seria como? GRPC ou RESTful mesmo?
+
+26:26 - 26:28
+RESTful é mais fácil de implementar.
+
+26:28 - 26:28
+Exato.
+
+26:28 - 26:29
+É muito mais rápido.
+
+26:29 - 26:34
+É isso que eu ia falar. Com a questão de tempo, a gente pode utilizar o REST mesmo. Porém...
+
+26:35 - 26:36
+Sempre eu vou encontrar um porém.
+
+26:36 - 26:41
+Porém, é... porém, a gente poderia partir pra uma comunicação via fila.
+
+26:43 - 26:43
+Pra tudo?
+
+26:43 - 27:00
+Pra tudo. Só que aí a gente parte, ao invés de um react-to-queue, que é tipo gerenciamento de fila, a gente parte pra uma Apache Kafka, gerenciamento de streaming de dados mesmo, entendeu? Que o funcionamento é o mesmo.
+
+27:00 - 27:06
+Sim, sim, sim. Mas eu tava pensando como que muda na programação isso daí. Você vai ter que esperar a resposta daqui.
+
+27:06 - 27:07
+E vai ser assim, como eu disse.
+
+27:07 - 27:07
+Tudo.
+
+27:07 - 27:09
+Esse é o... esse é o ponto. É.
+
+27:09 - 27:10
+Então esse é o ponto.
+
+27:10 - 27:19
+Só que... então, mas aí entra o estudo que nós dois precisamos fazer, que talvez caiba tudo assíncrono. Talvez, tá?
+
+27:19 - 27:20
+Vamos lá.
+
+27:22 - 27:28
+Porque... vamos... vamos pensar no... no que a gente viu ali da... de telas.
+
+27:28 - 27:29
+Uhum.
+
+27:29 - 27:30
+Né? De solicitação do cartão de crédito.
+
+27:31 - 27:31
+Tá.
+
+27:31 - 27:41
+Então o cara vem pelo front-end, é... preenche aqueles espaços e tudo mais e vai fazer a solicitação do cartão de crédito. Aquilo tudo é assíncrono.
+
+27:42 - 27:43
+Isso é assíncrono.
+
+27:43 - 27:47
+E dispara a proposta, a resposta não vem de...
+
+27:47 - 27:49
+Então, mas a resposta é melhor ir pro webhook.
+
+27:50 - 27:51
+Exato. Exato.
+
+27:52 - 28:13
+Então aí nós já temos todo um... um desafio com essa questão. Se bem que o webhook é... é fácil, é bom de tratar, tá? É... é melhor do que colocar em uma fila pra depois ficar aguardando a fila. Não sei. Porque se não chegou o webhook, eu ainda tenho um status de "aguardando".
+
+28:13 - 28:14
+Uhum.
+
+28:14 - 28:27
+Tá? Porque eu posso verificar isso. Porque o webhook, imagino, tem que ter identificador de chamada, né? Tipo, ah, eu chamei com tal identificador, alguma coisa assim, ou ele me devolveu o identificador, seja lá o que for, mas ele me devolveu. Eu consigo identificar isso depois.
+
+28:28 - 28:28
+Sim.
+
+28:28 - 29:00
+Então, tipo, no painel aparece: "Tá, tá aguardando. Ah, atualiza os status". Aí ele vai verificar só por identificadores. Né? Se veio no webhook, veio, já atualiza em Tela, tá? É... e aí podemos fazer um WebSocket, qualquer coisa. Mas isso de por si já é um desafio. Agora, entre eles, não sei. Por exemplo, sim pra... pra replicação de dados, tudo bem, fila. Me parece a... a... a mais natural das formas, contanto que haja garantia de entrega.
+
+29:00 - 29:00
+Uhum.
+
+29:00 - 29:08
+Ótimo. Tá? Agora, consulta entre eles. Será que vai haver tantas consultas?
+
+29:08 - 29:17
+Então, mas aí é... é nesse ponto que eu acho que a... que eu levantei a questão da replicação de dados. É justamente pra não haver uma consulta entre serviços, entendeu?
+
+29:18 - 29:21
+Mas a consulta do estado...
+
+29:21 - 29:22
+Porque, ó.
+
+29:23 - 29:29
+Não, se... se o estado mudou a ca... tá bom. E cada serviço vai avisar que o estado mudou, o estado está na minha base.
+
+29:29 - 29:30
+Exato.
+
+29:30 - 29:32
+Só que aí eu vou ter que consultar a base. Aí ficou pior.
+
+29:33 - 29:39
+Não. Não, porque, ó, a... vamos pensar na necessidade. O... o microserviço de cartão de crédito.
+
+29:39 - 29:40
+Tá.
+
+29:41 - 29:43
+Ele é o ponto de entrada. Ele é o domínio da... da...
+
+29:43 - 29:43
+Sim.
+
+29:43 - 29:49
+Do dado. Ele vai ter um webhook pra que o Algorics avise que foi aprovada a...
+
+29:49 - 29:50
+Tá. Ou não. Aham.
+
+29:50 - 29:56
+Ou não. Aquela... aquela proposta. Foi aprovada? O que que ele vai fazer? Ele vai jogar pra fila.
+
+29:56 - 29:56
+Isso.
+
+29:57 - 30:00
+Pra avisar quem for... quem caiba aquela informação.
+
+30:00 - 30:00
+Uhum.
+
+30:00 - 30:31
+Então vai atualizar o dashboard. Ah, o... o microserviço XX, ele é responsável por um domínio. Ele vai ter o seu próprio webhook de alertas ali pra receber alertas a respeito daquele tipo de transação que ele cuida. Quando ele receber, ele dispara via fila. É nesse ponto, entendeu? Agora, durante o processamento da informação, né? Então, do cartão de crédito, durante o processamento da... daquela proposta, ele vai consultar alguém? Eu entendo que não. Algum serviço da... da nossa própria.
+
+30:31 - 30:32
+Porque ele está no próprio banco.
+
+30:32 - 30:41
+Porque ele tem... exato. Ele tem o próprio banco, ele tem o próprio domínio. Esse domínio é literalmente fechado. Ele não tem por que consultar outros serviços.
+
+30:41 - 30:53
+Só que aí, ao consultar o próprio banco, você... você vai toda vez que quiser saber a modificação, você vai consultar o banco. Vai ter que consultar o banco.
+
+30:53 - 30:54
+Sim. O banco. O banco. Não.
+
+30:55 - 30:56
+O banco local.
+
+30:56 - 30:57
+Nos outros serviços, você diz?
+
+30:57 - 31:02
+É. Por exemplo, foi modificada aqui a informação, chegou pela fila, ficou aqui nesse serviço.
+
+31:02 - 31:02
+Uhum.
+
+31:02 - 31:05
+Aqui, quer dizer que ele tem um banco de dados.
+
+31:05 - 31:05
+Uhum.
+
+31:06 - 31:09
+Para o dashboard ficar sabendo, você tem que consultar a base.
+
+31:11 - 31:11
+Sim.
+
+31:12 - 31:16
+Tá? Se a base é, por exemplo, um... um RDS, né?
+
+31:16 - 31:16
+Uhum.
+
+31:17 - 31:43
+Aí você tá pagando por tal consulta. Aí podemos colocar um Redis no meio como cache, tudo bem. Vale. Aí... mas aí eu queria, já que vai fazer tudo de zero, esse dashboard eu entendo que poderíamos fazer com WebSocket. Chegou a modificação, essa modificação é replicada pelo WebSocket que estiver conectado.
+
+31:43 - 31:44
+Perfeito.
+
+31:44 - 31:49
+Se a tela precisa de informação, já é atualizada, mas somente depois de modificar o banco de dados.
+
+31:50 - 31:50
+Perfeito.
+
+31:51 - 31:55
+Porque se não consigo modificar o banco de dados, que essa é outra coisa que nós temos que levar em consideração.
+
+31:55 - 32:01
+Sim. Sim. É uma boa. É uma boa.
+
+32:05 - 32:12
+Uma coisa que eu não gostei da tela que vi é aquele carregar todas as telas de novo, né? Ou seja, você clica e ele muda completamente. Eu não gosto disso.
+
+32:12 - 32:13
+Eu também não.
+
+32:13 - 32:15
+A tela tem que estar carregada lá e...
+
+32:15 - 32:28
+É, mas ali a gente consegue... consegue mudar o framework de front-end que for utilizado. O que que daria? Foi a... a estratégia do front-end fazer aquilo.
+
+32:28 - 32:29
+Sim, sim, sim.
+
+32:29 - 32:31
+Você viu que é um... é um SPA?
+
+32:31 - 32:32
+Sim, sim.
+
+32:32 - 32:36
+E ele tá... a estratégia dele é fazer aquele efeito de recarregamento da página, né?
+
+32:37 - 32:40
+Não, mas ele tá carregando a página inteira. Tá carregando toda ela. Você viu?
+
+32:40 - 32:41
+Tá. Eu...
+
+32:41 - 32:43
+Não, porque pra mim ele mostra uma barrinha lá em cima.
+
+32:43 - 32:46
+Essa barrinha não é do navegador? Ele viu também a barrinha?
+
+32:46 - 32:49
+Não, acho que não. Eu até fechei tudo.
+
+32:50 - 32:51
+Eu vi a barrinha.
+
+32:52 - 32:52
+Não, tudo bem.
+
+32:53 - 32:53
+Mas...
+
+32:53 - 32:55
+Os dois entendemos, estamos na mesma linha.
+
+32:55 - 32:58
+Sim, entendemos e estamos... é, estamos alinhados. Acho que é... é isso aí.
+
+32:59 - 33:03
+Pra mim, o negócio tem que, tipo, puf, apareceu a tela, que seja vazia, aguarde um momento.
+
+33:04 - 33:04
+Exato.
+
+33:04 - 33:09
+Claro. E... e vão vir os dados. Mas... mas a estrutura da tela já está aqui.
+
+33:09 - 33:11
+Exato. Não tem por que recarregar.
+
+33:11 - 33:13
+Não. Carregar tudo, desfazer tudo.
+
+33:13 - 33:15
+Tá tudo de novo. Não faz sentido.
+
+33:15 - 33:18
+Não. Isso fazia sentido antes. Agora não faz.
+
+33:18 - 33:20
+Uhum. Tá. Então, daqui...
+
+33:22 - 33:27
+Enquanto é isso, então, nós temos uma fila para replicação de dados e nós estamos pens...
+
+33:28 - 33:29
+É. Vamos... deixa eu dar um passinho atrás.
+
+33:30 - 33:30
+Vamos.
+
+33:30 - 33:32
+Isso aqui é algo... é uma viagem minha, tá?
+
+33:33 - 33:33
+Sim.
+
+33:33 - 33:51
+Que eu acho que vale a pena, talvez, a gente fazer esse teste depois. Agora, por uma questão de tempo, vamos partir pro REST mesmo. Faz a comunicação via REST. Se bem que você jogou um negócio aqui que já me deu uma outra ideia. Já que vamos ter um Redis no meio.
+
+33:51 - 33:51
+Uhum.
+
+33:52 - 33:56
+Por que não usar o Redis pra fazer isso? Que aí cada serviço...
+
+33:56 - 33:57
+Também você já faz a mensageria também.
+
+33:59 - 34:00
+Que aí a gente pode criar um...
+
+34:00 - 34:20
+Não, não, não. Mas não usaria por uma questão de que você acrescenta um ponto de inflexão aqui. É... na realidade, na minha ideia, cada um destes aqui, se a gente vai pegar ele e vai ampliar, aqui, na realidade, você tem, tá? Um Redis aqui na ponta e você tem um banco de dados aqui, seja lá o que for o banco de dados.
+
+34:20 - 34:21
+Sim.
+
+34:21 - 34:24
+Tá? Pode até ser Mongo que for no interesse. Se for Mongo, são três.
+
+34:24 - 34:25
+Uhum.
+
+34:25 - 34:32
+Tá? Mas cada um deles tem a estrutura e são autônomos. Então, aqui também, esses aqui também têm um Redis, têm um banco de dados.
+
+34:33 - 34:33
+Sim.
+
+34:33 - 34:43
+E a ideia é que o serviço fale somente com o Redis. Mas aí, tudo bem, eu tô vendendo meu peixe, né? Porque é... é... eu fiz, trabalhei com um framework quanto a isso, né?
+
+34:43 - 34:43
+Uhum.
+
+34:43 - 34:52
+E tipo, não, você se comunica com o Redis. Ele vai se comunicar com o banco de dados primeiro quando é para atualizar. Atualiza o banco, deu certo, então atualiza o Redis.
+
+34:52 - 34:52
+Uhum.
+
+34:53 - 34:56
+E isso aqui tem tempo de... tem tempo de cache.
+
+34:57 - 34:57
+Certo.
+
+34:57 - 35:04
+Tá? Então, por exemplo, ah, uma informação faz cinco minutos que está no Redis, esquece, pega no banco de novo, que é melhor, mais seguro.
+
+35:04 - 35:04
+Uhum.
+
+35:04 - 35:30
+Esse tipo de coisa. Então, a... aqui eu... eu não sei se comunicar Redis com Redis seria uma boa. Eu... a tua ideia da... da fila é mais interessante, porque se a fila tá disponível, então eu consigo mandar. Se a fila não está disponível, eu não mando e marco... ah, eu não marco nada, porque não mandei. Essa... essa... essas... essas colunas aqui de controle.
+
+35:30 - 35:30
+Uhum.
+
+35:30 - 35:42
+Né? Tem várias, né? Essa... é... é... está desmarcada, porque eu tô tentando e tal. E aqui também tem que haver um... um... um demônio aí que fique: "Olha, tá, tem alguma coisa que não funcionou, vamos fazer funcionar".
+
+35:43 - 35:43
+Sim.
+
+35:43 - 35:49
+Tá? E o que que pode não ter funcionado? A fila. A fila não funcionou, então tô isolado, mas continuo funcionando.
+
+35:49 - 35:50
+Uhum.
+
+35:50 - 35:57
+Tá? Agora, a fila passou a funcionar, eu mandei tudo pra fila. Mas, do outro lado, tem um cara que consulta.
+
+35:58 - 35:58
+Uhum.
+
+35:58 - 36:03
+E aqui, sim, pode ser que caiba aquilo que você diz: "Ah, vamos fazer com o RESTful aqui". Podemos.
+
+36:04 - 36:04
+Uhum.
+
+36:05 - 36:22
+Agora, essas coisas eu gosto de fazer. Se você falou de não meter a mão na massa, tudo bem. Eu posso não meter a mão na massa. Mas, é... tipo, levamos anos fazendo esse tipo de coisa com outros tipos de banco de dados que não têm essas prestações, né?
+
+36:22 - 36:22
+Uhum.
+
+36:23 - 36:46
+É... mas eu acho que... que a catástrofe aqui, o erro aqui, o problema aqui é se a fila some. Que eu prefiro a fila do que o Redis aqui no meio, tá? Por uma questão, simplesmente que a fila, tipo, orientada a isso. Caiu? Caiu a comunicação. Tá tudo certo. Vai... vai resolver ele primeiro.
+
+36:46 - 36:46
+Sim.
+
+36:47 - 36:52
+Tá? Esse mecanismo pode continuar funcionando, porque uma vez que...
+
+36:54 - 37:03
+Não foi feito, entendi. Meu único medo de... de partir pra essa abordagem.
+
+37:03 - 37:03
+Hum.
+
+37:04 - 37:28
+É... é... é o... o time entender isso. Porque pra nós dois ficou claro. Você... você entendeu a mensagem que eu quis passar, eu entendi a mensagem que você quis passar, e o que pra mim tá claro, eu acho que, na minha visão, a alternativa mais legal de ser desenvolvida seria essa da... da fila. É... enfim.
+
+37:28 - 37:31
+E te parece que o pessoal não iria entender? Porque isso seria meu medo.
+
+37:31 - 37:32
+Meu medo é entender.
+
+37:32 - 37:42
+É, meu medo é não entender. Por quê? Só que assim, ao mesmo tempo, em termos de esforço, eu entendo que o esforço seria muito menor, porque eu não preciso desenvolver uma API de comunicação entre os serviços.
+
+37:42 - 37:48
+Não. Não precisa. Por outro lado, desenvolver uma API de microserviço, de comunicação entre os serviços, seria somente uma vez.
+
+37:49 - 37:49
+Exato.
+
+37:50 - 37:52
+Porque todo serviço funcionaria igual.
+
+37:52 - 37:52
+É.
+
+37:52 - 38:02
+Que é a isso que eu me referi outro dia com a normatização do... da API. Tipo, não. Como que é o JSTON? É esse daqui. Porque vai ter vários serviços. O que me interessa é o JSTON, é este.
+
+38:02 - 38:02
+Uhum.
+
+38:03 - 38:07
+Tá? É como que é a paginação? É assim? Como é a puxada de dados? É assim? Como...
+
+38:07 - 38:07
+Sim.
+
+38:07 - 38:08
+Centro?
+
+38:08 - 38:08
+Sim.
+
+38:11 - 38:15
+É... são dois pontos que a gente vai ter que ponderar, só que eu acho que...
+
+38:15 - 38:17
+Não, vamos ter que chamar pelo menos o Caligari.
+
+38:17 - 38:17
+É.
+
+38:17 - 38:19
+O Felipe vai... vai aceitar qualquer coisa.
+
+38:19 - 38:21
+Tem que discutir com o Caligari.
+
+38:21 - 38:30
+É. Aí, é... fazendo esta estrutura, ficaria... teria que ser ela permanente para todos os serviços.
+
+38:30 - 38:30
+Sim.
+
+38:30 - 38:31
+Funciona assim.
+
+38:32 - 38:32
+Sim.
+
+38:33 - 38:59
+E aí teríamos uma classe de gestão de dados que já se encarregaria de fazer todo o cuidado. Tipo, ah, eu sei que se faço um insert aqui, tá tudo bem, mas o nosso ORM, é... fala pra você usar aqui. E no meio ele vai fazer a checagem de... de se foi enviado ou não, se é uma modificação ou não. Porque também tem isso, né? Às vezes vem como um update, mas não precisa, porque é tudo igual.
+
+39:00 - 39:01
+Sim. Sim.
+
+39:02 - 39:02
+Tem várias coisas.
+
+39:03 - 39:03
+Exato.
+
+39:05 - 39:18
+Deixa eu perguntar outra coisa. Na área da saúde, a gente é obrigado a enganchar um registro com o seguinte, sabe? Como se fosse um... uma lista.
+
+39:18 - 39:18
+Sim.
+
+39:19 - 39:21
+Que aponta pra frente e aponta pra trás, tá?
+
+39:22 - 39:22
+Uhum.
+
+39:22 - 39:28
+De tal forma que se alguém corta isso, você pode configurar uma... uma fraude aí.
+
+39:29 - 39:29
+Entendi.
+
+39:29 - 39:42
+Tá? E como os identificadores estão baseados no tempo, você não pode simplesmente inventar um identificador novo sem que você perca a sequência.
+
+39:43 - 39:43
+Sim.
+
+39:45 - 39:47
+Isso para os prontuários dos pacientes, né?
+
+39:47 - 39:48
+Uhum.
+
+39:48 - 40:09
+Aqui nós precisamos de alguma coisa parecida. Você sabe de alguma exigência legal que... que oriente a isso? Como que o Credo foi... porque eu vi aquela trilha lá, né? Achei muito bacana, mas seria interessante que ela fosse segura, tipo, que nem o programador pudesse mexer fácil nisso, né? Entendeu?
+
+40:11 - 40:14
+É, não tem nenhuma exigência, nada nesse aspecto.
+
+40:14 - 40:15
+É.
+
+40:15 - 40:17
+É, porém, se a gente sofre alguma auditoria.
+
+40:18 - 40:18
+Uhum.
+
+40:19 - 40:22
+Futura, e o dado tiver estruturado, né?
+
+40:22 - 40:23
+Uhum.
+
+40:23 - 40:33
+Pra facilitar essa auditoria, melhor. Eu entendo que, talvez, nos registros de... de funcionamento do sistema, a gente não precise disso. Mas no log.
+
+40:33 - 40:33
+No log.
+
+40:34 - 40:35
+Aí sim.
+
+40:35 - 40:36
+Aí o log guarda.
+
+40:36 - 40:37
+A gente tem essa...
+
+40:37 - 40:40
+Guarda esse ID com a origem, qual que é a tabela.
+
+40:40 - 40:41
+A gente tem a amarração de tudo.
+
+40:42 - 40:42
+Uhum.
+
+40:42 - 40:46
+Pra gente saber o que que aconteceu ali, naquele...
+
+40:46 - 40:56
+Tá. Esse arquivo de log vai crescer exponencialmente. Aí nós teríamos que ter um separado, porque a gente tem uns Redis e bancos de dados, teríamos que ter um servidor de log aqui, porque ele vai crescer pra caramba.
+
+40:57 - 41:01
+Exato. Pra log, hoje, eu uso Elasticsearch.
+
+41:01 - 41:03
+Eu tentei usar, não consegui, cara.
+
+41:03 - 41:04
+Não?
+
+41:04 - 41:05
+Não, mas erro meu.
+
+41:05 - 41:06
+Uhum.
+
+41:06 - 41:13
+Tá? Elastic ou FluentD e... e o Syslog. Não consegui, mas tá lá ainda no projetinho, tá?
+
+41:14 - 41:14
+Uhum.
+
+41:14 - 41:18
+Mas eu não consegui, mas... mas... mas é uma boa. Parece... parece ser o melhor jeito.
+
+41:18 - 41:30
+É... é... por que que eu gostei de usar ele, o... o Elastic? Porque lá no meu projeto eu... eu sou obrigado... aliás, eu já te expliquei o que que é o meu projeto? Não. Meu projeto é um checkout pra lojas virtuais.
+
+41:31 - 41:31
+Hum, tá.
+
+41:32 - 41:33
+Só o checkout mesmo, tá?
+
+41:33 - 41:34
+Só.
+
+41:34 - 41:47
+Então eu plugo numa... na plataforma de e-commerce e... na... na parte de finalização de compra entra ali na minha... minha aplicação. Só que até chegar ali na minha aplicação, eu preciso registrar por onde o... aquele usuário passou.
+
+41:47 - 41:48
+Isso.
+
+41:48 - 41:57
+Por uma questão única e exclusivamente comercial, que é pra eu saber qual que é a taxa de conversão daquela loja virtual depois que ela colocou meu checkout pra mandar.
+
+41:57 - 41:57
+Entendi.
+
+41:57 - 42:01
+Então, assim, eu tenho muito, muito dado. Muito.
+
+42:01 - 42:01
+Uhum.
+
+42:01 - 42:07
+Eu tava registrando no Mongo. O Mongo não... não tem como no volume que eu tava gerando.
+
+42:07 - 42:07
+É mesmo?
+
+42:07 - 42:11
+É. Porque além de registrar... pra registrar o quê?
+
+42:11 - 42:12
+Pra buscar depois.
+
+42:13 - 42:14
+Pra buscar que era o problema.
+
+42:14 - 42:15
+Sem o...
+
+42:15 - 42:22
+Só que eu... e eu busco muito, porque dentro do meu dashboard da aplicação, eu faço o cálculo de... de... da taxa de conversão.
+
+42:23 - 42:23
+Uhum.
+
+42:23 - 42:24
+E aí, pô, vou consultar o banco.
+
+42:25 - 42:25
+Uhum.
+
+42:25 - 42:30
+Pra fazer esse cálculo. E cada consulta dessa era um...
+
+42:30 - 42:30
+Parto.
+
+42:30 - 42:42
+Era um parto. E era assim, era acabando um servidor e... enfim. E aí eu... qual que foi a... a... a solução que eu encontrei? Deixa eu fazer um teste com o Elasticsearch, que eu usei há muito tempo atrás num outro projeto de e-commerce.
+
+42:42 - 42:43
+Uhum.
+
+42:43 - 42:48
+E vou ver como é que se... se comporta. E, cara, resolveu o meu problema.
+
+42:48 - 42:48
+Uhum.
+
+42:49 - 42:57
+Ele aguenta aquela quantidade de dados que eu tô botando direto. E pra fazer a consulta, ele não pesa o meu... o meu servidor.
+
+42:57 - 43:00
+Claro, não, porque ele já tirou tudo. O servidor, inclusive, já tá.
+
+43:00 - 43:21
+Exato. Sim. Então tá... tá... tá bem... é... bem tranquilo assim. Então, se a gente optar por usar o Elasticsearch como o nosso mecanismo de armazenagem de... de logs, ok. É... e eu acho que vale a pena testar também. Agora, se não for uma saída, a gente pode jogar pro S3 da Amazon.
+
+43:22 - 43:22
+Sim.
+
+43:22 - 43:23
+Direto.
+
+43:24 - 43:29
+Tá. Mas teria que ser em cada microserviço, teria que ter um.
+
+43:29 - 43:32
+Cada microserviço tem o seu... seu log.
+
+43:32 - 43:50
+Por mais de quê? Por mais de quê? Se você for olhar, é... se nós passamos a avisar sobre as ações feitas, essa mesma informação vai estar em todos eles.
+
+43:50 - 43:50
+Exato.
+
+43:51 - 43:56
+Que não é ruim. O problema é que é caro, porque o banco vai ficar grande, o banco de log.
+
+43:56 - 44:04
+Sim. Sim. É, mas nos dá essa previsibilidade de que os serviços estão... estão se comunicando.
+
+44:05 - 44:05
+Uhum.
+
+44:05 - 44:09
+Chegou um dado novo aqui, eu registro um log de que recebi aquele dado.
+
+44:09 - 44:09
+Sim.
+
+44:09 - 44:11
+Então a gente tem essa...
+
+44:11 - 44:11
+Sim.
+
+44:11 - 44:14
+Uma previsibilidade, né? Essa... essa visão de que.
+
+44:14 - 44:14
+É.
+
+44:14 - 44:15
+Tá tudo funcionando.
+
+44:15 - 44:17
+Você vai rastrear, né?
+
+44:17 - 44:33
+Exato. Então, é, eu acho que é uma... uma alternativa. A gente testar o Elasticsearch e, se não performar bem, a gente joga pro S3, que é barato, né? Por mais que tenha um volume grande de dados, mas ele... ele ainda acaba sendo barato.
+
+44:33 - 44:33
+É.
+
+44:33 - 44:36
+Fica mais barato do que um servidor pra isso.
+
+44:36 - 44:38
+É. Muito sobre.
+
+44:38 - 44:42
+É... é... armazenamento pra servidor é caro.
+
+44:43 - 44:44
+Uhum.
+
+44:44 - 44:45
+Pegar volume lá na... na.
+
+44:46 - 44:47
+Lá, porque tá reservado.
+
+44:47 - 44:51
+É. Agora, lá no S3, não, porque é arquivo estático.
+
+44:51 - 44:52
+É só o texto.
+
+44:52 - 44:58
+Pra marcar o texto. Arquivo estático. É só jogar lá, ele não... não consome quase nada, entendeu? Custa muito baixo.
+
+45:00 - 45:14
+Tá. O... pelo que eu ouvi aqui, ele quer servidor nosso. Seja isso, pode significar nosso da Amazon, nosso Azure, nosso... nosso interno, nosso qualquer coisa, pode significar.
+
+45:14 - 45:16
+Não. A gente pode definir onde vai ficar.
+
+45:19 - 45:27
+Nós poderíamos fazer o MVP usando o MinIO, um servidor particular, depois migrar pra S3, se for o caso.
+
+45:31 - 45:55
+É, eu... é, vai... vai dar pra gente brincar com... com a infraestrutura. Porque, por exemplo, os front-ends, não, o Flutter não, mas o... o dashboard, que vai ser SPA, a gente pode jogar no S3, e o S3 atender, tranquilo. Então não precisa... a gente não precisa se confi... é... se preocupar em configurar servidor pro front-end. O S3 atende.
+
+45:55 - 45:58
+Precisaria de ver como que faz o S3, mas tudo bem.
+
+45:58 - 46:08
+É... e pros microserviços, tem... tem alternativas baratas aí no mercado que dá pra gente... pra gente trabalhar.
+
+46:10 - 46:11
+Uhum.
+
+46:11 - 46:27
+Eu acho que vai ser... vai ser legal. A única preocupação... minha única preocupação é com relação a banco de dados. Mas trabalhando com o Mongo, por mais que o custo não seja relativamente baixo, talvez valha a pena pegar o... o Atlas, que é o...
+
+46:27 - 46:27
+Atlas.
+
+46:28 - 46:33
+A versão cloud. Porque aí é gestão da própria...
+
+46:33 - 46:33
+Sim.
+
+46:34 - 46:45
+Mongo e tal, é, a gente acaba se beneficiando nesse ponto. Mas, assim, é legal que a gente tem possibilidade de... de brincar aí, né? Escolher o que que a gente vai usar.
+
+46:45 - 46:47
+É, o único problema é o tempo.
+
+46:47 - 46:48
+O problema é o tempo.
+
+46:49 - 46:59
+É... bom. Aí eu acho que nós deveríamos ver os dados que vamos usar, a extensão desses dados.
+
+47:00 - 47:31
+Sim. Eu vou... eu vou te mandar a documentação da API da Algorix, por favor. Eu já dei uma analisada nela e não vai ser tudo que a gente vai utilizar dali. Eu... eu tô montando um documento lá pra... pra ficar mais claro pra nós. Assim que eu terminar, eu te mando também. Pra... ali tá... tá descrito o que de fato a gente vai utilizar dessa API, tá?
+
+47:31 - 47:32
+Uhum.
+
+47:32 - 47:35
+Mas com a documentação já dá pra ter uma... uma base do que que vai ser.
+
+47:43 - 47:43
+Bom.
+
+48:31 - 48:31
+Bom.
+
+48:32 - 48:35
+Você me mandou, aí eu te respondo então.
+
+48:36 - 48:46
+Uhum. Eu vou... eu vou finalizar essa documentação que eu falei e vou.
+
+48:46 - 48:46
+Tá.
+
+48:46 - 49:04
+Não é documentação, é um... um esboço de planejamento pra nós, tá? Dessa... desse primeiro microserviço do... do Private Label. E aí a gente discute com o Caligari. Acho que amanhã o Luiz tá aí e volta, né, Luiz?
+
+49:04 - 49:05
+Isso, isso.
+
+49:05 - 49:15
+Aí a gente já marca com ele, já discute com o Caligari, expõe o que que a gente tá pensando e vê o que que ele.
+
+49:15 - 49:15
+Sim.
+
+49:15 - 49:16
+Pode contribuir.
+
+49:16 - 49:16
+Sim.
+
+49:17 - 49:22
+E aí, na semana que vem, dependendo como for, né, que eles vão vir pra cá. Aliás, você também vai vir, né?
+
+49:23 - 49:27
+É, eu venho, mas aí eu perguntei pro Luiz se precisava trazer as minhas coisas, ele falou que não.
+
+49:27 - 49:28
+Sim.
+
+49:28 - 49:30
+Porque eu venho com notebook somente.
+
+49:30 - 49:30
+Tá.
+
+49:31 - 49:38
+Tá? É... agora, seria interessante se puder fornecer um servidor que nem seja pra gente começar a testar aqui dentro.
+
+49:41 - 49:41
+Tá.
+
+49:41 - 49:46
+Sabe? E... e aqui tinha uma linha exclusiva de... de internet.
+
+49:46 - 49:46
+Hum.
+
+49:47 - 49:51
+Né? Com IP externo dedicado. Então tu joga lá pra gente.
+
+49:51 - 49:53
+Tá. Vou entender.
+
+49:53 - 49:55
+Essa... essa linha caía ali no escritório.
+
+49:56 - 49:56
+Uhum.
+
+49:56 - 49:58
+Que era onde nós tínhamos o servidor lá naquela época.
+
+49:58 - 49:59
+Uhum. Tá.
+
+50:00 - 50:05
+Então, aí joga lá, pede uma renovação de IP, se for o caso, né?
+
+50:05 - 50:05
+Uhum.
+
+50:06 - 50:12
+É... e aí a gente começa a trabalhar em cima de uma coisa mais concreta e já eles vendem a coisa.
+
+50:12 - 50:14
+Sim. Sim. Perfeito.
+
+50:14 - 50:27
+Eu deixaria o Caligari e o Felipe pra ver a questão do... do dashboard bem visto. A API, vamos ser controlados pela... pelo Flutter, né? Porque o Flutter já tá pronto, né?
+
+50:27 - 50:28
+Sim.
+
+50:28 - 50:30
+Então, se você tiver isso, você já me manda também.
+
+50:31 - 50:33
+Uhum. Eu ainda não tenho, vou ter que.
+
+50:33 - 50:35
+É, não, mas tipo, vai estar no Flutter.
+
+50:35 - 50:35
+Sim.
+
+50:35 - 50:41
+Então, o código você me manda e aí a gente filtra e vê o que que tem. Eu já tive que fazer isso, mas com um código fechado.
+
+50:41 - 50:41
+Tá.
+
+50:42 - 50:43
+Sabe essa história, né?
+
+50:43 - 50:45
+Não. Sério?
+
+50:47 - 50:48
+O Luiz comprou o código do Nais.
+
+50:48 - 50:48
+Uhum.
+
+50:48 - 50:49
+Certo?
+
+50:49 - 50:49
+Sim.
+
+50:51 - 50:57
+De outra empresa que não tinha nada a ver, que não se conheciam com o Márcio, que nunca tinha se visto a cara, ele comprou o aplicativo.
+
+50:58 - 50:58
+Uhum.
+
+51:00 - 51:11
+Quando chegou aqui, tudo bem, não sei o quê, blá-blá-blá. E eu: "Quieto, eu não entendo nada do que vocês estão fazendo". Aí foram ver, disseram: "Não, é o aplicativo, nós não vendemos código-fonte".
+
+51:14 - 51:15
+Meu Deus do céu.
+
+51:17 - 51:23
+Aí... aí eu falei, aí eu inventei, porque eu não sabia, eu vinha de programação desktop, né?
+
+51:23 - 51:23
+Sim.
+
+51:24 - 51:32
+Aí eu tive que aprender pra caramba aqueles números. Aí... aí eu fiz uma caixa preta, aí caíam as requisições lá dentro do servidor.
+
+51:33 - 51:33
+Uhum.
+
+51:33 - 51:39
+Tá? Elas vinham as requisições e eu fui fazendo, a partir disso, fui fazendo.
+
+51:39 - 51:40
+Meu Deus.
+
+51:40 - 51:41
+Foi assim que surgiu a API.
+
+51:43 - 51:43
+Nossa.
+
+51:43 - 51:46
+Por isso que a API tem aquele espaço lá, porque é daquele serviço.
+
+51:46 - 51:47
+Era do... do jeito que tava.
+
+51:48 - 51:51
+Tá, vamos voltar a fazer agora. Só que agora com o código-fonte vai ficar mais fácil.
+
+51:51 - 51:55
+É. Vai facilitar um pouquinho o troco.
+
+51:55 - 52:20
+Um pouquinho. E eu fiz tudo. Eu fiz até... eu fiz um script que ele pegava, porque depois pegamos uma menina, foi, em Portugal, e aí... com... ah, claro, porque teve isso. Depois de muito pleitear, ele conseguiu o código-fonte, primeiro do Arduino, depois do iOS. Não, do Arduino, do Android.
+
+52:20 - 52:20
+É.
+
+52:20 - 52:22
+Do Android e depois do iOS.
+
+52:22 - 52:23
+Caramba.
+
+52:23 - 52:29
+Depois de muito pleitear. E aí a menina pegou e moqueou aquilo lá, fez um... pegou e colocou um JSON.
+
+52:30 - 52:30
+Uhum.
+
+52:30 - 52:42
+Só que o JSON, ele não... qualquer lugar que ele colocava, não funcionava, nada. Aí eu peguei e fiz todo um script que ele lia aquilo lá. Aí eu fui buscar, aí que eu entendi que havia um Swagger, que havia um OpenAI.
+
+52:43 - 52:43
+Uhum.
+
+52:43 - 52:45
+Falei: "Esse vai ser o modelo que eu vou usar".
+
+52:45 - 52:46
+Caramba.
+
+52:47 - 52:50
+E aí ele convertia aquele JSON que ela tinha feito.
+
+52:50 - 52:50
+Sim.
+
+52:51 - 53:00
+E aí ele convertia, é... em código PHP. Por isso que se você abre o código velho, tudo é muito parecido.
+
+53:00 - 53:00
+Sim.
+
+53:00 - 53:01
+Porque foi um script que fez.
+
+53:02 - 53:02
+Entendi.
+
+53:02 - 53:03
+Tá? É...
+
+53:04 - 53:05
+Baseado na... nessa...
+
+53:05 - 53:08
+Baseado nessa loucura, nessa caixa preta e na...
+
+53:08 - 53:08
+Caramba.
+
+53:12 - 53:37
+E pra descobrir que eles esperavam resultados diferentes. Porque o Android, ele espera, o aplicativo Android, acho que ele espera... ele espera hora, espera 200, ora espera 400 e não sei quanto, tá? 300, enfim, quando redirecionado. Tá? Ele... ele é bastante, mas o... o iOS não, ele espera que todos os... todos as APIs retornem 200.
+
+53:37 - 53:37
+Uhum.
+
+53:37 - 53:41
+E depois na descrição descreve se houve erro ou não, mas é sempre 200.
+
+53:42 - 53:43
+Caramba.
+
+53:43 - 53:44
+Por isso que ele responde, por isso que a API...
+
+53:44 - 53:45
+Por isso que ela sempre...
+
+53:45 - 53:46
+Ele responde diferente.
+
+53:46 - 53:47
+Entendi.
+
+53:47 - 53:52
+Se você consulta com o Android, ele responde de um jeito; se consulta com o iOS, ele responde de outro.
+
+53:52 - 53:53
+Nossa.
+
+53:53 - 53:58
+Porque o aplicativo, eles não conversaram entre eles. Os que fizeram o aplicativo só tinham a cara igual.
+
+53:58 - 53:59
+Sim.
+
+53:59 - 54:01
+Mas esqueceram de combinar o protocolo.
+
+54:02 - 54:03
+Meu Deus.
+
+54:05 - 54:18
+Foi interessante, pô. Aprendi muita coisa. Isso porque o médico falou, disse: "Olha, agora é um trabalho tranquilo, tá? Não mais de 4 a 6 horas por dia. Como não?" Aí fui, peguei a Cronics.
+
+54:18 - 54:20
+Pensei, pensei: "Boa dessa".
+
+54:21 - 54:28
+Meu Deus do céu. Tá, você então... esses so... esses códigos.
+
+54:29 - 54:29
+Tá.
+
+54:29 - 54:39
+E preciso ver se vai ter servidor ali, é... né? E a... uma linha de internet pra poder trabalhar. Tipo assim, já dá pra ele, porque...
+
+54:42 - 54:43
+Obrigado.
+
+54:46 - 54:47
+Você abre aí que eu vou embora.
+
+54:48 - 54:50
+Você vai embora aqui? Abre aqui.
+
+54:51 - 54:54
+Por favor. Sabe demais.
+
+54:55 - 54:55
+Falou.
+
+54:56 - 54:56
+Falou.
+
+55:08 - 55:09
+Esse aqui é nosso ponto de encontro?
+
+55:09 - 55:10
+Sim.
+
+55:10 - 55:11
+Esse aqui é nosso ponto de encontro?
+
+55:12 - 55:13
+Sim, com certeza.
+
+55:14 - 55:14
+Você tá bem?
+
+55:14 - 55:19
+Eu tô bem, e você? Você tá estilo Chris Swift e eu estou estilo FitBinders.
+
+55:20 - 55:21
+Pois é. Você tá bonita.
+
+55:21 - 55:22
+Ah, thank you. Você também.
+
+55:23 - 55:24
+Onde fica a chapéu?
+
+55:25 - 55:25
+Eu tô bem.
+
+55:27 - 55:28
+Olha só.
+
+55:28 - 55:30
+Nossa.
+
+55:30 - 55:38
+Uma verdadeira fazendeira aí. Se fosse outra pessoa, eu ia... tudo bem.
+
+55:39 - 55:39
+Falou.
+
+55:39 - 55:40
+Posso fazer um comentário com você?
+
+55:40 - 55:41
+Diga.
+
+55:41 - 55:46
+Não. É um comentário que outras... outra pessoa iria achar ruim.
+
+55:46 - 55:46
+Ah.
+
+55:46 - 55:47
+É, você e eu somos amigos, somos.
+
+55:48 - 55:48
+Sim.
+
+55:48 - 55:49
+Não vai ter nova dona aqui.
+
+55:51 - 55:53
+Você que pariu, ó. Aqui, ó, ó.
+
+55:54 - 55:55
+Ah, pariu, você igual.
+
+55:56 - 55:57
+Ah, não, não, não, não, não.
+
+55:57 - 55:57
+Não?
+
+55:58 - 56:00
+Não, assim não. Aqui não.
+
+56:00 - 56:01
+É uma bíblia, então.
+
+56:04 - 56:06
+Me dá uma aí. Me dá uma aí.
+
+56:07 - 56:10
+Ué. Come com unha no.
+
+56:10 - 56:11
+É porque... é porque é tudo, isso.
+
+56:11 - 56:17
+Exato, exato. Foi isso que eu falei. Uma outra pessoa iria votar com você, tá. Não, mas é...
+
+56:18 - 56:22
+Eu também tô comendo comida dele. Você também tá comendo comida dele.
+
+56:23 - 56:23
+Meu filho.
+
+56:24 - 56:25
+Você falou.
+
+56:26 - 56:31
+Esse daqui é dele. Eu pedi dele. Nem presta o preto, porque o meu é marrom. Eu vou ver se esse mês eu compro um preto pra ele.
+
+56:31 - 56:32
+Só tá faltando a fazenda mesmo.
+
+56:33 - 56:36
+É, você também. É só uma coisa aqui, papai. Fazenda.
+
+56:37 - 56:37
+Fazenda.
+
+56:38 - 56:39
+É simples assim, simples assim.
+
+56:40 - 56:45
+Ai, eu vou pegar chapa e dinheiro pra fazenda. Se tivesse dinheiro.
+
+56:45 - 56:48
+Mulher que gasta como se tivesse fazenda, eu já tenho, tá?
+
+56:49 - 56:53
+É. Esse é o meu maior problema.
+
+56:53 - 56:56
+Então. A vaca eu já tenho, agora a fazenda eu não tenho.
+
+56:56 - 56:57
+Eu sou transfinanceira.
+
+56:58 - 56:58
+Transfin.
+
+56:58 - 57:13
+Eu sou pobre e acho que é rica, entendeu? Transfinanceira, é sobre isso. E aí, Pi, que tal correndo? Você tá fazendo reunião agora de reunião? Só bucha.
+
+57:15 - 57:24
+Não, bucha é que eu tenho agora. Segunda-feira vão entregar uma demanda a um cliente antigo. Me entregou uma demanda que eu tenho que entregar pra 1o de junho. Eu falei: "Vocês dois tão loucos".
+
+57:25 - 57:26
+Hoje, dia 29.
+
+57:26 - 57:27
+Tão loucos.
+
+57:27 - 57:28
+29 de maio.
+
+57:28 - 57:36
+Loucos de amarrar. É... é o projeto Z13 aí.
+
+57:37 - 57:37
+Ah, tá.
+
+57:38 - 57:45
+Aí eu tô... ainda estou embrulhando paraquedas, então eu vou colaborar com o Anderson.
+
+57:45 - 57:50
+Embrulha direitinho. O problema não é embrulhar o paraquedas, o problema é quem vai abrir.
+
+57:50 - 57:51
+Tá, porque quando abre é ele.
+
+57:55 - 57:58
+Procura raio. Toca aqui, toca aqui.
+
+57:59 - 58:00
+Com os dentes, sabe?
+
+58:02 - 58:04
+Ai, a minha vontade de... esse dia eu tô gritando.
+
+58:05 - 58:05
+É?
+
+58:05 - 58:06
+Não sei se você tá ouvindo.
+
+58:06 - 58:09
+Eu já... eu já... já fiz isso. Eu saí na caminhonete e saí gritando.
+
+58:09 - 58:14
+Não, mas eu voltei. De lá de dentro eu vim gritando até aqui na rua, plantando o povo correndo do CrossFit e eu gritando.
+
+58:14 - 58:16
+Sim, sim, sim, sim, sim.
+
+58:16 - 58:17
+Não que tem hora que não dá.
+
+58:17 - 58:18
+Tem hora que não dá. Tem que hora... tem.
+

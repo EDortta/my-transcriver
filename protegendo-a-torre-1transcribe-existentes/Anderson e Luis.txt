@@ -1,0 +1,1314 @@
+00:00 - 00:04
+Só um instante, eu vou responder duas coisas aqui, uma logo e depois eu pergunto.
+
+00:04 - 00:05
+Como é que é que ele quer ajudar?
+
+00:11 - 00:21
+Ficar olhando as budas no monitor, né? Passou diante dele de repente. Deixa eu determinar ele.
+
+00:32 - 00:33
+Cuidado, hein!
+
+00:35 - 00:37
+Sucesso.
+
+00:42 - 00:44
+Pega a carona comigo depois das 5.
+
+00:44 - 00:46
+Ah, tá. Porque não é mais Uber?
+
+00:46 - 00:49
+Caramba.
+
+00:55 - 01:02
+É. Essas são as que estavam funcionando. Estamos com um problema de derrubar uma, mas isso não me preocupa nesse momento. Esse é esse tipo de controle.
+
+01:03 - 01:03
+Sim.
+
+01:03 - 01:49
+Tá? Não sei se você chegou a ver o vídeo lá, mas fiz um monte de comandinho lá, tal e coisa. Relevante para o trabalho, cara. Quando você faz um curve, barra, tudo que vier depois da API vai ser um verbo. Aí, o que que eu tenho? Ó, eu tenho clients, clients com K, loans e treko. Então vou chamar o treko. Aí, aqui embaixo, eu vou te mostrar o que acontece quando eu coloco aqui. Tá? A máquina não existe, né? Quando ela vira aqui, e aí dá pau justamente por quê? Porque eu estou mostrando.
+
+01:49 - 01:52
+E se eu não estivesse mostrando.
+
+01:52 - 02:08
+Cara, eu não passo funcionando desde sexta, cara. Eu vim trabalhar ontem, via desgraçada, nojenta, tosca. Imbecil. Tu não presta, tu não vale nada.
+
+02:11 - 02:16
+Ai, ai, ai, ai, ai. O que que ele esqueceu de pegar aqui?
+
+02:16 - 02:19
+A regressão zero é o que falta.
+
+02:19 - 02:21
+Ponto M. Ah.
+
+02:21 - 02:23
+A regressão zero é o que falta.
+
+02:24 - 02:27
+Ué. Ele matou.
+
+02:28 - 02:30
+Eu não sei o que que trabalha pelo site.
+
+02:30 - 02:31
+Ele matou.
+
+02:32 - 02:32
+Já tem que é.
+
+02:33 - 02:34
+O que que ele matou?
+
+02:35 - 02:36
+O biso é o teste, né?
+
+02:41 - 02:44
+Não sei. Tá vendo aqui?
+
+02:46 - 02:46
+Ele demorou.
+
+02:50 - 02:55
+Ele demora mais para levantar tudo isso, baixar tal, que levantar e baixar as funções.
+
+02:55 - 02:56
+Sim, sim.
+
+02:57 - 03:03
+Eh, eu coloquei tempos bem ridículos, 10 segundos a função viva, só para poder testar, né?
+
+03:03 - 03:04
+Sim.
+
+03:04 - 03:10
+Fiz um, um, um estressador, né?
+
+03:10 - 03:10
+Uhum.
+
+03:11 - 03:22
+Então, supostamente, vamos ver, não vou falar nada, vamos ver. Isso. Aí ele levanta a Docker e já respondeu. Tá vendo? Tá? Ele levantou aqui a Docker.
+
+03:22 - 03:22
+Sim.
+
+03:22 - 03:27
+Tá? Aí ele vai, vai. Cara, o microserviço que tá funcionando é o treco para o microserviço do Janel, o treco.
+
+03:28 - 03:28
+Sim.
+
+03:28 - 03:33
+Daqui a pouco o treco vai embora. Aí já foi. A gente não tá mais.
+
+03:33 - 03:33
+Legal.
+
+03:34 - 04:00
+E aí eu fiz essa DBG. Então ele fica chamando. No caso, ele vai levantar ela de novo. Só que como a próxima chamada acontece dentro dos 20 segundos de graça dela, eu já tenho 10 segundos para rodar, mas o garbage collector entra a cada 20. Então esse aqui eu fiz a cada 15. Então o que acontece? Ele fica bem no limite aqui.
+
+04:01 - 04:01
+Uhum.
+
+04:01 - 04:10
+Sabe? E às vezes ele vai dar erro, porque eu quero justamente achar qual que é o número ideal para tratar a relação que existe no sistema.
+
+04:10 - 04:10
+Entendi.
+
+04:11 - 04:14
+Mas ele tá funcionando, ele continua funcionando, o treco tá aqui naquele lugar.
+
+04:15 - 04:15
+Sim.
+
+04:15 - 04:15
+Tá?
+
+04:15 - 04:16
+Uhum.
+
+04:17 - 04:52
+Tá vendo que tá 33 segundos vivo? Aí, deixa eu abrir mais uma chamada. E aí nós vamos somente encerrar ela. Aí, ela veio e tal. E aqui ela mandou o shutdown. Bom, justo coincidiu, sem buscar coincidiu. Ela respondeu à chamada, mas estava justo no final do período de graça. Matou ela na hora. Só que essa matada não é Docker stop. É um shutdown, é um comando barra shutdown para, eh, tipo, via API para o serviço, tipo, você desliga.
+
+04:52 - 04:52
+Uhum.
+
+04:52 - 04:54
+Aí ele faz o que tem que fazer e fecha.
+
+04:54 - 04:55
+Entendi.
+
+04:55 - 04:56
+Graciosamente.
+
+04:56 - 04:56
+Perfeito.
+
+04:57 - 05:44
+Tá? Então, assim, tá, tá bem bacaninha. Eh, aí, por exemplo, o que que mais nós temos? Loans, loans. Ela é, ela é uma API. API. Então aqui vai levantar as duas e respondeu as duas. Agora, se eu quero criar um serviço, eh, criei, eh, por exemplo, Anderson. Ele vai pegar o template.
+
+05:44 - 05:44
+Uhum.
+
+05:45 - 06:03
+Ele vai criar a função aqui. Ele tem um espaço que é para desenvolvimento, tá? Tem devel, devel, devel. Aqui. Ele, ele está criando aqui dentro, criou uma função Anderson que não está publicada ainda, não tá aqui, tá? Ela não tá aqui.
+
+06:03 - 06:03
+Uhum.
+
+06:05 - 06:18
+Eu posso, por exemplo, eu posso eliminar essa clients aqui que não me interessa.
+
+06:18 - 06:19
+Certo.
+
+06:19 - 06:35
+Tá? Aí, no caso, ele remove, faz tudo e deixa. Ela removeu até daqui, ó. Tá vendo aqui? Anderson. Opa, não removeu a pasta. Ah, removeu, removeu.
+
+06:35 - 06:37
+Então dos dois lugares, né?
+
+06:37 - 06:38
+Hum, dos dois lugares por causa do público.
+
+06:39 - 06:39
+Tá.
+
+06:39 - 06:47
+Tá? Mas você pode ficar só para desenvolvimento, tipo, cara, eu quero testar somente isto. Aí você fica, tipo, como faz habitualmente.
+
+06:47 - 06:47
+Sim.
+
+06:47 - 07:23
+Então você trabalha aqui, o programador nunca vai trabalhar aqui dentro. Trabalha aqui, tá, tá, tá, faz tudo que tiver que fazer. E, por exemplo, aqui agora, tá? Esse é Anderson, tá? É uma função que não tem status porque não está em produção, tá? Não tá no simulador de produção. Então você pode usar outro comando para dizer: "Olha, tá? Vamos publicar Anderson". Aqui ele vai transpilar de TypeScript para JavaScript.
+
+07:23 - 07:24
+Uhum.
+
+07:26 - 07:34
+E é somente isso que ele faz. Falou, queridão.
+
+07:34 - 07:35
+Tem que cuidar.
+
+07:36 - 07:48
+Não apronta nada, tá? Por favor. Esse aqui é demorado. Esse aqui é, é demorado, mas ele está transpilando tudo.
+
+07:48 - 07:49
+Uhum.
+
+07:50 - 08:07
+E vai ficar somente com o, o, o dist aqui. Não, esse é devel, desculpa. Anderson, tá? Vai ser ele pegar o dist de lá e joga aqui no dist.
+
+08:14 - 08:15
+Eu não gosto que ele vem já.
+
+08:16 - 08:26
+Mas é uma função nova. Ele vem já com hello, health, eh, shutdown, terminate. São funções que eu implementei aqui, né?
+
+08:26 - 08:26
+Uhum.
+
+08:27 - 08:30
+Status, né? Que falta, falta rechear ela com mais informação, né?
+
+08:30 - 08:31
+Uhum.
+
+08:31 - 08:50
+Health, bla bla. E vamos preparar um cur aqui. Cur aqui vai levar 502 porque não existe. Ele vai tentar levantar.
+
+08:50 - 08:51
+Uhum.
+
+08:51 - 08:55
+Talvez ele consiga tentar levantar alguma coisa. É, é isso que ele tenta.
+
+08:55 - 08:55
+Sim.
+
+08:57 - 09:05
+Tá pegando 20, tudo no mesmo comando. A gente não deixou lá. Que já vai, já fica do jeito que seria em produção.
+
+09:05 - 09:05
+Entendi.
+
+09:07 - 09:26
+Aqui tem queridas. O, o, esse, ó, são os logs. São todos os logs do estilo e tal, do, do, do Linux. Só os nossos que estão um pouquinho diferentes. Aí depois nós temos que ver o que que vamos fazer, porque são os mesmos de depuração, né?
+
+09:26 - 09:26
+Sim.
+
+09:27 - 09:39
+Então a gente tem que ver se vamos deixar aqui em formato. Vai parecer uma boa. Não faço o erro. Aí, aí ele tem que levantar agora. Tem que aparecer aqui o Anderson.
+
+09:40 - 09:41
+Uhum.
+
+09:41 - 09:50
+Aí ele joga. Cara, tô mostrando outro padrão, cara. Eh, não sei o que aconteceu.
+
+09:53 - 09:59
+Talvez seja aquela questão do que ele apagou no empty lá, deveria ter apagado lá dentro também.
+
+10:01 - 10:07
+Pode ser. Vamos arranjar uma coisa agora. Anderson.
+
+10:09 - 10:10
+Não, tá aqui.
+
+10:15 - 10:16
+Tem que colar aqui.
+
+10:21 - 10:22
+Uhum.
+
+10:49 - 11:21
+Talvez tenha faltado o comando. Não, mas eu vi ela fazendo isso. Não tá respondendo. Agora a ideia é que daqui a 20 segundos ele entre o garbage collection. Então aqui é o limite. Ele é limpo. Se não der isso, ele tem que matar aqui.
+
+11:22 - 11:22
+Uhum.
+
+11:23 - 11:29
+Mas eu não sei se manualmente se ele eu acho que tem que matar, porque ele manda um shutdown aqui dentro.
+
+11:29 - 11:29
+Entendi.
+
+11:36 - 11:38
+E o mata com propriedade e tal, parece.
+
+11:38 - 11:39
+Aham.
+
+11:42 - 11:43
+Tá, tá, tá lindo.
+
+12:10 - 12:48
+As coisas de carrinho é que eu preciso ir direcionando o Vítor lá na, na, na. Isso daí, por exemplo, a gente tem aqui é o, é o painel de administração, né? Seria o backoffice nosso ali o admin dele. Então o que ele fez até agora é o cadastro de novo máximo, promotor, novo vendedor, que são os três níveis ali. E as mensagens que tem. Beleza. Eh, agora aqui dentro a gente tem, por exemplo, produtos de crédito. E daí me vem a dúvida, eh, o que que eu entendo como produtos de crédito?
+
+12:48 - 13:02
+Cada nova esteira de crédito que a gente for fazer, cada novo produto de crédito. Então, por exemplo, a gente vai começar com o cartão consignado e com o crédito do trabalhador.
+
+13:02 - 13:03
+Uhum.
+
+13:03 - 13:19
+São dois produtos de créditos diferentes. Então eu entendo que esse menu aqui, produtos de crédito, é onde vai estar ali dentro as configurações e os detalhes de cada um dos.
+
+13:19 - 13:20
+Dessas esteiras, né?
+
+13:20 - 13:21
+Dessas esteiras.
+
+13:21 - 13:22
+Perfeito.
+
+13:22 - 13:48
+Então, só que, eh, isso não é algo que dá pra gente criar um formulário padrão e, e definido e pronto, porque cada produto são regras totalmente diferentes. Então eu sei que o produto final, a ideia do produto final é de um jeito que a gente consiga criar a esteira do produto de crédito, arrastar quais campos vai ter na esteira, beleza, mas não é o momento agora do, do MVP.
+
+13:48 - 13:48
+Uhum.
+
+13:49 - 14:08
+Então a minha dúvida foi, por exemplo, dentro do, do mesmo produto de crédito, que é o, o crédito do trabalhador, que é uma integração com a Keytech, é tudo aquilo ali, ali a gente sabe e tá beleza, que a gente sabe que é um fluxo X e pronto.
+
+14:08 - 14:09
+Bem conhecido.
+
+14:09 - 14:10
+Já tá aquilo pré-definido.
+
+14:10 - 14:11
+Uhum.
+
+14:11 - 14:31
+Então até dá para ali dentro ver as configurações características do produto que a gente sabe que aquele fluxo já tá definido. No cartão consignado, muda as regras de cada prefeitura ou de cada município. Não que muda brutamente, mas, por exemplo, eu, eu mandei aquele modelo de, de formulário lá.
+
+14:31 - 14:32
+Sim.
+
+14:33 - 14:53
+Porque, porque as informações que é o roteiro operacional, é as informações que o cara que tá lá na rua, quando ele vai cadastrar a prefeitura ou o governo ou município, ele tem que pegar essas informações aqui. Ele captura lá essas informações. Qual que é o público permitido, se é só os ativos e inativos, né?
+
+14:53 - 14:54
+Uhum.
+
+14:54 - 15:30
+Se os aposentados são permitidos ou não, se os pensionistas são permitidos ou não, qual que é o público não permitido, ou seja, não aceita estagiário temporário ou comissionados. Qual que é a margem, ou seja, a margem máxima que a gente pode pegar por funcionário para esse crédito? 10% para as operações de cartão de crédito, data de corte do convênio. São todos parâmetros de informação que é assim, se eu tiver uma maneira de cadastrar esses parâmetros dentro do sistema, são os parâmetros que normalmente tem o, o cada cadastro de convênio, cada prefeitura.
+
+15:30 - 15:30
+Uhum.
+
+15:31 - 15:33
+São parâmetros em tese padrão.
+
+15:33 - 15:33
+Sim.
+
+15:34 - 16:11
+Só que informações aqui que são texto puro, por exemplo, eh, quantidade de matrícula, beleza, dá para definir que é sem limite, mas conta de liberação do crédito, conta de titularidade do cliente, importante. Em caso de retorno de débito, é necessário validar entidades bancárias corretas. Então aqui, conta de, de liberação do crédito, OK? Só conta de titularidade do cliente. Sim ou não? Dá para ser um campo único, porque daí a gente sabe que a gente só pode creditar o dinheiro na conta da titularidade, da mesma titularidade.
+
+16:11 - 16:12
+Sim. Perfeito.
+
+16:12 - 16:27
+Então é a gente pegar esse formulário ao máximo e esmiuçar o que vai ser o cadastro do, do produto. E quando, porque quando alguém chegar lá, o operacional chegar lá da prefeitura, ele vai trazer essa, essa RO aqui preenchida.
+
+16:27 - 16:27
+Uhum.
+
+16:27 - 16:55
+E aí o nosso operacional, o admin, ele tem que cadastrar o convênio. E aí começou a surgir a dúvida. Eu falei: "Cara, onde que é esse aquele cadastro do convênio?" Porque eu entendo aqui que aqui é o administrativo, né? Mas aí eu entendo que aqui no administrativo talvez seria aqui um painel de controle, que aqui tem lugar onde cadastra bancos, usuários, empresas, relatórios, sistema, blacklist ou não, é dentro do produtos de crédito.
+
+16:55 - 16:55
+Produto.
+
+16:56 - 16:59
+Que eu vou lá e cadastro o convênio. O que que vocês acham?
+
+16:59 - 17:01
+Aí, né? É que tem que ser dentro do produto de crédito.
+
+17:01 - 17:02
+Dentro do produto.
+
+17:02 - 17:10
+Dentro do produto específico, né? No caso, o cartão, cartão consignado, então dentro dele tem lá toda a configuração.
+
+17:10 - 17:11
+Lugar onde eu cadastro o convênio.
+
+17:12 - 17:18
+Voltando aquele outro formulário que você tem, você tem mais desses dos outros que vamos implementar?
+
+17:20 - 17:20
+Do.
+
+17:20 - 17:21
+Pode achar.
+
+17:22 - 17:29
+É, do, do, do crédito do trabalhador a gente já tem, mas não é nesse formato. É, é definido.
+
+17:29 - 17:44
+Não, não, qualquer coisa. Isso. O interesse, né? Precisamos estar tendo uma, uma visão geral. Nós fizemos, eu não sei se vocês sabem, que existem na saúde, eh, pública, existe um conjunto de, de formulários da ANMNESA. São muito parecidos assim.
+
+17:44 - 17:44
+Uhum.
+
+17:45 - 17:50
+Tipo, tem checkbox, tem true ou false, tem data, tem campo que são de certo tipo, né?
+
+17:51 - 17:51
+Sim.
+
+17:51 - 17:54
+Mas depois ele vai te guiando para o diagnóstico.
+
+17:54 - 17:54
+Uhum.
+
+17:55 - 17:57
+Tá? Então, é, é um formulário que tem lógica.
+
+17:57 - 17:58
+Sim.
+
+17:58 - 18:20
+Tá? Então, o que nós fizemos foi traduzir isso para JSON, tá? Então, cada formulário JSON, tá? Que tem a regra lá de negócio. Por exemplo, ali ele diz: "Ah, isso aqui é um campo livre". O outro que diz: "Aqui é esse, tem um checkbox para dizer se a titularidade é dele mesmo, não?" Todo esse tipo de coisa. Aqui é uma seleção, são sim, não, três valores, quatro, entendeu?
+
+18:20 - 18:21
+Perfeito.
+
+18:22 - 18:26
+Eu concordo com o que nós queremos chegar, que é arrastar e soltar.
+
+18:26 - 18:26
+Uhum.
+
+18:26 - 18:36
+Tá? E eu entendo que isso vai chegar no JSON. Então, a minha proposta seria: faz, pega assim visualmente, faz o JSON, o quem que tá o Vítor fazendo? Eu não sei.
+
+18:36 - 18:36
+É.
+
+18:36 - 18:38
+Tá? Faz, monta.
+
+18:38 - 18:41
+Não, o visual não. O visual é o Vítor, do jeito normal, né?
+
+18:41 - 18:44
+Não, mas é ele que tá fazendo o visual, né?
+
+18:44 - 18:45
+É, ele tá fazendo o visual.
+
+18:45 - 18:49
+Ele pode fazer o JSON, pegar o formulário que está aqui, ou, ou tem que ser o item.
+
+18:49 - 18:52
+O item vai vai gerar o JSON para nós, né?
+
+18:52 - 18:54
+Tá. Então tá. Então beleza. Preencheu.
+
+18:55 - 18:55
+Uhum.
+
+18:55 - 19:00
+E a partir daí que você gera o formulário, você gera essa, essa forma aqui.
+
+19:00 - 19:00
+Exato.
+
+19:01 - 19:09
+Porque a ferramenta vai chegar até o JSON e do JSON para lá é outro. Como a gente precisa para o MVP, eu acho que o JSON tem a resposta ali.
+
+19:09 - 19:12
+Sim. Sim. Eu também, eu também acho que é isso aí.
+
+19:13 - 19:17
+Aí por isso que eu te perguntei, se tu tens os outros, se tens os outros mesmo, melhor ainda.
+
+19:18 - 19:18
+Uhum.
+
+19:19 - 19:33
+Rápido, que a gente já fez isso com a API. Falando isso, eu ainda eu e o Anderson lá que vai dar uma olhada aí. Não, que a gente fez isso com a API, né? A gente rapou e deixou o mínimo, né?
+
+19:33 - 19:33
+Tá.
+
+19:35 - 19:36
+Para colocar as outras coisas.
+
+19:36 - 19:45
+Negócio. Se o nosso sistema do head bank tá ativo ainda. Acho que sim. Vamos ver como que o head bank cadastra o convênio.
+
+19:49 - 19:54
+Ah, é, aquele monte de, de é, parece uma planilha aquilo lá, lembra? Você mostrou pra gente.
+
+19:55 - 20:14
+É, aqui, ó. Cadastro convênio. Cadastrar dados do convênio. CNPJ, nome. Isso já é um sistema que funciona. CNPJ, nome, código de convênio, código de convênio externo, código da rubrica do convênio, data de corte, data de vencimento.
+
+20:15 - 20:17
+Ele tá cadastrando o convênio, né?
+
+20:18 - 20:31
+É, é que eu tô em tese o que eu o que a gente tá fazendo aqui. Eh, o cara preencheu isso daqui, trouxe pro operacional e aí o operacional vai vir aqui e vai cadastrar o convênio.
+
+20:36 - 20:39
+Esse não seria a aplicação do formulário, né?
+
+20:40 - 21:10
+É, então, é a aplicação do formulário só que eu achei aqui, ele trata como uma abstração. Tem um convênio. Convênio pode ser usado em vários produtos de crédito. O que a gente precisa entender é isso, se vai ter essa abstração, sabe? Porque aí, OK, aí a gente trabalha nesse formato. Tem lá um naquela, se eu puder voltar lá, Luiz, no nosso layout, aí a gente joga para cá convênios. O cara vai vir aqui e cadastrar.
+
+21:10 - 21:10
+Uhum.
+
+21:11 - 21:21
+É, hoje, hoje é assim, a gente tem dois produtos que a gente consegue usar com o mesmo convênio, o cartão consignado e o cartão de crédito mesmo.
+
+21:21 - 21:22
+Uhum.
+
+21:22 - 21:54
+Que em tese é a mesma esteira. O Vítor tá terminando o UX disso. É a mesma esteira, só que ele pergunta: "É crédito ou é cartão de crédito ou é cartão consignado?" Então, o mesmo convênio dá para usar nesses dois produtos. Se, se tem no futuro algum outro crédito que a gente pode usar nesse mesmo convênio, por exemplo, a gente cria uma nova esteira de crédito porque abriu uma brecha no convênio da prefeitura tal, uma margem extra. Vamos criar uma nova esteira de crédito, então vai aproveitar esse mesmo convênio.
+
+21:54 - 21:55
+Perfeito.
+
+21:57 - 22:05
+Eu tenho surgiu dúvida se ele é dentro realmente do produto ou se ele é no, no painel de controle mesmo.
+
+22:05 - 22:11
+Ah, eu acho que são duas coisas, né? Uma é o produto e outra a aplicação desse produto.
+
+22:11 - 22:13
+É, mas é que assim, visualmente.
+
+22:14 - 22:16
+Visualmente lá no cadastro, lá no produto.
+
+22:16 - 22:24
+Visualmente pode ser unificado agora, que a gente ainda não tem certeza, porque mesmo nesse cenário que você falou, para mim é um produto só.
+
+22:25 - 22:25
+Uhum.
+
+22:25 - 22:33
+Que é o produto cartão. Ele tem um, um atributo que pode variar entre consignado e crédito, mas é um produto só.
+
+22:33 - 22:33
+Uhum.
+
+22:33 - 22:35
+Um produto de crédito só, né? Então.
+
+22:35 - 22:36
+Aplicação do produto.
+
+22:36 - 22:40
+Aplicação do produto. Exato. Então aí, a, a visualmente.
+
+22:40 - 22:41
+Visualmente?
+
+22:41 - 22:47
+Visual. Visualmente esses campos aqui de convênio, eles entram como campos de configuração do, daquele produto.
+
+22:48 - 22:48
+Tá.
+
+22:48 - 22:49
+De crédito, certo?
+
+22:50 - 22:50
+Tá.
+
+22:50 - 23:16
+Futuramente a gente tem um outro produto que é uma outra esteira de crédito que vai usar convênio. O registro do convênio tem que estar apartado do produto de crédito, entendeu? Internamente. Visualmente parece a mesma coisa, mas internamente aí vem aquilo que você trouxe. Tem um JSON lá que configurou o convênio, que ele não tá necessariamente ligado a, a amarrado ali aqui ao produto de crédito.
+
+23:17 - 23:17
+É.
+
+23:17 - 23:19
+E pode ser jornalizado.
+
+23:19 - 23:41
+Agora, e já pensando no futuro, não seria melhor então esse convênio tá, tá apartado? O produto de crédito, dentro do produto de crédito, a gente seleciona quais convênios pertencem a ele, mas o cadastro dele já tá apartado. Por quê? Porque senão depois no futuro, se tiver algum outro produto que vai usar esse convênio, eu vou ter que replicar esse cadastro. Não é assim?
+
+23:41 - 23:49
+Não, é isso que eu tô falando. Visualmente agora pro nosso MVP, visualmente parece que tá amarrado, mas no backend a gente já faz apartado.
+
+23:49 - 23:50
+Entendi.
+
+23:50 - 23:50
+Entendeu?
+
+23:50 - 23:51
+Entendi.
+
+23:51 - 24:03
+Porque se futuramente a gente tiver que de fato criar um cadastro aqui de convênio isolado, é só criar as telas, porque o, o banco de dados, o enfim, tudo tá separado, ele não tá amarrado a, ao produto, entendeu?
+
+24:03 - 24:24
+É, que é o porque aqui o, é o que o, o head bank faz, ele realmente, ó, aqui o tudo tá em cadastro. Eu, eu acho que fica, fica ruim esse controle dessa maneira, porque eu venho cadastro aqui, eu tenho tudo. Arquivo de convênio, auto contratação, os bancos, os clientes, as configurações, os feriados, o fundo, listas excessivas, os motivos, tudo, tudo, tudo.
+
+24:24 - 24:26
+É uma história assim, mas um pouco tipo andaria, né?
+
+24:26 - 24:30
+É, exatamente. Ele não tem nem a separação por tipo, entendeu? A promotora.
+
+24:31 - 24:35
+Porque perde parte do contexto pro usuário, né? Perde o contexto da função de.
+
+24:35 - 24:36
+Acha que é tudo igual.
+
+24:36 - 24:36
+É tudo igual.
+
+24:36 - 24:54
+Até as tabelas, ó, tá vendo do, do, do cadastro? Tanto é quando ele me liberou o sistema, que o sistema é 25.000 por mês. Quando ele me liberou o sistema, eu falei, pensei: "Isso daqui, que que é isso daqui? Um, dois, três menus". Eu falei: "Isso daqui faz tudo isso daí?" Pensei: "Mas é por causa disso, porque tá tudo aqui dentro".
+
+25:02 - 25:09
+É, eu acho que a gente poderia seguir nesse formato, Luiz. Você acha?
+
+25:10 - 25:30
+Eu me perdi um pouquinho, mas se você entendeu, eu tô contigo. Porque eu já viajei na questão do arrastar e soltar. Aí eu já viajei no formulário pronto para aquilo já, tipo, o JSON já determina o que que vai vir. E aparece os campos que o JSON determina e do tipo que o JSON tá dizendo.
+
+25:30 - 25:34
+Então você entendeu o que eu, que eu quero fazer. É isso aí. A gente ia fazer por.
+
+25:34 - 25:36
+Você tá traduzindo pro Luiz? Então eu perdi na.
+
+25:36 - 25:37
+É, não, só que agora pela questão.
+
+25:37 - 25:38
+Porque você legenda.
+
+25:38 - 26:01
+Questão de tempo, a gente fazia tudo num formulário visual, formulário só dentro do cadastro do produto, do cartão consignado, mas internamente a gente já trata nesse formato, né? Ah, os dados de convênio, eles vão para uma estrutura à parte, separada ali. E aqui na estrutura do, do produto de crédito, só tem um vínculo, sabe? Um ID para aquele cara, para aquele convênio.
+
+26:01 - 26:02
+Uhum.
+
+26:02 - 26:05
+Só que aí depois que a gente quiser apartar, OK.
+
+26:05 - 26:06
+É, para mim.
+
+26:06 - 26:18
+Ou a gente tem uma tela aqui de convênios lá embaixo para fazer isso, esse cadastro, ou via um UX mais atrativo dentro de cada produto, chama aquele formulário, aquele componente de formulário de convênio, entendeu?
+
+26:18 - 26:22
+Uhum. Esse componente, para mim, a minha ideia é que tem que ser versionado.
+
+26:23 - 26:23
+Sim.
+
+26:23 - 26:33
+Tá? Porque hoje você fechou um convênio, contrato uma forma de trabalho de um jeito e amanhã você pode ter dois concomitantes que não sejam necessariamente compatíveis a 100%, tipo.
+
+26:34 - 26:34
+Sim.
+
+26:34 - 26:37
+Na segunda versão tu exige coisa que a primeira não exigia, esse tipo de coisa.
+
+26:37 - 26:38
+Sim. Sim.
+
+26:39 - 26:44
+Então para mim isso tem que estar versionado e uma vez que usou tem que travar, tipo, não se modifica mais.
+
+26:44 - 26:44
+Uhum.
+
+26:45 - 26:52
+Aí já é outra versão, outra coisa. Isso engeça um pouquinho, mas ajuda depois quando quando vai tratar.
+
+26:53 - 27:02
+Nessa primeira versão a gente já vai fazer o produtos de crédito. Eh, já vai, já vai ter essa esteira para cadastrar o produto de crédito.
+
+27:02 - 27:03
+Já vai ter.
+
+27:03 - 27:03
+Tá.
+
+27:04 - 27:13
+E a gente precisa nutrir o sistema com esses parâmetros de cada produto, né? Porque os microsserviços eles já esperam receber esses, esses parâmetros.
+
+27:13 - 27:15
+Uhum. Entendi. Entendi.
+
+27:15 - 27:20
+Né? Que não fossem, por exemplo, esses, esses parâmetros do formulário que você trouxe ali.
+
+27:20 - 27:20
+Uhum.
+
+27:20 - 27:35
+Mas a gente já precisa, por exemplo, das credenciais de API, né, do parceiro para onde vai se comunicar, das regras de de cada situação. Então a gente já vai ter um formulário, a gente só anexa esse formulário aqui do, do convênio.
+
+27:35 - 27:57
+Entendi. Agora, por exemplo, eh, único lá ou zapsid no para assinatura ou qualquer outra coisa. Eh, ele vai servir, ele vai estar dentro do produto, tudo bem, mas ele, ele também vai servir, esse mesmo, esse mesmo vai servir para múltiplos produtos. Aí as credenciais dele vão ser cadastradas dentro de sistema ou em algum outro lugar, né?
+
+27:59 - 27:59
+Sim.
+
+27:59 - 28:04
+Porque sim, falou, porque se cadastrar ele dentro do produto.
+
+28:05 - 28:12
+É, não, ele vai ter que ficar replicando credencial. Não, não é, não é a ideia. A gente tem um lugar apartado para isso.
+
+28:13 - 28:13
+Sim.
+
+28:14 - 28:29
+Só que na verdade a gente poderia pensar num, num UX legal, Luiz, para não ter que toda hora que tem que cadastrar isso, tem que numa outra tela, sabe? Porque pensa no operacional, o cara tá aqui cadastrando o produto de crédito.
+
+28:29 - 28:29
+Uhum.
+
+28:29 - 28:38
+Aí, putz, tem que colocar as credenciais da Keytech. Eu vou sair dessa tela e até lá o formulário da Keytech, preencher e depois voltar na tela de novo.
+
+28:39 - 28:39
+Uhum.
+
+28:39 - 29:00
+Sabe? Para não, não gerar isso aí, a gente conseguiria eh, ter um UX mais inteligente. Ah, eu tenho que cadastrar as credenciais. A gente tem lá na aba sistemas o lugar para colocar ou dentro de cada produto de crédito, clico num, abro um popupzinho, coloco as configurações e fechou, entendeu?
+
+29:00 - 29:20
+Sim. Porque cada, cada não, cada, cada a gente vai fechar, a gente vai fechar, fechou lá com a Bem Tuls, mas eu tenho reunião deles amanhã. Mas lá dentro ele tem as listas de avervadoras que eles, que eles eh já têm integração.
+
+29:20 - 29:21
+Uhum.
+
+29:21 - 29:39
+Né? Então lá dentro, por exemplo, aqui avervadoras aqui, que é a lista de avervadora, cada uma dessas avervadoras aqui, por exemplo, nós vamos começar com a, com a Consignet. Cada uma dessas avervadoras aqui eu preciso colocar a credencial dela.
+
+29:39 - 29:39
+Uhum.
+
+29:40 - 29:51
+Por quê? Eu vou usar a credencial do, do município que já tem cadastro com a Consignet, entendeu? Eu já poderia fazer isso. Então como que é?
+
+29:52 - 29:53
+E aí vai ser uma matriz então.
+
+29:55 - 29:55
+Vai ser uma matriz.
+
+29:55 - 29:56
+Vai ser uma matriz.
+
+29:57 - 30:09
+Não, porque eu vou ter, às vezes eu vou ter mais de um município trabalhando com credenciais diferentes ou dentro do município, vou ter município, vou ter outra coisa, talvez um poder público, né? Dois poderes públicos.
+
+30:10 - 30:11
+Exato. Então é uma matriz.
+
+30:11 - 30:12
+Vai ser uma matriz.
+
+30:14 - 30:14
+Tá.
+
+30:15 - 30:16
+E também.
+
+30:16 - 30:22
+E o problema é que tem que se referir aquele cadastro lá que você falou que talvez que tenha que ser multiplicado.
+
+30:23 - 30:23
+Uhum.
+
+30:23 - 30:30
+Porque de lá onde estão só as credenciais vai ter que dizer qual que é o produto que está, né? Produto tal, né?
+
+30:30 - 30:40
+Exato. Se eu tirar uma dúvida com o Fabrício, se todos os municípios eles eles estão se a gente vai verificar.
+
+30:40 - 30:44
+Se existe um caso que tem uma credencial diferente, já para nós é a mesma coisa.
+
+30:48 - 31:06
+Fabrício, beleza? Só, só fazer uma pergunta rapidão. Eh, quando você fecha o convênio com o município, esse e o acesso ao Consignet ou à avervadora é o próprio município que cria um usuário para ERC e disponibiliza, certo?
+
+31:07 - 31:08
+Sim.
+
+31:08 - 31:08
+Tá bom.
+
+31:14 - 31:17
+Não tem canal nenhum aqui. Não abriria aqui nenhum canal.
+
+31:18 - 31:22
+Entendido. Ah, beleza. Era essa dúvida mesmo. Fechou. Valeu.
+
+31:23 - 31:23
+Valeu.
+
+31:25 - 31:27
+Tem alguma dúvida? Alguma coisa ainda?
+
+31:32 - 31:33
+Eu nunca acho que o cara é capaz de fazer com.
+
+31:37 - 31:39
+Cada município vai ter a então, mas.
+
+31:40 - 32:05
+Então, mas aqui, por exemplo, só imprudente, por exemplo. Deus abençoe e tenhamos mais que o cara precise usar mais de uma credencial, tipo: "Ah, esse aqui é do município, mas essa outra é de uma autarquia do estado que está aqui, do, do, do federativo, do federal que está aqui", por exemplo. Aí você vai ter que ter pelo menos duas. E quando tem duas, tem N, né? Então.
+
+32:06 - 32:08
+É exato.
+
+32:08 - 32:08
+Sim.
+
+32:09 - 32:20
+É, é no ato do cadastro do convênio, vai ter que ser aí isso vai ter que ser mais ou menos parecido com isso daqui, ó. Vai ter que cadastrar, vai ter que escolher qual que é a avervadora do convênio.
+
+32:21 - 32:22
+E a chave dela.
+
+32:22 - 32:33
+E a chave dela. Exatamente. O convênio exige senha, sim ou não? Permitir novo contrato para inadimplente. Não sei porque essas perguntas são importantes ou não é, mas beleza. Aí vai.
+
+32:34 - 32:49
+Mas isso é simples, são aquelas perguntas que que estão lá que são meio alencatracadas no bem para cada contrato, né? É aí que que entra aquela, aquela, aquele dinamismo de que o programador, o programador web não vai desenvolver isso especificamente, vai ver do jeito.
+
+32:49 - 32:49
+Sim, sim.
+
+32:51 - 32:52
+Só pouco.
+
+32:54 - 32:55
+Outras solução.
+
+32:56 - 32:58
+Eu quis dizer para para mim.
+
+32:58 - 33:06
+Onde que ele coloca as configurações, as integrações dentro dos cadastros? Ele tem um menu de configurações, por exemplo, aqui é clique sai.
+
+33:06 - 33:07
+Ah, o interface dele é linda.
+
+33:08 - 33:17
+Que é o único, que é Keyside, esse cred aqui é BMP. Todos que eles têm integração ele.
+
+33:17 - 33:18
+Já copiaram isso aí para nós?
+
+33:20 - 33:26
+É, eu acho que nesse, nesse formato aqui, as credenciais nesse formato seria.
+
+33:26 - 33:29
+Formato não me interessa. O que me interessa são os campos.
+
+33:29 - 33:34
+Não aí. Quais são esses campos?
+
+33:34 - 33:40
+Então, então, então Keyside é a assinatura que nós vamos usar daqui.
+
+33:41 - 33:41
+Uhum.
+
+33:42 - 33:45
+Keytech é as credenciais aqui do.
+
+33:46 - 33:58
+Então, mas aí no caso deles não dá para fazer o que a gente tava falando, né? Que às vezes você tem dois clientes que sobrepõe no mesmo espaço geográfico. Aí não dá. Você tem uma credencial, uma.
+
+33:59 - 34:12
+Não, é, é que assim, você tem a credencial master e aí você tem as cred, porque aqui, ó, por exemplo, eh, da Keytech é só a credencial da Zicred ou da Cronos. Sempre vai usar só a credencial da Zicred ou da Cronos.
+
+34:12 - 34:13
+E onde que usa?
+
+34:13 - 34:19
+Depende do convênio. Agora do município é dentro do convênio. Aqui, ó, é quando você vai cadastrar.
+
+34:19 - 34:20
+Checklist não é nos convênios também.
+
+34:20 - 34:25
+Não, você vai cadastrar e você escolhe qual que é a avervadora e daí possivelmente você vai colocar uma.
+
+34:25 - 34:27
+A avervadora. Escolher qual que é.
+
+34:28 - 34:30
+Mas é, é um convênio, uma avervadora.
+
+34:30 - 34:30
+Uma avervadora.
+
+34:30 - 34:31
+É.
+
+34:31 - 34:31
+É.
+
+34:33 - 34:36
+Não, não tem a possibilidade de no mesmo convênio colocar uma avervadora.
+
+34:36 - 34:37
+Não, aqui.
+
+34:37 - 34:37
+Aqui.
+
+34:37 - 34:40
+Aí, senão no nosso. No mesmo convênio.
+
+34:41 - 34:43
+Se aqui tá assim, tem que copiar as mesmas.
+
+34:45 - 34:45
+Tá bom.
+
+34:46 - 34:52
+Porque se eu tiver outra avervadora, eu entendo que tem um outro convênio, certo?
+
+34:52 - 34:53
+É.
+
+34:55 - 34:55
+É.
+
+34:55 - 34:56
+Faz sentido.
+
+34:56 - 34:58
+Entendi. Porque é um para um, né?
+
+34:58 - 34:59
+Nesse sentido, um para um.
+
+34:59 - 35:00
+Nesse sentido.
+
+35:00 - 35:00
+Aí não.
+
+35:03 - 35:20
+Aí sim. Voltar na latinha aqui. Tudo separado.
+
+35:23 - 35:24
+Ah, nós escrever isso.
+
+35:24 - 35:28
+Tem que requebrar a cabeça. Vem tudo junto. Fantástico.
+
+35:32 - 35:34
+Vai passar lá. Vai no ponto novo.
+
+35:35 - 35:36
+Vazio.
+
+35:37 - 35:41
+Ninguém mandou você começar de trás para frente, né? Vai preencher o formulário do produto.
+
+35:41 - 35:47
+Tem um caso que você tem um caso que veio com todas essas peças juntos, certinho.
+
+35:47 - 35:47
+Uhum.
+
+35:47 - 36:19
+Ao qual o criador determinou. Depois eu vou buscar porque vocês acharam inacreditável. Ah, mas tudo bem. Teve um casal que passou oito anos sentado no tr filho. Não, não tinha, não tinha, não tinha. Fiz o lançamento tudo quanto não é piada. Não é piada, é verdade. Fiz o lançamento tudo quanto era jeito e não havia quem desse ter como volar, porque tava tudo certinho, tá? Até que eu tô falando, foram parar numa sexóloga, tá? Eles não tinham filhos porque o único jeito que eles gostavam de ter sexo era lá. Tava tudo ali.
+
+36:19 - 36:25
+Eles não juntaram as peças de forma coordenada. Oito anos, filho. A mãe levando com esforço, não é esse?
+
+36:30 - 36:30
+E aí?
+
+36:31 - 36:31
+5 mm.
+
+36:32 - 36:33
+Isso é fato. É exatamente.
+
+36:34 - 36:35
+5 mm.
+
+36:36 - 36:36
+É.
+
+36:37 - 36:41
+O engenheiro que fez.
+
+36:41 - 37:18
+A área de lazer junto com a então essa questão de tabela, a maneira como tá no sistema atual, ela tá mais, ela tá ela tá melhor no sistema. Foi o Vargas que fez. É um jeito louco lá de cadastrar tabela, mas assim, eh, tá tá dando possibilidade de você fazer múltiplas tabelas com múltiplas regras diferentes, com múltiplos. Aí você não tem que ter preciso sair olhar para isso, porque assim, isso é uma das coisas mais importantes do sistema.
+
+37:18 - 37:19
+Uhum.
+
+37:19 - 37:47
+É tabela de tanto a tabela de cálculo do do empréstimo, né, que a gente replica aqui. E é isso que vai para aquele quanto quanto também as tabelas de comissionamento, que são regras em cima de regras, porque tabela de comissionamento, por exemplo, a gente tem uma tabela de comissionamento que é pro pra promotora e aí debaixo da promotora tem o o Corban ou tem pode ser um master promotora e o Corban.
+
+37:48 - 37:48
+Uhum.
+
+37:48 - 37:58
+E aí se eu pago 20% pro pro master e 18 pra promotora que tá debaixo do master, na verdade o master tá ganhando dois.
+
+37:59 - 37:59
+Uhum.
+
+38:00 - 38:01
+Se eu pago sete pro Corban.
+
+38:02 - 38:03
+Então tem dois aumentos.
+
+38:03 - 38:04
+É, exatamente.
+
+38:05 - 38:17
+Agora também tem outras regras. Tem regra, por exemplo, no caso da BV, nós só pagamos pra BV. A BV é cadastrada com o master. Nós só pagamos pra BV e nós não pagamos mais para ninguém. Isso o Calegar tem de cor essas regras.
+
+38:18 - 38:19
+É, não. Calegar já.
+
+38:19 - 38:20
+A gente fica lá no sistema.
+
+38:21 - 38:32
+Não tem nenhuma regrelha de não calcular, tipo assim, não calcular comissão com a Urban. Aí ele não calcula para baixo, ele ele para sempre na BV, no master. Eu pago sempre 20% pro master e ele que se vira pro Corban.
+
+38:32 - 38:32
+Uhum.
+
+38:32 - 38:40
+Porque tem promotoras que já tem o sistema de controle de comissionamento, tem promotoras que não tem, que precisa usar o nosso para ver as comissões, entendeu?
+
+38:42 - 38:46
+Isso. O Calegar ele tá bem. Ele já colocou exatamente os executórios.
+
+38:46 - 38:47
+Uhum.
+
+38:48 - 38:49
+Mas sempre tem que ficar atento.
+
+38:50 - 39:11
+Então para para eu poder seguir com o com o Vítor, porque o Vítor tá terminando essa parte aqui, ele vai parar a tela de vendedor, porque já chegou no no mínimo que a gente precisa, que é o o escopo do do MVP do vendedor. O que que é o mínimo que a gente precisa? Tá aqui. Início. Essa dashboard mostrando o total de vendas que o vendedor teve, que é o Corban.
+
+39:12 - 39:12
+Uhum.
+
+39:12 - 39:42
+Quantas foram avervadas e pagas realmente, meta e realizado e quantidade de proposta. Que que é essa meta e realizado? Sei lá, isso daqui pode ser um cadastrinho que ele mesmo define uma meta ali para ele saber quanto ele alcançou, qualquer coisa, só para só para ter dashboard mostrando, alguma coisa assim. Então aqui meus dados, que é o perfil mesmo, onde ele altera a senha, os arquivos, logs de acesso. Beleza? Propostas aqui as as esteiras card pix. Nós não vamos mexer nessa esteira agora, tá?
+
+39:42 - 39:48
+É porque ele precisava desenvolver uma primeira e eu pedi para ele replicar o modelo do Card Pix.
+
+39:48 - 39:49
+Uhum.
+
+39:49 - 40:10
+Mas em proposta nós vamos ter crédito de trabalhador e e cartão consignado inicialmente. Então o fluxo crédito trabalhador, o fluxo Card Pix já tá tudo validado. Agora ele tá criando o fluxo do do cartão consignado, que a gente tá replicando muito o modelo da Amigos, que é uma que o fluxo é bem bem fluido. A gente conversou e resolveu seguir com esse.
+
+40:10 - 40:10
+Uhum.
+
+40:12 - 40:16
+Eh, bom, depois daqui esteira que ele não colocou o link.
+
+40:16 - 40:18
+Ele não colocou.
+
+40:18 - 40:37
+Ele não colocou o link da esteira funcionando para visualizar, mas já tá já tá pronta, que é o gerenciar propostas. Antig é que eu pedi para ele separar. Antigamente tinha propostas e aqui tinha gerenciar propostas. Falei para ele criar um outro menu só de esteira, que é onde a gente vai visualizar a lista de propostas que tem, quem tem que ver o status dela e essas coisas mais.
+
+40:37 - 40:37
+Uhum.
+
+40:38 - 40:55
+E por fim, clientes, que é visualizar o menu de clientes. Isso daqui eu sei que tá pronto também, só não tá prototipado, mas é isso é o que a gente precisa pro mínimo ali para poder liberar o Corban com com acesso ao sistema. Comunicados de página, né? Normal.
+
+40:55 - 40:56
+Uhum.
+
+40:56 - 41:30
+Basicamente é isso. Aí ele terminou essa próxima esteira aqui. Aí ele vai pegar para vir em cima do do admin hub aqui mesmo. E daí é essa parte do produtos de crédito, né? O cadastro do produto de crédito. Daí eu vou quebrar a cabeça aqui para saber como fazer esse fluxo, o desenho desse fluxo, porque eu não tenho ideia ainda. Sim, de como produto de crédito, cartão consignado, que que é o fluxo de cadastro, entendeu? Porque vai tudo lá, vem tudo API, todas as regras, né?
+
+41:31 - 41:46
+Sim. É, eu acho que você vai nunca saber fazer não. Vai ser formulário. É, abrir para nós uma tela aqui com um exemplo, um layout mais ou menos de formulário. Não precisa nem nomear os campos e depois a gente se vira e a gente dá lá com entendi.
+
+41:46 - 41:50
+Os atributos que são necessários, porque vai mudar para caramba de produto para produto.
+
+41:51 - 41:51
+Sim, muito.
+
+41:51 - 41:56
+Só que o padrão é o mesmo, é formulário, né? Não foge muito disso.
+
+41:56 - 41:59
+Entendi. Meu Deus, tô seguindo essa linha aí.
+
+41:59 - 42:05
+Uhum. Propostas aqui, aquela esteira, só que mostrando mais detalhes, né? Que aqui eu já tô eu tô no administrativo.
+
+42:06 - 42:06
+Uhum.
+
+42:08 - 42:36
+Financeiro é relatório, porque a gente vai precisar ter o relatório para pagamento, esse tipo de coisa. É o é a base que a gente precisa para poder para poder começar com o resto é painel de controle aqui é são os cadastros realmente dos dos tipo assim cadastro da tabela de comissão vai tá aqui cadastro da tabela de tabela de juros vai tudo vai tá aqui dentro de do painel de controle, né?
+
+42:36 - 42:36
+Sim.
+
+42:37 - 42:39
+Blacklist, esse tipo de coisa, sistema.
+
+42:41 - 42:46
+Ah, tu vai precisar de um link?
+
+42:47 - 42:49
+Não, tá só explicando para eles aqui.
+
+42:51 - 42:52
+Lá que eu não preciso.
+
+42:53 - 42:54
+Meu Deus.
+
+43:02 - 43:08
+Beleza. E lá tudo certo? Certo.
+
+43:11 - 43:37
+É uma outra coisa que a gente tava já tava pensando em fazer. Eu não sei o quanto quantas são necessárias para a gente passar lá na frente, mas a gente já queria desocupar lá e como já tá já tá descansando todos os aqui já tá fazendo conversa com o diretor de dispensa dos outros. Então o já trazer o time o time de crédito eles trazer para eles ficar aqui. Aí quando você precisar fazer reunião você pode vir para cá também tudo.
+
+43:37 - 43:45
+Mas é que eu já tinha falado pro Robson que eles vão ficar lá na frente também, né? Então vem já separar mesmo, tá?
+
+43:45 - 43:45
+Beleza.
+
+43:48 - 43:50
+Resumo já pode vir essa semana para cá.
+
+43:50 - 43:51
+Sim, sim.
+
+43:51 - 43:59
+Beleza. Aí resumo aí eu acho que na quinta-feira, né? É, quinta-feira, quinta em diante que dá tempo de retornar as decisões.
+
+43:59 - 44:03
+Amanhã vai ter que acabar de a modestar.
+
+44:06 - 44:09
+Beleza, gente. Falou. Falou.
+
+44:10 - 44:10
+Falou.
+
+44:13 - 44:18
+Ah, meu Deus, os dados dele não apareceu. Ele tava muito pequeno. Eu tô clicando aí e não consigo.
+
+44:18 - 44:22
+Ah, não, aqui não. Aqui no admin hub não tá pronto. Meu dado pronto. Tá lá no.
+
+44:22 - 44:24
+Sim. É o único que pro vendedor tá.
+
+44:25 - 44:26
+Aí ó.
+
+44:26 - 44:30
+Aí não você tá pagando. Sabe a regra, né?
+
+44:30 - 44:30
+Hum.
+
+44:31 - 44:33
+Um metro e meio, uma pessoa de 40 anos.
+
+44:33 - 44:34
+Eu quero saber daqui.
+
+44:35 - 44:41
+É. 54, né? Eu achei um pouquinho pequeno essa letra.
+
+44:43 - 44:44
+Você fala a fonte daqui.
+
+44:44 - 44:47
+Essa, essa, essa, essa fonte daí, esse tamanho de fonte aí.
+
+44:48 - 44:52
+Acho que um pouquinho pequena para para o tipo de.
+
+44:52 - 44:56
+É um público que vai ser que vai ser que nem eu, né?
+
+45:01 - 45:02
+Eles vão melhorando.
+
+45:03 - 45:05
+É uma forma de ver a coisa.
+
+45:07 - 45:10
+Lá desenvolver também.
+
+45:10 - 45:14
+É, dá para fazer, dá para você deixar que eu não chego essa letra.
+
+45:17 - 45:18
+Não vai nem ver que tinha isso.
+
+45:19 - 45:23
+Não, não. É que tô indo para desesperadamente.
+
+45:24 - 45:25
+Sim.
+
+45:25 - 45:37
+Show. Lindo, lindo. Que lindo os APIs internos. Muito bom. Bonito.
+
+45:40 - 45:44
+Então, pessoal de de front, o que que eles estão fazendo? Como que tá lá nas etapas?
+
+45:47 - 45:54
+O Will tá fazendo a parte do Pix dentro do app e o Ítalo tá tá trabalhando no dashboard.
+
+45:55 - 45:56
+Tá bom.
+
+45:57 - 45:57
+Uhum.
+
+45:58 - 46:02
+Você acha que vai sair mais ou menos parecido com isso daqui ou?
+
+46:03 - 46:12
+Vai, vai. Assim, dá para garantir que é 100% fiel, né? Porque tem algumas coisas que acabam mudando aí por conta do do framework que tá usando.
+
+46:12 - 46:13
+Uhum.
+
+46:13 - 46:19
+Mas estão tentando seguir o mais próximo possível do que foi desenhado.
+
+46:19 - 46:20
+Uhum.
+
+46:20 - 46:27
+O aplicativo tá muito, tá muito assim, o Will é muito muito detalhista nesse ponto.
+
+46:27 - 46:28
+Legal, legal.
+
+46:29 - 46:46
+O Ítalo também é é bastante detalhista. Eu não vi ainda o dashboard, não me mostrou não, porque ele tá mais na parte de base ali, né? Ele ele tem design system e tal para depois atuar nas telas, mas ele ele deve conseguir deixar muito parecido com muito fiel aí.
+
+46:46 - 46:47
+Sim.
+
+46:47 - 46:53
+Inclusive ele tá batendo muita bola com o Vítor também para pegar o o que tá acontecendo e tal.
+
+46:54 - 46:54
+Legal.
+
+46:54 - 47:17
+E eu pedi pro Will ficar em cima também, apesar de eu já ter trabalhado com Ítalo e conhecer a qualidade de trabalho. Eh, como o Will é o cara que tá mais por dentro de tudo, então eu pedi para ele, cara, fica em cima e toma conta. Aí ele tá tá tentando ajudar também, mas vai ficar muito vai ficar bem fiel ao design, né?
+
+47:18 - 47:18
+Legal.
+
+47:18 - 47:19
+Confundir não.
+
+47:19 - 47:19
+Legal.
+
+47:39 - 47:40
+Ai, ai.
+
+47:46 - 47:47
+Vou deixar para você.
+
+47:51 - 48:22
+Vamos mostrar a música para outro lado, né? Pera aí, daí você abre, né? Eu tenho que me esticar tudo para então.
+
+48:27 - 48:29
+Fiz isso. Vai a mita aí no modo melhor. Tem hora.
+
+48:30 - 48:32
+Só que para pegar uma fita aqui, ele vai tudo aberto.
+
+48:33 - 48:35
+Não, então vou lá trocar e aí você abrir.
+

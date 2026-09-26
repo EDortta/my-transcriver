@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-25T14:09:00.001689+00:00",
+  "selected_audio": {
+    "path": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Esteban e Felipe Gaia 2026-07-31.m4a",
+    "size_bytes": 11538442,
+    "sha256": "001bae3694971028f79e45b04c3a9899a9a3e17b0a486d229f6ce40e84fcf0b1"
+  },
+  "settings": {
+    "cpu_seconds": 8.0,
+    "remote_dir": "/tmp/my-transcriver-host-benchmark",
+    "keep_remote": false
+  },
+  "ranking": [
+    {
+      "name": "devel3",
+      "score": 11362.019,
+      "status": "ok"
+    },
+    {
+      "name": "dom1",
+      "score": 361.99,
+      "status": "ok"
+    },
+    {
+      "name": "dom0a",
+      "score": 0.0,
+      "status": "failed"
+    }
+  ],
+  "results": [
+    {
+      "host": "devel3",
+      "fqdn": "devel3",
+      "platform": "Linux-5.15.0-187-generic-x86_64-with-glibc2.35",
+      "python": "3.10.12",
+      "cpu_count": 4,
+      "cpu_model": "Intel(R) Core(TM) i3-9100F CPU @ 3.60GHz",
+      "meminfo_kb": {
+        "MemTotal": 16287904,
+        "MemAvailable": 6314724
+      },
+      "disk_free": {
+        "cwd": {
+          "total": 943441317888,
+          "used": 800498900992,
+          "free": 94942801920
+        },
+        "audio_parent": {
+          "total": 943441317888,
+          "used": 800498900992,
+          "free": 94942801920
+        }
+      },
+      "tools": {
+        "ffmpeg": "/usr/bin/ffmpeg",
+        "ffprobe": "/usr/bin/ffprobe",
+        "whisper_cli": null,
+        "faster_whisper_python": true,
+        "vosk_python": true
+      },
+      "audio": {
+        "path": "/home/esteban/Sync/Backups/Android/VoiceRecorder/Esteban e Felipe Gaia 2026-07-31.m4a",
+        "size_bytes": 11538442,
+        "duration_seconds": 705.312
+      },
+      "benchmarks": {
+        "cpu_hash": {
+          "loops": 7916,
+          "loops_per_second": 989.5,
+          "seconds": 8.0,
+          "digest_prefix": "226288f55f14"
+        },
+        "ffmpeg_decode": {
+          "command": [
+            "/usr/bin/ffmpeg",
+            "-nostdin",
+            "-hide_banner",
+            "-loglevel",
+            "error",
+            "-i",
+            "/home/esteban/Sync/Backups/Android/VoiceRecorder/Esteban e Felipe Gaia 2026-07-31.m4a",
+            "-f",
+            "null",
+            "-"
+          ],
+          "returncode": 0,
+          "wall_seconds": 0.527,
+          "stdout_tail": "",
+          "stderr_tail": "",
+          "audio_seconds_per_wall_second": 1338.35
+        }
+      },
+      "name": "devel3",
+      "target": "local",
+      "status": "ok",
+      "orchestrator_wall_seconds": 9.017
+    },
+    {
+      "host": "dom1-inovacao",
+      "fqdn": "dom1.nuomed.com.br",
+      "platform": "Linux-6.12.86+deb12-amd64-x86_64-with-glibc2.36",
+      "python": "3.11.2",
+      "cpu_count": 16,
+      "cpu_model": "Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz",
+      "meminfo_kb": {
+        "MemTotal": 65937116,
+        "MemAvailable": 54535436
+      },
+      "disk_free": {
+        "cwd": {
+          "total": 292588748800,
+          "used": 242248765440,
+          "free": 35402493952
+        },
+        "audio_parent": {
+          "total": 292588748800,
+          "used": 242248765440,
+          "free": 35402493952
+        }
+      },
+      "tools": {
+        "ffmpeg": null,
+        "ffprobe": null,
+        "whisper_cli": null,
+        "faster_whisper_python": false,
+        "vosk_python": false
+      },
+      "audio": {
+        "path": "/tmp/my-transcriver-host-benchmark/sample.m4a",
+        "size_bytes": 11538442,
+        "duration_seconds": null
+      },
+      "benchmarks": {
+        "cpu_hash": {
+          "loops": 3175,
+          "loops_per_second": 396.88,
+          "seconds": 8.0,
+          "digest_prefix": "ff6558b57171"
+        },
+        "ffmpeg_decode": null
+      },
+      "name": "dom1",
+      "target": "esteban@dom1.inovacaosistemas.com.br",
+      "status": "ok",
+      "orchestrator_wall_seconds": 41.568
+    },
+    {
+      "name": "dom0a",
+      "target": "root@dom0a",
+      "status": "failed",
+      "stage": "benchmark",
+      "returncode": 127,
+      "stdout_tail": "",
+      "stderr_tail": "bash: python3: command not found\n",
+      "orchestrator_wall_seconds": 1.189
+    }
+  ]
+}

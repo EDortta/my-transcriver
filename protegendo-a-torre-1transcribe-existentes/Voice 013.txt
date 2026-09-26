@@ -1,0 +1,183 @@
+00:00 - 00:02
+Remendo pra ser saúde. O beck do...
+
+00:03 - 00:04
+Não é pra ser saúde.
+
+00:04 - 00:08
+Não é pra ser saúde. O remendo acaba descosturando no mau-asso.
+
+00:08 - 00:10
+O beck do produto tá ficando grande, hein.
+
+00:11 - 00:15
+Não, ele é grande, né? Mas eu digo agora, pra ser de imediato.
+
+00:16 - 00:16
+Isso.
+
+00:17 - 00:41
+Mas tá bom. Bom, acho que o que a gente tem que fazer agora... eu tenho que mostrar pra vocês o fluxo e a esteira do que é... do que é o produto do cartão, quais são as etapas, o que a gente tem que construir, pra vocês terem ideia e concepção do que é. Além do core, tem todo o front que envolve as integrações que vai ter no core. Por exemplo, integração com averbadoras e tudo mais.
+
+00:41 - 01:07
+Ontem eu fiz uma reunião com a Carleto e eu descobri que as 5 prefeituras que eles já têm usam a Consignet como averbadora. Então nós vamos ter que buscar margem lá na Consignet também, entendeu? Creio eu que são 2 endpoints no máximo, que é uma consulta de margem, né, mas ainda assim tem todo esse fluxo. Então eu vou... o que eu vou fazer? Vou compartilhar aqui com vocês. Vou pegar o fluxo que nós temos, que eu criei aqui.
+
+01:12 - 01:28
+Isso é Banco Central, isso não é eu, não. Isso é do Banco Central. Eu não lembro o nome das ferramentas que eu uso aí, Danoa. E o mapa?
+
+01:28 - 01:30
+Já coloquei... já falei pra você usar o Persona, cara.
+
+01:31 - 01:31
+O mapa?
+
+01:32 - 01:34
+O mapa mental. Hã? Persona?
+
+01:34 - 01:37
+É, pra poder armazenar todas as suas contas e tudo.
+
+01:38 - 01:44
+É. Eu preciso mesmo. Aí, por exemplo, aqui, ó. Não tem a senha marcada. E aí?
+
+01:46 - 01:47
+8080 em algum lugar entra.
+
+01:49 - 02:01
+Era 448800. Mas aí a Deep Web descobriu essa senha e começou a vir alarme pra mim, aí eu mudei. Ah, é, porque eu acessava via o outro aí.
+
+02:02 - 02:04
+Falou que você... essa senha foi vazada?
+
+02:04 - 02:04
+É.
+
+02:05 - 02:09
+Puts, cara. Não, aí você falou que... aí você falou sua senha pra mim.
+
+02:09 - 02:10
+Agora que foi vazada.
+
+02:10 - 02:10
+Agora que foi vazada.
+
+02:11 - 02:13
+Você acabou de confirmar que a minha senha foi vazada.
+
+02:13 - 02:16
+Na verdade ela não tinha sido vazada, ela foi vazada na hora que você falou.
+
+02:16 - 02:17
+Jogou verde e desligou.
+
+02:18 - 02:33
+Não, não, eu sou Serasa Premium. E daí vem uma notifi... é do Serasa mesmo. Vem notificação no aplicativo de que os meus dados estão na Dark Web e mostrando lá toda a lista de... de... tipo assim, os e-mails tal, senha começada com tal.
+
+02:34 - 02:35
+Ah, descobriram minha senha.
+
+02:37 - 02:39
+Senha mestre, né? Todo mundo tem a senha.
+
+02:39 - 02:39
+Minha senha, sua senha.
+
+02:39 - 02:40
+É.
+
+02:41 - 02:43
+Quase ninguém sabia sua senha.
+
+02:44 - 02:45
+Não tem um por dentro.
+
+02:45 - 02:45
+Eu meio errado.
+
+02:47 - 02:48
+Eu loguei no e-mail errado.
+
+02:48 - 02:52
+Então mesmo quando a pessoa esquecia a senha, que poderia correr o risco de esquecer a senha.
+
+02:52 - 02:57
+Mesmo, mesmo sendo a Serasa Premium e tal, eles ainda não dão pra eles tirarem isso.
+
+02:57 - 03:03
+Eu ia perguntar pro... eu ia perguntar pro Serasa: "me lembra... tira os asteriscos aí, me mostra o restante da senha, porque eu não lembro mais".
+
+03:07 - 03:07
+Eu lembro.
+
+03:17 - 03:18
+Nem a conta que eu acesso.
+
+03:18 - 03:20
+Ela tem pouquinha conta, hein?
+
+03:20 - 03:37
+Pouquinha. Ah, tá aqui, ó. Crédito trabalhador, fluxo. Qual dos dois tá certo? Vamos ver. Crédito trabalhador, prospecção, buscas de imagens, dados de crédito, contratação, formalização, pagamento.
+
+03:53 - 04:07
+Quanto ele busca aí? Tava falando com o William sobre o aplicativo, né? Então vamos deixar um aplicativo o mais leve possível, né? Então, na hora de contratar o serviço, é que vão vir os dados extraordinários.
+
+04:07 - 04:26
+Uhum. Aqui. Cartão consignado. Vou mostrar pra vocês a jornada, mas antes deixa eu mostrar o... o... o videozinho do Anote, porque senão isso vai ficar na minha cabeça como uma caixa que eu não fechei, e o Estevão vai continuar mandando coisa no seu fiado.
+
+04:27 - 04:28
+Depois eu vou mostrar.
+
+04:29 - 04:30
+Mostra a ideia pra ele.
+
+04:30 - 04:31
+Vou mostrar o in.
+
+04:31 - 04:34
+Substituir Anote por seu fiado aí, ó.
+
+04:34 - 04:34
+Seu fiado.
+
+04:50 - 05:24
+Ei, sobrou mês e acabou o salário. Você queria comer em um restaurante, cortar o cabelo, fazer um serviço no mecânico, mas tá sem grana. Chega de ouvir que fiado só pra pessoas acima de 90 anos e acompanhadas dos pais. Agora você tem Anote, a plataforma que te apoia nos momentos que você mais precisa e concede um limite de crédito pra uso imediato nos estabelecimentos credenciados. Baixe agora o aplicativo, faça o seu cadastro e tenha seu limite disponível pra utilização em 5 minutos.
+
+05:24 - 05:35
+Você tem até 40 dias pra pagar e cada vez que você usa, o seu limite fica maior. Baixe agora o aplicativo e viva a vida hoje. Anote, a cadernetinha ficou digital.
+
+05:38 - 05:45
+Tipo quando o seu fiado fala que o buraco fica cada vez maior. Eu que sou errado. Eu que sou errado.
+
+05:45 - 05:50
+O buraco fica cada vez maior. É o limite que aumenta, rapaz.
+
+05:51 - 05:59
+É, mas é isso. É o alargamento do limite. Se não quiser alargamento, pode ser alargação também, né? Vai ser chato, né?
+
+06:01 - 06:03
+Produto pra salvar a vida dos brasileiros.
+
+06:04 - 06:05
+Do quê?
+
+06:06 - 06:39
+Explica a questão. Vamos lá. Bom, aqui é o seguinte, ó. O... a gente tem... existe uma jornada pra contratação do cartão consignado. Primeiro... o primeiro ponto é entender o que é o cartão consignado, pra todo mundo entender o que é o produto, né? É... dentro da prefeitura, quem é funcionário público, municipal, estadual, federal, qualquer funcionário público, ele tem direito de pegar um crédito consignado, que é aquele crédito consignado que desconta do salário dele.
+
+06:39 - 07:17
+Como com o superendividamento da população, inclusive esse povo também endividado, criaram por decreto uma lei de que agrega 5% da margem consignável, ou seja, eles tinham 30%, podia pegar até 30% do salário. Acrescentaram, através de decreto, uma margem extra de 5% do salário válida exclusivamente pra cartão, cartão consignado. Que daí eles falam: "não é um empréstimo, é pra poder ter cartão". Só que esse cartão aqui, ele libera dinheiro também. Então terminou virando mais uma modalidade de empréstimo através do cartão consignado.
+
+07:17 - 07:51
+Esse é o produto que a gente tá criando pra esse parceiro lá da Carleto Bank. Ele tem assinado contratos, 5 municípios, que a folha de pagamento vai rodar lá, ele vai ter acesso através da averbadora, que ele tem contrato com os municípios, e vai concedê crédito através do cartão consignado. Então o trabalhador tem, por exemplo, lá... é... recebe, pra facilitar o cálculo, R$ 10.000 por mês, e ele tem 30% de limite de crédito consignado já tomado, R$ 3.000 ele paga por mês de parcela de consignado.
+
+07:52 - 08:25
+Só que por decreto ele tem mais 5%, que equivale ali a R$ 500 por mês de parcela. Nós vamos pegar essa margem que ele tem... como que a gente vai pegar essa margem que ele tem? Ó, aí começa o fluxo. O CoreBank prospecta o cliente, por quê? Isso daqui é venda realizada de duas formas, igual o CardPix, ou pelo correspondente bancário, que tá lá na prefeitura, o Pastinha, batendo na porta de todos os funcionários falando: "ó, eu tenho um crédito pra você", ou pelo fluxo de autocontratação, que daí vai ser o aplicativo.
+
+08:25 - 09:02
+Mas vamos por aqui, porque a plataforma que vocês estão desenvolvendo faz isso daqui e vai fazer as APIs, que daí é o aplicativo que a gente vai pegar da Cronos, que eu tô pronto. Então é assim, ó. O cartão consignado começa com a prospecção, o CoreBank prospecta, então, o parceiro, solicita CPF e holerite pra ele ali na hora, consulta exige token ou não, disponibiliza token, consulta margem e vai lá. O que que é isso daqui? Existem empresas como essa daqui, que são sistemas de gestão de margem consignada. Essa daqui é uma das maiores do mercado.
+
+09:02 - 09:28
+As prefeituras usam empresas desse tipo pra quê? Pra poder... pra poder saber quanto de crédito cada colaborador tem tomado e o RH saber: "ó, eu não posso pagar R$ 10.000 pro Estevão", porque ele já tem R$ 3.500 de empréstimo tomado, então eu vou pagar só R$ 6.500 na conta dele. Entendeu? Então, é... esse sistema serve pra gestão de consignado.
+
+09:28 - 10:06
+Então, às vezes, uma prefeitura tem convênio com açougue, o Estevão comprou R$ 700 de carne lá no açougue, opa, então no salário dele, no pagamento dele, eu não posso dar o R$ 6.500, eu tenho que dar o R$ 5.800, porque ele comprou R$ 700 de carne. Então, é... esse sistema, ele controla tudo isso, controla as margens consignáveis dos funcionários. É como se fosse a CIP do governo lá, ou DataPrev, que controla o fluxo da folha de pagamento do funcionário ali e tudo mais. Ok? Então, basicamente é isso. Então.
+
